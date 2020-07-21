@@ -157,6 +157,7 @@ Usage
 
  update_parameters(mode = "cls", estimator_name = "svm", C=[0.1,0.2],kernel=["linear"])
 ..
+
   - *export_parameters* method can help you export the currnt default parameter settings as 2 csv files named "exported_cls_parameters.csv" and "exported_reg_parameters.csv". You can find them in the *./exported* folder of you current work dictionary.
 
 .. code-block:: python
