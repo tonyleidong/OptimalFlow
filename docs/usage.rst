@@ -46,6 +46,7 @@ Output:
     Progress: [####################] 100.0%
 
     The DynaPipe autoFS identify the top 5 important features for regression are: ['RM', 'LSTAT', 'PTRATIO', 'NOX', 'CRIM']. 
+..
 
 2. Model selection for classification problem:
 
@@ -73,6 +74,7 @@ Output:
 
    for name, mdl in models.items():
        evaluate_clf_model(name, mdl, val_features, val_labels)
+
 
 Output:
 
@@ -142,6 +144,7 @@ Output:
     gb -- Accuracy: 0.815 / Precision: 0.796 / Recall: 0.662 / Latency: 2.0ms
     xgb -- Accuracy: 0.815 / Precision: 0.786 / Recall: 0.677 / Latency: 5.0ms
 
+
 3. Default parameters settings:
 
   Currently, there're 3 methods in *utilis_fun* module - *reset_parameters*, *update_parameters*, and *export_parameters*.
@@ -153,13 +156,14 @@ Output:
 .. code-block:: python
 
  update_parameters(mode = "cls", estimator_name = "svm", C=[0.1,0.2],kernel=["linear"])
+..
 
-  - *export_parameters* method can help you export the currnt default parameter settings as 2 csv files named "exported_cls_parameters.csv" and "exported_reg_parameters.csv". You can find them in the *./exported* folder of you current work dictionary.
+   - *export_parameters* method can help you export the currnt default parameter settings as 2 csv files named "exported_cls_parameters.csv" and "exported_reg_parameters.csv". You can find them in the *./exported* folder of you current work dictionary.
 
 .. code-block:: python
 
  export_parameters()
-
+..
   - *reset_parameters* method can reset the default parameter settings to the package's original default settings. Just add this code line will work:
 
 .. code-block:: python
