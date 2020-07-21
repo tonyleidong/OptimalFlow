@@ -1,5 +1,5 @@
 ===========
-HISTORY LOG
+History
 ===========
 
 0.1.0 Stable Version (2020-07-21)
