@@ -9,9 +9,9 @@ Welcome to Dynamic Pipeline's Documentation!
    installation
    usage
    modules
-   contributing
    authors
    history
+   issues
 
 Indices and tables
 ==================
