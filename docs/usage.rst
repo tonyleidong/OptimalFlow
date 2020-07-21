@@ -18,7 +18,7 @@ Usage
    reg_fs_demo = dynaFS_reg( fs_num = 5,random_state = 13,cv = 5,input_from_file = True)
    # Select detail_info = True, when you want to see the detail of the iteration
    reg_fs_demo.fit_fs_reg(tr_features,tr_labels,detail_info = False)
-
+..
 
 Output:
 
@@ -74,7 +74,7 @@ Output:
 
    for name, mdl in models.items():
        evaluate_clf_model(name, mdl, val_features, val_labels)
-
+..
 
 Output:
 
@@ -143,7 +143,7 @@ Output:
     ada -- Accuracy: 0.792 / Precision: 0.759 / Recall: 0.631 / Latency: 21.4ms
     gb -- Accuracy: 0.815 / Precision: 0.796 / Recall: 0.662 / Latency: 2.0ms
     xgb -- Accuracy: 0.815 / Precision: 0.786 / Recall: 0.677 / Latency: 5.0ms
-
+..
 
 3. Default parameters settings:
 
@@ -151,21 +151,22 @@ Output:
 
   - *update_parameters* method is used to modify the default parameter settings for models selection module (autoCV).
 
-  i.e. When you want to modify the support vector machine clssifier, with new penalty "C" and "kernel" values, the code line below will achieve that.
+ i.e. When you want to modify the support vector machine classifier, with new penalty "C" and "kernel" values, the code line below will achieve that.
 
 .. code-block:: python
 
  update_parameters(mode = "cls", estimator_name = "svm", C=[0.1,0.2],kernel=["linear"])
 ..
-
-   - *export_parameters* method can help you export the currnt default parameter settings as 2 csv files named "exported_cls_parameters.csv" and "exported_reg_parameters.csv". You can find them in the *./exported* folder of you current work dictionary.
+- *export_parameters* method can help you export the currnt default parameter settings as 2 csv files named "exported_cls_parameters.csv" and "exported_reg_parameters.csv". You can find them in the *./exported* folder of you current work dictionary.
 
 .. code-block:: python
 
  export_parameters()
 ..
-  - *reset_parameters* method can reset the default parameter settings to the package's original default settings. Just add this code line will work:
+
+- *reset_parameters* method can reset the default parameter settings to the package's original default settings. Just add this code line will work:
 
 .. code-block:: python
 
  reset_parameters()
+..
