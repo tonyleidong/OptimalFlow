@@ -2,7 +2,12 @@
 History
 ===========
 
-0.1.0 Stable Version (2020-07-21)
+0.1.1 (2020-07-21)
+------------------
+
+* Add online documentation page: https://dynamic-pipeline.readthedocs.io
+
+0.1.0 (2020-07-21)
 ------------------
 
 * Debug in the estimatorCV.py
