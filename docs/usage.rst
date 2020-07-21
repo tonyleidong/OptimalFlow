@@ -19,7 +19,8 @@ Usage
    # Select detail_info = True, when you want to see the detail of the iteration
    reg_fs_demo.fit_fs_reg(tr_features,tr_labels,detail_info = False)
 
-  Output:
+
+Output:
 
 .. code-block:: python
 
