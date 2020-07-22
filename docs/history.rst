@@ -2,7 +2,7 @@
 History
 ===========
 
-0.1.1 (2020-07-21)
+0.1.3 (2020-07-21)
 ------------------
 
 * Add online documentation page: https://dynamic-pipeline.readthedocs.io
