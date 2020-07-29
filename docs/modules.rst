@@ -31,8 +31,8 @@ Description :
         - "mean" : Mean calculation approach
 
     * winsorization : Default limits settings
-        - (0.1,0.1) : Top 10% and bottom 10% will be excluded
-        - (0.2,0.2) : Top 20% and bottom 20% will be excluded
+        - (0.01,0.01) : Top 1% and bottom 1% will be excluded
+        - (0.05,0.05) : Top 5% and bottom 5% will be excluded
 
         
 2. autoFS - Features Selection Module
