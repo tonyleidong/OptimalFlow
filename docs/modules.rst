@@ -1,8 +1,41 @@
 ============
 Modules
 ============
+1. autoPP - Data Preprocessing Module
+===============
+Description : 
+ - This module is used for data preprocessing operation:
+    * Impute with missing value
+    * Winsorize with outlier
+    * Scaling using popular scaler approaches
+    * Encoding category features using popular encoder approaches
+    * Generated all combination datasets for further modeling and evaluation
+    * Sparsity calculation as the critera for output datasets filtering
+    * Custom parameters initial settings, add/remove winsorization, scaling, or encoding strategies.
+ 
+ - Class:
+    * dynaPreprocessing : Focus on classification/regression prprocessing problems
+        - fit_pp() - fit method for preprocessing
 
-1. autoFS - Features Selection Module
+ - Current available strategies:
+    * Scaling : Numeric features scaling, default settings
+        - "standard" : StandardScaler() approach
+        - "minmax" - MinMaxScaler() approach
+        - "maxabs" - MaxAbsScaler() approach
+        - "robust" - RobustScaler() approach
+        
+    * Encoding : Category features encoding, default settings
+        - "onehot" : OnehotEncoder() approach, with dummy trap consideration in regression problem
+        - "label" : LabelEncoder() approach
+        - "frequency" : Frequency calculation approach  
+        - "mean" : Mean calculation approach
+
+    * winsorization : Default limits settings
+        - (0.1,0.1) : Top 10% and bottom 10% will be excluded
+        - (0.2,0.2) : Top 20% and bottom 20% will be excluded
+
+        
+2. autoFS - Features Selection Module
 ===============
 Description : 
  - This module is used for features selection:
@@ -37,7 +70,7 @@ Description :
         - rfecv_rf : RFECV with RandomForestRegressor() estimator
 
 
-2. autoCV - Model selection module
+3. autoCV - Model selection module
 ===============
 Description : 
  - This module is used for model selection:
