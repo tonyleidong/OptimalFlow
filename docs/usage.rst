@@ -2,7 +2,61 @@
 Usage
 ============
 
-1. Features selection for regression problem:
+1. Preprocessing for regression problem:
+
+  Demo Code:
+
+.. code-block:: python
+
+  import pandas as pd 
+  from funcPP import PPtools
+  from autoPP import dynaPreprocessing
+
+  df = pd.read_csv('../data/preprocessing/breast_cancer.csv')
+
+  custom_parameters = {
+      "scaler" : ["None", "standard"],
+       # threshold number of category dimension
+      "encode_band" : [6],
+       # low dimension encoding
+      "low_encode" : ["onehot","label"], 
+       # high dimension encoding
+      "high_encode" : ["frequency", "mean"],
+      "winsorizer" : [(0.1,0.1)],
+      "sparsity" : [0.4862],
+      "cols" : [27]
+     }
+  dyna = dynaPreprocessing(custom_parameters = custom_parameters, label_col = 'diagnosis', model_type = "reg")
+  dict_df = dyna.fit_pp(input_data = df)
+  print(f"Total combinations: {len(dict_df.keys())}")
+  print(dict_df['winsor_0-Scaler_standard-Dataset_441'])
+
+..
+
+ Output:
+
+.. code-block:: python
+
+   Now in Progress - Data Preprocessing Ensemble Iteration: Estimate about 0
+  Total combinations: 64
+       diagnosis    Size_3  area_mean  compactness_mean  concave points_mea
+  0            1  1.290564   1.151477          1.730765             1.63873
+  1            1 -1.423416   1.823311         -0.679975             0.53514
+  2            1 -0.066426   1.823311          1.163585             1.63873
+  3            1  1.290564  -1.011406          1.730765             1.63873
+  4            1 -0.066426   1.823311          0.548763             1.61037
+  ..         ...       ...        ...               ...                  ..
+  281          0 -0.066426  -0.866487         -1.300016            -0.80503
+  282          1 -0.066426   1.657991          0.807396             1.30604
+  283          1 -0.066426   0.462408          1.624135             1.17625
+  284          0 -0.066426  -0.552378         -0.290663            -0.60750
+  285          0  1.290564  -0.649460         -1.300016            -1.25679
+  [286 rows x 26 columns]
+
+..
+
+
+2. Features selection for regression problem:
 
   Demo Code:
 
@@ -48,7 +102,7 @@ Usage
     The DynaPipe autoFS identify the top 5 important features for regression are: ['RM', 'LSTAT', 'PTRATIO', 'NOX', 'CRIM']. 
 ..
 
-2. Model selection for classification problem:
+3. Model selection for classification problem:
 
   Demo Code:
 
@@ -145,7 +199,7 @@ Usage
     xgb -- Accuracy: 0.815 / Precision: 0.786 / Recall: 0.677 / Latency: 5.0ms
 ..
 
-3. Default parameters settings:
+4. autoCV default parameters settings:
 
   Currently, there're 3 methods in *utilis_fun* module - *reset_parameters*, *update_parameters*, and *export_parameters*.
 
