@@ -44,9 +44,9 @@ Description :
  
  - Class:
     * dynaFS_clf : Focus on classification problems
-        - fit_fs_clf() - fit method for classifier
+        - fit() - fit method for classifier
     * dynaFS_reg : Focus on regression problems
-        - fit_fs_reg() - fit method for regressor
+        - fit() - fit method for regressor
 
  - Current available selectors
     * clf_fs : Class focusing on classification features selection
@@ -81,9 +81,9 @@ Description :
 
 - Class
     * dynaClassifier : Focus on classification problems
-        -  fit_clf() : fit method for classifier
+        -  fit() : fit method for classifier
     * dynaRegressor : Focus on regression problems
-        -  fit_reg() : fit method for regressor
+        -  fit() : fit method for regressor
 
  - Current available estimators
     * clf_cv : Class focusing on classification estimators
