@@ -10,4 +10,4 @@ Original Author
 Contributors
 ------------
 
-* Send email to <tonyleidong@gmail.com> to be one of them.
+* Send email to <tonyleidong@gmail.com> to be one of us.
