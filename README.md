@@ -5,7 +5,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/tonyleidong/dynapipe)](https://github.com/tonyleidong/dynapipe)
 [![Python Version](https://img.shields.io/pypi/pyversions/dynapipe)](https://pypi.org/project/dynapipe/)
 
-
+![Image Logo]()
 
    
 #### Author: [Tony Dong](http://www.linkedin.com/in/lei-tony-dong)
