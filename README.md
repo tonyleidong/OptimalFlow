@@ -15,22 +15,16 @@
 
 Documentation:  https://dynamic-pipeline.readthedocs.io/
 
+### Installation
+```python
+pip install dynapipe
+```
+
 ### Current available modules: 
  - autoPP for feature preprocessing
  - autoFS for classification/regression features selection
  - autoCV for classification/regression model selection and evaluation
  - autoPipe for modules automatic pipeline connection & generate model's performance reports
- 
-### Modules in development:
- - autoVIZ for pipeline visualization 
- - autoFlow for tracking and deployment
- - autoTM for text mining
- - Unsupervised models specific modules
-
-### Installation
-```python
-pip install dynapipe
-```
 
 ### Modules
 #### autoFS - features selection module
@@ -69,7 +63,7 @@ pip install dynapipe
         $ rfecv_rf - RFECV with RandomForestRegressor() estimator
 ```
 
-###### Demo - Input from csv file - Regression Problem
+###### Demo - Regression Problem
 - CODE:
 ```python
 import pandas as pd
@@ -78,9 +72,7 @@ from dynapipe.autoFS import dynaFS_reg
 tr_features = pd.read_csv('./data/regression/train_features.csv')
 tr_labels = pd.read_csv('./data/regression/train_labels.csv')
 
-# Set input_form_file = False, when label values are array. Select 'True' from Pandas dataframe.
 reg_fs_demo = dynaFS_reg( fs_num = 5,random_state = 13,cv = 5,input_from_file = True)
-# Select detail_info = True, when you want to see the detail of the iteration
 reg_fs_demo.fit_fs_reg(tr_features,tr_labels,detail_info = False)
 ```
 - OUTPUT:
@@ -122,9 +114,9 @@ Description :
 ```python
  - Class
     * dynaClassifier - Focus on classification problems
-        - $ fit_clf() - fit method for classifier
+        - $ fit() - fit method for classifier
     * dynaRegressor - Focus on regression problems
-        - $ fit_reg() - fit method for regressor
+        - $ fit() - fit method for regressor
 
  - Class and current available estimators
     * clf_cv - Class focusing on classification estimators
@@ -146,12 +138,12 @@ Description :
         $ mlp - Multi-layer Perceptron regressor - MLPRegressor()
         $ xgb - XGBoost regression - XGBRegressor()
 ```
-###### Demo - Input from csv file - Classification Problem
+###### Demo - Classification Problem
 
 - CODE:
 ```python
 import pandas as pd
-from dynapipe.autoMS import dynaClassifier,evaluate_clf_model
+from dynapipe.autoCV import evaluate_model,dynaClassifier
 import joblib
 
 tr_features = pd.read_csv('./data/classification/train_features.csv')
@@ -159,18 +151,20 @@ tr_labels = pd.read_csv('./data/classification/train_labels.csv')
 val_features = pd.read_csv('./data/classification/val_features.csv')
 val_labels = pd.read_csv('./data/classification/val_labels.csv')
 
-# Set input_form_file = False, when label values are array. Select 'True' from Pandas dataframe.
 clf_cv_demo = dynaClassifier(random_state = 13,cv_num = 5,input_from_file = True)
-# Select detail_info = True, when you want to see the detail of the iteration
-clf_cv_demo.fit_clf(tr_features,tr_labels,detail_info = False)
+clf_cv_demo.fit(tr_features,tr_labels,detail_info = False)
 
 models = {}
 
-for mdl in ['lgr','svm','mlp','rf','ada','gb','xgb']:
-    models[mdl] = joblib.load('./pkl/{}_clf_model.pkl'.format(mdl))
+for mdl in ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb']:
+    models[mdl] = joblib.load('./pkl/{}_cls_model.pkl'.format(mdl))
 
 for name, mdl in models.items():
-    evaluate_clf_model(name, mdl, val_features, val_labels)
+    try:
+        ml_evl = evaluate_model(model_type = "cls")
+        ml_evl.fit(name, mdl, val_features, val_labels)
+    except:
+        print(f"Failed to load the {mdl}.")
 ```
 - OUTPUT:
 ```python
@@ -239,5 +233,21 @@ ada -- Accuracy: 0.792 / Precision: 0.759 / Recall: 0.631 / Latency: 21.4ms
 gb -- Accuracy: 0.815 / Precision: 0.796 / Recall: 0.662 / Latency: 2.0ms
 xgb -- Accuracy: 0.815 / Precision: 0.786 / Recall: 0.677 / Latency: 5.0ms
 ```
+#### autoPP - features preprocessing module
+
+###### Description : 
+ - This module is used for features preprocessing:
+    * Apply ensemble imputing, winsorization,encoding, and scaling steps to cleaned dataset. 
+    * Generate all possible datasets after cross-combiniations and columns permutations in ensemble algorithm approach
+    * Support custom sparsity and column numbers ceriteria to narrow the number of combination datasets 
+    
+#### autoPipe - pipeline module for connection
+
+###### Description : 
+ - This module is used for pipeline connection:
+    * Connect autoPP, autoFS, and autoCV like scikit-learn pipeline approach.
+    * Automated the iteration of cross-experiment to find the best baseline model
+    * Generate comparable and parameter-tracable dictionaies and reports to support autoVIZ and autoFlow modules
+
 ### License:
 MIT
