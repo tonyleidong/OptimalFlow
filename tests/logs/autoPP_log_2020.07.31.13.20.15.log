@@ -1,0 +1,57 @@
+31/07 13:20:15 - INFO - ###############################################################################################################################################################################################################
+31/07 13:20:15 - INFO - Dynamic Pipeline - autoCV - Auto PreProcessing :: 2020.07.31.13.20.15
+31/07 13:20:15 - INFO - ###############################################################################################################################################################################################################
+31/07 13:20:15 - INFO - Copyright All Reserved by Tony Dong | e-mail: tonyleidong@gmail.com 
+31/07 13:20:15 - INFO - Official Documentation: https://dynamic-pipeline.readthedocs.io
+31/07 13:20:15 - INFO - ------------------------------------------------------------
+31/07 13:20:15 - INFO - All previous logfiles will be deleted, when DELETE_FLAG is set to True.
+31/07 13:20:15 - INFO - Deleted file:autoPP_log_2020.07.31.13.18.36.log
+31/07 13:20:15 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+31/07 13:20:28 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+31/07 13:20:28 - INFO - Current Running Dataset No. 137 :
+31/07 13:20:28 - INFO - >>> winsorized_Strategy is 0
+31/07 13:20:28 - INFO - >>> Scaler stragety is None
+31/07 13:20:28 - INFO - >>> Encoding strategy: [['onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79'], ['Label_Position_1'], ['onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up'], ['Frequency_Size_1'], ['onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+31/07 13:20:28 - INFO - >>> Total columns with label column is: 41
+31/07 13:20:28 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.7585001205690861
+31/07 13:20:28 - INFO - >>> winsorized_Strategy is 0
+31/07 13:20:28 - INFO - >>> Scaler stragety is standard
+31/07 13:20:28 - INFO - >>> Encoding strategy: [['onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79'], ['Label_Position_1'], ['onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up'], ['Frequency_Size_1'], ['onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+31/07 13:20:28 - INFO - >>> Total columns with label column is: 41
+31/07 13:20:28 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.7585001205690861
+31/07 13:20:28 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+31/07 13:20:28 - INFO - Current Running Dataset No. 141 :
+31/07 13:20:28 - INFO - >>> winsorized_Strategy is 0
+31/07 13:20:28 - INFO - >>> Scaler stragety is None
+31/07 13:20:28 - INFO - >>> Encoding strategy: [['onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79'], ['Label_Position_1'], ['onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up'], ['Frequency_Size_1'], ['onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11'], ['Label_Treatment'], ['Label_Type_1'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+31/07 13:20:28 - INFO - >>> Total columns with label column is: 39
+31/07 13:20:28 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.7573167573167573
+31/07 13:20:28 - INFO - >>> winsorized_Strategy is 0
+31/07 13:20:28 - INFO - >>> Scaler stragety is standard
+31/07 13:20:28 - INFO - >>> Encoding strategy: [['onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79'], ['Label_Position_1'], ['onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up'], ['Frequency_Size_1'], ['onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11'], ['Label_Treatment'], ['Label_Type_1'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+31/07 13:20:28 - INFO - >>> Total columns with label column is: 39
+31/07 13:20:28 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.7573167573167573
+31/07 13:20:29 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+31/07 13:20:29 - INFO - Current Running Dataset No. 169 :
+31/07 13:20:29 - INFO - >>> winsorized_Strategy is 0
+31/07 13:20:29 - INFO - >>> Scaler stragety is None
+31/07 13:20:29 - INFO - >>> Encoding strategy: [['onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79'], ['Label_Position_1'], ['onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up'], ['Mean_Size_1'], ['onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+31/07 13:20:29 - INFO - >>> Total columns with label column is: 41
+31/07 13:20:29 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.7585001205690861
+31/07 13:20:29 - INFO - >>> winsorized_Strategy is 0
+31/07 13:20:29 - INFO - >>> Scaler stragety is standard
+31/07 13:20:29 - INFO - >>> Encoding strategy: [['onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79'], ['Label_Position_1'], ['onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up'], ['Mean_Size_1'], ['onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+31/07 13:20:29 - INFO - >>> Total columns with label column is: 41
+31/07 13:20:29 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.7585001205690861
+31/07 13:20:29 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+31/07 13:20:29 - INFO - Current Running Dataset No. 173 :
+31/07 13:20:29 - INFO - >>> winsorized_Strategy is 0
+31/07 13:20:29 - INFO - >>> Scaler stragety is None
+31/07 13:20:29 - INFO - >>> Encoding strategy: [['onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79'], ['Label_Position_1'], ['onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up'], ['Mean_Size_1'], ['onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11'], ['Label_Treatment'], ['Label_Type_1'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+31/07 13:20:29 - INFO - >>> Total columns with label column is: 39
+31/07 13:20:29 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.7573167573167573
+31/07 13:20:29 - INFO - >>> winsorized_Strategy is 0
+31/07 13:20:29 - INFO - >>> Scaler stragety is standard
+31/07 13:20:29 - INFO - >>> Encoding strategy: [['onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79'], ['Label_Position_1'], ['onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up'], ['Mean_Size_1'], ['onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11'], ['Label_Treatment'], ['Label_Type_1'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+31/07 13:20:29 - INFO - >>> Total columns with label column is: 39
+31/07 13:20:29 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.7573167573167573

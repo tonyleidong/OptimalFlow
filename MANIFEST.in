@@ -1,0 +1,5 @@
+include HISTORY.rst
+include LICENSE
+include dynapipe/parameters.json
+include dynapipe/reset_parameters.json
+recursive-exclude * __pycache__
