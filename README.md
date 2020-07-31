@@ -11,7 +11,7 @@
 
 <img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Logo.png" width="80">**Dynamic Pipeline** is a high-level API to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple code.
 
-<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Workflow.PNG" width="1200">
+<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Workflow.PNG" width="980">
 
 Documentation:  https://dynamic-pipeline.readthedocs.io/
 
