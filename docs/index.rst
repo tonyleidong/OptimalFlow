@@ -6,6 +6,7 @@ Welcome to Dynamic Pipeline's Documentation!
    :caption: Contents:
 
    readme
+   overview
    installation
    usage
    modules
