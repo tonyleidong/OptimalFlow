@@ -21,6 +21,8 @@ project = 'DynamicPipeline'
 copyright = '2020, Tony Dong'
 author = 'Tony Dong'
 
+# The master toctree document.
+master_doc = 'index'
 
 # -- General configuration ---------------------------------------------------
 
