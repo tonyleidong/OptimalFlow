@@ -21,6 +21,7 @@ Welcome to Dynamic Pipeline's Documentation!
    authors
    history
    issues
+   dynaPreprocessing
 
 Indices and tables
 ==================
