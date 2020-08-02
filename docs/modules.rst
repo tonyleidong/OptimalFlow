@@ -2,7 +2,7 @@
 Modules
 ============
 1. autoPP - Feature Preprocessing Module
-===============
+--------------
 
 Description : 
  - This module is used for data preprocessing operation:
@@ -40,7 +40,7 @@ Description :
 
         
 2. autoFS - Features Selection Module
-===============
+--------------
 Description : 
  - This module is used for features selection:
     * Automate the feature selection with several selectors
@@ -75,7 +75,7 @@ Description :
 
 
 3. autoCV - Model selection module
-===============
+--------------
 Description : 
  - This module is used for model selection:
     * Automate the models training with cross validation
@@ -250,7 +250,7 @@ Description :
 ..
 
 4. autoPipe - Pipeline Module for Connection
-===============
+--------------
 Description : 
  - This module is used for pipeline connection:
     * Connect autoPP, autoFS, and autoCV like scikit-learn pipeline approach.
