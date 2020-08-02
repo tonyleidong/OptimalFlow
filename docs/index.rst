@@ -1,20 +1,34 @@
-.. DynamicPipeline documentation master file, created by
-   sphinx-quickstart on Sun Aug  2 14:29:02 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Welcome to Dynamic Pipeline's Documentation!
+======================================
 
-Welcome to DynamicPipeline's documentation!
-===========================================
+.. image:: ../DynamicPipeline_Logo.png
+   :width: 200
+   :align: center
+   
+**Dynamic Pipeline** is a high-level API to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple codes. The core advantage Dynamic Pipeline is it automates general scikit-learn-style pipeline with each component ensembled, and avoids repeated manual cross-experiments with iteration of algrithms combination and searching best parameters. By modularizing all key classic pipeline components in reuseable packages, it allows all components to be custom tunable along with high scalability.
+
+.. image:: ../DynamicPipeline_Workflow.PNG
+   :width: 980
+   
+.. automodule:: dynapipe.autoPP
+    :members:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
-
+   readme
+   installation
+   modules
+   demos
+   authors
+   history
+   issues
+   dynaPreprocessing
 
 Indices and tables
 ==================
-
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+  
