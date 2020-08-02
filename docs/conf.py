@@ -58,7 +58,7 @@ author = 'Tony Dong'
 # built documents.
 #
 # The short X.Y version.
-from category_encoders import __version__
+from dynapipe import __version__
 version = __version__
 # The full version, including alpha/beta/rc tags.
 release = __version__
