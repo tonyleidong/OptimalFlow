@@ -4,9 +4,6 @@ Modules
 1. autoPP - Feature Preprocessing Module
 ===============
 
-.. autoclass:: dynapipe.autoPP.dynaPreprocessing
-    :members:
-
 Description : 
  - This module is used for data preprocessing operation:
     * Impute with missing value
@@ -37,7 +34,8 @@ Description :
     * winsorization : Default limits settings
         - (0.01,0.01) : Top 1% and bottom 1% will be excluded
         - (0.05,0.05) : Top 5% and bottom 5% will be excluded
-
+.. autoclass:: dynapipe.autoPP.dynaPreprocessing
+    :members:
 
         
 2. autoFS - Features Selection Module
