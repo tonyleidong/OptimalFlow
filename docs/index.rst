@@ -9,7 +9,10 @@ Welcome to Dynamic Pipeline's Documentation!
 
 .. image:: DynamicPipeline_Workflow.PNG
    :width: 980
-    
+   
+.. automodule:: dynapipe.autoPP
+    :members:
+
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
