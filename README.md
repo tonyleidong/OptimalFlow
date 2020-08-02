@@ -9,7 +9,7 @@
    
 #### Author: [Tony Dong](http://www.linkedin.com/in/lei-tony-dong)
 
-<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Logo.png" width="80">**Dynamic Pipeline** is a high-level API to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple code.
+<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Logo.png" width="80">**Dynamic Pipeline** is a high-level API to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple codes. The core advantage Dynamic Pipeline is it automates general scikit-learn-style pipeline with each component ensembled, and avoids repeated manual cross-experiments with iteration of algrithms combination and searching best parameters. By modularizing all key classic pipeline components in reuseable packages, it allows all components to be custom tunable along with high scalability.
 
 <img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Workflow.PNG" width="980">
 
