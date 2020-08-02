@@ -1,8 +1,9 @@
 ============
-Usage
+Demos
 ============
 
-1. Preprocessing for regression problem:
+Demo 1. Feature preprocessing for a regression problem using autoPP module:
+===============
 
   Demo Code:
 
@@ -56,7 +57,8 @@ Usage
 ..
 
 
-2. Features selection for regression problem:
+Demo 2. Features selection for a regression problem using autoFS module:
+===============
 
   Demo Code:
 
@@ -102,7 +104,8 @@ Usage
     The DynaPipe autoFS identify the top 5 important features for regression are: ['RM', 'LSTAT', 'PTRATIO', 'NOX', 'CRIM']. 
 ..
 
-3. Model selection for classification problem:
+Demo 3. Model selection for a classification problem using autoCV module:
+===============
 
   Demo Code:
 
@@ -199,7 +202,8 @@ Usage
     xgb -- Accuracy: 0.815 / Precision: 0.786 / Recall: 0.677 / Latency: 5.0ms
 ..
 
-4. autoCV default parameters settings:
+Demo 4. autoCV default parameters settings:
+===============
 
   Currently, there're 3 methods in *utilis_fun* module - *reset_parameters*, *update_parameters*, and *export_parameters*.
 
@@ -224,4 +228,44 @@ Usage
 .. code-block:: python
 
  reset_parameters()
+..
+
+Demo 5. Pipeline building & modeling automation using autoPipe:
+===============
+
+  Demo Code:
+
+.. code-block:: python
+
+  import pandas as pd
+  from dynapipe.autoPipe import autoPipe
+  from dynapipe.funcPP import PPtools
+  from dynapipe.autoPP import dynaPreprocessing
+  from dynapipe.autoFS import dynaFS_clf
+  from dynapipe.autoCV import evaluate_model,dynaClassifier
+
+  df = pd.read_csv('./data/preprocessing/breast_cancer.csv')
+
+  pipe = autoPipe(
+  [("autoPP",dynaPreprocessing(custom_parameters = None, label_col = 'diagnosis', model_type = "cls")),
+  ("datasets_splitting",pipeline_splitting_rule(val_size = 0.2, test_size = 0.2, random_state = 13)),
+  ("autoFS",dynaFS_clf(fs_num = 5, random_state=13, cv = 5, in_pipeline = True, input_from_file = False)),
+  ("autoCV",dynaClassifier(random_state = 13,cv_num = 5,in_pipeline = True, input_from_file = False)),
+  ("model_evaluate",evaluate_model(model_type = "cls"))])
+
+  dyna_report= pipe.fit(df)[4]
+  dyna_report.head(5)
+..
+
+ Output:
+
+.. code-block:: python
+
+  	Dataset	   Model_Name    Best_Parameters	 Accuracy	Precision	Recall	Latency
+  1	Dataset_0	svm	[('C', 0.1), ('kernel', 'linear')]	  0.930 0.889 0.96 3.0
+  6	Dataset_0	xgb	[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]	0.912	0.955	0.84	2.0
+  40	Dataset_5	gb	[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]	0.895	0.913	0.84	2.0
+  31	Dataset_4	rf	[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]	0.877	0.821	0.92	12.0
+  51	Dataset_7	mlp	[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]	0.772	0.875	0.56	4.0
+
 ..
