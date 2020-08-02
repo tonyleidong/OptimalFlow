@@ -15,7 +15,7 @@ Description :
  
  - Class:
     * dynaPreprocessing : Focus on classification/regression prprocessing problems
-        - fit_pp() - fit method for preprocessing
+        - fit() - fit & transform method for preprocessing
 
  - Current available strategies:
     * Scaling : Numeric features scaling, default settings
@@ -34,6 +34,8 @@ Description :
         - (0.01,0.01) : Top 1% and bottom 1% will be excluded
         - (0.05,0.05) : Top 5% and bottom 5% will be excluded
 
+.. autoclass:: dynapipe.autoPP.dynaPreprocessing
+    :members:
         
 2. autoFS - Features Selection Module
 ===============
@@ -44,9 +46,9 @@ Description :
  
  - Class:
     * dynaFS_clf : Focus on classification problems
-        - fit() - fit method for classifier
+        - fit() - fit and transform method for classifier
     * dynaFS_reg : Focus on regression problems
-        - fit() - fit method for regressor
+        - fit() - fit and transform method for regressor
 
  - Current available selectors
     * clf_fs : Class focusing on classification features selection
@@ -104,6 +106,12 @@ Description :
         - tree : A decision tree regressor - DecisionTreeRegressor()
         - mlp : Multi-layer Perceptron regressor - MLPRegressor()
         - xgb : XGBoost regression - XGBRegressor()
+
+.. autoclass:: dynapipe.autoFS.dynaClassifier
+    :members:
+    
+.. autoclass:: dynapipe.autoFS.dynaRegressor
+    :members:
 
 ***Estimators default parameters setting:**
 
