@@ -5,8 +5,6 @@ Installation
 ============
 
 
-Stable release
---------------
 
 To install Dynamic Pipeline, run this command in your terminal:
 
