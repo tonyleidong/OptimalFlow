@@ -35,9 +35,11 @@ Description :
         - (0.01,0.01) : Top 1% and bottom 1% will be excluded
         - (0.05,0.05) : Top 5% and bottom 5% will be excluded
         
-.. autoclass:: dynapipe.autoPP.dynaPreprocessing
+.. autoclass:: DynamicPipeline.dynapipe.autoPP.dynaPreprocessing
     :members:
 
+.. autoclass:: dynapipe.autoPP.dynaPreprocessing
+    :members:
         
 2. autoFS - Features Selection Module
 --------------

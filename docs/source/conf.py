@@ -17,7 +17,8 @@ import shlex
 #sys.path.insert(0, os.path.abspath('.'))
 # sys.path.insert(0, str(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))) + os.sep + '')
 # sys.path.insert(0, str(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))) + os.sep + 'dynapipe')
-sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, str(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))) + os.sep + '')
+sys.path.insert(0, str(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))) + os.sep + 'DynamicPipeline')
 
 # -- General configuration ------------------------------------------------
 
@@ -33,8 +34,8 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.coverage',
     'sphinx.ext.doctest',
-    'sphinx.ext.napoleon'
-#     'numpydoc'
+    'sphinx.ext.napoleon',
+    'numpydoc'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -207,7 +208,7 @@ html_show_copyright = True
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'CategoryEncodersdoc'
+htmlhelp_basename = 'DynamicPipelinedoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -229,8 +230,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'CategoryEncoders.tex', 'Category Encoders Documentation',
-   'Will McGinnis', 'manual'),
+  (master_doc, 'DynamicPipeline.tex', 'Dynamic Pipelines Documentation',
+   'Tony Dong', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
