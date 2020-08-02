@@ -1,4 +1,4 @@
-"""1. autoPP - Feature Preprocessing Module"""
+"""Modules"""
 
 #!/usr/bin/env python
 
