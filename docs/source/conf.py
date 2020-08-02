@@ -18,7 +18,7 @@ import shlex
 # sys.path.insert(0, str(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))) + os.sep + '')
 # sys.path.insert(0, str(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))) + os.sep + 'dynapipe')
 sys.path.insert(0, str(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))) + os.sep + '')
-sys.path.insert(0, str(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))) + os.sep + 'DynamicPipeline')
+sys.path.insert(0, str(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))) + os.sep + 'dynapipe')
 
 # -- General configuration ------------------------------------------------
 
@@ -35,7 +35,6 @@ extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.doctest',
     'sphinx.ext.napoleon',
-    'numpydoc'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
