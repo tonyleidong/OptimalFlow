@@ -15,6 +15,7 @@ Welcome to Dynamic Pipeline's Documentation!
 
 .. toctree::
    :maxdepth: 3
+   :caption: Contents:
 
    readme
    installation
