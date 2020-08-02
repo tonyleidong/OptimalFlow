@@ -45,6 +45,35 @@ delete_old_log_files(directory = logs_folder ,delete_flag = DELETE_FLAG, logger 
 logger.info(Test_comment)
 
 class dynaPreprocessing:
+    """Automated feature preprocessing including imputation, winsorization, encoding, and scaling in ensemble algorithms, to generate permutation input datasets for further pipeline components.
+    Parameters
+    ----------
+    custom_parameters: dictionary
+        Custom parameters settings input - Default: None.
+        NOTE - default_parameters = {
+            "scaler" : ["None", "standard", "minmax", "maxabs", "robust"],
+            "encode_band" : [10],
+            "low_encode" : ["onehot","label"], 
+            "high_encode" : ["frequency", "mean"],
+            "winsorizer" : [(0.01,0.01),(0.05,0.05)],
+            "sparsity" : [0.40],
+            "cols" : [30]
+            }
+    label_col: str
+        Name of label column - Default: None.
+    model_type: str
+        "reg" for regression problem or "cls" for classification problem - Default: "reg".
+    export_output_files: bool
+        Export qualified permutated datasets to ./df_folder - Default: False.
+    
+    Example
+    -------
+    See Demos -> Demo 1
+    
+    References
+    ----------
+    None
+    """
     def __init__(self, custom_parameters = None, label_col = None, model_type = "reg",export_output_files = False):
 
         default_parameters = {
@@ -66,6 +95,19 @@ class dynaPreprocessing:
         self.label_col = label_col
 
     def fit(self, input_data = None):
+        """Fits and transforms a pandas dataframe to non-missing values, outlier excluded, categories encoded and scaled datasets by all algorithms permutation.
+        Parameters
+        ----------
+        input_data : pandas dataframe, shape = [n_samples, n_features]
+            NOTE - The input_data should be the datasets after basic data cleaning & well feature deduction, the more features involve will result in more columns permutation outputs. 
+        Returns
+        -------
+        DICT_PREP_DF : dictionary
+            Each key is the # of the output preprocessed dataset, each value stores the dataset
+        DICT_PREP_INFO : dictionary
+            Dictionary for reference. Each key is the # of the output preprocessed dataset, each value stores the column names of the dataset
+        """
+                        
         if (self.export_output_files):
             df_folder = os.path.join(os.getcwd(),'dfs')
             if not os.path.exists(df_folder):
