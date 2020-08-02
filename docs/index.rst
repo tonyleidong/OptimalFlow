@@ -1,5 +1,5 @@
 .. DynamicPipeline documentation master file, created by
-   sphinx-quickstart on Sun Aug  2 14:21:43 2020.
+   sphinx-quickstart on Sun Aug  2 14:29:02 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
