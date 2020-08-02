@@ -1,4 +1,4 @@
-"""Modules"""
+"""Preprocessing Class"""
 
 #!/usr/bin/env python
 
