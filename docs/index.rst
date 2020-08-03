@@ -49,7 +49,6 @@ Dynamic Pieline share a few useful properties for data scientists:
 .. toctree::
    :maxdepth: 3
 
-   readme
    installation
    autoPP
    autoFS
