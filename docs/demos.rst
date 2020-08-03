@@ -1,9 +1,9 @@
-============
-Demos
-============
+========
+Examples
+========
 
-Demo 1. Feature preprocessing for a regression problem using autoPP module:
-===============
+Feature preprocessing for a regression problem using autoPP:
+------------------------------------------------------------
 
   Demo Code:
 
@@ -57,8 +57,8 @@ Demo 1. Feature preprocessing for a regression problem using autoPP module:
 ..
 
 
-Demo 2. Features selection for a regression problem using autoFS module:
-===============
+Features selection for a regression problem using autoFS:
+---------------------------------------------------------
 
   Demo Code:
 
@@ -104,8 +104,8 @@ Demo 2. Features selection for a regression problem using autoFS module:
     The DynaPipe autoFS identify the top 5 important features for regression are: ['RM', 'LSTAT', 'PTRATIO', 'NOX', 'CRIM']. 
 ..
 
-Demo 3. Model selection for a classification problem using autoCV module:
-===============
+Model selection for a classification problem using autoCV:
+----------------------------------------------------------
 
   Demo Code:
 
@@ -202,8 +202,8 @@ Demo 3. Model selection for a classification problem using autoCV module:
     xgb -- Accuracy: 0.815 / Precision: 0.786 / Recall: 0.677 / Latency: 5.0ms
 ..
 
-Demo 4. autoCV default parameters settings:
-===============
+Custom estimators & parameters setting for for autoCV:
+------------------------------------------------------
 
   Currently, there're 3 methods in *utilis_fun* module - *reset_parameters*, *update_parameters*, and *export_parameters*.
 
@@ -230,8 +230,8 @@ Demo 4. autoCV default parameters settings:
  reset_parameters()
 ..
 
-Demo 5. Pipeline building & modeling automation using autoPipe:
-===============
+Dynamic Pipeline building using autoPipe:
+-----------------------------------------
 
   Demo Code:
 
