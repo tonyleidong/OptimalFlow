@@ -13,11 +13,13 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join('..','dynapipe')))
+sys.path.insert(0, os.path.abspath(..)
+
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'DynamicPipeline'
+project = 'Dynamic Pipeline'
 copyright = '2020, Tony Dong'
 author = 'Tony Dong'
 
