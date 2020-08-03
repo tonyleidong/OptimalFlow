@@ -52,7 +52,8 @@ class dynaPreprocessing:
     ----------
     custom_parameters: dictionary
         Custom parameters settings input - Default: None.
-        NOTE - default_parameters = {
+        
+        [Warning]: default_parameters = {
             "scaler" : ["None", "standard", "minmax", "maxabs", "robust"],
             "encode_band" : [10],
             "low_encode" : ["onehot","label"], 
@@ -61,6 +62,7 @@ class dynaPreprocessing:
             "sparsity" : [0.40],
             "cols" : [30]
             }
+
     label_col: str
         Name of label column - Default: None.
     model_type: str
@@ -101,7 +103,7 @@ class dynaPreprocessing:
         Parameters
         ----------
         input_data : pandas dataframe, shape = [n_samples, n_features]
-            NOTE - The input_data should be the datasets after basic data cleaning & well feature deduction, the more features involve will result in more columns permutation outputs. 
+            [Warning]: The input_data should be the datasets after basic data cleaning & well feature deduction, the more features involve will result in more columns permutation outputs. 
         Returns
         -------
         DICT_PREP_DF : dictionary
