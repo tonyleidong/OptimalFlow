@@ -1,6 +1,6 @@
-=====================================
-autoPP - Feature Preprocessing Module
-=====================================
+=============
+autoPP Module
+=============
 
 Description : 
  - This module is used for data preprocessing operation:

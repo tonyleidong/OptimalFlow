@@ -1,6 +1,6 @@
-==================================
-autoFS - Features Selection Module
-==================================
+=============
+autoFS Module
+=============
 
 Description : 
  - This module is used for features selection:

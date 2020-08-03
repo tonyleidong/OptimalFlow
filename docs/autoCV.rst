@@ -1,6 +1,6 @@
-===============================
-autoCV - Model Selection Module
-===============================
+=============
+autoCV Module
+=============
 
 Description : 
  - This module is used for model selection:

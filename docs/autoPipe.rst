@@ -1,6 +1,6 @@
-===================================
-autoPipe - Pipeline Building Module
-===================================
+===============
+autoPipe Module
+===============
 
 Description : 
  - This module is used for pipeline connection:
