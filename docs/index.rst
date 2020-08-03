@@ -1,5 +1,6 @@
 Welcome to Dynamic Pipeline's Documentation!
 ======================================
+<a href="https://github.com/tonyleidong/DynamicPipeline"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
 
 .. image:: DynamicPipeline_Logo.png
    :width: 200
@@ -13,17 +14,17 @@ Welcome to Dynamic Pipeline's Documentation!
 
 Dynamic Pieline share a few useful properties for data scientists:
 
-      * **Easy & less coding** - High-level APIs that each ML component is highly automated and modularized;
+      * *Easy & less coding* - High-level APIs that each ML component is highly automated and modularized;
 
-      * **Well ensembled** - Each key component is ensemble of popular algorithms w/ optimal parameters searching included;
+      * *Well ensembled* - Each key component is ensemble of popular algorithms w/ optimal parameters searching included;
       
-      * **Automated & dynamic** - autoPipe can build a scikit-learn-style pipline workflow to easily achieve automated ML;
+      * *Automated & dynamic* - autoPipe can build a scikit-learn-style pipline workflow to easily achieve automated ML;
       
-      * **Hardly omission** - Create powerful cross-experiments combined permutated input datasets, feature selection, and model selection;
+      * *Hardly omission* - Create powerful cross-experiments combined permutated input datasets, feature selection, and model selection;
       
-      * **Algorithms scalable** - Each module could add new algorithms easily due to its ensemble coding structure;
+      * *Algorithms scalable* - Each module could add new algorithms easily due to its ensemble coding structure;
       
-      * Adaptable - Support custom settings to add/remove algorithms or modify parameters for elastic requirements.
+      * *Adaptable* - Support custom settings to add/remove algorithms or modify parameters for elastic requirements.
 
 
 

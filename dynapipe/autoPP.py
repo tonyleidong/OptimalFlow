@@ -48,12 +48,13 @@ logger.info(Test_comment)
 
 class dynaPreprocessing:
     """Automated feature preprocessing including imputation, winsorization, encoding, and scaling in ensemble algorithms, to generate permutation input datasets for further pipeline components.
+    
     Parameters
     ----------
     custom_parameters: dictionary
         Custom parameters settings input - Default: None.
         
-        [Warning]: default_parameters = {
+        NOTE: default_parameters = {
             "scaler" : ["None", "standard", "minmax", "maxabs", "robust"],
             "encode_band" : [10],
             "low_encode" : ["onehot","label"], 
@@ -100,10 +101,12 @@ class dynaPreprocessing:
 
     def fit(self, input_data = None):
         """Fits and transforms a pandas dataframe to non-missing values, outlier excluded, categories encoded and scaled datasets by all algorithms permutation.
+        
         Parameters
         ----------
         input_data : pandas dataframe, shape = [n_samples, n_features]
-            [Warning]: The input_data should be the datasets after basic data cleaning & well feature deduction, the more features involve will result in more columns permutation outputs. 
+            NOTE: The input_data should be the datasets after basic data cleaning & well feature deduction, the more features involve will result in more columns permutation outputs. 
+        
         Returns
         -------
         DICT_PREP_DF : dictionary
