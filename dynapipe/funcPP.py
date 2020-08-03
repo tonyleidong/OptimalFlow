@@ -5,7 +5,6 @@ import pandas as pd
 import numpy as np
 from numpy import array
 from numpy import count_nonzero
-import matplotlib.pyplot as plt
 from sklearn import preprocessing
 from sklearn.impute import SimpleImputer
 from sklearn.feature_extraction import DictVectorizer
