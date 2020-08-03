@@ -38,7 +38,3 @@ dynapipePreprocessing
 
 .. autoclass:: dynapipe.autoPP.dynaPreprocessing
     :members:
-
-
-.. autoclass:: autoPP.dynaPreprocessing
-    :members:
