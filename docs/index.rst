@@ -29,6 +29,13 @@ Dynamic Pieline share a few useful properties for data scientists:
     :members:
 
 .. automodule:: autoPP
+    :members:
+    
+.. autoclass:: dynapipe.autoPP.dynaPreprocessing
+    :members:
+
+.. autoclass:: autoPP.dynaPreprocessing
+    :members:
 
 .. toctree::
    :maxdepth: 3
