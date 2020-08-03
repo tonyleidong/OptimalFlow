@@ -12,7 +12,14 @@
 #
 import os
 import sys
+<<<<<<< HEAD
 sys.path.insert(0, os.path.abspath('../dynapipe'))
+=======
+sys.path.insert(0, os.path.abspath('..')
+sys.path.insert(0, os.path.abspath(os.path.join('..','dynapipe')))
+>>>>>>> 25dd099593a334f589aba17889402e0a70f625a5
+
+
 
 
 # -- Project information -----------------------------------------------------
