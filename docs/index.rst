@@ -26,25 +26,23 @@ Dynamic Pieline share a few useful properties for data scientists:
       * Adaptable - Support custom settings to add/remove algorithms or modify parameters for elastic requirements.
 
 .. automodule:: dynapipe.autoPP
-    :members:
+
 
 .. automodule:: autoPP
-    :members:
+
 
 .. autoclass:: dynapipe.autoPP.dynaPreprocessing
 
 .. autoclass:: dynapipe.autoPP.dynaPreprocessing
-    :members:
 
 .. autoclass:: autoPP.dynaPreprocessing
 
 .. autoclass:: autoPP.dynaPreprocessing
-    :members:
 
 .. automodule:: autoPP
 
 .. automodule:: autoPP
-    :members:
+
 
 .. toctree::
    :maxdepth: 3
