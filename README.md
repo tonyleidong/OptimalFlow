@@ -1,5 +1,6 @@
 ## Dynamic Pipeline
 [![PyPI Latest Release](https://img.shields.io/pypi/v/dynapipe)](https://pypi.org/project/dynapipe/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dw/dynapipe?style=plastic)](https://pypi.org/project/dynapipe/)
 [![Github Issues](https://img.shields.io/github/issues/tonyleidong/DynamicPipeline)](https://github.com/tonyleidong/DynamicPipeline/issues)
 [![License](https://img.shields.io/github/license/tonyleidong/DynamicPipeline)](https://github.com/tonyleidong/DynamicPipeline/blob/master/LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/tonyleidong/DynamicPipeline)](https://github.com/tonyleidong/dynapipe)
