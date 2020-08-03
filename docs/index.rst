@@ -28,6 +28,8 @@ Dynamic Pieline share a few useful properties for data scientists:
 .. automodule:: dynapipe.autoPP
     :members:
 
+.. automodule:: autoPP
+
 .. toctree::
    :maxdepth: 3
 
