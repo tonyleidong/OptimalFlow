@@ -19,13 +19,13 @@ To achieve that, **Dynamic Pipeline** creates *Pipeline Cluster Traversal Experi
 Besides, by modularizing all key pipeline components in reuseable packages, it allows all components to be custom tunable along with high scalability.
 
 
-<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Workflow.PNG" width="980">
+<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Workflow_.PNG" width="980">
 
 The core concept in **Dynamic Pipeline** is *Pipeline Cluster Traversal Experiments*, which is a theory first raised by Tony Dong during Genpact 2020 GVector Conference, to optimize Machine Learning Workflow using ensemble pipelines approach.
 
 Comparing traditional machine learning workflow repetitive experiments using single pipeline, *Pipeline Cluster Traversal Experiments* is more powerful, with larger coverage scope, to find the best model without manual intervention, and also more flexible with elasticity to cope with unseen data due to its ensemble designs in each component.  
 
-<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/PipelineClusterTraversalExperiments.PNG" width="980">
+<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/PipelineClusterTraversalExperiments_.PNG" width="980">
 
 In summary, **Dynamic Pipeline** shares a few useful properties for data scientists:
 
