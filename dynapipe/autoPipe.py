@@ -48,7 +48,7 @@ logger.info(Test_comment)
 
 
 class autoPipe:
-    """This class is to build a scikit-learn-style pipline, as a chain of preprocessing, feature selection, model selection and model evaluation.
+    """This class is to build **Pipeline Cluster Traversal Experiments**.
     
     Parameters
     ----------
