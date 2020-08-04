@@ -3,7 +3,7 @@ autoPipe Module
 ===============
 
 Description : 
- - This module is used for pipeline connection:
+ - This module is used for *Pipeline Cluster Traversal Experiments*:
     * Connect autoPP, autoFS, and autoCV like scikit-learn pipeline approach.
     * Automated the iteration of cross-experiment to find the best baseline model
     * Generate comparable and parameter-tracable dictionaies and reports to support autoVIZ and autoFlow modules
