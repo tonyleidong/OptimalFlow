@@ -10,7 +10,7 @@
    
 #### Author: [Tony Dong](http://www.linkedin.com/in/lei-tony-dong)
 
-![](https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Logo.PNG | width=80)**Dynamic Pipeline** is a high-level API toolkit to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple codes. 
+<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Logo.png" width="80">**Dynamic Pipeline** is a high-level API toolkit to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple codes. 
 
 Comparing other popular "AutoML or Automatic Machine Learning" APIs, **Dynamic Pipeline** is designed as an omni-ensembled ML workflow optimizer with higher-level API targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. 
 
@@ -19,17 +19,14 @@ To achieve that, **Dynamic Pipeline** applies *Pipeline Cluster Traversal Experi
 Besides, by modularizing all key pipeline components in reuseable packages, it allows all components to be custom tunable along with high scalability.
 
 
-![](https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Workflow.PNG | width=980)
-
+<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Workflow.PNG" width="980">
 
 The core concept in **Dynamic Pipeline** is *Pipeline Cluster Traversal Experiments*, which is a theory, first raised by Tony Dong during Genpact 2020 GVector Conference, to optimize and automate Machine Learning Workflow using ensemble pipelines algorithm.
 
 Comparing other automatic or classic machine learning workflow's repetitive experiments using single pipeline, *Pipeline Cluster Traversal Experiments* is more powerful, with larger coverage scope, to find the best model without manual intervention, and also more flexible with elasticity to cope with unseen data due to its ensemble designs in each component.
 
+<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/PipelineClusterTraversalExperiments.PNG" width="980">
 
-![](https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/SinglePipelineRepetitiveExperiments.PNG | width=980)
-
-![](https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/PipelineClusterTraversalExperiments.PNG | width=980)
 
 In summary, **Dynamic Pipeline** shares a few useful properties for data scientists:
 
