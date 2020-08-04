@@ -230,8 +230,8 @@ Custom estimators & parameters setting for for autoCV:
  reset_parameters()
 ..
 
-Dynamic Pipeline building using autoPipe:
------------------------------------------
+Build Pipeline Cluster Traveral Experiments using autoPipe:
+----------------------------------------------------------
 
   Demo Code:
 
