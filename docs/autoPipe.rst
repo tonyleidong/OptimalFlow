@@ -21,5 +21,5 @@ Description :
 autoPipe
 ---------------------
 
-.. autoclass:: dynapipe.autoPipe.autoPipe
+.. autoclass:: dynapipe.autoPipe
     :members:
