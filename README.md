@@ -270,7 +270,7 @@ xgb -- Accuracy: 0.815 / Precision: 0.786 / Recall: 0.677 / Latency: 5.0ms
     * Generate all possible datasets after cross-combiniations and columns permutations in ensemble algorithm approach
     * Support custom sparsity and column numbers ceriteria to narrow the number of combination datasets 
     
-#### autoPipe - pipeline module for connection
+#### autoPipe - Build *Pipeline Cluster Traveral Experiments*
 
 ###### Description : 
  - This module is used for pipeline connection:
