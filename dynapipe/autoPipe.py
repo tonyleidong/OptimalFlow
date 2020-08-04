@@ -48,6 +48,22 @@ logger.info(Test_comment)
 
 
 class autoPipe:
+    """This class is to build a scikit-learn-style pipline, as a chain of preprocessing, feature selection, model selection and model evaluation.
+    
+    Parameters
+    ----------
+    steps: list, default = None
+        List of (name, transform) tuples (implementing fit & transform) that are chained, in the order in which they are chained, with the last object a model evaluation function.
+    
+    Example
+    -------
+    
+    .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#dynamic-pipeline-building-using-autopipe
+    
+    References
+    ----------
+    None
+    """
     def __init__(self,steps):
         self.step1 = steps[0][1]
         self.step2 = steps[1][1]
@@ -56,6 +72,31 @@ class autoPipe:
         self.step5 = steps[4][1]
 
     def fit(self,data):
+        """Fits and transforms a chain of Dynamic Pipeline modules.
+        
+        Parameters
+        ----------
+        input_data : pandas dataframe, shape = [n_samples, n_features]
+            
+            NOTE: 
+            The input_data should be the datasets after basic data cleaning & well feature deduction, the more features involve will result in more columns permutation outputs. 
+        
+        Returns
+        -------
+        DICT_PREP_INFO : dictionary
+            Each key is the # of preprocessed dataset("Dataset_xxx" format, i.e. "Dataset_10"), each value stores an info string about what transforms applied.
+            i.e. DICT_PREPROCESSING['Dataset_0'] stores value "winsor_0-Scaler_None-- Encoded Features:['diagnosis', 'Size_3', 'area_mean']", which means applied 1st mode of winsorization, none scaler applied, and the encoded columns names(shown the enconding approachs in the names)
+        DICT_FEATURE_SELECTION_INFO : dictionary
+            Each key is the # of preprocessed dataset, each value stores the name of features selected after the autoFS module.
+        DICT_MODELS_EVALUATION : dictionary
+            Each key is the # of preprocessed dataset, each value stores the model evaluation results with its validate dataset.
+        DICT_DATA : dictionary
+            Each key is the # of preprocessed dataset, and first level sub-key is the type of splitted sets(including 'DICT_Train','DICT_TEST',and'DICT_Validate').
+            The second level sub-key is "X" for features and "y" for label, each value stores the datasets related to the keys(Pandas Dataframe format)
+            i.e. DICT_DATA['Dataset_0']['DICT_TEST']["X"] is the train features of Dataset_0's test dataset
+        models_summary : Pandas Dataframe
+            Model selection results ranking table among all composits of preprocessed datasets, selected features and all posible models with optimal parameters. 
+        """
         dyna = self.step1
         DICT_PREP_DF,DICT_PREP_INFO = dyna.fit(input_data = data)
         print(f"Total combinations: {len(DICT_PREP_DF.keys())}")

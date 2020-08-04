@@ -7,7 +7,7 @@ Description :
     * Automate the models training with cross validation
     * GridSearch the best parameters
     * Export the optimized models as pkl files, and saved them in /pkl folders
-    * Validate the optimized models, and select the best model 
+    * Validate the optimized models, and select the best model  
 
 - Class
     * dynaClassifier : Focus on classification problems

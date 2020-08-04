@@ -51,10 +51,11 @@ class dynaPreprocessing:
     
     Parameters
     ----------
-    custom_parameters: dictionary
-        Custom parameters settings input - Default: None.
+    custom_parameters: dictionary, default = None
+        Custom parameters settings input.
         
-        NOTE: default_parameters = {
+        NOTE: 
+        default_parameters = {
             "scaler" : ["None", "standard", "minmax", "maxabs", "robust"],
             "encode_band" : [10],
             "low_encode" : ["onehot","label"], 
@@ -64,16 +65,17 @@ class dynaPreprocessing:
             "cols" : [30]
             }
 
-    label_col: str
-        Name of label column - Default: None.
-    model_type: str
+    label_col: str, default = None
+        Name of label column.
+    model_type: str, default = "reg"
         "reg" for regression problem or "cls" for classification problem - Default: "reg".
-    export_output_files: bool
-        Export qualified permutated datasets to ./df_folder - Default: False.
+    export_output_files: bool, default = False
+        Export qualified permutated datasets to ./df_folder.
     
     Example
     -------
-    See Demos -> Demo 1
+
+    .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#feature-preprocessing-for-a-regression-problem-using-autopp
     
     References
     ----------
@@ -105,12 +107,14 @@ class dynaPreprocessing:
         Parameters
         ----------
         input_data : pandas dataframe, shape = [n_samples, n_features]
-            NOTE: The input_data should be the datasets after basic data cleaning & well feature deduction, the more features involve will result in more columns permutation outputs. 
+            
+            NOTE: 
+            The input_data should be the datasets after basic data cleaning & well feature deduction, the more features involve will result in more columns permutation outputs. 
         
         Returns
         -------
         DICT_PREP_DF : dictionary
-            Each key is the # of the output preprocessed dataset, each value stores the dataset
+            Each key is the # of output preprocessed dataset, each value stores the dataset
         DICT_PREP_INFO : dictionary
             Dictionary for reference. Each key is the # of the output preprocessed dataset, each value stores the column names of the dataset
         """

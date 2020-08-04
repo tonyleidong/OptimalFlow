@@ -55,6 +55,30 @@ def rank_fs_result(clf_sel_result = None,tr_features = None):
     return(fs_features)
 
 class dynaFS_clf:
+    """This class implements feature selection for classification problem.
+    
+    Parameters
+    ----------
+    fs_num : int, default = None
+        List of (name, transform) tuples (implementing fit & transform) that are chained, in the order in which they are chained, with the last object a model evaluation function.
+    
+    random_state : int, default = None
+
+    cv : int, default = None
+
+    in_pipeline
+
+    input_from_file
+
+    Example
+    -------
+    
+    .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#dynamic-pipeline-building-using-autopipe
+    
+    References
+    ----------
+    None
+    """
     def __init__(self, fs_num = None ,random_state = None,cv = None, in_pipeline = False, input_from_file = True):
         self.fs_num = fs_num
         self.random_state = random_state

@@ -4,24 +4,27 @@ Welcome to Dynamic Pipeline's Documentation!
    :width: 200
    :align: center
    
-**Dynamic Pipeline** is a high-level API to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple codes. The core advantage Dynamic Pipeline is it automates general scikit-learn-style pipeline with each component ensembled, and avoids repeated manual cross-experiments with iteration of algrithms combination and searching best parameters. By modularizing all key classic pipeline components in reuseable packages, it allows all components to be custom tunable along with high scalability.
+**Dynamic Pipeline** is a high-level API to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple codes. 
+Comparing other popular "AutoML or Automatic Machine Learning" APIs, **Dynamic Pipeline** is designed as a ML workflow optimizer with higher-level API targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. 
+To achieve that, **Dynamic Pipeline** creates *Pipeline Cluster* to assemble all cross-matching pipelines covering major tasks of Machine Learning workflow, and apply traversal-experiment to search the optimal baseline model.
+Besides, by modularizing all key pipeline components in reuseable packages, it allows all components to be custom tunable along with high scalability.
 
 .. image:: DynamicPipeline_Workflow.PNG
    :width: 980
 
 Dynamic Pieline share a few useful properties for data scientists:
 
-      * *Easy & less coding* - High-level APIs that each ML component is highly automated and modularized;
+      * *Easy & less coding* - High-level APIs to implement *Pipeline Cluster* traversal experiments, and each ML component is highly automated and modularized;
 
-      * *Well ensembled* - Each key component is ensemble of popular algorithms w/ optimal parameters searching included;
+      * *Well ensembled* - Each key component is ensemble of popular algorithms w/ optimal hyperparameters tuning included;
       
-      * *Automated & dynamic* - autoPipe can build a scikit-learn-style pipline workflow to easily achieve automated ML;
+      * *Hardly omission* - Using * Pipeline Cluster * technique, to cross-experiment with combined permutated input datasets, feature selection, and model selection;
       
-      * *Hardly omission* - Create powerful cross-experiments combined permutated input datasets, feature selection, and model selection;
+      * *Scalable* - Each module could add new algorithms easily due to its ensemble and reuseable coding design;
+
+      * *Adaptable* - *Pipeline Cluster* traversal experiments makes it easier to adapt unseen datasets with the right pipeline;
       
-      * *Algorithms scalable* - Each module could add new algorithms easily due to its ensemble coding structure;
-      
-      * *Adaptable* - Support custom settings to add/remove algorithms or modify parameters for elastic requirements.
+      * *Custom Modify Welcomed* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
 
 
 

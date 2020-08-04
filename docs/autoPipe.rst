@@ -8,9 +8,15 @@ Description :
     * Automated the iteration of cross-experiment to find the best baseline model
     * Generate comparable and parameter-tracable dictionaies and reports to support autoVIZ and autoFlow modules
  
- - Pipeline Components:
+ - Pipeline Steps:
     * autoPP - dynaPreprocessing() Class in autoPP module
     * Datasets Splitting - pipeline_splitting_rule() Function in utilis_funs module
     * autoFS - dynaFS_clf() or dynaFS_reg() Class in autoFS module
     * autoCV - dynaClassifier() or dynaRegressor() Class in autoCV module
     * Model Evaluate - evaluate_model() Class in autoCV module
+
+autoPipe
+---------------------
+
+.. autoclass:: dynapipe.autoPipe.autoPipe
+    :members:
