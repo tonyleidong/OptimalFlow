@@ -48,7 +48,7 @@ logger.info(Test_comment)
 
 
 class autoPipe:
-    """This class is to build **Pipeline Cluster Traversal Experiments**.
+    """This class is to build Pipeline Cluster Traversal Experiments.
     
     Parameters
     ----------
@@ -60,8 +60,10 @@ class autoPipe:
     
     .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#build-pipeline-cluster-traveral-experiments-using-autopipe
     
+    
     References
     ----------
+    
     None
     """
     def __init__(self,steps):
