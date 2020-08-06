@@ -151,7 +151,7 @@ class dynaClassifier:
 
     Example
     -------
-    .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#model-selection-for-a-classification-problem-using-autocv
+    .. [Example] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#model-selection-for-a-classification-problem-using-autocv
     
     References
     ----------
