@@ -35,6 +35,55 @@ Description :
         - mlp : Multi-layer Perceptron regressor - MLPRegressor()
         - xgb : XGBoost regression - XGBRegressor()
 
+dynaClassifier
+---------------------
+
+.. autoclass:: dynapipe.autoCV.dynaClassifier
+    :members:
+
+dynaRegressor
+---------------------
+
+.. autoclass:: dynapipe.autoCV.dynaRegressor
+    :members:
+
+evaluate_model
+---------------------
+
+.. autoclass:: dynapipe.autoCV.evaluate_model
+    :members:
+
+clf_cv
+---------------------
+
+.. autoclass:: dynapipe.estimatorCV.clf_cv
+
+reg_cv
+---------------------
+
+.. autoclass:: dynapipe.estimatorCV.reg_cv
+
+data_splitting_tool
+---------------------
+
+.. autofunction:: dynapipe.utilis_fun.data_splitting_tool
+
+reset_parameters
+---------------------
+
+.. autofunction:: dynapipe.utilis_fun.reset_parameters
+
+update_parameters
+---------------------
+
+.. autofunction:: dynapipe.utilis_fun.update_parameters
+
+
+export_parameters
+---------------------
+
+.. autofunction:: dynapipe.utilis_fun.export_parameters
+
 
 Defaults Parameters for Classifiers/Regressors
 ----------------------------------------------

@@ -54,10 +54,57 @@ def update_progress(progress, clear_flag = False,process_name = None,time_est = 
     print(text)
 
 def pipeline_splitting_rule(val_size = 0.2, test_size = 0.2, random_state = 13):
+    """Setup percentage of train, validate, and test of each pipeline's dataset in Pipeline Cluster Traversal Experiments.
+    
+    Parameters
+    ----------
+    val_size : float, default = None
+        Value within [0~1]. Percentage of validate data.
+    test_size : float, default = None
+        Value within [0~1]. Percentage of test data.
+    random_state : int, default = 13
+        Random state value.
+    Returns
+    -------
+    Deliver the percentage values to splitting tool function.
+
+    """
     custom_val_size,custom_size,custom_random_state = val_size, test_size, random_state
     return(custom_val_size,custom_size,custom_random_state)
 
 def data_splitting_tool(feature_cols = None, label_col = None ,val_size = 0.2, test_size = 0.2, random_state = 13):
+    """Splitting each pipeline's dataset into train, validate, and test parts for Pipeline Cluster Traversal Experiments.
+    
+    NOTE: When in_pipeline = "True", this function will be built-in function in autoPipe module. So it needs to use pipeline_splitting_rule() to setup splitting rule.
+
+    Parameters
+    ----------
+    label_col : array/df, default = None
+        Column of label.
+    feature_cols : df, default = None
+        Feature columns.
+    val_size : float, default = 0.2
+        Value within [0~1]. Percentage of validate data. NOTE - When val_size with no input value will not return X_val & y_val
+    test_size : float, default = 0.2
+        Value within [0~1]. Percentage of test data.
+    random_state : int, default = 13
+        Random state value.
+    Returns
+    -------
+    X_train : array
+        Train features dataset 
+    y_train : array
+        Train label dataset
+    X_val : array
+        Validate features datset
+    y_val : array
+        Validate label dataset
+    X_test : array
+        Test features dataset
+    y_test : array
+        Test label dataset
+
+    """
     if (val_size != ''):
         total_test_size = val_size + test_size
         test_ratio = test_size/total_test_size
@@ -69,6 +116,21 @@ def data_splitting_tool(feature_cols = None, label_col = None ,val_size = 0.2, t
         return(X_train, y_train, X_test, y_test)
 
 def reset_parameters():
+    """Reset autoCV estimators hyperparameters and searching range to default values.
+
+    Parameters
+    ----------
+        None
+    Returns
+    -------
+        None
+
+    Example
+    -------
+
+    .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#custom-estimators-parameters-setting-for-for-autocv
+    
+    """
     try:
         json_p = os.path.join(os.path.dirname(__file__), 'reset_parameters.json')
         with open(json_p,'r') as d_file:
@@ -83,6 +145,29 @@ def reset_parameters():
         print('Failed to reset the parameters.')
 
 def update_parameters(mode = str(None), estimator_name = str(None), **kwargs):
+    """Update autoCV estimators hyperparameters and searching range to custom values.
+        
+    NOTE: One line of command could only update one estimator.
+
+    Parameters
+    ----------
+        mode : str, default = None
+            Value in ["cls","reg"]. "cls" will modify classification estimators; "reg" will modify regression estimators.
+        estimator_name : str, default = None
+            Name of estimator.
+        **kwargs : list, default = None
+            Lists of values using comma splitting, i.e. C=[0.1,0.2],kernel=["linear"].
+
+    Returns
+    -------
+        None
+    
+    Example
+    -------
+
+    .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#custom-estimators-parameters-setting-for-for-autocv
+    
+    """
     try:
         json_p = os.path.join(os.path.dirname(__file__), 'parameters.json')
         with open(json_p,'r',encoding='utf-8') as d_file:
@@ -99,6 +184,21 @@ def update_parameters(mode = str(None), estimator_name = str(None), **kwargs):
         print('Failed to update the parameters.')
 
 def export_parameters():
+    """Export current autoCV estimators hyperparameters and searching range to current work dictionary.
+
+    Parameters
+    ----------
+        None
+    Returns
+    -------
+        None
+    
+    Example
+    -------
+
+    .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#custom-estimators-parameters-setting-for-for-autocv
+    
+    """
     exp_folder = os.path.join(os.getcwd(),'exported')
     if not os.path.exists(exp_folder):
         os.makedirs(exp_folder)

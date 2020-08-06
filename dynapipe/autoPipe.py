@@ -98,6 +98,8 @@ class autoPipe:
             i.e. DICT_DATA['Dataset_0']['DICT_TEST']["X"] is the train features of Dataset_0's test dataset
         models_summary : Pandas Dataframe
             Model selection results ranking table among all composits of preprocessed datasets, selected features and all posible models with optimal parameters. 
+        
+        NOTE - Log records will generate and save to ./logs folder automatedly.
         """
         dyna = self.step1
         DICT_PREP_DF,DICT_PREP_INFO = dyna.fit(input_data = data)

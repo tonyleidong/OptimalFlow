@@ -54,8 +54,8 @@ class dynaPreprocessing:
     custom_parameters: dictionary, default = None
         Custom parameters settings input.
         
-        NOTE: 
-        default_parameters = {
+        NOTE: default_parameters 
+            = {
             "scaler" : ["None", "standard", "minmax", "maxabs", "robust"],
             "encode_band" : [10],
             "low_encode" : ["onehot","label"], 
@@ -117,6 +117,8 @@ class dynaPreprocessing:
             Each key is the # of output preprocessed dataset, each value stores the dataset
         DICT_PREP_INFO : dictionary
             Dictionary for reference. Each key is the # of the output preprocessed dataset, each value stores the column names of the dataset
+        
+        NOTE - Log records will generate and save to ./logs folder automatedly.
         """
                         
         if (self.export_output_files):
@@ -131,7 +133,7 @@ class dynaPreprocessing:
             pp.split_category_cols()
             initial_num_cols = pp.num_df.columns
             pp.impute_tool()
-            pp.winzorize_tool(lower_ban = self.parameters.get("winsorizer")[i][0],upper_ban = self.parameters.get("winsorizer")[i][1])
+            pp.winsorize_tool(lower_ban = self.parameters.get("winsorizer")[i][0],upper_ban = self.parameters.get("winsorizer")[i][1])
             winsorized_df_cols_list = list(pp.num_df.columns)
             encoded_cols_list = {}
             for col in pp.cat_df.columns:

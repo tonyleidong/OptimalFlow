@@ -12,6 +12,27 @@ warnings.filterwarnings('ignore', category=FutureWarning)
 warnings.filterwarnings('ignore', category=DeprecationWarning)
 
 class clf_fs:
+    """This class stores classification selectors.
+    
+    Parameters
+    ----------
+    fs_num : int, default = None
+        Set the # of features want to select out.    
+    
+    random_state : int, default = None
+        Random state value.
+    
+    cv : int, default = None
+        # of folds for cross-validation.
+    Example
+    -------
+    
+    .. [Example]: 
+    
+    References
+    ----------
+    None
+    """
     def __init__(self,fs_num = None ,random_state = None,cv = None):
         self.fs_num = fs_num
         self.random_state = random_state
@@ -53,6 +74,27 @@ class clf_fs:
 
 
 class reg_fs:
+    """This class stores regression selectors.
+    
+    Parameters
+    ----------
+    fs_num : int, default = None
+        Set the # of features want to select out.    
+    
+    random_state : int, default = None
+        Random state value.
+    
+    cv : int, default = None
+        # of folds for cross-validation.
+    Example
+    -------
+    
+    .. [Example]: 
+    
+    References
+    ----------
+    None
+    """
     def __init__(self,fs_num,random_state = None,cv = None):
         self.fs_num = fs_num
         self.random_state = random_state

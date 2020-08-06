@@ -34,3 +34,24 @@ Description :
         - rfe_rf : RFE with RandomForestRegressor() estimator
         - rfecv_rf : RFECV with RandomForestRegressor() estimator
 
+dynaFS_clf
+---------------------
+
+.. autoclass:: dynapipe.autoFS.dynaFS_clf
+    :members:
+
+dynaFS_reg
+---------------------
+
+.. autoclass:: dynapipe.autoFS.dynaFS_reg
+    :members:
+
+clf_fs
+---------------------
+
+.. autoclass:: dynapipe.selectorFS.clf_fs
+
+reg_fs
+---------------------
+
+.. autoclass:: dynapipe.selectorFS.reg_fs

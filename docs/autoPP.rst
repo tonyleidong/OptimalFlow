@@ -38,3 +38,9 @@ dynapipePreprocessing
 
 .. autoclass:: dynapipe.autoPP.dynaPreprocessing
     :members:
+
+PPtools
+-------
+
+.. autoclass:: dynapipe.funcPP.PPtools
+    :members:

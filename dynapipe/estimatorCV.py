@@ -27,7 +27,24 @@ def warn(*args, **kwargs):
     pass
 
 class clf_cv:
-
+    """This class stores classification estimators.
+    
+    Parameters
+    ----------
+    random_state : int, default = None
+        Random state value.
+    
+    cv_val : int, default = None
+        # of folds for cross-validation.
+    Example
+    -------
+    
+    .. [Example]: 
+    
+    References
+    ----------
+    None
+    """
     def __init__(self,cv_val = None,random_state = None):
         self.cv = cv_val
         self.random_state = [random_state]
@@ -121,7 +138,24 @@ class clf_cv:
         return(GridSearchCV(xgb_cv, parameters,cv=self.cv))
 
 class reg_cv:
-
+    """This class stores regression estimators.
+    
+    Parameters
+    ----------
+    random_state : int, default = None
+        Random state value.
+    
+    cv_val : int, default = None
+        # of folds for cross-validation.
+    Example
+    -------
+    
+    .. [Example]: 
+    
+    References
+    ----------
+    None
+    """
     def __init__(self,cv_val = None,random_state = None):
         self.cv = cv_val
         self.random_state = [random_state]

@@ -60,20 +60,23 @@ class dynaFS_clf:
     Parameters
     ----------
     fs_num : int, default = None
-        List of (name, transform) tuples (implementing fit & transform) that are chained, in the order in which they are chained, with the last object a model evaluation function.
+        Set the # of features want to select out.
     
     random_state : int, default = None
-
+        Random state value.
+    
     cv : int, default = None
+        # of folds for cross-validation.
 
-    in_pipeline
-
-    input_from_file
+    in_pipeline : bool, default = False
+        Should be set to "True" when using autoPipe module to build Pipeline Cluster Traveral Experiments.
+    
+    input_from_file : bool, default = True
+        When input dataset is dataframe, needs to set "True"; Otherwise, i.e. array, needs to set "False".
 
     Example
     -------
-    
-    .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#dynamic-pipeline-building-using-autopipe
+        .. [Example]: 
     
     References
     ----------
@@ -87,6 +90,26 @@ class dynaFS_clf:
         self.in_pipeline = in_pipeline
 
     def fit(self,tr_features,tr_labels):
+        """Fits and transforms a dataframe with built-in algorithms, to select top features.
+        
+        Parameters
+        ----------
+        tr_features : df, default = None
+            Train features columns. 
+            (NOTE: In the Pipeline Cluster Traversal Experiments, the features columns should be from the same pipeline dataset).
+        tr_labels : array/df, default = None
+            Train label column, when input_from_file = True, must be pandas datframe.
+            (NOTE: In the Pipeline Cluster Traversal Experiments, the label column should be from the same pipeline dataset).
+        
+        Returns
+        -------
+        fs_num : int
+            # of top features has been select out.
+        fs_results : array
+            Selected & ranked top feature names.
+
+        NOTE - Log records will generate and save to ./logs folder automatedly.
+        """
         warnings.warn = warn
         if(self.input_from_file):
             tr_labels = tr_labels.values.ravel()
@@ -131,6 +154,35 @@ class dynaFS_clf:
         return(self.fs_num,fs_results)           
 
 class dynaFS_reg:
+    """This class implements feature selection for regression problem.
+    
+    Parameters
+    ----------
+    fs_num : int, default = None
+        Set the # of features want to select out.
+    
+    random_state : int, default = None
+        Random state value.
+    
+    cv : int, default = None
+        # of folds for cross-validation.
+
+    in_pipeline : bool, default = False
+        Should be set to "True" when using autoPipe module to build Pipeline Cluster Traveral Experiments.
+    
+    input_from_file : bool, default = True
+        When input dataset is dataframe, needs to set "True"; Otherwise, i.e. array, needs to set "False".
+
+    Example
+    -------
+    
+    .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#features-selection-for-a-regression-problem-using-autoFS
+    
+    References
+    ----------
+    None
+    """
+
     def __init__(self, fs_num = None ,random_state = None,cv = None,in_pipeline = False, input_from_file = True):
         self.fs_num = fs_num
         self.random_state = random_state
@@ -139,6 +191,26 @@ class dynaFS_reg:
         self.in_pipeline = in_pipeline
 
     def fit(self,tr_features,tr_labels):
+        """Fits and transforms a dataframe with built-in algorithms, to select top features.
+        
+        Parameters
+        ----------
+        tr_features : df, default = None
+            Train features columns. 
+            (NOTE: In the Pipeline Cluster Traversal Experiments, the features columns should be from the same pipeline dataset).
+        tr_labels : array/df, default = None
+            Train label column, when input_from_file = True, must be pandas datframe.
+            (NOTE: In the Pipeline Cluster Traversal Experiments, the label column should be from the same pipeline dataset).
+             
+        Returns
+        -------
+        fs_num : int
+            # of top features has been select out.
+        fs_results : array
+            Selected & ranked top feature names.
+        
+        NOTE - Log records will generate and save to ./logs folder automatedly.
+        """
         if(self.input_from_file):
             tr_labels = tr_labels.values.ravel()
 

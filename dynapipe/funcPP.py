@@ -13,6 +13,28 @@ from sklearn.preprocessing import LabelEncoder
 import category_encoders as ce
 
 class PPtools:
+  """This class stores feature preprocessing transform tools.
+  
+  Parameters
+  ----------
+  data : df, default = None
+    Pre-cleaned dataset for feature preprocessing.
+  
+  label_col : str, default = None
+    Name of label column.
+
+  model_type : str, default = "reg"
+      Value in ["reg","cls"]. The "reg" for regression problem, and "cls" for classification problem.
+
+  Example
+  -------
+  
+    .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#build-pipeline-cluster-traveral-experiments-using-autopipe
+  
+  References
+  ----------
+  None
+  """
   def __init__(self, data = None, label_col = None,model_type = 'reg'):
     self.snapshots = {}
     self.log = []
@@ -37,6 +59,16 @@ class PPtools:
       self.data[self.label_col] = pd.DataFrame(LabelEncoder().fit_transform(self.data[self.label_col]))
 
   def split_category_cols(self):
+    """Split input datasets to numeric dataset and category dataset.
+    
+    Parameters
+    ----------
+    None
+
+    Returns
+    -------
+    None
+    """
     non_label_list = self.data.columns.difference([self.label_col])
     self.non_label_data = self.data[non_label_list]
     self.cat_df = self.non_label_data.select_dtypes(exclude=['number'])
@@ -44,6 +76,16 @@ class PPtools:
     self._log("PPtools.split_category_cols(): Split input to category df and numeric df.")
 
   def remove_feature(self, feature_name):
+    """Remove feature.
+    
+    Parameters
+    ----------
+    feature_name : str/list, default = None
+        column name, or list of column names wants to extract.
+    Returns
+    -------
+    None
+    """
     del self.data[feature_name]
     self._log("PPtools.remove_feature('{0}')".format(feature_name))
 
@@ -53,6 +95,17 @@ class PPtools:
     self._log("PPtools.extract_feature({0}, {1}, {2})".format(old_featre, new_feature, mapper))
 
   def impute_tool(self):
+    """Imputation with the missing values.
+    
+    Parameters
+    ----------
+    None
+
+    Returns
+    -------
+    None
+
+    """
     column_names = self.num_df.columns
     imp = SimpleImputer()
     imp.fit(self.num_df[column_names])
@@ -61,6 +114,25 @@ class PPtools:
     self._log("PPtools.impute_tool()")
 
   def scale_tool(self,df = None,sc_type = None):
+    """Feature scaling.
+    
+    Parameters
+    ----------
+    df : df, default = None
+      Dataset wants to be scaled
+    
+    sc_type : str, default = None
+      Value in ["None","standard","minmax","maxabs","robust"]. Select which scaling algorithm:
+      "None" - No scale algorithm apply;
+      "standard" - StandardScaler algorithm;
+      "minmax" - MinMaxScaler algorithm;
+      "maxabs" - MaxAbsScaler algorithm;
+      "RobustScaler" - RobustScaler algorithm
+    Returns
+    -------
+    Scaled dataset
+
+    """
     if sc_type == "None":
       self._log("PPtools.scale_tool() - None")
       return(df)
@@ -81,14 +153,56 @@ class PPtools:
       self._log("PPtools.scale_tool() - RobustScaler")
       return(pd.DataFrame(preprocessing.RobustScaler().fit_transform(df),columns = df.columns))
 
-  def winzorize_tool(self, lower_ban = None,upper_ban = None):
+  def winsorize_tool(self, lower_ban = None,upper_ban = None):
+    """Feature outliers excluding with winsorization.
+    
+    Parameters
+    ----------
+    lower_ban : float, default = None
+      Bottom percent of excluding data needs to set here.
+    upper_ban 
+      Top percent of excluding data needs to set here.
+
+    Returns
+    -------
+    None
+    """
     for i in list(self.num_df.columns):
       self.num_df[i] = winsorize(self.num_df[i], limits=[lower_ban,upper_ban])
       
   def remove_zero_col_tool(self, data = None):
+    """Remove the columns with all value zero.
+    
+    Parameters
+    ----------
+    data : pandas dataset, default = None
+      dataset needs to remove all zero columns
+
+    Returns
+    -------
+    All-zero-columns dataset
+    """
     return(data.loc[:, (data!= 0).any(axis=0)])
 
   def encode_tool(self,en_type = None ,category_col = None):
+    """Category features encoding, included: 
+      "onehot" - OneHot algorithm;
+      "label" - LabelEncoder algorithm;
+      "frequency" - Frequency Encoding algorithm;
+      "mean" - Mean Encoding algorithm.
+
+    
+    Parameters
+    ----------
+    en_type : str, default = None
+
+      Value in ["reg","cls"]. Will drop first encoded column to cope with dummy trap issue, when value is "reg".
+
+    Returns
+    -------
+    Encoded column/dataset for each category feature
+
+    """
     if en_type == 'onehot':
       if(self.model_type == 'reg'):
         temp_df = pd.get_dummies(self.cat_df,prefix = ['onehot_'+category_col],columns = [category_col], drop_first = True)
@@ -111,6 +225,16 @@ class PPtools:
 
 
   def sparsity_tool(self, data = None):
+    """Calculate the sparsity of the datset.
+    
+    Parameters
+    ----------
+    data : df, default = None
+
+    Returns
+    -------
+    Value of sparsity
+    """
     return(1.0 - (count_nonzero(data)/float(data.size)))
 
   def use_snapshot(self, name):
