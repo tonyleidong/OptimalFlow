@@ -25,7 +25,7 @@
 #     evaluate_clf_model(name, mdl, val_features, val_labels)
 
 
-# Regression Demo 
+# Regression Demo 1
 import pandas as pd
 from dynapipe.autoCV import evaluate_model,dynaClassifier,dynaRegressor
 import joblib
@@ -37,9 +37,9 @@ val_labels = pd.read_csv('./data/regression/val_labels.csv')
 te_features = pd.read_csv('./data/regression/test_features.csv')
 te_labels = pd.read_csv('./data/regression/test_labels.csv')
 
-# reg_cv_demo = dynaRegressor(random_state=13,cv_num = 5)
+reg_cv_demo = dynaRegressor(random_state=13,cv_num = 5)
 
-# reg_cv_demo.fit(tr_features,tr_labels)
+reg_cv_demo.fit(tr_features,tr_labels)
 
 models = {}
 
@@ -53,7 +53,33 @@ for name, mdl in models.items():
     except:
         print(f"Failed to load the {mdl}.")
 
+# # Regression Demo 2
+# import pandas as pd
+# from dynapipe.autoCV import evaluate_model,dynaClassifier,dynaRegressor
+# import joblib
 
+# tr_features = pd.read_csv('./data/regression/train_features.csv')
+# tr_labels = pd.read_csv('./data/regression/train_labels.csv')
+# val_features = pd.read_csv('./data/regression/val_features.csv')
+# val_labels = pd.read_csv('./data/regression/val_labels.csv')
+# te_features = pd.read_csv('./data/regression/test_features.csv')
+# te_labels = pd.read_csv('./data/regression/test_labels.csv')
+
+# reg_cv_demo = dynaRegressor(random_state=13,cv_num = 5)
+
+# reg_cv_demo.fit(tr_features,tr_labels)
+
+# models = {}
+
+# for mdl in ['extratrees','nsvr','hgboost','bagging','huber','lsvr','rgcv','bayesrg','cvlasso','elastic','sgd']:
+#     models[mdl] = joblib.load('./pkl/{}_reg_model.pkl'.format(mdl))
+
+# for name, mdl in models.items():
+#     try:
+#         ml_evl = evaluate_model(model_type = "reg")
+#         ml_evl.fit(name, mdl, val_features, val_labels)
+#     except:
+#         print(f"Failed to load the {mdl}.")
 
 # # EstimatorCV Test Demo - classification
 # import pandas as pd
