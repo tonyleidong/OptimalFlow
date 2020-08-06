@@ -30,7 +30,7 @@ In summary, **Dynamic Pipeline** shares a few useful properties for data scienti
       
       * *Hardly omission* - Using *Pipeline Cluster Traversal Experiments*, to cross-experiment with combined permuted input datasets, feature selection, and model selection;
       
-      * *Scalable* - Each module could add new algorithms easily due to its ensemble and reusable coding design;
+      * *Scalable & Consistency* - Each module could add new algorithms easily due to its ensemble & reusable design; no extra needs to modify existing codes for new experiment
 
       * *Adaptable* - *Pipeline Cluster Traversal Experiments* makes it easier to adapt unseen datasets with the right pipeline;
       
@@ -46,6 +46,8 @@ In summary, **Dynamic Pipeline** shares a few useful properties for data scienti
    autoFS
    autoCV
    autoPipe
+   autoViz
+   autoFlow
    demos
    authors
    history
