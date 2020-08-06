@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 
 import pandas as pd
-from sklearn.linear_model import LogisticRegression,LinearRegression
-from sklearn.svm import SVC,SVR
+from sklearn.linear_model import LogisticRegression,LinearRegression,HuberRegressor,RidgeCV,BayesianRidge,LassoCV,ElasticNetCV,SGDRegressor
+from sklearn.svm import SVC,SVR,NuSVR,LinearSVR
 from sklearn.tree import DecisionTreeRegressor
-from sklearn.ensemble import RandomForestClassifier,RandomForestRegressor,AdaBoostRegressor,AdaBoostClassifier
+from sklearn.ensemble import ExtraTreesRegressor,RandomForestClassifier,RandomForestRegressor,AdaBoostRegressor,AdaBoostClassifier
+from sklearn.ensemble import HistGradientBoostingRegressor
+from sklearn.ensemble import BaggingRegressor
 from sklearn.neural_network import MLPClassifier,MLPRegressor
 from sklearn.ensemble import GradientBoostingClassifier,GradientBoostingRegressor
 from sklearn.neighbors import KNeighborsRegressor
@@ -237,7 +239,8 @@ class reg_cv:
         #     'min_samples_leaf':[1,3,5]
         #     }
         parameters = para_data["reg"]["tree"]
-        return(GridSearchCV(tree_cv, parameters,cv=self.cv))       
+        return(GridSearchCV(tree_cv, parameters,cv=self.cv))
+      
     def ada(self):
         warnings.warn = warn
         ada_cv = AdaBoostRegressor()
@@ -261,4 +264,113 @@ class reg_cv:
         #     }
         parameters = para_data["reg"]["xgb"]
         return(GridSearchCV(xgb_cv, parameters,cv=self.cv))
+    # # New add August 5,2020
+    # def extratrees(self):
+    #     warnings.warn = warn
+    #     extratrees_cv = ExtraTreesRegressor()
+    #     parameters = {
+    #         'n_estimators': [50,100,150,200,250,300],
+    #         'max_depth': [1, 3, 5, 7, 9],
+    #         'random_state': [self.random_state],
+    #         'min_samples_leaf':[1,3,5]
+    #         }
+    #     # parameters = para_data["reg"]["tree"]
+    #     return(GridSearchCV(extratrees_cv, parameters,cv=self.cv)) 
+    # def nsvr(self):
+    #     warnings.warn = warn
+    #     nusvr_cv = NuSVR()
+    #     parameters = {
+    #         'kernel':['linear', 'poly', 'rbf', 'sigmoid'],
+    #         'C': [0.1, 1, 10],
+    #         'nu': [0.3,0.5,1]
+    #         }
+    #     # parameters = para_data["reg"]["tree"]
+    #     return(GridSearchCV(nusvr_cv, parameters,cv=self.cv)) 
 
+    # def hgboost(self):
+    #     warnings.warn = warn
+    #     hgboost_cv = HistGradientBoostingRegressor()
+    #     parameters = {
+    #         'max_depth': [3, 5, 7, 9],
+    #         'learning_rate': [0.1, 0.2,0.3,0.4]
+    #         }
+    #     # parameters = para_data["reg"]["tree"]
+    #     return(GridSearchCV(hgboost_cv, parameters,cv=self.cv)) 
+
+    # def bagging(self):
+    #     warnings.warn = warn
+    #     bagging_cv = BaggingRegressor()
+    #     parameters = {
+    #         'n_estimators': [50,100,150,200,250,300],
+    #         'bootstrap' : [True,False],
+    #         'bootstrap_features' : [True,False],
+    #         'oob_score' : [True,False]
+    #         }
+    #     # parameters = para_data["reg"]["tree"]
+    #     return(GridSearchCV(bagging_cv, parameters,cv=self.cv)) 
+
+    # def huber(self):
+    #     warnings.warn = warn
+    #     huber_cv = HuberRegressor()
+    #     parameters = {
+    #         'fit_intercept' : [True,False]
+    #         }
+    #     # parameters = para_data["reg"]["tree"]
+    #     return(GridSearchCV(huber_cv, parameters,cv=self.cv))
+
+    # def lsvr(self):
+    #     warnings.warn = warn
+    #     lsvr_cv = LinearSVR()
+    #     parameters = {
+    #         'C': [1, 5, 10],
+    #         'random_state': [self.random_state] 
+    #         }
+    #     # parameters = para_data["reg"]["tree"]
+    #     return(GridSearchCV(lsvr_cv, parameters,cv=self.cv))
+
+    # def rgcv(self):
+    #     warnings.warn = warn
+    #     rgcv_cv = RidgeCV()
+    #     parameters = {
+    #         'fit_intercept': [True,False]
+    #         }
+    #     # parameters = para_data["reg"]["tree"]
+    #     return(GridSearchCV(rgcv_cv, parameters,cv=self.cv))
+
+    # def bayesrg(self):
+    #     warnings.warn = warn
+    #     bayesrg_cv = BayesianRidge()
+    #     parameters = {
+    #         'fit_intercept': [True,False]
+    #         }
+    #     # parameters = para_data["reg"]["tree"]
+    #     return(GridSearchCV(rgcv_cv, parameters,cv=self.cv))
+
+    # def cvlasso(self):
+    #     warnings.warn = warn
+    #     cvlasso_cv = LassoCV()
+    #     parameters = {
+    #         'fit_intercept': [True,False]
+    #         }
+    #     # parameters = para_data["reg"]["tree"]
+    #     return(GridSearchCV(cvlasso_cv, parameters,cv=self.cv))
+
+    # def elastic(self):
+    #     warnings.warn = warn
+    #     elastic_cv = ElasticNetCV()
+    #     parameters = {
+    #         'fit_intercept': [True,False]
+    #         }
+    #     # parameters = para_data["reg"]["tree"]
+    #     return(GridSearchCV(cvlasso_cv, parameters,cv=self.cv))
+
+    # def sgd(self):
+    #     warnings.warn = warn
+    #     sgd_cv = SGDRegressor()
+    #     parameters = {
+    #         'shuffle': [True,False],
+    #         'penalty': ['l2', 'l1', 'elasticnet'],
+    #         'learning_rate': ['constant','optimal','invscaling']
+    #         }
+    #     # parameters = para_data["reg"]["tree"]
+    #     return(GridSearchCV(sgd_cv, parameters,cv=self.cv))
