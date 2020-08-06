@@ -8,7 +8,7 @@ Welcome to Dynamic Pipeline's Documentation!
 Comparing other popular "AutoML or Automatic Machine Learning" APIs, **Dynamic Pipeline** is designed as an omni-ensembled ML workflow optimizer with higher-level API targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. 
 
 To achieve that, **Dynamic Pipeline** creates *Pipeline Cluster Traversal Experiments* to assemble all cross-matching pipelines covering major tasks of Machine Learning workflow, and apply traversal-experiment to search the optimal baseline model.
-Besides, by modularizing all key pipeline components in reuseable packages, it allows all components to be custom tunable along with high scalability.
+Besides, by modularizing all key pipeline components in reusable packages, it allows all components to be custom tunable along with high scalability.
 
 .. image:: DynamicPipeline_Workflow.PNG
    :width: 980
@@ -28,9 +28,9 @@ In summary, **Dynamic Pipeline** shares a few useful properties for data scienti
 
       * *Well ensembled* - Each key component is ensemble of popular algorithms w/ optimal hyperparameters tuning included;
       
-      * *Hardly omission* - Using *Pipeline Cluster Traversal Experiments*, to cross-experiment with combined permutated input datasets, feature selection, and model selection;
+      * *Hardly omission* - Using *Pipeline Cluster Traversal Experiments*, to cross-experiment with combined permuted input datasets, feature selection, and model selection;
       
-      * *Scalable* - Each module could add new algorithms easily due to its ensemble and reuseable coding design;
+      * *Scalable* - Each module could add new algorithms easily due to its ensemble and reusable coding design;
 
       * *Adaptable* - *Pipeline Cluster Traversal Experiments* makes it easier to adapt unseen datasets with the right pipeline;
       
