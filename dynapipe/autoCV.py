@@ -73,7 +73,7 @@ class evaluate_model:
     
     References
     ----------
-    None
+    
     """
     def __init__(self,model_type = None, in_pipeline = False):
         self.model_type = model_type
@@ -151,7 +151,7 @@ class dynaClassifier:
 
     Example
     -------
-        .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#model-selection-for-a-classification-problem-using-autocv
+    .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#model-selection-for-a-classification-problem-using-autocv
     
     References
     ----------
@@ -241,7 +241,7 @@ class dynaRegressor:
 
     Example
     -------
-        .. [Example]: 
+    .. [Example]
     
     References
     ----------

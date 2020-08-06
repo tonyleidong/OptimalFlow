@@ -29,7 +29,7 @@ class PPtools:
   Example
   -------
   
-    .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#build-pipeline-cluster-traveral-experiments-using-autopipe
+    .. [Example] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#build-pipeline-cluster-traveral-experiments-using-autopipe
   
   References
   ----------

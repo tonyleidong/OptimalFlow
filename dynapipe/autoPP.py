@@ -75,7 +75,7 @@ class dynaPreprocessing:
     Example
     -------
 
-    .. [Example]: https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#feature-preprocessing-for-a-regression-problem-using-autopp
+    .. [Example] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#feature-preprocessing-for-a-regression-problem-using-autopp
     
     References
     ----------

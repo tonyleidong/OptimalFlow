@@ -27,7 +27,7 @@ class clf_fs:
     Example
     -------
     
-    .. [Example]: 
+    .. [Example]
     
     References
     ----------
@@ -89,7 +89,7 @@ class reg_fs:
     Example
     -------
     
-    .. [Example]: 
+    .. [Example]
     
     References
     ----------

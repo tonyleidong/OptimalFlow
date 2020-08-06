@@ -66,23 +66,23 @@ reg_cv
 data_splitting_tool
 ---------------------
 
-.. autofunction:: dynapipe.utilis_fun.data_splitting_tool
+.. autofunction:: dynapipe.utilis_func.data_splitting_tool
 
 reset_parameters
 ---------------------
 
-.. autofunction:: dynapipe.utilis_fun.reset_parameters
+.. autofunction:: dynapipe.utilis_func.reset_parameters
 
 update_parameters
 ---------------------
 
-.. autofunction:: dynapipe.utilis_fun.update_parameters
+.. autofunction:: dynapipe.utilis_func.update_parameters
 
 
 export_parameters
 ---------------------
 
-.. autofunction:: dynapipe.utilis_fun.export_parameters
+.. autofunction:: dynapipe.utilis_func.export_parameters
 
 
 Defaults Parameters for Classifiers/Regressors
