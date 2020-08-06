@@ -1,0 +1,424 @@
+06/08 14:26:00 - INFO - ##################################################################################################################################################################################################################
+06/08 14:26:00 - INFO - Dynamic Pipeline - autoCV - Auto Pipe Connector :: 2020.08.06.14.26.00
+06/08 14:26:00 - INFO - ##################################################################################################################################################################################################################
+06/08 14:26:00 - INFO - Copyright All Reserved by Tony Dong | e-mail: tonyleidong@gmail.com 
+06/08 14:26:00 - INFO - Official Documentation: https://dynamic-pipeline.readthedocs.io
+06/08 14:26:00 - INFO - ------------------------------------------------------------
+06/08 14:26:00 - INFO - All previous logfiles will be deleted, when DELETE_FLAG is set to True.
+06/08 14:26:00 - INFO - Deleted file:autoPipe_log_2020.07.31.13.20.15.log
+06/08 14:26:00 - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+06/08 14:26:14 - INFO - Total combinations: 8
+06/08 14:26:14 - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+06/08 14:26:14 - INFO - Current Running Preprocessed Dataset No. 0:
+06/08 14:26:14 - INFO - [Features Before autoFS]: 
+06/08 14:26:14 - INFO - ['Size_3', 'area_mean', 'compactness_mean', 'concave points_mean', 'concavity_mean', 'fractal_dimension_mean', 'perimeter_mean', 'radius_mean', 'smoothness_mean', 'symmetry_mean', 'texture_mean', 'onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79', 'Label_Position_1', 'onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up', 'Frequency_Size_1', 'onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11', 'Label_Treatment', 'onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno', 'onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes', 'Label_Type_3']
+06/08 14:26:36 - INFO - [Results Report]:
+06/08 14:26:36 - INFO - >>> autoFS summary - This dataset has the top 5 important features: ['concavity_mean', 'concave points_mean', 'perimeter_mean', 'radius_mean', 'texture_mean'].
+06/08 14:26:38 - INFO - >>> autoCV summary - lgr model CrossValidation with 5 folds:
+06/08 14:26:38 - INFO -      - Best Paramaters: {'C': 1000, 'random_state': 13}
+
+06/08 14:26:38 - INFO -      - Best CV Score: 0.9356302521008404
+
+06/08 14:26:38 - INFO - >>> autoCV summary - svm model CrossValidation with 5 folds:
+06/08 14:26:38 - INFO -      - Best Paramaters: {'C': 0.1, 'kernel': 'linear'}
+
+06/08 14:26:38 - INFO -      - Best CV Score: 0.8946218487394958
+
+06/08 14:26:38 - INFO - >>> autoCV summary - mlp model CrossValidation with 5 folds:
+06/08 14:26:38 - INFO -      - Best Paramaters: {'activation': 'relu', 'hidden_layer_sizes': (10,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'sgd'}
+
+06/08 14:26:38 - INFO -      - Best CV Score: 0.5440336134453782
+
+06/08 14:26:38 - INFO - >>> autoCV summary - rf model CrossValidation with 5 folds:
+06/08 14:26:38 - INFO -      - Best Paramaters: {'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:26:38 - INFO -      - Best CV Score: 0.9122689075630251
+
+06/08 14:26:38 - INFO - >>> autoCV summary - ada model CrossValidation with 5 folds:
+06/08 14:26:38 - INFO -      - Best Paramaters: {'learning_rate': 1, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:26:38 - INFO -      - Best CV Score: 0.9121008403361344
+
+06/08 14:26:38 - INFO - >>> autoCV summary - gb model CrossValidation with 5 folds:
+06/08 14:26:38 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:26:38 - INFO -      - Best CV Score: 0.9121008403361344
+
+06/08 14:26:38 - INFO - >>> autoCV summary - xgb model CrossValidation with 5 folds:
+06/08 14:26:38 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:26:38 - INFO -      - Best CV Score: 0.9121008403361344
+
+06/08 14:26:38 - INFO - >>> lgr Modle Validation Results -- Accuracy: 0.877 / Precision: 0.875 / Recall: 0.84 / Latency: 5.0s
+06/08 14:26:38 - INFO - >>> svm Modle Validation Results -- Accuracy: 0.93 / Precision: 0.889 / Recall: 0.96 / Latency: 3.0s
+06/08 14:26:38 - INFO - >>> mlp Modle Validation Results -- Accuracy: 0.596 / Precision: 0.583 / Recall: 0.28 / Latency: 3.0s
+06/08 14:26:38 - INFO - >>> rf Modle Validation Results -- Accuracy: 0.877 / Precision: 0.821 / Recall: 0.92 / Latency: 11.0s
+06/08 14:26:38 - INFO - >>> ada Modle Validation Results -- Accuracy: 0.895 / Precision: 0.913 / Recall: 0.84 / Latency: 16.0s
+06/08 14:26:38 - INFO - >>> gb Modle Validation Results -- Accuracy: 0.895 / Precision: 0.913 / Recall: 0.84 / Latency: 1.0s
+06/08 14:26:38 - INFO - >>> xgb Modle Validation Results -- Accuracy: 0.912 / Precision: 0.955 / Recall: 0.84 / Latency: 2.4s
+06/08 14:26:38 - INFO - Total executed 0.4133 minutes
+06/08 14:26:39 - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+06/08 14:26:39 - INFO - Current Running Preprocessed Dataset No. 1:
+06/08 14:26:39 - INFO - [Features Before autoFS]: 
+06/08 14:26:39 - INFO - ['Size_3', 'area_mean', 'compactness_mean', 'concave points_mean', 'concavity_mean', 'fractal_dimension_mean', 'perimeter_mean', 'radius_mean', 'smoothness_mean', 'symmetry_mean', 'texture_mean', 'onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79', 'Label_Position_1', 'onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up', 'Frequency_Size_1', 'onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11', 'Label_Treatment', 'onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno', 'onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes', 'Label_Type_3']
+06/08 14:26:42 - INFO - [Results Report]:
+06/08 14:26:42 - INFO - >>> autoFS summary - This dataset has the top 5 important features: ['concave points_mean', 'concavity_mean', 'perimeter_mean', 'smoothness_mean', 'area_mean'].
+06/08 14:26:44 - INFO - >>> autoCV summary - lgr model CrossValidation with 5 folds:
+06/08 14:26:44 - INFO -      - Best Paramaters: {'C': 1000, 'random_state': 13}
+
+06/08 14:26:44 - INFO -      - Best CV Score: 0.9126050420168067
+
+06/08 14:26:44 - INFO - >>> autoCV summary - svm model CrossValidation with 5 folds:
+06/08 14:26:44 - INFO -      - Best Paramaters: {'C': 0.1, 'kernel': 'linear'}
+
+06/08 14:26:44 - INFO -      - Best CV Score: 0.9067226890756303
+
+06/08 14:26:44 - INFO - >>> autoCV summary - mlp model CrossValidation with 5 folds:
+06/08 14:26:44 - INFO -      - Best Paramaters: {'activation': 'relu', 'hidden_layer_sizes': (10,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'sgd'}
+
+06/08 14:26:44 - INFO -      - Best CV Score: 0.8596638655462184
+
+06/08 14:26:44 - INFO - >>> autoCV summary - rf model CrossValidation with 5 folds:
+06/08 14:26:44 - INFO -      - Best Paramaters: {'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:26:44 - INFO -      - Best CV Score: 0.9065546218487395
+
+06/08 14:26:44 - INFO - >>> autoCV summary - ada model CrossValidation with 5 folds:
+06/08 14:26:44 - INFO -      - Best Paramaters: {'learning_rate': 1, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:26:44 - INFO -      - Best CV Score: 0.8712605042016806
+
+06/08 14:26:44 - INFO - >>> autoCV summary - gb model CrossValidation with 5 folds:
+06/08 14:26:44 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:26:44 - INFO -      - Best CV Score: 0.8947899159663866
+
+06/08 14:26:44 - INFO - >>> autoCV summary - xgb model CrossValidation with 5 folds:
+06/08 14:26:44 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:26:44 - INFO -      - Best CV Score: 0.900672268907563
+
+06/08 14:26:44 - INFO - >>> lgr Modle Validation Results -- Accuracy: 0.825 / Precision: 0.778 / Recall: 0.84 / Latency: 3.0s
+06/08 14:26:44 - INFO - >>> svm Modle Validation Results -- Accuracy: 0.912 / Precision: 0.917 / Recall: 0.88 / Latency: 2.0s
+06/08 14:26:44 - INFO - >>> mlp Modle Validation Results -- Accuracy: 0.895 / Precision: 0.952 / Recall: 0.8 / Latency: 3.0s
+06/08 14:26:44 - INFO - >>> rf Modle Validation Results -- Accuracy: 0.895 / Precision: 0.852 / Recall: 0.92 / Latency: 12.0s
+06/08 14:26:44 - INFO - >>> ada Modle Validation Results -- Accuracy: 0.86 / Precision: 0.905 / Recall: 0.76 / Latency: 17.0s
+06/08 14:26:44 - INFO - >>> gb Modle Validation Results -- Accuracy: 0.807 / Precision: 0.769 / Recall: 0.8 / Latency: 2.0s
+06/08 14:26:44 - INFO - >>> xgb Modle Validation Results -- Accuracy: 0.842 / Precision: 0.808 / Recall: 0.84 / Latency: 2.0s
+06/08 14:26:44 - INFO - Total executed 0.0877 minutes
+06/08 14:26:44 - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+06/08 14:26:44 - INFO - Current Running Preprocessed Dataset No. 2:
+06/08 14:26:44 - INFO - [Features Before autoFS]: 
+06/08 14:26:44 - INFO - ['Size_3', 'area_mean', 'compactness_mean', 'concave points_mean', 'concavity_mean', 'fractal_dimension_mean', 'perimeter_mean', 'radius_mean', 'smoothness_mean', 'symmetry_mean', 'texture_mean', 'onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79', 'Label_Position_1', 'onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up', 'Frequency_Size_1', 'onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11', 'Label_Treatment', 'Label_Type_1', 'onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes', 'Label_Type_3']
+06/08 14:27:05 - INFO - [Results Report]:
+06/08 14:27:05 - INFO - >>> autoFS summary - This dataset has the top 5 important features: ['concavity_mean', 'perimeter_mean', 'area_mean', 'concave points_mean', 'radius_mean'].
+06/08 14:27:08 - INFO - >>> autoCV summary - lgr model CrossValidation with 5 folds:
+06/08 14:27:08 - INFO -      - Best Paramaters: {'C': 10, 'random_state': 13}
+
+06/08 14:27:08 - INFO -      - Best CV Score: 0.9065546218487395
+
+06/08 14:27:08 - INFO - >>> autoCV summary - svm model CrossValidation with 5 folds:
+06/08 14:27:08 - INFO -      - Best Paramaters: {'C': 0.1, 'kernel': 'linear'}
+
+06/08 14:27:08 - INFO -      - Best CV Score: 0.8712605042016806
+
+06/08 14:27:08 - INFO - >>> autoCV summary - mlp model CrossValidation with 5 folds:
+06/08 14:27:08 - INFO -      - Best Paramaters: {'activation': 'relu', 'hidden_layer_sizes': (10,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'sgd'}
+
+06/08 14:27:08 - INFO -      - Best CV Score: 0.4794957983193278
+
+06/08 14:27:08 - INFO - >>> autoCV summary - rf model CrossValidation with 5 folds:
+06/08 14:27:08 - INFO -      - Best Paramaters: {'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:08 - INFO -      - Best CV Score: 0.9122689075630254
+
+06/08 14:27:08 - INFO - >>> autoCV summary - ada model CrossValidation with 5 folds:
+06/08 14:27:08 - INFO -      - Best Paramaters: {'learning_rate': 1, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:08 - INFO -      - Best CV Score: 0.8769747899159663
+
+06/08 14:27:08 - INFO - >>> autoCV summary - gb model CrossValidation with 5 folds:
+06/08 14:27:08 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:08 - INFO -      - Best CV Score: 0.8769747899159664
+
+06/08 14:27:08 - INFO - >>> autoCV summary - xgb model CrossValidation with 5 folds:
+06/08 14:27:08 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:08 - INFO -      - Best CV Score: 0.9122689075630251
+
+06/08 14:27:08 - INFO - >>> lgr Modle Validation Results -- Accuracy: 0.842 / Precision: 0.833 / Recall: 0.8 / Latency: 2.0s
+06/08 14:27:08 - INFO - >>> svm Modle Validation Results -- Accuracy: 0.842 / Precision: 0.808 / Recall: 0.84 / Latency: 3.0s
+06/08 14:27:08 - INFO - >>> mlp Modle Validation Results -- Accuracy: 0.561 / Precision: 0.0 / Recall: 0.0 / Latency: 4.0s
+06/08 14:27:08 - INFO - >>> rf Modle Validation Results -- Accuracy: 0.877 / Precision: 0.821 / Recall: 0.92 / Latency: 12.0s
+06/08 14:27:08 - INFO - >>> ada Modle Validation Results -- Accuracy: 0.86 / Precision: 0.84 / Recall: 0.84 / Latency: 18.0s
+06/08 14:27:08 - INFO - >>> gb Modle Validation Results -- Accuracy: 0.842 / Precision: 0.833 / Recall: 0.8 / Latency: 4.0s
+06/08 14:27:08 - INFO - >>> xgb Modle Validation Results -- Accuracy: 0.86 / Precision: 0.815 / Recall: 0.88 / Latency: 3.0s
+06/08 14:27:08 - INFO - Total executed 0.3997 minutes
+06/08 14:27:08 - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+06/08 14:27:08 - INFO - Current Running Preprocessed Dataset No. 3:
+06/08 14:27:08 - INFO - [Features Before autoFS]: 
+06/08 14:27:08 - INFO - ['Size_3', 'area_mean', 'compactness_mean', 'concave points_mean', 'concavity_mean', 'fractal_dimension_mean', 'perimeter_mean', 'radius_mean', 'smoothness_mean', 'symmetry_mean', 'texture_mean', 'onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79', 'Label_Position_1', 'onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up', 'Frequency_Size_1', 'onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11', 'Label_Treatment', 'Label_Type_1', 'onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes', 'Label_Type_3']
+06/08 14:27:11 - INFO - [Results Report]:
+06/08 14:27:11 - INFO - >>> autoFS summary - This dataset has the top 5 important features: ['area_mean', 'concave points_mean', 'concavity_mean', 'perimeter_mean', 'smoothness_mean'].
+06/08 14:27:13 - INFO - >>> autoCV summary - lgr model CrossValidation with 5 folds:
+06/08 14:27:13 - INFO -      - Best Paramaters: {'C': 1000, 'random_state': 13}
+
+06/08 14:27:13 - INFO -      - Best CV Score: 0.9126050420168067
+
+06/08 14:27:13 - INFO - >>> autoCV summary - svm model CrossValidation with 5 folds:
+06/08 14:27:13 - INFO -      - Best Paramaters: {'C': 0.1, 'kernel': 'linear'}
+
+06/08 14:27:13 - INFO -      - Best CV Score: 0.9067226890756303
+
+06/08 14:27:13 - INFO - >>> autoCV summary - mlp model CrossValidation with 5 folds:
+06/08 14:27:13 - INFO -      - Best Paramaters: {'activation': 'relu', 'hidden_layer_sizes': (10,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'sgd'}
+
+06/08 14:27:13 - INFO -      - Best CV Score: 0.8831932773109242
+
+06/08 14:27:13 - INFO - >>> autoCV summary - rf model CrossValidation with 5 folds:
+06/08 14:27:13 - INFO -      - Best Paramaters: {'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:13 - INFO -      - Best CV Score: 0.9240336134453783
+
+06/08 14:27:13 - INFO - >>> autoCV summary - ada model CrossValidation with 5 folds:
+06/08 14:27:13 - INFO -      - Best Paramaters: {'learning_rate': 1, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:13 - INFO -      - Best CV Score: 0.8712605042016806
+
+06/08 14:27:13 - INFO - >>> autoCV summary - gb model CrossValidation with 5 folds:
+06/08 14:27:13 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:13 - INFO -      - Best CV Score: 0.8947899159663866
+
+06/08 14:27:13 - INFO - >>> autoCV summary - xgb model CrossValidation with 5 folds:
+06/08 14:27:13 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:13 - INFO -      - Best CV Score: 0.9122689075630251
+
+06/08 14:27:13 - INFO - >>> lgr Modle Validation Results -- Accuracy: 0.825 / Precision: 0.778 / Recall: 0.84 / Latency: 3.0s
+06/08 14:27:13 - INFO - >>> svm Modle Validation Results -- Accuracy: 0.912 / Precision: 0.917 / Recall: 0.88 / Latency: 4.0s
+06/08 14:27:13 - INFO - >>> mlp Modle Validation Results -- Accuracy: 0.86 / Precision: 0.905 / Recall: 0.76 / Latency: 3.0s
+06/08 14:27:13 - INFO - >>> rf Modle Validation Results -- Accuracy: 0.877 / Precision: 0.821 / Recall: 0.92 / Latency: 12.0s
+06/08 14:27:13 - INFO - >>> ada Modle Validation Results -- Accuracy: 0.86 / Precision: 0.905 / Recall: 0.76 / Latency: 16.0s
+06/08 14:27:13 - INFO - >>> gb Modle Validation Results -- Accuracy: 0.807 / Precision: 0.769 / Recall: 0.8 / Latency: 3.0s
+06/08 14:27:13 - INFO - >>> xgb Modle Validation Results -- Accuracy: 0.842 / Precision: 0.808 / Recall: 0.84 / Latency: 3.0s
+06/08 14:27:13 - INFO - Total executed 0.0884 minutes
+06/08 14:27:13 - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+06/08 14:27:13 - INFO - Current Running Preprocessed Dataset No. 4:
+06/08 14:27:13 - INFO - [Features Before autoFS]: 
+06/08 14:27:13 - INFO - ['Size_3', 'area_mean', 'compactness_mean', 'concave points_mean', 'concavity_mean', 'fractal_dimension_mean', 'perimeter_mean', 'radius_mean', 'smoothness_mean', 'symmetry_mean', 'texture_mean', 'onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79', 'Label_Position_1', 'onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up', 'Mean_Size_1', 'onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11', 'Label_Treatment', 'onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno', 'onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes', 'Label_Type_3']
+06/08 14:27:34 - INFO - [Results Report]:
+06/08 14:27:34 - INFO - >>> autoFS summary - This dataset has the top 5 important features: ['concavity_mean', 'area_mean', 'radius_mean', 'concave points_mean', 'perimeter_mean'].
+06/08 14:27:37 - INFO - >>> autoCV summary - lgr model CrossValidation with 5 folds:
+06/08 14:27:37 - INFO -      - Best Paramaters: {'C': 10, 'random_state': 13}
+
+06/08 14:27:37 - INFO -      - Best CV Score: 0.9065546218487395
+
+06/08 14:27:37 - INFO - >>> autoCV summary - svm model CrossValidation with 5 folds:
+06/08 14:27:37 - INFO -      - Best Paramaters: {'C': 0.1, 'kernel': 'linear'}
+
+06/08 14:27:37 - INFO -      - Best CV Score: 0.8712605042016806
+
+06/08 14:27:37 - INFO - >>> autoCV summary - mlp model CrossValidation with 5 folds:
+06/08 14:27:37 - INFO -      - Best Paramaters: {'activation': 'relu', 'hidden_layer_sizes': (10,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'sgd'}
+
+06/08 14:27:37 - INFO -      - Best CV Score: 0.4794957983193278
+
+06/08 14:27:37 - INFO - >>> autoCV summary - rf model CrossValidation with 5 folds:
+06/08 14:27:37 - INFO -      - Best Paramaters: {'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:37 - INFO -      - Best CV Score: 0.9122689075630254
+
+06/08 14:27:37 - INFO - >>> autoCV summary - ada model CrossValidation with 5 folds:
+06/08 14:27:37 - INFO -      - Best Paramaters: {'learning_rate': 1, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:37 - INFO -      - Best CV Score: 0.8769747899159663
+
+06/08 14:27:37 - INFO - >>> autoCV summary - gb model CrossValidation with 5 folds:
+06/08 14:27:37 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:37 - INFO -      - Best CV Score: 0.8769747899159664
+
+06/08 14:27:37 - INFO - >>> autoCV summary - xgb model CrossValidation with 5 folds:
+06/08 14:27:37 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:37 - INFO -      - Best CV Score: 0.917983193277311
+
+06/08 14:27:37 - INFO - >>> lgr Modle Validation Results -- Accuracy: 0.842 / Precision: 0.833 / Recall: 0.8 / Latency: 2.8s
+06/08 14:27:37 - INFO - >>> svm Modle Validation Results -- Accuracy: 0.842 / Precision: 0.808 / Recall: 0.84 / Latency: 3.0s
+06/08 14:27:37 - INFO - >>> mlp Modle Validation Results -- Accuracy: 0.561 / Precision: 0.0 / Recall: 0.0 / Latency: 3.0s
+06/08 14:27:37 - INFO - >>> rf Modle Validation Results -- Accuracy: 0.877 / Precision: 0.821 / Recall: 0.92 / Latency: 12.0s
+06/08 14:27:37 - INFO - >>> ada Modle Validation Results -- Accuracy: 0.86 / Precision: 0.84 / Recall: 0.84 / Latency: 16.0s
+06/08 14:27:37 - INFO - >>> gb Modle Validation Results -- Accuracy: 0.842 / Precision: 0.833 / Recall: 0.8 / Latency: 3.0s
+06/08 14:27:37 - INFO - >>> xgb Modle Validation Results -- Accuracy: 0.86 / Precision: 0.815 / Recall: 0.88 / Latency: 3.0s
+06/08 14:27:37 - INFO - Total executed 0.4007 minutes
+06/08 14:27:37 - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+06/08 14:27:37 - INFO - Current Running Preprocessed Dataset No. 5:
+06/08 14:27:37 - INFO - [Features Before autoFS]: 
+06/08 14:27:37 - INFO - ['Size_3', 'area_mean', 'compactness_mean', 'concave points_mean', 'concavity_mean', 'fractal_dimension_mean', 'perimeter_mean', 'radius_mean', 'smoothness_mean', 'symmetry_mean', 'texture_mean', 'onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79', 'Label_Position_1', 'onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up', 'Mean_Size_1', 'onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11', 'Label_Treatment', 'onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno', 'onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes', 'Label_Type_3']
+06/08 14:27:41 - INFO - [Results Report]:
+06/08 14:27:41 - INFO - >>> autoFS summary - This dataset has the top 5 important features: ['concavity_mean', 'perimeter_mean', 'area_mean', 'concave points_mean', 'radius_mean'].
+06/08 14:27:43 - INFO - >>> autoCV summary - lgr model CrossValidation with 5 folds:
+06/08 14:27:43 - INFO -      - Best Paramaters: {'C': 0.1, 'random_state': 13}
+
+06/08 14:27:43 - INFO -      - Best CV Score: 0.9122689075630251
+
+06/08 14:27:43 - INFO - >>> autoCV summary - svm model CrossValidation with 5 folds:
+06/08 14:27:43 - INFO -      - Best Paramaters: {'C': 0.1, 'kernel': 'linear'}
+
+06/08 14:27:43 - INFO -      - Best CV Score: 0.9008403361344538
+
+06/08 14:27:43 - INFO - >>> autoCV summary - mlp model CrossValidation with 5 folds:
+06/08 14:27:43 - INFO -      - Best Paramaters: {'activation': 'relu', 'hidden_layer_sizes': (10,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'sgd'}
+
+06/08 14:27:43 - INFO -      - Best CV Score: 0.8949579831932774
+
+06/08 14:27:43 - INFO - >>> autoCV summary - rf model CrossValidation with 5 folds:
+06/08 14:27:43 - INFO -      - Best Paramaters: {'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:43 - INFO -      - Best CV Score: 0.9122689075630254
+
+06/08 14:27:43 - INFO - >>> autoCV summary - ada model CrossValidation with 5 folds:
+06/08 14:27:43 - INFO -      - Best Paramaters: {'learning_rate': 1, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:43 - INFO -      - Best CV Score: 0.8769747899159663
+
+06/08 14:27:43 - INFO - >>> autoCV summary - gb model CrossValidation with 5 folds:
+06/08 14:27:43 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:43 - INFO -      - Best CV Score: 0.8769747899159664
+
+06/08 14:27:43 - INFO - >>> autoCV summary - xgb model CrossValidation with 5 folds:
+06/08 14:27:43 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:27:43 - INFO -      - Best CV Score: 0.9122689075630251
+
+06/08 14:27:43 - INFO - >>> lgr Modle Validation Results -- Accuracy: 0.842 / Precision: 0.864 / Recall: 0.76 / Latency: 3.0s
+06/08 14:27:43 - INFO - >>> svm Modle Validation Results -- Accuracy: 0.877 / Precision: 0.875 / Recall: 0.84 / Latency: 3.0s
+06/08 14:27:43 - INFO - >>> mlp Modle Validation Results -- Accuracy: 0.877 / Precision: 0.95 / Recall: 0.76 / Latency: 3.0s
+06/08 14:27:43 - INFO - >>> rf Modle Validation Results -- Accuracy: 0.877 / Precision: 0.821 / Recall: 0.92 / Latency: 11.0s
+06/08 14:27:43 - INFO - >>> ada Modle Validation Results -- Accuracy: 0.86 / Precision: 0.84 / Recall: 0.84 / Latency: 17.0s
+06/08 14:27:43 - INFO - >>> gb Modle Validation Results -- Accuracy: 0.842 / Precision: 0.833 / Recall: 0.8 / Latency: 3.0s
+06/08 14:27:43 - INFO - >>> xgb Modle Validation Results -- Accuracy: 0.86 / Precision: 0.815 / Recall: 0.88 / Latency: 2.0s
+06/08 14:27:43 - INFO - Total executed 0.0976 minutes
+06/08 14:27:43 - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+06/08 14:27:43 - INFO - Current Running Preprocessed Dataset No. 6:
+06/08 14:27:43 - INFO - [Features Before autoFS]: 
+06/08 14:27:43 - INFO - ['Size_3', 'area_mean', 'compactness_mean', 'concave points_mean', 'concavity_mean', 'fractal_dimension_mean', 'perimeter_mean', 'radius_mean', 'smoothness_mean', 'symmetry_mean', 'texture_mean', 'onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79', 'Label_Position_1', 'onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up', 'Mean_Size_1', 'onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11', 'Label_Treatment', 'Label_Type_1', 'onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes', 'Label_Type_3']
+06/08 14:28:02 - INFO - [Results Report]:
+06/08 14:28:02 - INFO - >>> autoFS summary - This dataset has the top 5 important features: ['concavity_mean', 'area_mean', 'concave points_mean', 'perimeter_mean', 'radius_mean'].
+06/08 14:28:05 - INFO - >>> autoCV summary - lgr model CrossValidation with 5 folds:
+06/08 14:28:05 - INFO -      - Best Paramaters: {'C': 10, 'random_state': 13}
+
+06/08 14:28:05 - INFO -      - Best CV Score: 0.9065546218487395
+
+06/08 14:28:05 - INFO - >>> autoCV summary - svm model CrossValidation with 5 folds:
+06/08 14:28:05 - INFO -      - Best Paramaters: {'C': 0.1, 'kernel': 'linear'}
+
+06/08 14:28:05 - INFO -      - Best CV Score: 0.8712605042016806
+
+06/08 14:28:05 - INFO - >>> autoCV summary - mlp model CrossValidation with 5 folds:
+06/08 14:28:05 - INFO -      - Best Paramaters: {'activation': 'relu', 'hidden_layer_sizes': (10,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'sgd'}
+
+06/08 14:28:05 - INFO -      - Best CV Score: 0.4794957983193278
+
+06/08 14:28:05 - INFO - >>> autoCV summary - rf model CrossValidation with 5 folds:
+06/08 14:28:05 - INFO -      - Best Paramaters: {'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:28:05 - INFO -      - Best CV Score: 0.9008403361344538
+
+06/08 14:28:05 - INFO - >>> autoCV summary - ada model CrossValidation with 5 folds:
+06/08 14:28:05 - INFO -      - Best Paramaters: {'learning_rate': 1, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:28:05 - INFO -      - Best CV Score: 0.8769747899159663
+
+06/08 14:28:05 - INFO - >>> autoCV summary - gb model CrossValidation with 5 folds:
+06/08 14:28:05 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:28:05 - INFO -      - Best CV Score: 0.8769747899159664
+
+06/08 14:28:05 - INFO - >>> autoCV summary - xgb model CrossValidation with 5 folds:
+06/08 14:28:05 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:28:05 - INFO -      - Best CV Score: 0.917983193277311
+
+06/08 14:28:06 - INFO - >>> lgr Modle Validation Results -- Accuracy: 0.842 / Precision: 0.833 / Recall: 0.8 / Latency: 2.0s
+06/08 14:28:06 - INFO - >>> svm Modle Validation Results -- Accuracy: 0.842 / Precision: 0.808 / Recall: 0.84 / Latency: 3.0s
+06/08 14:28:06 - INFO - >>> mlp Modle Validation Results -- Accuracy: 0.561 / Precision: 0.0 / Recall: 0.0 / Latency: 3.0s
+06/08 14:28:06 - INFO - >>> rf Modle Validation Results -- Accuracy: 0.877 / Precision: 0.821 / Recall: 0.92 / Latency: 12.0s
+06/08 14:28:06 - INFO - >>> ada Modle Validation Results -- Accuracy: 0.86 / Precision: 0.84 / Recall: 0.84 / Latency: 17.9s
+06/08 14:28:06 - INFO - >>> gb Modle Validation Results -- Accuracy: 0.825 / Precision: 0.8 / Recall: 0.8 / Latency: 4.0s
+06/08 14:28:06 - INFO - >>> xgb Modle Validation Results -- Accuracy: 0.86 / Precision: 0.815 / Recall: 0.88 / Latency: 2.0s
+06/08 14:28:06 - INFO - Total executed 0.3758 minutes
+06/08 14:28:06 - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+06/08 14:28:06 - INFO - Current Running Preprocessed Dataset No. 7:
+06/08 14:28:06 - INFO - [Features Before autoFS]: 
+06/08 14:28:06 - INFO - ['Size_3', 'area_mean', 'compactness_mean', 'concave points_mean', 'concavity_mean', 'fractal_dimension_mean', 'perimeter_mean', 'radius_mean', 'smoothness_mean', 'symmetry_mean', 'texture_mean', 'onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79', 'Label_Position_1', 'onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up', 'Mean_Size_1', 'onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11', 'Label_Treatment', 'Label_Type_1', 'onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes', 'Label_Type_3']
+06/08 14:28:10 - INFO - [Results Report]:
+06/08 14:28:10 - INFO - >>> autoFS summary - This dataset has the top 5 important features: ['concavity_mean', 'perimeter_mean', 'texture_mean', 'area_mean', 'concave points_mean'].
+06/08 14:28:12 - INFO - >>> autoCV summary - lgr model CrossValidation with 5 folds:
+06/08 14:28:12 - INFO -      - Best Paramaters: {'C': 0.1, 'random_state': 13}
+
+06/08 14:28:12 - INFO -      - Best CV Score: 0.9415126050420168
+
+06/08 14:28:12 - INFO - >>> autoCV summary - svm model CrossValidation with 5 folds:
+06/08 14:28:12 - INFO -      - Best Paramaters: {'C': 0.1, 'kernel': 'linear'}
+
+06/08 14:28:12 - INFO -      - Best CV Score: 0.9356302521008404
+
+06/08 14:28:12 - INFO - >>> autoCV summary - mlp model CrossValidation with 5 folds:
+06/08 14:28:12 - INFO -      - Best Paramaters: {'activation': 'relu', 'hidden_layer_sizes': (10,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'sgd'}
+
+06/08 14:28:12 - INFO -      - Best CV Score: 0.900672268907563
+
+06/08 14:28:12 - INFO - >>> autoCV summary - rf model CrossValidation with 5 folds:
+06/08 14:28:12 - INFO -      - Best Paramaters: {'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:28:12 - INFO -      - Best CV Score: 0.917983193277311
+
+06/08 14:28:12 - INFO - >>> autoCV summary - ada model CrossValidation with 5 folds:
+06/08 14:28:12 - INFO -      - Best Paramaters: {'learning_rate': 1, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:28:12 - INFO -      - Best CV Score: 0.9178151260504201
+
+06/08 14:28:12 - INFO - >>> autoCV summary - gb model CrossValidation with 5 folds:
+06/08 14:28:12 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:28:12 - INFO -      - Best CV Score: 0.9240336134453783
+
+06/08 14:28:12 - INFO - >>> autoCV summary - xgb model CrossValidation with 5 folds:
+06/08 14:28:12 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+06/08 14:28:12 - INFO -      - Best CV Score: 0.9356302521008404
+
+06/08 14:28:12 - INFO - >>> lgr Modle Validation Results -- Accuracy: 0.895 / Precision: 0.913 / Recall: 0.84 / Latency: 3.0s
+06/08 14:28:12 - INFO - >>> svm Modle Validation Results -- Accuracy: 0.895 / Precision: 0.913 / Recall: 0.84 / Latency: 3.0s
+06/08 14:28:12 - INFO - >>> mlp Modle Validation Results -- Accuracy: 0.86 / Precision: 0.905 / Recall: 0.76 / Latency: 4.0s
+06/08 14:28:12 - INFO - >>> rf Modle Validation Results -- Accuracy: 0.877 / Precision: 0.821 / Recall: 0.92 / Latency: 13.0s
+06/08 14:28:12 - INFO - >>> ada Modle Validation Results -- Accuracy: 0.895 / Precision: 0.913 / Recall: 0.84 / Latency: 17.0s
+06/08 14:28:12 - INFO - >>> gb Modle Validation Results -- Accuracy: 0.895 / Precision: 0.913 / Recall: 0.84 / Latency: 3.0s
+06/08 14:28:12 - INFO - >>> xgb Modle Validation Results -- Accuracy: 0.912 / Precision: 0.955 / Recall: 0.84 / Latency: 3.0s
+06/08 14:28:12 - INFO - Total executed 0.1059 minutes
+06/08 14:28:12 - INFO - ##################################################################################################################################################################################################################
+06/08 14:28:12 - INFO - The top 5 Models with Best Performance Metrics:
+06/08 14:28:12 - INFO -       Dataset Model_Name  \
+1   Dataset_0  svm         
+6   Dataset_0  xgb         
+55  Dataset_7  xgb         
+8   Dataset_1  svm         
+22  Dataset_3  svm         
+
+                                                                         Best_Parameters  \
+1   [('C', 0.1), ('kernel', 'linear')]                                                     
+6   [('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]   
+55  [('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]   
+8   [('C', 0.1), ('kernel', 'linear')]                                                     
+22  [('C', 0.1), ('kernel', 'linear')]                                                     
+
+    Accuracy  Precision  Recall  Latency  
+1   0.930     0.889      0.96    3.0      
+6   0.912     0.955      0.84    2.4      
+55  0.912     0.955      0.84    3.0      
+8   0.912     0.917      0.88    2.0      
+22  0.912     0.917      0.88    4.0      
