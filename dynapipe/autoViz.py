@@ -18,7 +18,7 @@ class autoViz:
     Example
     -------
     
-    .. [Example] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#pipeline-cluster-traversal-experiments-model-retrieval-diagram-using-autoviz
+    .. [Example]: 
     
     References
     ----------
@@ -52,23 +52,61 @@ class autoViz:
             row_pp = [i]
             s = self.DICT_PREPROCESSING[i]
             ext = re.search("Encoded Features:(.*)']", s).group(1)
-            if "onehot_" in ext:
-                row_pp.append('Low Dim_onehot')
-            elif "label_" in ext:
-                row_pp.append('Low Dim_label')
-            else:
-                row_pp.append('Low Dim_No Encoder')
-
-            if "frequency_" in ext:
-                row_pp.append('High Dim_frequency')
-            elif "mean_" in ext:
-                row_pp.append('High Dim_mean')
-            else:
+            
+            if ("onehot_" in ext) and ("Frequency_" in ext):
+                row_pp.append('Low Dim_Onehot')
+                row_pp.append('High Dim_Frequency')
+                row_pp.append(re.search('winsor_(.*)-Scaler', s).group(1))
+                row_pp.append(re.search('-Scaler_(.*)-- ', s).group(1))
+                df_pp.loc[len(df_pp)] = row_pp
+            elif ("onehot_" in ext) and ("Mean_" in ext):
+                row_pp.append('Low Dim_Onehot')
+                row_pp.append('High Dim_Mean')
+                row_pp.append(re.search('winsor_(.*)-Scaler', s).group(1))
+                row_pp.append(re.search('-Scaler_(.*)-- ', s).group(1))
+                df_pp.loc[len(df_pp)] = row_pp
+            elif ("onehot_" in ext) and ("Mean_" not in ext) and ("Frequency_" not in ext):
+                row_pp.append('Low Dim_Onehot')
                 row_pp.append('High Dim_No Encoder')
-
-            row_pp.append(re.search('winsor_(.*)-Scaler', s).group(1))
-            row_pp.append(re.search('-Scaler_(.*)-- ', s).group(1))
-            df_pp.loc[len(df_pp)] = row_pp
+                row_pp.append(re.search('winsor_(.*)-Scaler', s).group(1))
+                row_pp.append(re.search('-Scaler_(.*)-- ', s).group(1))
+                df_pp.loc[len(df_pp)] = row_pp
+            elif ("Label_" in ext) and ("Frequency_" in ext):
+                row_pp.append('Low Dim_Label')
+                row_pp.append('High Dim_Frequency')
+                row_pp.append(re.search('winsor_(.*)-Scaler', s).group(1))
+                row_pp.append(re.search('-Scaler_(.*)-- ', s).group(1))
+                df_pp.loc[len(df_pp)] = row_pp
+            elif ("Label_" in ext) and ("Mean_" in ext):
+                row_pp.append('Low Dim_Label')
+                row_pp.append('High Dim_Mean')
+                row_pp.append(re.search('winsor_(.*)-Scaler', s).group(1))
+                row_pp.append(re.search('-Scaler_(.*)-- ', s).group(1))
+                df_pp.loc[len(df_pp)] = row_pp
+            elif ("Label_" in ext) and ("Mean_" not in ext) and ("Frequency_" not in ext):
+                row_pp.append('Low Dim_Label')
+                row_pp.append('High Dim_No Encoder')
+                row_pp.append(re.search('winsor_(.*)-Scaler', s).group(1))
+                row_pp.append(re.search('-Scaler_(.*)-- ', s).group(1))
+                df_pp.loc[len(df_pp)] = row_pp
+            elif ("Frequency_" in ext) and ("onehot_" not in ext) and ("Label_" not in ext):
+                row_pp.append('Low Dim_No Encoder')
+                row_pp.append('High Dim_Frequency')
+                row_pp.append(re.search('winsor_(.*)-Scaler', s).group(1))
+                row_pp.append(re.search('-Scaler_(.*)-- ', s).group(1))
+                df_pp.loc[len(df_pp)] = row_pp    
+            elif ("Mean_" in ext) and ("onehot_" not in ext) and ("Label_" not in ext):
+                row_pp.append('Low Dim_No Encoder')
+                row_pp.append('High Dim_Mean')
+                row_pp.append(re.search('winsor_(.*)-Scaler', s).group(1))
+                row_pp.append(re.search('-Scaler_(.*)-- ', s).group(1))
+                df_pp.loc[len(df_pp)] = row_pp    
+            elif ("Frequency_" not in ext) and ("Mean_" not in ext) and ("onehot_" not in ext) and ("Label_" not in ext):
+                row_pp.append('Low Dim_No Encoder')
+                row_pp.append('High Dim_No Encoder')
+                row_pp.append(re.search('winsor_(.*)-Scaler', s).group(1))
+                row_pp.append(re.search('-Scaler_(.*)-- ', s).group(1))
+                df_pp.loc[len(df_pp)] = row_pp 
 
         if metrics == "accuracy":
             df_report_Accuracy = df_pp.merge(self.dyna_report[['Dataset','Accuracy']], how = 'left', on = 'Dataset')
