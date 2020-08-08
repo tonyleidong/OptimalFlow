@@ -10,10 +10,10 @@ class autoViz:
     Parameters
     ----------
     preprocess_dict : dict, default = None
-        Value in ["reg","cls"]. The "reg" for regression problem, and "cls" for classification problem.
+        1st output result (DICT_PREPROCESS) of autoPipe module.
 
     report : df, default = None
-        Should be set to "True" when using autoPipe module to build Pipeline Cluster Traveral Experiments.
+        4th output result (dyna_report) of autoPipe module.
 
     Example
     -------
@@ -67,7 +67,7 @@ class autoViz:
                 row_pp.append('High Dim_No Encoder')
 
             row_pp.append(re.search('winsor_(.*)-Scaler', s).group(1))
-            row_pp.append(re.search('winsor_0-Scaler_(.*)-- ', s).group(1))
+            row_pp.append(re.search('-Scaler_(.*)-- ', s).group(1))
             df_pp.loc[len(df_pp)] = row_pp
 
         if metrics == "accuracy":

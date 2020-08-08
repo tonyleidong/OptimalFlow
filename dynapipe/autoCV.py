@@ -56,51 +56,12 @@ def print_results(results,in_pipeline = False):
         logger.info('{} (+/-{}) for {}'.format(round(mean, 3), round(std * 2, 3), params))
 
 class evaluate_model:
-    """This class implements model evaluation and return key score results.
-    
-    Parameters
-    ----------
-    model_type : str, default = None
-        Value in ["reg","cls"]. The "reg" for regression problem, and "cls" for classification problem.
-
-    in_pipeline : bool, default = False
-        Should be set to "True" when using autoPipe module to build Pipeline Cluster Traveral Experiments.
-
-    Example
-    -------
-    
-    .. [Example]: 
-    
-    References
-    ----------
-    
-    """
     def __init__(self,model_type = None, in_pipeline = False):
         self.model_type = model_type
         self.in_pipeline = in_pipeline
         optimal_scores = []
 
     def fit(self,name = None, model = None, features = None, labels = None):
-        """Model evaluation with all models by the validate datasets.
-        
-        Parameters
-        ----------
-        name : str, default = None
-            Estimator name.
-        model : pkl, default = None
-            Model needs to evaluate. Needs pkl file as input when in_pipeline = "False"; otherwise, should use DICT_EST[estimator name] as the input here.
-        features : df, default = None
-            Validate features columns. ( NOTE: In the Pipeline Cluster Traversal Experiments, the features columns should be from the same pipeline dataset).
-        labels : df ,default = None
-            Validate label column. 
-            ( NOTE: In the Pipeline Cluster Traversal Experiments, the label column should be from the same pipeline dataset).        
-        Returns
-        -------
-        optimal_scores : list
-            When model_type = "cls", will return [name,accuracy,precision,recall,latency] info of model validation results.
-            when model_type = "reg", will return [name,R-squared,MAE,MSE,RMSE,latency] info of model validation results.
-            
-        """
         if (self.model_type == "cls"):
             start = time()
             pred = model.predict(features)
@@ -133,30 +94,6 @@ class evaluate_model:
         return(optimal_scores)
 
 class dynaClassifier:
-    """This class implements classification model selection with hyperparameters grid search and cross-validation.
-    
-    Parameters
-    ----------
-    random_state : int, default = None
-        Random state value.
-    
-    cv : int, default = None
-        # of folds for cross-validation.
-
-    in_pipeline : bool, default = False
-        Should be set to "True" when using autoPipe module to build Pipeline Cluster Traveral Experiments.
-    
-    input_from_file : bool, default = True
-        When input dataset is df, needs to set "True"; Otherwise, i.e. array, needs to set "False".
-
-    Example
-    -------
-    .. [Example] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#model-selection-for-a-classification-problem-using-autocv
-    
-    References
-    ----------
-    None
-    """
     def __init__(self,random_state = 13,cv_num = 5,in_pipeline = False, input_from_file = True):
         self.random_state =random_state
         self.cv_num = cv_num
@@ -164,25 +101,6 @@ class dynaClassifier:
         self.in_pipeline = in_pipeline
         self.DICT_EST = {}
     def fit(self,tr_features = None,tr_labels = None):
-        """Fit and train datasets with classification hyperparameters GridSearch and CV across multiple estimators. Module will Auto save trained model as {estimator_name}_clf_model.pkl file to ./pkl folder.
-        Parameters
-        ----------
-
-        features : df, default = None
-            Train features columns. ( NOTE: In the Pipeline Cluster Traversal Experiments, the features columns should be from the same pipeline dataset).
-        labels : df ,default = None
-            Train label column. 
-            ( NOTE: In the Pipeline Cluster Traversal Experiments, the label column should be from the same pipeline dataset).        
-        Returns
-        -------
-            cv_num : int
-                # of fold for cross-validation.
-            DICT_EST : dictionary
-                key is the name of estimators, value is the ralated trained model
-            
-            NOTE - Trained model auto save function only avalable when in_pipeline = "False".
-            NOTE - Log records will generate and save to ./logs folder automatedly.
-        """
         warnings.warn = warn
         if(self.input_from_file):
             tr_labels = tr_labels.values.ravel()
@@ -223,30 +141,6 @@ class dynaClassifier:
                 pass
         return(self.cv_num,self.DICT_EST)
 class dynaRegressor:
-    """This class implements regression model selection with with hyperparameters grid search and cross-validation. Module will Auto save trained model as {estimator_name}_reg_model.pkl file to ./pkl folder.
-    
-    Parameters
-    ----------
-    random_state : int, default = None
-        Random state value.
-    
-    cv : int, default = None
-        # of folds for cross-validation.
-
-    in_pipeline : bool, default = False
-        Should be set to "True" when using autoPipe module to build Pipeline Cluster Traveral Experiments.
-    
-    input_from_file : bool, default = True
-        When input dataset is df, needs to set "True"; Otherwise, i.e. array, needs to set "False".
-
-    Example
-    -------
-    .. [Example]
-    
-    References
-    ----------
-    None
-    """
     def __init__(self ,random_state = 25 ,cv_num = 5,in_pipeline = False, input_from_file = True):
         self.random_state =random_state
         self.cv_num = cv_num
@@ -255,30 +149,11 @@ class dynaRegressor:
         self.DICT_EST = {}
 
     def fit(self,tr_features = None,tr_labels = None):
-        """Fit and train datasets with regression hyperparameters GridSearch and CV across multiple estimators.
         
-        Parameters
-        ----------
-
-        features : df, default = None
-            Train features columns. ( NOTE: In the Pipeline Cluster Traversal Experiments, the features columns should be from the same pipeline dataset).
-        labels : df ,default = None
-            Train label column. 
-            ( NOTE: In the Pipeline Cluster Traversal Experiments, the label column should be from the same pipeline dataset).        
-        Returns
-        -------
-            cv_num : int
-                # of fold for cross-validation.
-            DICT_EST : dictionary
-                key is the name of estimators, value is the ralated trained model.
-
-            NOTE - Trained model auto save function only avalable when in_pipeline = "False".
-            NOTE - Log records will generate and save to ./logs folder automatedly.
-        """
         if(self.input_from_file):
             tr_labels = tr_labels.values.ravel()
         reg = reg_cv(cv_val = self.cv_num,random_state = self.random_state)
-        estimators = ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb']
+        estimators = ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd']
         if (not self.in_pipeline):
             pkl_folder = os.path.join(os.getcwd(),'pkl')
             if not os.path.exists(pkl_folder):

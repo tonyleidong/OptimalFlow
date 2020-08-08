@@ -2,6 +2,12 @@
 History
 ===========
 
+0.2.2 (2020-8-7)
+------------------
+* Add estimators: HuberRegressor, RidgeCV, LassoCV, SGDRegressor, and HistGradientBoostingRegressor
+* Modify parameters.json, and reset_parameters.json for the added estimators
+* Add autoViz for classification problem model retrieval diagram
+
 0.2.1 (2020-7-31)
 ------------------
 

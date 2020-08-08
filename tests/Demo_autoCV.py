@@ -54,9 +54,12 @@
 #         print(f"Failed to load the {mdl}.")
 
 # # Regression Demo 2
-# import pandas as pd
+import pandas as pd
 from dynapipe.autoCV import evaluate_model,dynaClassifier,dynaRegressor
 import joblib
+
+from dynapipe.utilis_func import pipeline_splitting_rule, update_parameters,reset_parameters
+reset_parameters()
 
 tr_features = pd.read_csv('./data/regression/train_features.csv')
 tr_labels = pd.read_csv('./data/regression/train_labels.csv')
@@ -71,7 +74,7 @@ reg_cv_demo.fit(tr_features,tr_labels)
 
 models = {}
 
-for mdl in ['extratrees','nsvr','hgboost','bagging','huber','lsvr','rgcv','bayesrg','cvlasso','elastic','sgd']:
+for mdl in ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd']:
     models[mdl] = joblib.load('./pkl/{}_reg_model.pkl'.format(mdl))
 
 for name, mdl in models.items():

@@ -1,0 +1,645 @@
+Dataset,Model_Name,Best_Parameters,Accuracy,Precision,Recall,Latency
+Dataset_33,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.93,0.957,0.88,3.0
+Dataset_75,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.93,0.957,0.88,15.0
+Dataset_4,lgr,"[('C', 100), ('random_state', 13)]",0.93,0.92,0.92,2.0
+Dataset_0,svm,"[('C', 0.1), ('kernel', 'linear')]",0.93,0.889,0.96,2.0
+Dataset_46,svm,"[('C', 0.1), ('kernel', 'linear')]",0.93,0.889,0.96,2.0
+Dataset_80,svm,"[('C', 0.1), ('kernel', 'linear')]",0.93,0.889,0.96,2.0
+Dataset_64,svm,"[('C', 0.1), ('kernel', 'linear')]",0.93,0.889,0.96,2.5
+Dataset_14,svm,"[('C', 0.1), ('kernel', 'linear')]",0.93,0.889,0.96,3.0
+Dataset_20,svm,"[('C', 0.1), ('kernel', 'linear')]",0.93,0.889,0.96,3.0
+Dataset_22,svm,"[('C', 0.1), ('kernel', 'linear')]",0.93,0.889,0.96,3.0
+Dataset_28,svm,"[('C', 0.1), ('kernel', 'linear')]",0.93,0.889,0.96,3.0
+Dataset_54,svm,"[('C', 0.1), ('kernel', 'linear')]",0.93,0.889,0.96,3.0
+Dataset_62,svm,"[('C', 0.1), ('kernel', 'linear')]",0.93,0.889,0.96,3.0
+Dataset_74,svm,"[('C', 0.1), ('kernel', 'linear')]",0.93,0.889,0.96,3.0
+Dataset_82,svm,"[('C', 0.1), ('kernel', 'linear')]",0.93,0.889,0.96,3.0
+Dataset_54,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,1.0
+Dataset_0,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_3,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_7,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_15,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_17,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_25,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_28,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_29,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_37,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_41,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_46,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_55,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_61,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_62,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_63,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_64,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_71,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_73,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_74,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_75,lgr,"[('C', 1), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_75,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_76,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_80,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_82,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_83,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_89,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,2.0
+Dataset_10,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_13,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_19,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_20,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_22,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_31,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_33,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.955,0.84,3.0
+Dataset_33,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_39,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_47,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_51,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_65,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_67,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_69,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_75,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.955,0.84,3.0
+Dataset_91,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,3.0
+Dataset_14,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,4.0
+Dataset_23,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,4.0
+Dataset_53,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,4.0
+Dataset_5,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.955,0.84,8.0
+Dataset_9,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,2.0
+Dataset_21,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,2.0
+Dataset_34,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.917,0.88,2.0
+Dataset_35,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.917,0.88,2.0
+Dataset_43,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,2.0
+Dataset_59,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,2.0
+Dataset_77,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,2.0
+Dataset_79,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,2.0
+Dataset_81,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,2.5
+Dataset_1,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,3.0
+Dataset_11,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,3.0
+Dataset_30,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.917,0.88,3.0
+Dataset_35,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.917,0.88,3.0
+Dataset_44,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.917,0.88,3.0
+Dataset_45,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,3.0
+Dataset_49,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,3.0
+Dataset_57,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,3.0
+Dataset_85,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,3.0
+Dataset_86,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.912,0.917,0.88,3.0
+Dataset_87,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,3.0
+Dataset_27,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.917,0.88,4.0
+Dataset_4,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.912,0.917,0.88,18.0
+Dataset_10,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.885,0.92,3.0
+Dataset_30,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.885,0.92,3.0
+Dataset_34,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.885,0.92,3.0
+Dataset_44,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.885,0.92,3.0
+Dataset_76,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.885,0.92,3.0
+Dataset_86,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.885,0.92,3.0
+Dataset_4,svm,"[('C', 0.1), ('kernel', 'linear')]",0.912,0.885,0.92,4.0
+Dataset_3,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.895,0.952,0.8,3.0
+Dataset_5,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.895,0.952,0.8,3.0
+Dataset_23,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.895,0.952,0.8,3.0
+Dataset_25,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.895,0.952,0.8,3.0
+Dataset_29,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.895,0.952,0.8,3.0
+Dataset_69,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.895,0.952,0.8,3.0
+Dataset_85,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.895,0.952,0.8,3.0
+Dataset_15,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.895,0.952,0.8,4.0
+Dataset_39,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,1.0
+Dataset_15,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,2.0
+Dataset_15,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,2.0
+Dataset_25,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,2.0
+Dataset_28,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,2.0
+Dataset_29,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,2.0
+Dataset_35,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,2.0
+Dataset_41,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,2.0
+Dataset_47,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,2.0
+Dataset_51,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,2.0
+Dataset_53,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,2.0
+Dataset_55,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,2.0
+Dataset_61,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,2.0
+Dataset_61,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,2.0
+Dataset_63,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,2.0
+Dataset_67,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,2.0
+Dataset_71,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,2.0
+Dataset_83,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,2.0
+Dataset_31,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,2.5
+Dataset_0,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_3,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_3,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_3,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_4,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_5,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_5,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_7,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_7,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_7,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_13,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_13,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_14,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_15,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_17,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_17,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_19,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_19,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_19,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_20,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_22,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_25,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_29,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_29,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_31,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_31,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_33,lgr,"[('C', 1000), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_34,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_35,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_37,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_37,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_37,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_39,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_39,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_41,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_41,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_46,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_47,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_47,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_51,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_51,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_53,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_53,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_54,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_55,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_55,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_61,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_62,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_63,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_63,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_64,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_65,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_65,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_67,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_67,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_69,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_69,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_69,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_71,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_71,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_73,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_73,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_73,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.895,0.913,0.84,3.0
+Dataset_73,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_74,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_75,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_76,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_80,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_82,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_83,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_83,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_86,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_89,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_89,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_89,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_91,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,3.0
+Dataset_91,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.895,0.913,0.84,3.0
+Dataset_91,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,3.0
+Dataset_5,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,4.0
+Dataset_10,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,4.0
+Dataset_13,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,4.0
+Dataset_23,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,4.0
+Dataset_25,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,4.0
+Dataset_65,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,4.0
+Dataset_91,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,4.0
+Dataset_30,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,5.0
+Dataset_44,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,5.5
+Dataset_17,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,6.0
+Dataset_23,lgr,"[('C', 0.1), ('random_state', 13)]",0.895,0.913,0.84,8.0
+Dataset_23,svm,"[('C', 0.1), ('kernel', 'linear')]",0.895,0.913,0.84,12.0
+Dataset_46,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,13.5
+Dataset_22,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,15.0
+Dataset_51,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,15.0
+Dataset_89,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,15.0
+Dataset_17,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,15.5
+Dataset_0,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,16.0
+Dataset_3,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,16.0
+Dataset_5,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,16.0
+Dataset_7,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,16.0
+Dataset_10,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,16.0
+Dataset_37,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,16.0
+Dataset_41,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,16.0
+Dataset_47,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,16.0
+Dataset_55,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,16.0
+Dataset_62,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,16.0
+Dataset_63,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,16.0
+Dataset_73,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,16.0
+Dataset_80,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,16.0
+Dataset_20,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,17.0
+Dataset_53,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,17.0
+Dataset_54,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,17.0
+Dataset_61,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,17.0
+Dataset_67,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,17.0
+Dataset_71,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,17.0
+Dataset_74,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,17.0
+Dataset_76,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,17.0
+Dataset_82,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,17.0
+Dataset_83,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,17.0
+Dataset_91,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,17.0
+Dataset_14,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,18.0
+Dataset_15,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,18.0
+Dataset_19,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,18.0
+Dataset_29,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,18.0
+Dataset_64,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,18.0
+Dataset_65,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,18.0
+Dataset_69,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,18.0
+Dataset_25,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,18.9
+Dataset_28,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,18.9
+Dataset_31,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,18.9
+Dataset_13,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,19.9
+Dataset_39,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,19.9
+Dataset_23,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.895,0.913,0.84,29.9
+Dataset_30,lgr,"[('C', 1000), ('random_state', 13)]",0.895,0.88,0.88,3.0
+Dataset_34,lgr,"[('C', 1000), ('random_state', 13)]",0.895,0.88,0.88,3.0
+Dataset_44,lgr,"[('C', 1000), ('random_state', 13)]",0.895,0.88,0.88,3.0
+Dataset_86,lgr,"[('C', 1000), ('random_state', 13)]",0.895,0.88,0.88,3.0
+Dataset_3,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.852,0.92,11.0
+Dataset_5,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.852,0.92,11.0
+Dataset_15,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.852,0.92,11.0
+Dataset_29,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.852,0.92,11.0
+Dataset_53,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.852,0.92,11.0
+Dataset_63,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.852,0.92,11.0
+Dataset_65,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.852,0.92,11.0
+Dataset_25,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.852,0.92,12.0
+Dataset_33,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.852,0.92,12.0
+Dataset_39,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.852,0.92,12.0
+Dataset_21,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.895,0.852,0.92,23.0
+Dataset_57,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.877,0.95,0.76,3.0
+Dataset_87,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.877,0.95,0.76,3.0
+Dataset_43,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.877,0.95,0.76,4.0
+Dataset_79,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.877,0.909,0.8,2.0
+Dataset_1,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.877,0.909,0.8,3.0
+Dataset_33,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.877,0.909,0.8,3.0
+Dataset_59,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.877,0.909,0.8,3.0
+Dataset_61,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.877,0.909,0.8,3.0
+Dataset_71,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.877,0.909,0.8,3.0
+Dataset_81,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.877,0.909,0.8,3.0
+Dataset_89,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.877,0.909,0.8,3.0
+Dataset_34,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.877,0.909,0.8,15.0
+Dataset_44,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.877,0.909,0.8,16.0
+Dataset_35,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.877,0.909,0.8,17.0
+Dataset_30,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.877,0.909,0.8,18.0
+Dataset_33,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.877,0.909,0.8,18.0
+Dataset_86,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.877,0.909,0.8,18.0
+Dataset_0,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,2.0
+Dataset_10,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,2.0
+Dataset_14,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,2.0
+Dataset_20,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,2.0
+Dataset_54,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,2.0
+Dataset_22,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,3.0
+Dataset_28,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,3.0
+Dataset_46,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,3.0
+Dataset_62,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,3.0
+Dataset_63,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.877,0.875,0.84,3.0
+Dataset_64,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,3.0
+Dataset_74,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,3.0
+Dataset_76,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,3.0
+Dataset_80,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,3.0
+Dataset_82,lgr,"[('C', 1000), ('random_state', 13)]",0.877,0.875,0.84,3.0
+Dataset_35,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.875,0.84,12.0
+Dataset_75,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.875,0.84,12.0
+Dataset_4,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.846,0.88,2.0
+Dataset_30,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,9.0
+Dataset_40,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,10.0
+Dataset_0,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_2,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_6,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_7,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_8,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_9,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_10,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_11,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_16,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_17,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_31,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_38,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_41,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_42,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_43,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_45,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_46,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_48,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_49,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_50,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_51,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_52,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_54,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_55,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_56,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_57,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_58,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_59,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_60,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_61,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_69,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_71,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_73,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_77,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_78,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_79,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_80,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_81,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_83,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_85,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_87,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_88,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_90,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_91,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,11.0
+Dataset_1,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_14,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_18,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_19,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_20,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_22,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_24,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_26,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_32,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_36,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_37,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_44,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_47,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_64,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_66,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_67,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_68,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_70,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_72,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_74,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_76,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_82,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_86,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_89,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.0
+Dataset_84,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.1
+Dataset_62,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,12.5
+Dataset_27,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,13.0
+Dataset_28,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,13.0
+Dataset_34,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,14.0
+Dataset_12,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,15.0
+Dataset_13,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,15.0
+Dataset_23,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.877,0.821,0.92,24.9
+Dataset_65,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.86,0.947,0.72,3.0
+Dataset_47,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.86,0.905,0.76,2.0
+Dataset_67,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.86,0.905,0.76,2.0
+Dataset_9,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.86,0.905,0.76,3.0
+Dataset_11,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.86,0.905,0.76,3.0
+Dataset_27,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.86,0.905,0.76,3.0
+Dataset_31,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.86,0.905,0.76,3.0
+Dataset_45,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.86,0.905,0.76,3.0
+Dataset_49,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.86,0.905,0.76,3.0
+Dataset_53,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.86,0.905,0.76,3.0
+Dataset_77,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.86,0.905,0.76,3.0
+Dataset_1,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,15.0
+Dataset_9,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,16.0
+Dataset_43,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,16.0
+Dataset_45,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,16.0
+Dataset_49,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,16.0
+Dataset_85,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,16.0
+Dataset_57,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,17.0
+Dataset_59,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,17.0
+Dataset_79,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,17.0
+Dataset_81,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,17.0
+Dataset_87,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,17.0
+Dataset_77,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,17.5
+Dataset_11,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,18.0
+Dataset_21,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,18.9
+Dataset_27,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.905,0.76,20.0
+Dataset_21,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.86,0.87,0.8,3.0
+Dataset_35,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.86,0.87,0.8,3.0
+Dataset_4,rf,"[('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.87,0.8,11.0
+Dataset_40,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,14.0
+Dataset_50,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,15.0
+Dataset_2,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,16.0
+Dataset_6,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,16.0
+Dataset_8,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,16.0
+Dataset_16,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,16.0
+Dataset_18,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,16.0
+Dataset_38,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,16.0
+Dataset_42,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,16.0
+Dataset_48,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,16.0
+Dataset_56,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,16.0
+Dataset_58,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,16.0
+Dataset_60,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,16.0
+Dataset_72,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,16.0
+Dataset_78,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,16.0
+Dataset_36,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,17.0
+Dataset_52,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,17.0
+Dataset_66,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,17.0
+Dataset_68,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,17.0
+Dataset_70,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,17.0
+Dataset_84,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,17.0
+Dataset_88,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,17.0
+Dataset_90,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,17.0
+Dataset_12,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,17.9
+Dataset_24,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,18.0
+Dataset_26,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,19.9
+Dataset_32,ada,"[('learning_rate', 1), ('n_estimators', 50), ('random_state', 13)]",0.86,0.84,0.84,31.9
+Dataset_8,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_12,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_16,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_18,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_26,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_36,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_42,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_48,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_50,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_52,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_56,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_58,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_60,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_68,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_72,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_78,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_84,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_88,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_90,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,2.0
+Dataset_2,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,3.0
+Dataset_6,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,3.0
+Dataset_38,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,3.0
+Dataset_40,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,3.0
+Dataset_66,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,3.0
+Dataset_70,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,3.0
+Dataset_24,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,6.0
+Dataset_32,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.86,0.815,0.88,17.0
+Dataset_39,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.842,0.9,0.72,18.0
+Dataset_41,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.842,0.864,0.76,2.0
+Dataset_55,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.842,0.864,0.76,2.0
+Dataset_51,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.842,0.864,0.76,2.5
+Dataset_7,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.842,0.864,0.76,3.0
+Dataset_17,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.842,0.864,0.76,3.0
+Dataset_19,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.842,0.864,0.76,3.0
+Dataset_37,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.842,0.864,0.76,3.0
+Dataset_83,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.842,0.864,0.76,3.0
+Dataset_13,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.842,0.864,0.76,8.0
+Dataset_2,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,2.0
+Dataset_6,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,2.0
+Dataset_12,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,2.0
+Dataset_32,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,2.0
+Dataset_38,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,2.0
+Dataset_40,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,2.0
+Dataset_52,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,2.0
+Dataset_58,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,2.0
+Dataset_84,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,2.0
+Dataset_90,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,2.0
+Dataset_8,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,2.5
+Dataset_2,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_6,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_12,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_16,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_18,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_18,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_24,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_36,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_38,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_42,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_42,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_48,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_50,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_56,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_56,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_60,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_60,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_66,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_68,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_68,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_70,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_72,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_75,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.842,0.833,0.8,3.0
+Dataset_78,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_78,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_84,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_88,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_88,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_90,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,3.0
+Dataset_36,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,4.0
+Dataset_48,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,4.0
+Dataset_66,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,4.0
+Dataset_26,lgr,"[('C', 10), ('random_state', 13)]",0.842,0.833,0.8,5.0
+Dataset_26,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.833,0.8,5.0
+Dataset_1,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,2.0
+Dataset_2,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,2.0
+Dataset_6,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,2.0
+Dataset_21,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,2.0
+Dataset_26,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,2.0
+Dataset_43,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,2.0
+Dataset_45,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,2.0
+Dataset_50,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,2.0
+Dataset_57,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,2.0
+Dataset_59,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,2.0
+Dataset_66,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,2.0
+Dataset_77,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,2.0
+Dataset_79,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,2.0
+Dataset_81,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,2.0
+Dataset_84,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,2.0
+Dataset_90,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,2.0
+Dataset_85,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,2.5
+Dataset_8,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_9,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,3.0
+Dataset_12,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_16,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_18,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_24,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_32,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_36,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_38,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_40,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_42,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_48,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_49,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,3.0
+Dataset_52,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_56,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_58,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_60,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_68,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_70,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_72,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_78,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_87,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,3.0
+Dataset_88,svm,"[('C', 0.1), ('kernel', 'linear')]",0.842,0.808,0.84,3.0
+Dataset_11,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,4.0
+Dataset_27,xgb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.842,0.808,0.84,57.8
+Dataset_8,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.825,0.8,0.8,3.0
+Dataset_16,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.825,0.8,0.8,3.0
+Dataset_32,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.825,0.8,0.8,3.0
+Dataset_50,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.825,0.8,0.8,3.0
+Dataset_52,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.825,0.8,0.8,3.0
+Dataset_58,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.825,0.8,0.8,3.0
+Dataset_70,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.825,0.8,0.8,3.0
+Dataset_72,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.825,0.8,0.8,3.0
+Dataset_24,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.825,0.8,0.8,4.0
+Dataset_40,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.825,0.8,0.8,4.0
+Dataset_9,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,2.0
+Dataset_11,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,2.0
+Dataset_43,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,2.0
+Dataset_45,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,2.0
+Dataset_49,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,2.0
+Dataset_57,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,2.0
+Dataset_59,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,2.0
+Dataset_77,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,2.0
+Dataset_87,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,2.0
+Dataset_1,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,3.0
+Dataset_21,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,3.0
+Dataset_27,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,3.0
+Dataset_79,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,3.0
+Dataset_81,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,3.0
+Dataset_85,lgr,"[('C', 1000), ('random_state', 13)]",0.825,0.778,0.84,3.0
+Dataset_27,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,2.0
+Dataset_1,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,3.0
+Dataset_21,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,3.0
+Dataset_43,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,3.0
+Dataset_45,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,3.0
+Dataset_49,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,3.0
+Dataset_57,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,3.0
+Dataset_59,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,3.0
+Dataset_77,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,3.0
+Dataset_79,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,3.0
+Dataset_81,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,3.0
+Dataset_85,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,3.0
+Dataset_87,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,3.0
+Dataset_11,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,4.0
+Dataset_9,gb,"[('learning_rate', 1), ('max_depth', 2), ('n_estimators', 50), ('random_state', 13)]",0.807,0.769,0.8,5.0
+Dataset_0,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.772,0.714,0.8,3.0
+Dataset_14,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.772,0.714,0.8,3.0
+Dataset_46,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.772,0.714,0.8,3.0
+Dataset_54,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.772,0.714,0.8,3.0
+Dataset_62,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.772,0.714,0.8,3.0
+Dataset_64,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.772,0.714,0.8,3.0
+Dataset_74,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.772,0.714,0.8,3.0
+Dataset_82,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.772,0.714,0.8,3.0
+Dataset_20,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.754,0.69,0.8,4.0
+Dataset_28,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.684,0.621,0.72,3.0
+Dataset_22,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.596,0.583,0.28,3.0
+Dataset_80,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.596,0.583,0.28,3.0
+Dataset_6,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,2.0
+Dataset_24,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,2.0
+Dataset_50,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,2.0
+Dataset_70,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,2.0
+Dataset_78,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,2.0
+Dataset_84,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,2.0
+Dataset_2,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_4,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_8,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_10,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_16,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_18,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_26,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_30,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_32,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_34,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_36,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_40,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_42,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_48,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_52,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_56,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_58,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_60,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_66,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_68,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_72,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_76,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_88,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_90,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,3.0
+Dataset_38,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,4.0
+Dataset_44,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,4.0
+Dataset_86,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,4.0
+Dataset_12,mlp,"[('activation', 'relu'), ('hidden_layer_sizes', (10,)), ('learning_rate', 'constant'), ('random_state', 13), ('solver', 'sgd')]",0.561,0.0,0.0,11.0

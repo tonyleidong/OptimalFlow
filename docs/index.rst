@@ -28,7 +28,7 @@ In summary, **Dynamic Pipeline** shares a few useful properties for data scienti
 
       * *Well ensembled* - Each key component is ensemble of popular algorithms w/ optimal hyperparameters tuning included;
       
-      * *Hardly omission* - Using *Pipeline Cluster Traversal Experiments*, to cross-experiment with combined permuted input datasets, feature selection, and model selection;
+      * *Hardly omission* - *Pipeline Cluster Traversal Experiments* are designed to cross-experiment with combined permuted input datasets, feature selection, and model selection;
       
       * *Scalable & Consistency* - Each module could add new algorithms easily due to its ensemble & reusable design; no extra needs to modify existing codes for new experiment
 
