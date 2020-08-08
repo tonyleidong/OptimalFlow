@@ -14,8 +14,8 @@ History
 * Bug fix and stable version with pipeline modules
 
 0.1.4 (2020-7-30)
-
 ------------------
+
 * Add autoPP & autoPipe modules
 
 0.1.3 (2020-07-21)
