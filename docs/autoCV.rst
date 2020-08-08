@@ -34,6 +34,12 @@ Description :
         - tree : A decision tree regressor - DecisionTreeRegressor()
         - mlp : Multi-layer Perceptron regressor - MLPRegressor()
         - xgb : XGBoost regression - XGBRegressor()
+        New added 8/7/2020
+        - hgboost : Hist Gradient Boosting regression - HistGradientBoostingRegressor()
+        - huber : Huber regression - HuberRegressor()
+        - rgcv : Ridge cross validation regression - RidgeCV()
+        - cvlasso : Lasso cross validation regression - LassoCV()
+        - sgd : Stochastic Gradient Descent regression - SGDRegressor()
 
 dynaClassifier
 ---------------------
@@ -220,4 +226,28 @@ Defaults Parameters for Classifiers/Regressors
    * - 
      - 'learning_rate' 
      - [0.01, 0.1, 0.2,0.3,0.4] 
+   * - sgd
+     - 'shuffle'
+     - [True,False]
+   * - 
+     - 'penalty'
+     - ['l2', 'l1', 'elasticnet']
+   * - 
+     - 'learning_rate' 
+     - ['constant','optimal','invscaling'] 
+   * - cvlasso
+     - 'fit_intercept'
+     - [True,False]
+   * - rgcv
+     - 'fit_intercept'
+     - [True,False]
+   * - huber
+     - 'fit_intercept'
+     - [True,False]
+   * - hgboost
+     - 'max_depth'
+     - [3, 5, 7, 9]
+   * - 
+     - 'learning_rate'
+     - [0.1, 0.2,0.3,0.4]
 ..
