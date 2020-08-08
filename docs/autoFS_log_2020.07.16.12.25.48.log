@@ -1,0 +1,77 @@
+16/07 12:25:48 - INFO - #####################################################################################################################################################################
+16/07 12:25:48 - INFO - Dynapipe Auto Features Selection :: 2020.07.16.12.25.48
+16/07 12:25:48 - INFO - #####################################################################################################################################################################
+16/07 12:25:48 - INFO - Copyright All Reserved by Tony Dong | e-mail: tonyleidong@gmail.com 
+16/07 12:25:48 - INFO - Official Documentation: https://dynamic-pipeline.readthedocs.io
+16/07 12:25:48 - INFO - DELETE_FLAG is set to True
+16/07 12:25:48 - INFO - All previous logfiles will be deleted
+16/07 12:25:48 - INFO - Deleted file:autoFS_log_2020.07.16.12.24.24.log
+16/07 12:25:48 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:25:48 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:25:48 - INFO - Current Running:kbest_f selector
+16/07 12:25:48 - INFO - Selector - kbest_f is generating ['Pclass', 'Sex', 'Age', 'Fare', 'Cabin_ind']selected features...
+16/07 12:25:48 - INFO - This selector executed 0.0001 minutes
+16/07 12:25:48 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:25:48 - INFO - Current Running:kbest_chi2 selector
+16/07 12:25:48 - INFO - Selector - kbest_chi2 is generating ['Pclass', 'Sex', 'Age', 'Fare', 'Cabin_ind']selected features...
+16/07 12:25:48 - INFO - This selector executed 0.0001 minutes
+16/07 12:25:48 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:25:48 - INFO - Current Running:rfe_lr selector
+16/07 12:25:48 - INFO - Selector - rfe_lr is generating ['Pclass', 'Sex', 'Age', 'Family_cnt', 'Cabin_ind']selected features...
+16/07 12:25:48 - INFO - This selector executed 0.0008 minutes
+16/07 12:25:48 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:25:48 - INFO - Current Running:rfe_svm selector
+16/07 12:25:56 - INFO - Selector - rfe_svm is generating ['Pclass', 'Sex', 'Age', 'Family_cnt', 'Cabin_ind']selected features...
+16/07 12:25:56 - INFO - This selector executed 0.1374 minutes
+16/07 12:25:56 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:25:56 - INFO - Current Running:rfe_tree selector
+16/07 12:25:56 - INFO - Selector - rfe_tree is generating ['Pclass', 'Sex', 'Age', 'Fare', 'Family_cnt']selected features...
+16/07 12:25:56 - INFO - This selector executed 0.0001 minutes
+16/07 12:25:56 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:25:56 - INFO - Current Running:rfe_rf selector
+16/07 12:25:56 - INFO - Selector - rfe_rf is generating ['Pclass', 'Sex', 'Age', 'Fare', 'Cabin_ind']selected features...
+16/07 12:25:56 - INFO - This selector executed 0.0004 minutes
+16/07 12:25:56 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:25:56 - INFO - Current Running:rfecv_svm selector
+16/07 12:26:35 - INFO - Selector - rfecv_svm is generating ['Pclass', 'Sex', 'Age', 'Family_cnt', 'Cabin_ind']selected features...
+16/07 12:26:35 - INFO - This selector executed 0.6492 minutes
+16/07 12:26:35 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:26:35 - INFO - Current Running:rfecv_tree selector
+16/07 12:26:35 - INFO - Selector - rfecv_tree is generating ['Pclass', 'Sex', 'Age', 'Fare', 'Family_cnt']selected features...
+16/07 12:26:35 - INFO - This selector executed 0.0005 minutes
+16/07 12:26:35 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:26:35 - INFO - Current Running:rfecv_rf selector
+16/07 12:26:35 - INFO - Selector - rfecv_rf is generating ['Pclass', 'Sex', 'Age', 'Fare', 'Family_cnt', 'Cabin_ind']selected features...
+16/07 12:26:35 - INFO - This selector executed 0.0019 minutes
+16/07 12:26:35 - INFO - All selected features are extended as the list:['Pclass', 'Sex', 'Age', 'Fare', 'Cabin_ind', 'Pclass', 'Sex', 'Age', 'Fare', 'Cabin_ind', 'Pclass', 'Sex', 'Age', 'Family_cnt', 'Cabin_ind', 'Pclass', 'Sex', 'Age', 'Family_cnt', 'Cabin_ind', 'Pclass', 'Sex', 'Age', 'Fare', 'Family_cnt', 'Pclass', 'Sex', 'Age', 'Fare', 'Cabin_ind', 'Pclass', 'Sex', 'Age', 'Family_cnt', 'Cabin_ind', 'Pclass', 'Sex', 'Age', 'Fare', 'Family_cnt', 'Pclass', 'Sex', 'Age', 'Fare', 'Family_cnt', 'Cabin_ind']
+16/07 12:26:35 - INFO - The DynaPipe autoFS identify the top 5 important features for classification are: ['Pclass', 'Sex', 'Age', 'Cabin_ind', 'Fare'].
+16/07 12:26:35 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:26:35 - INFO - Current Running:kbest_f selector
+16/07 12:26:35 - INFO - Selector - kbest_f is generating ['INDUS', 'NOX', 'RM', 'PTRATIO', 'LSTAT']selected features...
+16/07 12:26:35 - INFO - This selector executed 0.0 minutes
+16/07 12:26:35 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:26:35 - INFO - Current Running:rfe_svm selector
+16/07 12:26:40 - INFO - Selector - rfe_svm is generating ['CHAS', 'NOX', 'RM', 'PTRATIO', 'LSTAT']selected features...
+16/07 12:26:40 - INFO - This selector executed 0.0718 minutes
+16/07 12:26:40 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:26:40 - INFO - Current Running:rfe_tree selector
+16/07 12:26:40 - INFO - Selector - rfe_tree is generating ['CRIM', 'RM', 'DIS', 'TAX', 'LSTAT']selected features...
+16/07 12:26:40 - INFO - This selector executed 0.0006 minutes
+16/07 12:26:40 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:26:40 - INFO - Current Running:rfe_rf selector
+16/07 12:26:40 - INFO - Selector - rfe_rf is generating ['CRIM', 'RM', 'DIS', 'B', 'LSTAT']selected features...
+16/07 12:26:40 - INFO - This selector executed 0.0016 minutes
+16/07 12:26:40 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:26:40 - INFO - Current Running:rfecv_svm selector
+16/07 12:26:58 - INFO - Selector - rfecv_svm is generating ['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT']selected features...
+16/07 12:26:58 - INFO - This selector executed 0.2972 minutes
+16/07 12:26:58 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:26:58 - INFO - Current Running:rfecv_tree selector
+16/07 12:26:58 - INFO - Selector - rfecv_tree is generating ['CRIM', 'INDUS', 'NOX', 'RM', 'AGE', 'DIS', 'TAX', 'PTRATIO', 'B', 'LSTAT']selected features...
+16/07 12:26:58 - INFO - This selector executed 0.0023 minutes
+16/07 12:26:58 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/07 12:26:58 - INFO - Current Running:rfecv_rf selector
+16/07 12:26:58 - INFO - Selector - rfecv_rf is generating ['CRIM', 'INDUS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT']selected features...
+16/07 12:26:58 - INFO - This selector executed 0.0076 minutes
+16/07 12:26:58 - INFO - All selected features are extended as the list:['INDUS', 'NOX', 'RM', 'PTRATIO', 'LSTAT', 'CHAS', 'NOX', 'RM', 'PTRATIO', 'LSTAT', 'CRIM', 'RM', 'DIS', 'TAX', 'LSTAT', 'CRIM', 'RM', 'DIS', 'B', 'LSTAT', 'CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT', 'CRIM', 'INDUS', 'NOX', 'RM', 'AGE', 'DIS', 'TAX', 'PTRATIO', 'B', 'LSTAT', 'CRIM', 'INDUS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT']
+16/07 12:26:58 - INFO - The DynaPipe autoFS identify the top 5 important features for regression are: ['RM', 'LSTAT', 'NOX', 'PTRATIO', 'CRIM'].
