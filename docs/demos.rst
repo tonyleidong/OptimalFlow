@@ -443,9 +443,8 @@ Pipeline Cluster Traversal Experiments Model Retrieval Diagram using autoViz:
 ..
 
 Output:
-.. code-block:: python
+
 
     .. image:: autoViz_Demo_1.PNG 
         :width: 980
 
-..
