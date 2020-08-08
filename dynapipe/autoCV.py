@@ -81,7 +81,7 @@ class evaluate_model:
         optimal_scores = []
 
     def fit(self,name = None, model = None, features = None, labels = None):
-         """Model evaluation with all models by the validate datasets.
+        """Model evaluation with all models by the validate datasets.
         
         Parameters
         ----------
