@@ -34,12 +34,11 @@ Description :
         - tree : A decision tree regressor - DecisionTreeRegressor()
         - mlp : Multi-layer Perceptron regressor - MLPRegressor()
         - xgb : XGBoost regression - XGBRegressor()
-        New added 8/7/2020
-        - hgboost : Hist Gradient Boosting regression - HistGradientBoostingRegressor()
-        - huber : Huber regression - HuberRegressor()
-        - rgcv : Ridge cross validation regression - RidgeCV()
-        - cvlasso : Lasso cross validation regression - LassoCV()
-        - sgd : Stochastic Gradient Descent regression - SGDRegressor()
+        - hgboost : Hist Gradient Boosting regression - HistGradientBoostingRegressor(); New added on 8/7/2020
+        - huber : Huber regression - HuberRegressor(); New added on 8/7/2020
+        - rgcv : Ridge cross validation regression - RidgeCV(); New added on 8/7/2020
+        - cvlasso : Lasso cross validation regression - LassoCV(); New added on 8/7/2020
+        - sgd : Stochastic Gradient Descent regression - SGDRegressor(); New added on 8/7/2020
 
 dynaClassifier
 ---------------------
