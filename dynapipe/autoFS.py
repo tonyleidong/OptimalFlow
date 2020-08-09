@@ -176,7 +176,7 @@ class dynaFS_reg:
     Example
     -------
     
-    .. [] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#features-selection-for-a-regression-problem-using-autoFS
+    .. [Example] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#features-selection-for-a-regression-problem-using-autoFS
 
     References
     ----------

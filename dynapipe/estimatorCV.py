@@ -40,7 +40,7 @@ class clf_cv:
     Example
     -------
     
-    .. []
+    .. [Example]
     
     References
     ----------
@@ -151,7 +151,7 @@ class reg_cv:
     Example
     -------
     
-    .. []
+    .. [Example]
     
     References
     ----------

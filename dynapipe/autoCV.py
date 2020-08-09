@@ -69,7 +69,7 @@ class evaluate_model:
     Example
     -------
     
-    .. [] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#build-pipeline-cluster-traveral-experiments-using-autopipe
+    .. [Example] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#build-pipeline-cluster-traveral-experiments-using-autopipe
     
     References
     ----------
@@ -154,7 +154,7 @@ class dynaClassifier:
 
     Example
     -------
-    .. [] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#model-selection-for-a-classification-problem-using-autocv
+    .. [Example] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#model-selection-for-a-classification-problem-using-autocv
     
     References
     ----------
@@ -253,7 +253,7 @@ class dynaRegressor:
 
     Example
     -------
-    .. [] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#model-selection-for-a-regression-problem-using-autocv
+    .. [Example] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#model-selection-for-a-regression-problem-using-autocv
     
     References
     ----------
