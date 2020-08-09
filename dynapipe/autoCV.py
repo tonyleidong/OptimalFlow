@@ -137,6 +137,9 @@ class dynaClassifier:
     
     Parameters
     ----------
+    custom_estimators : list, default = None
+        Custom set the estimators in the autoCV regression module(if set None, will use all available estimators). Current version's default available estimators are ['lgr','svm','mlp','rf','ada','gb','xgb'].
+    
     random_state : int, default = None
         Random state value.
     
@@ -157,7 +160,12 @@ class dynaClassifier:
     ----------
     None
     """
-    def __init__(self,random_state = 13,cv_num = 5,in_pipeline = False, input_from_file = True):
+    def __init__(self,custom_estimators = None, random_state = 13,cv_num = 5,in_pipeline = False, input_from_file = True):
+        default_estimators = ['lgr','svm','mlp','rf','ada','gb','xgb']
+        if(custom_estimators is None):
+            self.set_estimators = default_estimators
+        else:
+            self.set_estimators = custom_estimators
         self.random_state =random_state
         self.cv_num = cv_num
         self.input_from_file = input_from_file
@@ -187,7 +195,8 @@ class dynaClassifier:
         if(self.input_from_file):
             tr_labels = tr_labels.values.ravel()
         clf = clf_cv(cv_val = self.cv_num,random_state = self.random_state)
-        estimators = ['lgr','svm','mlp','rf','ada','gb','xgb']
+        # estimators = ['lgr','svm','mlp','rf','ada','gb','xgb']
+        estimators = self.set_estimators
         loop_num = 1
         total_loop = len(estimators)
         if(not self.in_pipeline):
@@ -227,6 +236,9 @@ class dynaRegressor:
     
     Parameters
     ----------
+    custom_estimators : list, default = None
+        Custom set the estimators in the autoCV regression module(if set None, will use all available estimators). Current version's default available estimators are ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd'].
+    
     random_state : int, default = None
         Random state value.
     
@@ -247,7 +259,12 @@ class dynaRegressor:
     ----------
     None
     """
-    def __init__(self ,random_state = 25 ,cv_num = 5,in_pipeline = False, input_from_file = True):
+    def __init__(self ,custom_estimators = None, random_state = 25 ,cv_num = 5,in_pipeline = False, input_from_file = True):
+        default_estimators = ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd']
+        if(custom_estimators is None):
+            self.set_estimators = default_estimators
+        else:
+            self.set_estimators = custom_estimators
         self.random_state =random_state
         self.cv_num = cv_num
         self.input_from_file = input_from_file
@@ -278,7 +295,8 @@ class dynaRegressor:
         if(self.input_from_file):
             tr_labels = tr_labels.values.ravel()
         reg = reg_cv(cv_val = self.cv_num,random_state = self.random_state)
-        estimators = ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd']
+        # estimators = ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd']
+        estimators = self.set_estimators
         if (not self.in_pipeline):
             pkl_folder = os.path.join(os.getcwd(),'pkl')
             if not os.path.exists(pkl_folder):
