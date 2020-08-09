@@ -76,7 +76,7 @@ class dynaFS_clf:
 
     Example
     -------
-    .. [Example]
+    .. []
     
     References
     ----------
@@ -176,7 +176,7 @@ class dynaFS_reg:
     Example
     -------
     
-    .. [Example] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#features-selection-for-a-regression-problem-using-autoFS
+    .. [] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#features-selection-for-a-regression-problem-using-autoFS
 
     References
     ----------
