@@ -1,0 +1,104 @@
+10/08 11:39:28 - INFO - #####################################################################################################################################################################################################################################################################
+10/08 11:39:28 - INFO - Optimal Flow - autoCV - Auto Model Selection w/ Cross Validation :: 2020.08.10.11.39.28
+10/08 11:39:28 - INFO - #####################################################################################################################################################################################################################################################################
+10/08 11:39:28 - INFO - Copyright All Reserved by Tony Dong | e-mail: tonyleidong@gmail.com 
+10/08 11:39:28 - INFO - Official Documentation: https://optimal-flow.readthedocs.io
+10/08 11:39:28 - INFO - ------------------------------------------------------------
+10/08 11:39:28 - INFO - All previous logfiles will be deleted, when DELETE_FLAG is set to True.
+10/08 11:39:28 - INFO - Deleted file:autoCV_log_2020.08.07.23.23.41.log
+10/08 11:39:28 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10/08 11:39:28 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10/08 11:39:28 - INFO - Current Running:lr estimator
+10/08 11:39:29 - INFO - Best Paramaters: {'normalize': False}
+
+10/08 11:39:29 - INFO - Best CV Score: 0.682929422892965
+
+10/08 11:39:29 - INFO - 0.683 (+/-0.113) for {'normalize': True}
+10/08 11:39:29 - INFO - 0.683 (+/-0.113) for {'normalize': False}
+10/08 11:39:29 - INFO - This estimator executed 0.0013 minutes
+10/08 11:39:29 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10/08 11:39:29 - INFO - Current Running:knn estimator
+10/08 11:39:30 - INFO - Best Paramaters: {'algorithm': 'auto', 'n_neighbors': 10, 'weights': 'distance'}
+
+10/08 11:39:30 - INFO - Best CV Score: 0.5277324478219082
+
+10/08 11:39:30 - INFO - 0.483 (+/-0.187) for {'algorithm': 'auto', 'n_neighbors': 5, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.524 (+/-0.222) for {'algorithm': 'auto', 'n_neighbors': 5, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.448 (+/-0.195) for {'algorithm': 'auto', 'n_neighbors': 10, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.528 (+/-0.198) for {'algorithm': 'auto', 'n_neighbors': 10, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.398 (+/-0.157) for {'algorithm': 'auto', 'n_neighbors': 15, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.503 (+/-0.162) for {'algorithm': 'auto', 'n_neighbors': 15, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.352 (+/-0.152) for {'algorithm': 'auto', 'n_neighbors': 20, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.471 (+/-0.151) for {'algorithm': 'auto', 'n_neighbors': 20, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.32 (+/-0.133) for {'algorithm': 'auto', 'n_neighbors': 25, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.451 (+/-0.137) for {'algorithm': 'auto', 'n_neighbors': 25, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.483 (+/-0.187) for {'algorithm': 'ball_tree', 'n_neighbors': 5, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.524 (+/-0.222) for {'algorithm': 'ball_tree', 'n_neighbors': 5, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.448 (+/-0.195) for {'algorithm': 'ball_tree', 'n_neighbors': 10, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.528 (+/-0.198) for {'algorithm': 'ball_tree', 'n_neighbors': 10, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.398 (+/-0.157) for {'algorithm': 'ball_tree', 'n_neighbors': 15, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.503 (+/-0.162) for {'algorithm': 'ball_tree', 'n_neighbors': 15, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.352 (+/-0.152) for {'algorithm': 'ball_tree', 'n_neighbors': 20, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.471 (+/-0.151) for {'algorithm': 'ball_tree', 'n_neighbors': 20, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.32 (+/-0.133) for {'algorithm': 'ball_tree', 'n_neighbors': 25, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.451 (+/-0.137) for {'algorithm': 'ball_tree', 'n_neighbors': 25, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.483 (+/-0.187) for {'algorithm': 'kd_tree', 'n_neighbors': 5, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.524 (+/-0.222) for {'algorithm': 'kd_tree', 'n_neighbors': 5, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.448 (+/-0.195) for {'algorithm': 'kd_tree', 'n_neighbors': 10, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.528 (+/-0.198) for {'algorithm': 'kd_tree', 'n_neighbors': 10, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.398 (+/-0.157) for {'algorithm': 'kd_tree', 'n_neighbors': 15, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.503 (+/-0.162) for {'algorithm': 'kd_tree', 'n_neighbors': 15, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.352 (+/-0.152) for {'algorithm': 'kd_tree', 'n_neighbors': 20, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.471 (+/-0.151) for {'algorithm': 'kd_tree', 'n_neighbors': 20, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.32 (+/-0.133) for {'algorithm': 'kd_tree', 'n_neighbors': 25, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.451 (+/-0.137) for {'algorithm': 'kd_tree', 'n_neighbors': 25, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.483 (+/-0.187) for {'algorithm': 'brute', 'n_neighbors': 5, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.524 (+/-0.222) for {'algorithm': 'brute', 'n_neighbors': 5, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.448 (+/-0.195) for {'algorithm': 'brute', 'n_neighbors': 10, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.528 (+/-0.198) for {'algorithm': 'brute', 'n_neighbors': 10, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.398 (+/-0.157) for {'algorithm': 'brute', 'n_neighbors': 15, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.503 (+/-0.162) for {'algorithm': 'brute', 'n_neighbors': 15, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.352 (+/-0.152) for {'algorithm': 'brute', 'n_neighbors': 20, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.471 (+/-0.151) for {'algorithm': 'brute', 'n_neighbors': 20, 'weights': 'distance'}
+10/08 11:39:30 - INFO - 0.32 (+/-0.133) for {'algorithm': 'brute', 'n_neighbors': 25, 'weights': 'uniform'}
+10/08 11:39:30 - INFO - 0.451 (+/-0.137) for {'algorithm': 'brute', 'n_neighbors': 25, 'weights': 'distance'}
+10/08 11:39:30 - INFO - This estimator executed 0.0203 minutes
+10/08 11:39:30 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10/08 11:39:30 - INFO - Current Running:tree estimator
+10/08 11:39:31 - INFO - Best Paramaters: {'max_depth': 9, 'min_samples_leaf': 3, 'splitter': 'best'}
+
+10/08 11:39:31 - INFO - Best CV Score: 0.7775375792967164
+
+10/08 11:39:31 - INFO - 0.299 (+/-0.221) for {'max_depth': 1, 'min_samples_leaf': 1, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.223 (+/-0.155) for {'max_depth': 1, 'min_samples_leaf': 1, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.299 (+/-0.221) for {'max_depth': 1, 'min_samples_leaf': 3, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.233 (+/-0.201) for {'max_depth': 1, 'min_samples_leaf': 3, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.299 (+/-0.221) for {'max_depth': 1, 'min_samples_leaf': 5, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.178 (+/-0.152) for {'max_depth': 1, 'min_samples_leaf': 5, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.679 (+/-0.306) for {'max_depth': 3, 'min_samples_leaf': 1, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.636 (+/-0.311) for {'max_depth': 3, 'min_samples_leaf': 1, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.647 (+/-0.481) for {'max_depth': 3, 'min_samples_leaf': 3, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.54 (+/-0.069) for {'max_depth': 3, 'min_samples_leaf': 3, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.704 (+/-0.158) for {'max_depth': 3, 'min_samples_leaf': 5, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.478 (+/-0.434) for {'max_depth': 3, 'min_samples_leaf': 5, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.747 (+/-0.212) for {'max_depth': 5, 'min_samples_leaf': 1, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.615 (+/-0.223) for {'max_depth': 5, 'min_samples_leaf': 1, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.752 (+/-0.234) for {'max_depth': 5, 'min_samples_leaf': 3, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.655 (+/-0.229) for {'max_depth': 5, 'min_samples_leaf': 3, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.747 (+/-0.207) for {'max_depth': 5, 'min_samples_leaf': 5, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.607 (+/-0.381) for {'max_depth': 5, 'min_samples_leaf': 5, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.747 (+/-0.182) for {'max_depth': 7, 'min_samples_leaf': 1, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.66 (+/-0.245) for {'max_depth': 7, 'min_samples_leaf': 1, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.774 (+/-0.239) for {'max_depth': 7, 'min_samples_leaf': 3, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.579 (+/-0.313) for {'max_depth': 7, 'min_samples_leaf': 3, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.746 (+/-0.194) for {'max_depth': 7, 'min_samples_leaf': 5, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.69 (+/-0.168) for {'max_depth': 7, 'min_samples_leaf': 5, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.715 (+/-0.18) for {'max_depth': 9, 'min_samples_leaf': 1, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.652 (+/-0.242) for {'max_depth': 9, 'min_samples_leaf': 1, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.778 (+/-0.244) for {'max_depth': 9, 'min_samples_leaf': 3, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.675 (+/-0.199) for {'max_depth': 9, 'min_samples_leaf': 3, 'splitter': 'random'}
+10/08 11:39:31 - INFO - 0.747 (+/-0.204) for {'max_depth': 9, 'min_samples_leaf': 5, 'splitter': 'best'}
+10/08 11:39:31 - INFO - 0.668 (+/-0.317) for {'max_depth': 9, 'min_samples_leaf': 5, 'splitter': 'random'}
+10/08 11:39:31 - INFO - This estimator executed 0.015 minutes
+10/08 11:39:31 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10/08 11:39:31 - INFO - Current Running:svm estimator

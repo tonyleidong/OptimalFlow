@@ -1,0 +1,7 @@
+pandas
+scikit-learn
+statsmodels
+scipy
+joblib
+category_encoders
+plotly

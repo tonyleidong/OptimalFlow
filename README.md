@@ -20,7 +20,7 @@ The core concept in **OptimalFlow** is *Pipeline Cluster Traversal Experiments*,
 Comparing other automatic or classic machine learning workflow's repetitive experiments using single pipeline, *Pipeline Cluster Traversal Experiments* is more powerful, with larger coverage scope, to find the best model without manual intervention, and also more flexible with elasticity to cope with unseen data due to its ensemble designs in each component.
 
 
-### Documentation:  https://dynamic-pipeline.readthedocs.io/
+### Documentation:  https://optimal-flow.readthedocs.io/
 
 ### Installation
 ```python
