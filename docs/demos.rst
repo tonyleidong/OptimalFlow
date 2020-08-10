@@ -10,8 +10,8 @@ Feature preprocessing for a regression problem using autoPP:
 .. code-block:: python
 
   import pandas as pd 
-  from funcPP import PPtools
-  from autoPP import dynaPreprocessing
+  from optimalflow.funcPP import PPtools
+  from optimalflow.autoPP import dynaPreprocessing
 
   df = pd.read_csv('../data/preprocessing/breast_cancer.csv')
 
@@ -65,7 +65,7 @@ Features selection for a regression problem using autoFS:
 .. code-block:: python
 
    import pandas as pd
-   from dynapipe.autoFS import dynaFS_reg
+   from optimalflow.autoFS import dynaFS_reg
 
    tr_features = pd.read_csv('./data/regression/train_features.csv')
    tr_labels = pd.read_csv('./data/regression/train_labels.csv')
@@ -80,28 +80,28 @@ Features selection for a regression problem using autoFS:
 
 .. code-block:: python
 
-    *DynaPipe* autoFS Module ===> Selector kbest_f gets outputs: ['INDUS', 'NOX', 'RM', 'PTRATIO', 'LSTAT']
+    *optimalflow* autoFS Module ===> Selector kbest_f gets outputs: ['INDUS', 'NOX', 'RM', 'PTRATIO', 'LSTAT']
     Progress: [###-----------------] 14.3%
 
-    *DynaPipe* autoFS Module ===> Selector rfe_svm gets outputs: ['CHAS', 'NOX', 'RM', 'PTRATIO', 'LSTAT']
+    *optimalflow* autoFS Module ===> Selector rfe_svm gets outputs: ['CHAS', 'NOX', 'RM', 'PTRATIO', 'LSTAT']
     Progress: [######--------------] 28.6%
 
-    *DynaPipe* autoFS Module ===> Selector rfe_tree gets outputs: ['CRIM', 'RM', 'DIS', 'TAX', 'LSTAT']
+    *optimalflow* autoFS Module ===> Selector rfe_tree gets outputs: ['CRIM', 'RM', 'DIS', 'TAX', 'LSTAT']
     Progress: [#########-----------] 42.9%
 
-    *DynaPipe* autoFS Module ===> Selector rfe_rf gets outputs: ['CRIM', 'RM', 'DIS', 'PTRATIO', 'LSTAT']
+    *optimalflow* autoFS Module ===> Selector rfe_rf gets outputs: ['CRIM', 'RM', 'DIS', 'PTRATIO', 'LSTAT']
     Progress: [###########---------] 57.1%
 
-    *DynaPipe* autoFS Module ===> Selector rfecv_svm gets outputs: ['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT']
+    *optimalflow* autoFS Module ===> Selector rfecv_svm gets outputs: ['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT']
     Progress: [##############------] 71.4%
 
-    *DynaPipe* autoFS Module ===> Selector rfecv_tree gets outputs: ['CRIM', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'TAX', 'PTRATIO', 'B', 'LSTAT']
+    *optimalflow* autoFS Module ===> Selector rfecv_tree gets outputs: ['CRIM', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'TAX', 'PTRATIO', 'B', 'LSTAT']
     Progress: [#################---] 85.7%
 
-    *DynaPipe* autoFS Module ===> Selector rfecv_rf gets outputs: ['CRIM', 'ZN', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT']
+    *optimalflow* autoFS Module ===> Selector rfecv_rf gets outputs: ['CRIM', 'ZN', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT']
     Progress: [####################] 100.0%
 
-    The DynaPipe autoFS identify the top 5 important features for regression are: ['RM', 'LSTAT', 'PTRATIO', 'NOX', 'CRIM']. 
+    The optimalflow autoFS identify the top 5 important features for regression are: ['RM', 'LSTAT', 'PTRATIO', 'NOX', 'CRIM']. 
 ..
 
 Model selection for a classification problem using autoCV:
@@ -112,7 +112,7 @@ Model selection for a classification problem using autoCV:
 .. code-block:: python
 
    import pandas as pd
-   from dynapipe.autoCV import dynaClassifier,evaluate_clf_model
+   from optimalflow.autoCV import dynaClassifier,evaluate_clf_model
    import joblib
 
    tr_features = pd.read_csv('./data/classification/train_features.csv')
@@ -137,7 +137,7 @@ Model selection for a classification problem using autoCV:
 
 .. code-block:: python
       
-    *DynaPipe* autoCV Module ===> lgr_CrossValidation with 5 folds:
+    *optimalflow* autoCV Module ===> lgr_CrossValidation with 5 folds:
 
     Best Parameters: {'C': 1, 'random_state': 13}
 
@@ -145,7 +145,7 @@ Model selection for a classification problem using autoCV:
 
     Progress: [###-----------------] 14.3%
 
-    *DynaPipe* autoCV Module ===> svm_CrossValidation with 5 folds:
+    *optimalflow* autoCV Module ===> svm_CrossValidation with 5 folds:
 
     Best Parameters: {'C': 0.1, 'kernel': 'linear'}
 
@@ -153,7 +153,7 @@ Model selection for a classification problem using autoCV:
 
     Progress: [######--------------] 28.6%
 
-    *DynaPipe* autoCV Module ===> mlp_CrossValidation with 5 folds:
+    *optimalflow* autoCV Module ===> mlp_CrossValidation with 5 folds:
 
     Best Parameters: {'activation': 'tanh', 'hidden_layer_sizes': (50,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'lbfgs'}
 
@@ -161,7 +161,7 @@ Model selection for a classification problem using autoCV:
 
     Progress: [#########-----------] 42.9%
 
-    *DynaPipe* autoCV Module ===> rf_CrossValidation with 5 folds:
+    *optimalflow* autoCV Module ===> rf_CrossValidation with 5 folds:
 
     Best Parameters: {'max_depth': 4, 'n_estimators': 250, 'random_state': 13}
 
@@ -169,7 +169,7 @@ Model selection for a classification problem using autoCV:
 
     Progress: [###########---------] 57.1%
 
-    *DynaPipe* autoCV Module ===> ada_CrossValidation with 5 folds:
+    *optimalflow* autoCV Module ===> ada_CrossValidation with 5 folds:
 
     Best Parameters: {'learning_rate': 0.1, 'n_estimators': 100, 'random_state': 13}
 
@@ -177,7 +177,7 @@ Model selection for a classification problem using autoCV:
 
     Progress: [##############------] 71.4%
 
-    *DynaPipe* autoCV Module ===> gb_CrossValidation with 5 folds:
+    *optimalflow* autoCV Module ===> gb_CrossValidation with 5 folds:
 
     Best Parameters: {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 300, 'random_state': 13}
 
@@ -185,7 +185,7 @@ Model selection for a classification problem using autoCV:
 
     Progress: [#################---] 85.7%
 
-    *DynaPipe* autoCV Module ===> xgb_CrossValidation with 5 folds:
+    *optimalflow* autoCV Module ===> xgb_CrossValidation with 5 folds:
 
     Best Parameters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200, 'verbosity': 0}
 
@@ -210,10 +210,10 @@ Model selection for a regression problem using autoCV:
 .. code-block:: python
 
     import pandas as pd
-    from dynapipe.autoCV import evaluate_model,dynaClassifier,dynaRegressor
+    from optimalflow.autoCV import evaluate_model,dynaClassifier,dynaRegressor
     import joblib
 
-    from dynapipe.utilis_func import pipeline_splitting_rule, update_parameters,reset_parameters
+    from optimalflow.utilis_func import pipeline_splitting_rule, update_parameters,reset_parameters
     reset_parameters()
 
     tr_features = pd.read_csv('./data/regression/train_features.csv')
@@ -248,98 +248,98 @@ Model selection for a regression problem using autoCV:
     Done with the parameters reset.
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.0337 minutes left  [#-------------------] 7.1%
 
-        *DynaPipe* autoCV Module ===> lr model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> lr model CrossValidation with 5 folds:
     Best Parameters: {'normalize': False}
 
     Best CV Score: 0.682929422892965
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.5549 minutes left  [###-----------------] 14.3%
 
-        *DynaPipe* autoCV Module ===> knn model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> knn model CrossValidation with 5 folds:
     Best Parameters: {'algorithm': 'auto', 'n_neighbors': 10, 'weights': 'distance'}
 
     Best CV Score: 0.5277324478219082
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.2383 minutes left  [####----------------] 21.4%
 
-        *DynaPipe* autoCV Module ===> tree model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> tree model CrossValidation with 5 folds:
     Best Parameters: {'max_depth': 5, 'min_samples_leaf': 3, 'splitter': 'best'}
 
     Best CV Score: 0.7704058399460141
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 11.0461 minutes left  [######--------------] 28.6%
 
-        *DynaPipe* autoCV Module ===> svm model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> svm model CrossValidation with 5 folds:
     Best Parameters: {'C': 1, 'kernel': 'linear'}
 
     Best CV Score: 0.6817778239200576
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 20.2113 minutes left  [#######-------------] 35.7%
 
-        *DynaPipe* autoCV Module ===> mlp model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> mlp model CrossValidation with 5 folds:
     Best Parameters: {'activation': 'identity', 'hidden_layer_sizes': (50,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'lbfgs'}
 
     Best CV Score: 0.6556246414762388
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 3.1693 minutes left  [#########-----------] 42.9%
 
-        *DynaPipe* autoCV Module ===> rf model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> rf model CrossValidation with 5 folds:
     Best Parameters: {'max_depth': 8, 'n_estimators': 50}
 
     Best CV Score: 0.8582920563031621
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 18.0094 minutes left  [##########----------] 50.0%
 
-        *DynaPipe* autoCV Module ===> gb model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> gb model CrossValidation with 5 folds:
     Best Parameters: {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 100}
 
     Best CV Score: 0.8794018441486111
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 18.7663 minutes left  [###########---------] 57.1%
 
-        *DynaPipe* autoCV Module ===> ada model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> ada model CrossValidation with 5 folds:
     Best Parameters: {'learning_rate': 0.3, 'loss': 'linear', 'n_estimators': 150, 'random_state': 13}
 
     Best CV Score: 0.8255039215809923
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 4.545 minutes left  [#############-------] 64.3%
 
-        *DynaPipe* autoCV Module ===> xgb model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> xgb model CrossValidation with 5 folds:
     Best Parameters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 300, 'verbosity': 0}
 
     Best CV Score: 0.8645505523555148
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 1.6471 minutes left  [##############------] 71.4%
 
-        *DynaPipe* autoCV Module ===> hgboost model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> hgboost model CrossValidation with 5 folds:
     Best Parameters: {'learning_rate': 0.2, 'max_depth': 3}
 
     Best CV Score: 0.8490465745463796
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.0182 minutes left  [################----] 78.6%
 
-        *DynaPipe* autoCV Module ===> huber model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> huber model CrossValidation with 5 folds:
     Best Parameters: {'fit_intercept': False}
 
     Best CV Score: 0.6250877399211718
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.0024 minutes left  [#################---] 85.7%
 
-        *DynaPipe* autoCV Module ===> rgcv model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> rgcv model CrossValidation with 5 folds:
     Best Parameters: {'fit_intercept': True}
 
     Best CV Score: 0.6814764830347567
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.011 minutes left  [###################-] 92.9%
 
-        *DynaPipe* autoCV Module ===> cvlasso model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> cvlasso model CrossValidation with 5 folds:
     Best Parameters: {'fit_intercept': True}
 
     Best CV Score: 0.6686184981380419
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.0 minutes left  [####################] 100.0%
 
-        *DynaPipe* autoCV Module ===> sgd model CrossValidation with 5 folds:
+        *optimalflow* autoCV Module ===> sgd model CrossValidation with 5 folds:
     Best Parameters: {'learning_rate': 'invscaling', 'penalty': 'elasticnet', 'shuffle': True}
 
     Best CV Score: -1.445728757185719e+26
@@ -397,11 +397,11 @@ Build Pipeline Cluster Traveral Experiments using autoPipe:
 .. code-block:: python
 
   import pandas as pd
-  from dynapipe.autoPipe import autoPipe
-  from dynapipe.funcPP import PPtools
-  from dynapipe.autoPP import dynaPreprocessing
-  from dynapipe.autoFS import dynaFS_clf
-  from dynapipe.autoCV import evaluate_model,dynaClassifier
+  from optimalflow.autoPipe import autoPipe
+  from optimalflow.funcPP import PPtools
+  from optimalflow.autoPP import dynaPreprocessing
+  from optimalflow.autoFS import dynaFS_clf
+  from optimalflow.autoCV import evaluate_model,dynaClassifier
 
   df = pd.read_csv('./data/preprocessing/breast_cancer.csv')
 
@@ -436,7 +436,7 @@ Pipeline Cluster Traversal Experiments Model Retrieval Diagram using autoViz:
 
 .. code-block:: python
 
-  from dynapipe.autoViz import autoViz
+  from optimalflow.autoViz import autoViz
   viz = autoViz(preprocess_dict=DICT_PREPROCESSING,report=dyna_report)
   viz.clf_model_retrieval(metrics='accuracy')
 

@@ -37,21 +37,21 @@ Description :
 dynaFS_clf
 ---------------------
 
-.. autoclass:: dynapipe.autoFS.dynaFS_clf
+.. autoclass:: optimalflow.autoFS.dynaFS_clf
     :members:
 
 dynaFS_reg
 ---------------------
 
-.. autoclass:: dynapipe.autoFS.dynaFS_reg
+.. autoclass:: optimalflow.autoFS.dynaFS_reg
     :members:
 
 clf_fs
 ---------------------
 
-.. autoclass:: dynapipe.selectorFS.clf_fs
+.. autoclass:: optimalflow.selectorFS.clf_fs
 
 reg_fs
 ---------------------
 
-.. autoclass:: dynapipe.selectorFS.reg_fs
+.. autoclass:: optimalflow.selectorFS.reg_fs

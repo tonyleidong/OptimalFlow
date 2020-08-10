@@ -10,6 +10,6 @@ Description :
 autoViz
 ---------------------
 
-.. automodule:: dynapipe.autoViz
+.. automodule:: optimalflow.autoViz
     :members:
 

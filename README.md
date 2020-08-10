@@ -1,34 +1,34 @@
-## Dynamic Pipeline
-[![PyPI Latest Release](https://img.shields.io/pypi/v/dynapipe)](https://pypi.org/project/dynapipe/)
-[![PyPI - Downloads](https://img.shields.io/pypi/dw/dynapipe?style=plastic)](https://pypi.org/project/dynapipe/)
-[![Github Issues](https://img.shields.io/github/issues/tonyleidong/DynamicPipeline)](https://github.com/tonyleidong/DynamicPipeline/issues)
-[![License](https://img.shields.io/github/license/tonyleidong/DynamicPipeline)](https://github.com/tonyleidong/DynamicPipeline/blob/master/LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/tonyleidong/DynamicPipeline)](https://github.com/tonyleidong/dynapipe)
-[![Python Version](https://img.shields.io/pypi/pyversions/dynapipe)](https://pypi.org/project/dynapipe/)
+## OptimalFlow
+[![PyPI Latest Release](https://img.shields.io/pypi/v/optimalflow)](https://pypi.org/project/optimalflow/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dw/optimalflow?style=plastic)](https://pypi.org/project/optimalflow/)
+[![Github Issues](https://img.shields.io/github/issues/tonyleidong/OptimalFlow)](https://github.com/tonyleidong/OptimalFlow/issues)
+[![License](https://img.shields.io/github/license/tonyleidong/OptimalFlow)](https://github.com/tonyleidong/OptimalFlow/blob/master/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/tonyleidong/OptimalFlow)](https://github.com/tonyleidong/optimalflow)
+[![Python Version](https://img.shields.io/pypi/pyversions/optimalflow)](https://pypi.org/project/optimalflow/)
 
 
    
 #### Author: [Tony Dong](http://www.linkedin.com/in/lei-tony-dong)
 
-<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Logo.png" width="80">**Dynamic Pipeline** is a high-level API toolkit to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple codes. 
+<img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow_Logo.png" width="80">**OptimalFlow** is a high-level API toolkit to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple codes. 
 
-Comparing other popular "AutoML or Automatic Machine Learning" APIs, **Dynamic Pipeline** is designed as an omni-ensembled ML workflow optimizer with higher-level API targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. 
+Comparing other popular "AutoML or Automatic Machine Learning" APIs, **OptimalFlow** is designed as an omni-ensembled ML workflow optimizer with higher-level API targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. 
 
-To achieve that, **Dynamic Pipeline** applies *Pipeline Cluster Traversal Experiments* algorithm to assemble all cross-matching pipelines covering major tasks of Machine Learning workflow, and apply traversal-experiment to search the optimal baseline model.
+To achieve that, **OptimalFlow** applies *Pipeline Cluster Traversal Experiments* algorithm to assemble all cross-matching pipelines covering major tasks of Machine Learning workflow, and apply traversal-experiment to search the optimal baseline model.
 
 Besides, by modularizing all key pipeline components in reuseable packages, it allows all components to be custom tunable along with high scalability.
 
 
-<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/DynamicPipeline_Workflow.PNG" width="980">
+<img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow_Workflow.PNG" width="980">
 
-The core concept in **Dynamic Pipeline** is *Pipeline Cluster Traversal Experiments*, which is a theory, first raised by Tony Dong during Genpact 2020 GVector Conference, to optimize and automate Machine Learning Workflow using ensemble pipelines algorithm.
+The core concept in **OptimalFlow** is *Pipeline Cluster Traversal Experiments*, which is a theory, first raised by Tony Dong during Genpact 2020 GVector Conference, to optimize and automate Machine Learning Workflow using ensemble pipelines algorithm.
 
 Comparing other automatic or classic machine learning workflow's repetitive experiments using single pipeline, *Pipeline Cluster Traversal Experiments* is more powerful, with larger coverage scope, to find the best model without manual intervention, and also more flexible with elasticity to cope with unseen data due to its ensemble designs in each component.
 
-<img src="https://github.com/tonyleidong/DynamicPipeline/blob/master/docs/PipelineClusterTraversalExperiments.PNG" width="980">
+<img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/PipelineClusterTraversalExperiments.PNG" width="980">
 
 
-In summary, **Dynamic Pipeline** shares a few useful properties for data scientists:
+In summary, **OptimalFlow** shares a few useful properties for data scientists:
 
 * *Easy & less coding* - High-level APIs to implement *Pipeline Cluster Traversal Experiments*, and each ML component is highly automated and modularized;
 
@@ -42,11 +42,11 @@ In summary, **Dynamic Pipeline** shares a few useful properties for data scienti
       
 * *Custom Modify Welcomed* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
 
-### Documentation:  https://dynamic-pipeline.readthedocs.io/
+### Documentation:  https://Optimal-Flow.readthedocs.io/
 
 ### Installation
 ```python
-pip install dynapipe
+pip install optimalflow
 ```
 
 ### Core Modules: 

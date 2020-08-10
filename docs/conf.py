@@ -32,7 +32,7 @@ sys.path.insert(0, project_root)
 
 # -- Project information -----------------------------------------------------
 
-project = 'Dynamic Pipeline'
+project = 'Optimal Flow'
 copyright = '2020, Tony Dong'
 author = 'Tony Dong'
 

@@ -1,6 +1,6 @@
 import importlib.resources
 import json
-from dynapipe.utilis_func import export_parameters,reset_parameters,update_parameters
+from optimalflow.utilis_func import export_parameters,reset_parameters,update_parameters
 
 # import pandas as pd
 # from pandas.io.json import json_normalize

@@ -21,5 +21,5 @@ Description :
 autoPipe
 ---------------------
 
-.. automodule:: dynapipe.autoPipe
+.. automodule:: optimalflow.autoPipe
     :members:

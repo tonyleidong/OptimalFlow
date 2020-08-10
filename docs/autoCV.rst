@@ -43,51 +43,51 @@ Description :
 dynaClassifier
 ---------------------
 
-.. autoclass:: dynapipe.autoCV.dynaClassifier
+.. autoclass:: optimalflow.autoCV.dynaClassifier
     :members:
 
 dynaRegressor
 ---------------------
 
-.. autoclass:: dynapipe.autoCV.dynaRegressor
+.. autoclass:: optimalflow.autoCV.dynaRegressor
     :members:
 
 evaluate_model
 ---------------------
 
-.. autoclass:: dynapipe.autoCV.evaluate_model
+.. autoclass:: optimalflow.autoCV.evaluate_model
     :members:
 
 clf_cv
 ---------------------
 
-.. autoclass:: dynapipe.estimatorCV.clf_cv
+.. autoclass:: optimalflow.estimatorCV.clf_cv
 
 reg_cv
 ---------------------
 
-.. autoclass:: dynapipe.estimatorCV.reg_cv
+.. autoclass:: optimalflow.estimatorCV.reg_cv
 
 data_splitting_tool
 ---------------------
 
-.. autofunction:: dynapipe.utilis_func.data_splitting_tool
+.. autofunction:: optimalflow.utilis_func.data_splitting_tool
 
 reset_parameters
 ---------------------
 
-.. autofunction:: dynapipe.utilis_func.reset_parameters
+.. autofunction:: optimalflow.utilis_func.reset_parameters
 
 update_parameters
 ---------------------
 
-.. autofunction:: dynapipe.utilis_func.update_parameters
+.. autofunction:: optimalflow.utilis_func.update_parameters
 
 
 export_parameters
 ---------------------
 
-.. autofunction:: dynapipe.utilis_func.export_parameters
+.. autofunction:: optimalflow.utilis_func.export_parameters
 
 
 Defaults Parameters for Classifiers/Regressors

@@ -6,10 +6,10 @@ Installation
 
 
 
-To install Dynamic Pipeline, run this command in your terminal:
+To install Optimal Flow, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install dynapipe
+    $ pip install optimalflow
 
-This is the preferred method to install Dynamic Pipeline, as it will always install the most recent stable release.
+This is the preferred method to install Optimal Flow, as it will always install the most recent stable release.

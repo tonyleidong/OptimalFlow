@@ -2,7 +2,7 @@
 # # Classification Demo 
 # import pandas as pd
 # import pandas as pd
-# from dynapipe.autoCV import dynaClassifier,evaluate_clf_model
+# from optimalflow.autoCV import dynaClassifier,evaluate_clf_model
 # import joblib
 
 # tr_features = pd.read_csv('./data/classification/train_features.csv')
@@ -27,7 +27,7 @@
 
 # # Regression Demo 1
 # import pandas as pd
-# from dynapipe.autoCV import evaluate_model,dynaClassifier,dynaRegressor
+# from optimalflow.autoCV import evaluate_model,dynaClassifier,dynaRegressor
 # import joblib
 
 # tr_features = pd.read_csv('./data/regression/train_features.csv')
@@ -55,10 +55,10 @@
 
 # # Regression Demo 2
 import pandas as pd
-from dynapipe.autoCV import evaluate_model,dynaClassifier,dynaRegressor
+from optimalflow.autoCV import evaluate_model,dynaClassifier,dynaRegressor
 import joblib
 
-from dynapipe.utilis_func import pipeline_splitting_rule, update_parameters,reset_parameters
+from optimalflow.utilis_func import pipeline_splitting_rule, update_parameters,reset_parameters
 reset_parameters()
 
 tr_features = pd.read_csv('./data/regression/train_features.csv')
@@ -86,7 +86,7 @@ for name, mdl in models.items():
 
 # # EstimatorCV Test Demo - classification
 # import pandas as pd
-# from dynapipe.estimatorCV import clf_cv,reg_cv
+# from optimalflow.estimatorCV import clf_cv,reg_cv
 
 # tr_features = pd.read_csv('./data/classification/train_features.csv')
 # tr_labels = pd.read_csv('./data/classification/train_labels.csv')

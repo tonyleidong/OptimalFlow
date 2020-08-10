@@ -4,7 +4,7 @@
 Report Issues
 =============
 
-Report Issues at https://github.com/tonyleidong/dynapipe/issues.
+Report Issues at https://github.com/tonyleidong/OptimalFlow/issues.
 
 If you are reporting a bug, please include:
 

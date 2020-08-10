@@ -39,7 +39,7 @@ class autoViz:
         Example
         -------
         
-        .. [] https://dynamic-pipeline.readthedocs.io/en/latest/demos.html#pipeline-cluster-traversal-experiments-model-retrieval-diagram-using-autoviz
+        .. [] https://Optimal-Flow.readthedocs.io/en/latest/demos.html#pipeline-cluster-traversal-experiments-model-retrieval-diagram-using-autoviz
         
         References
         ----------

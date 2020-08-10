@@ -1,6 +1,6 @@
 # Demo - Classification
 import pandas as pd
-from dynapipe.autoFS import dynaFS_clf
+from optimalflow.autoFS import dynaFS_clf
 
 tr_features = pd.read_csv('./data/classification/train_features.csv')
 tr_labels = pd.read_csv('./data/classification/train_labels.csv')
@@ -12,7 +12,7 @@ clf_fs_demo.fit_fs_clf(tr_features,tr_labels)
 
 # # Demo - Regression
 # import pandas as pd
-# from dynapipe.autoFS import dynaFS_reg
+# from optimalflow.autoFS import dynaFS_reg
 
 # tr_features = pd.read_csv('./data/regression/train_features.csv')
 # tr_labels = pd.read_csv('./data/regression/train_labels.csv')

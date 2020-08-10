@@ -36,11 +36,11 @@ Description :
 dynapipePreprocessing
 ---------------------
 
-.. autoclass:: dynapipe.autoPP.dynaPreprocessing
+.. autoclass:: optimalflow.autoPP.dynaPreprocessing
     :members:
 
 PPtools
 -------
 
-.. autoclass:: dynapipe.funcPP.PPtools
+.. autoclass:: optimalflow.funcPP.PPtools
     :members:

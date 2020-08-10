@@ -1,8 +1,8 @@
 07/08 23:23:41 - INFO - ###############################################################################################################################################################################################################
-07/08 23:23:41 - INFO - Dynamic Pipeline - autoCV - Auto PreProcessing :: 2020.08.07.23.23.41
+07/08 23:23:41 - INFO - Optimal Flow - autoCV - Auto PreProcessing :: 2020.08.07.23.23.41
 07/08 23:23:41 - INFO - ###############################################################################################################################################################################################################
 07/08 23:23:41 - INFO - Copyright All Reserved by Tony Dong | e-mail: tonyleidong@gmail.com 
-07/08 23:23:41 - INFO - Official Documentation: https://dynamic-pipeline.readthedocs.io
+07/08 23:23:41 - INFO - Official Documentation: https://Optimal-Flow.readthedocs.io
 07/08 23:23:41 - INFO - ------------------------------------------------------------
 07/08 23:23:41 - INFO - All previous logfiles will be deleted, when DELETE_FLAG is set to True.
 07/08 23:23:41 - INFO - Deleted file:autoPP_log_2020.08.07.23.19.30.log
