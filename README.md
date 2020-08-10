@@ -42,7 +42,7 @@ In summary, **OptimalFlow** shares a few useful properties for data scientists:
       
 * *Custom Modify Welcomed* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
 
-### Documentation:  https://OptimalFlow.readthedocs.io/
+### Documentation:  https://Optimal-Flow.readthedocs.io/
 
 ### Installation
 ```python
