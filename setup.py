@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="dynapipe", 
-    version="0.1.4",
+    version="0.0.1",
     author="Tony Dong",
     author_email="tonyleidong@gmail.com",
-    description="Dynamic Pipeline is a high-level API to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple coding.",
+    description="OptimalFlow is a high-level API to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple coding.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/tonyleidong/dynapipe",
+    url="https://github.com/tonyleidong/OptimalFlow",
     keywords = ['auto machine learning', 'features selection', 'model selection','model preprocessing','pipeline'],
     packages=setuptools.find_packages(),
     include_package_data = True,
@@ -22,6 +22,7 @@ setuptools.setup(
         'scipy',
         'joblib',
         'category_encoders',
+        'plotly'
     ],
     classifiers=[
         "Programming Language :: Python :: 3.8",

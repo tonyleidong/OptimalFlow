@@ -137,7 +137,7 @@ Model selection for a classification problem using autoCV:
 
 .. code-block:: python
       
-    *optimalflow* autoCV Module ===> lgr_CrossValidation with 5 folds:
+    *OptimalFlow* autoCV Module ===> lgr_CrossValidation with 5 folds:
 
     Best Parameters: {'C': 1, 'random_state': 13}
 
@@ -145,7 +145,7 @@ Model selection for a classification problem using autoCV:
 
     Progress: [###-----------------] 14.3%
 
-    *optimalflow* autoCV Module ===> svm_CrossValidation with 5 folds:
+    *OptimalFlow* autoCV Module ===> svm_CrossValidation with 5 folds:
 
     Best Parameters: {'C': 0.1, 'kernel': 'linear'}
 
@@ -153,7 +153,7 @@ Model selection for a classification problem using autoCV:
 
     Progress: [######--------------] 28.6%
 
-    *optimalflow* autoCV Module ===> mlp_CrossValidation with 5 folds:
+    *OptimalFlow* autoCV Module ===> mlp_CrossValidation with 5 folds:
 
     Best Parameters: {'activation': 'tanh', 'hidden_layer_sizes': (50,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'lbfgs'}
 
@@ -161,7 +161,7 @@ Model selection for a classification problem using autoCV:
 
     Progress: [#########-----------] 42.9%
 
-    *optimalflow* autoCV Module ===> rf_CrossValidation with 5 folds:
+    *OptimalFlow* autoCV Module ===> rf_CrossValidation with 5 folds:
 
     Best Parameters: {'max_depth': 4, 'n_estimators': 250, 'random_state': 13}
 
@@ -169,7 +169,7 @@ Model selection for a classification problem using autoCV:
 
     Progress: [###########---------] 57.1%
 
-    *optimalflow* autoCV Module ===> ada_CrossValidation with 5 folds:
+    *OptimalFlow* autoCV Module ===> ada_CrossValidation with 5 folds:
 
     Best Parameters: {'learning_rate': 0.1, 'n_estimators': 100, 'random_state': 13}
 
@@ -177,7 +177,7 @@ Model selection for a classification problem using autoCV:
 
     Progress: [##############------] 71.4%
 
-    *optimalflow* autoCV Module ===> gb_CrossValidation with 5 folds:
+    *OptimalFlow* autoCV Module ===> gb_CrossValidation with 5 folds:
 
     Best Parameters: {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 300, 'random_state': 13}
 
@@ -185,7 +185,7 @@ Model selection for a classification problem using autoCV:
 
     Progress: [#################---] 85.7%
 
-    *optimalflow* autoCV Module ===> xgb_CrossValidation with 5 folds:
+    *OptimalFlow* autoCV Module ===> xgb_CrossValidation with 5 folds:
 
     Best Parameters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200, 'verbosity': 0}
 
@@ -248,98 +248,98 @@ Model selection for a regression problem using autoCV:
     Done with the parameters reset.
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.0337 minutes left  [#-------------------] 7.1%
 
-        *optimalflow* autoCV Module ===> lr model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> lr model CrossValidation with 5 folds:
     Best Parameters: {'normalize': False}
 
     Best CV Score: 0.682929422892965
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.5549 minutes left  [###-----------------] 14.3%
 
-        *optimalflow* autoCV Module ===> knn model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> knn model CrossValidation with 5 folds:
     Best Parameters: {'algorithm': 'auto', 'n_neighbors': 10, 'weights': 'distance'}
 
     Best CV Score: 0.5277324478219082
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.2383 minutes left  [####----------------] 21.4%
 
-        *optimalflow* autoCV Module ===> tree model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> tree model CrossValidation with 5 folds:
     Best Parameters: {'max_depth': 5, 'min_samples_leaf': 3, 'splitter': 'best'}
 
     Best CV Score: 0.7704058399460141
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 11.0461 minutes left  [######--------------] 28.6%
 
-        *optimalflow* autoCV Module ===> svm model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> svm model CrossValidation with 5 folds:
     Best Parameters: {'C': 1, 'kernel': 'linear'}
 
     Best CV Score: 0.6817778239200576
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 20.2113 minutes left  [#######-------------] 35.7%
 
-        *optimalflow* autoCV Module ===> mlp model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> mlp model CrossValidation with 5 folds:
     Best Parameters: {'activation': 'identity', 'hidden_layer_sizes': (50,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'lbfgs'}
 
     Best CV Score: 0.6556246414762388
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 3.1693 minutes left  [#########-----------] 42.9%
 
-        *optimalflow* autoCV Module ===> rf model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> rf model CrossValidation with 5 folds:
     Best Parameters: {'max_depth': 8, 'n_estimators': 50}
 
     Best CV Score: 0.8582920563031621
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 18.0094 minutes left  [##########----------] 50.0%
 
-        *optimalflow* autoCV Module ===> gb model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> gb model CrossValidation with 5 folds:
     Best Parameters: {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 100}
 
     Best CV Score: 0.8794018441486111
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 18.7663 minutes left  [###########---------] 57.1%
 
-        *optimalflow* autoCV Module ===> ada model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> ada model CrossValidation with 5 folds:
     Best Parameters: {'learning_rate': 0.3, 'loss': 'linear', 'n_estimators': 150, 'random_state': 13}
 
     Best CV Score: 0.8255039215809923
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 4.545 minutes left  [#############-------] 64.3%
 
-        *optimalflow* autoCV Module ===> xgb model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> xgb model CrossValidation with 5 folds:
     Best Parameters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 300, 'verbosity': 0}
 
     Best CV Score: 0.8645505523555148
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 1.6471 minutes left  [##############------] 71.4%
 
-        *optimalflow* autoCV Module ===> hgboost model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> hgboost model CrossValidation with 5 folds:
     Best Parameters: {'learning_rate': 0.2, 'max_depth': 3}
 
     Best CV Score: 0.8490465745463796
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.0182 minutes left  [################----] 78.6%
 
-        *optimalflow* autoCV Module ===> huber model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> huber model CrossValidation with 5 folds:
     Best Parameters: {'fit_intercept': False}
 
     Best CV Score: 0.6250877399211718
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.0024 minutes left  [#################---] 85.7%
 
-        *optimalflow* autoCV Module ===> rgcv model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> rgcv model CrossValidation with 5 folds:
     Best Parameters: {'fit_intercept': True}
 
     Best CV Score: 0.6814764830347567
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.011 minutes left  [###################-] 92.9%
 
-        *optimalflow* autoCV Module ===> cvlasso model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> cvlasso model CrossValidation with 5 folds:
     Best Parameters: {'fit_intercept': True}
 
     Best CV Score: 0.6686184981380419
 
     Now in Progress - Model Selection w/ Cross-validation: Estimate about 0.0 minutes left  [####################] 100.0%
 
-        *optimalflow* autoCV Module ===> sgd model CrossValidation with 5 folds:
+        *OptimalFlow* autoCV Module ===> sgd model CrossValidation with 5 folds:
     Best Parameters: {'learning_rate': 'invscaling', 'penalty': 'elasticnet', 'shuffle': True}
 
     Best CV Score: -1.445728757185719e+26
