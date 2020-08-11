@@ -55,7 +55,12 @@ pip install OptimalFlow
  - autoFS for classification/regression features selection
  - autoCV for classification/regression model selection and evaluation
  - autoPipe for *Pipeline Cluster Traversal Experiments* 
+ - autoViz for pipeline cluster visualization. Current available: Model retrieval diagram
+ - autoFlow for logging & tracking.
 
+### Updates on 8/10/2020
+ * Stable 0.1.0 version release on Pypi
+ 
 ### Updates on 8/7/2020
  * Add estimators: HuberRegressor, RidgeCV, LassoCV, SGDRegressor, and HistGradientBoostingRegressor
  * Modify parameters.json, and reset_parameters.json for the added estimators
