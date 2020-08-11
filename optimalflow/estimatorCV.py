@@ -2,10 +2,10 @@
 
 import pandas as pd
 from sklearn.experimental import enable_hist_gradient_boosting
-from sklearn.linear_model import LogisticRegression,LinearRegression,HuberRegressor,RidgeCV,LassoCV,SGDRegressor
-from sklearn.svm import SVC,SVR,LinearSVR
+from sklearn.linear_model import LogisticRegression,LinearRegression,HuberRegressor,RidgeCV,RidgeClassifierCV,LassoCV,SGDRegressor,SGDClassifier
+from sklearn.svm import SVC,SVR,LinearSVR,LinearSVC
 from sklearn.tree import DecisionTreeRegressor
-from sklearn.ensemble import RandomForestClassifier,RandomForestRegressor,AdaBoostRegressor,AdaBoostClassifier,HistGradientBoostingRegressor
+from sklearn.ensemble import RandomForestClassifier,RandomForestRegressor,AdaBoostRegressor,AdaBoostClassifier,HistGradientBoostingRegressor,HistGradientBoostingClassifier
 from sklearn.neural_network import MLPClassifier,MLPRegressor
 from sklearn.ensemble import GradientBoostingClassifier,GradientBoostingRegressor
 from sklearn.neighbors import KNeighborsRegressor
@@ -137,6 +137,44 @@ class clf_cv:
         #     }
         parameters = para_data["cls"]["gb"]
         return(GridSearchCV(xgb_cv, parameters,cv=self.cv))
+    # New add on 8/10/2020
+    def lsvc(self):
+        warnings.warn = warn
+        lsvc_cv = LinearSVC()
+        parameters = para_data["cls"]["lsvc"]
+        # parameters = {
+        #     'C': [0.1, 1, 10]
+        #     }
+        return(GridSearchCV(lsvc_cv, parameters, cv = self.cv))
+    def sgd(self):
+        warnings.warn = warn
+        sgd_cv = SGDClassifier()
+        # parameters = {
+        #     'shuffle': [True,False],
+        #     'penalty': ['l2', 'l1', 'elasticnet'],
+        #     'learning_rate': ['constant','optimal','invscaling']
+        #     }
+        parameters = para_data["cls"]["sgd"]
+        return(GridSearchCV(sgd_cv, parameters,cv=self.cv))
+    def hgboost(self):
+        warnings.warn = warn
+        hgboost_cv = HistGradientBoostingClassifier()
+        # parameters = {
+        #     'max_depth': [3, 5, 7, 9],
+        #     'learning_rate': [0.1, 0.2,0.3,0.4]
+        #     }
+        parameters = para_data["cls"]["hgboost"]
+        return(GridSearchCV(hgboost_cv, parameters,cv=self.cv)) 
+
+    def rgcv(self):
+        warnings.warn = warn
+        rgcv_cv = RidgeClassifierCV()
+        # parameters = {
+        #     'fit_intercept': [True,False]
+        #     }
+        parameters = para_data["cls"]["rgcv"]
+        return(GridSearchCV(rgcv_cv, parameters,cv=self.cv))
+
 
 class reg_cv:
     """This class stores regression estimators.
@@ -268,46 +306,46 @@ class reg_cv:
     def hgboost(self):
         warnings.warn = warn
         hgboost_cv = HistGradientBoostingRegressor()
-        parameters = {
-            'max_depth': [3, 5, 7, 9],
-            'learning_rate': [0.1, 0.2,0.3,0.4]
-            }
-        # parameters = para_data["reg"]["tree"]
+        # parameters = {
+        #     'max_depth': [3, 5, 7, 9],
+        #     'learning_rate': [0.1, 0.2,0.3,0.4]
+        #     }
+        parameters = para_data["reg"]["hgboost"]
         return(GridSearchCV(hgboost_cv, parameters,cv=self.cv)) 
 
     def huber(self):
         warnings.warn = warn
         huber_cv = HuberRegressor()
-        parameters = {
-            'fit_intercept' : [True,False]
-            }
-        # parameters = para_data["reg"]["tree"]
+        # parameters = {
+        #     'fit_intercept' : [True,False]
+        #     }
+        parameters = para_data["reg"]["huber"]
         return(GridSearchCV(huber_cv, parameters,cv=self.cv))
 
     def rgcv(self):
         warnings.warn = warn
         rgcv_cv = RidgeCV()
-        parameters = {
-            'fit_intercept': [True,False]
-            }
-        # parameters = para_data["reg"]["tree"]
+        # parameters = {
+        #     'fit_intercept': [True,False]
+        #     }
+        parameters = para_data["reg"]["rgcv"]
         return(GridSearchCV(rgcv_cv, parameters,cv=self.cv))
 
     def cvlasso(self):
         warnings.warn = warn
         cvlasso_cv = LassoCV()
-        parameters = {
-            'fit_intercept': [True,False]
-            }
-        # parameters = para_data["reg"]["tree"]
+        # parameters = {
+        #     'fit_intercept': [True,False]
+        #     }
+        parameters = para_data["reg"]["cvlasso"]
         return(GridSearchCV(cvlasso_cv, parameters,cv=self.cv))
     def sgd(self):
         warnings.warn = warn
         sgd_cv = SGDRegressor()
-        parameters = {
-            'shuffle': [True,False],
-            'penalty': ['l2', 'l1', 'elasticnet'],
-            'learning_rate': ['constant','optimal','invscaling']
-            }
-        # parameters = para_data["reg"]["tree"]
+        # parameters = {
+        #     'shuffle': [True,False],
+        #     'penalty': ['l2', 'l1', 'elasticnet'],
+        #     'learning_rate': ['constant','optimal','invscaling']
+        #     }
+        parameters = para_data["reg"]["sgd"]
         return(GridSearchCV(sgd_cv, parameters,cv=self.cv))

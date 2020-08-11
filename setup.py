@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="optimalflow", 
-    version="0.1.0",
+    version="0.1.1",
     author="Tony Dong",
     author_email="tonyleidong@gmail.com",
-    description="OptimalFlow is a high-level API to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple code.",
+    description="OptimalFlow is a high-level API to help data scientists building models in ensemble way, and automate Machine Learning workflow with simple code.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/tonyleidong/OptimalFlow",

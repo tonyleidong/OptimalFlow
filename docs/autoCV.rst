@@ -24,6 +24,10 @@ Description :
         - rf : Random Forest classifier - RandomForestClassifier()
         - gb : Gradient Boost classifier - GradientBoostingClassifier()
         - xgb : XGBoost classifier - xgb.XGBClassifier()
+        - lsvc : Linear Support Vector Machine Classifier - LinearSVC()
+        - hgboost : Hist Gradient Boosting classifier - HistGradientBoostingClassifier()
+        - sgd : SDG classifier - SGDClassifier() 
+        - rgcv : Ridge Cross-validation classifier - RidgeClassifierCV() 
     * reg_cv : Class focusing on regression estimators
         - lr : Linear Regression - LinearRegression()
         - knn : Regression based on k-nearest neighbors - KNeighborsRegressor()
@@ -34,11 +38,11 @@ Description :
         - tree : A decision tree regressor - DecisionTreeRegressor()
         - mlp : Multi-layer Perceptron regressor - MLPRegressor()
         - xgb : XGBoost regression - XGBRegressor()
-        - hgboost : Hist Gradient Boosting regression - HistGradientBoostingRegressor(); New added on 8/7/2020
-        - huber : Huber regression - HuberRegressor(); New added on 8/7/2020
-        - rgcv : Ridge cross validation regression - RidgeCV(); New added on 8/7/2020
-        - cvlasso : Lasso cross validation regression - LassoCV(); New added on 8/7/2020
-        - sgd : Stochastic Gradient Descent regression - SGDRegressor(); New added on 8/7/2020
+        - hgboost : Hist Gradient Boosting regression - HistGradientBoostingRegressor()
+        - huber : Huber regression - HuberRegressor()
+        - rgcv : Ridge cross validation regression - RidgeCV()
+        - cvlasso : Lasso cross validation regression - LassoCV()
+        - sgd : Stochastic Gradient Descent regression - SGDRegressor()
 
 dynaClassifier
 ---------------------
@@ -153,6 +157,21 @@ Defaults Parameters for Classifiers/Regressors
    * - 
      - 'learning_rate' 
      - [0.01, 0.1, 0.2,0.3,0.4]
+   * - lsvc
+     - 'C'
+     - [0.1, 1, 10]
+   * - sgd
+     - 'penalty'
+     - ['l2', 'l1', 'elasticnet']
+   * - hgboost
+     - 'max_depth' 
+     - [3, 5, 7, 9]
+   * - 
+     - 'learning_rate' 
+     - [0.1, 0.2,0.3,0.4]
+   * - rgcv
+     - 'fit_intercept' 
+     - [True,False]
 ..
 
 .. list-table:: Regressors Default Parameters Searching Range
