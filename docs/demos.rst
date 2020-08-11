@@ -73,7 +73,7 @@ Features selection for a regression problem using autoFS:
    # Set input_form_file = False, when label values are array. Select 'True' from Pandas dataframe.
    reg_fs_demo = dynaFS_reg( fs_num = 5,random_state = 13,cv = 5,input_from_file = True)
    # Select detail_info = True, when you want to see the detail of the iteration
-   reg_fs_demo.fit(tr_features,tr_labels,detail_info = False)
+   reg_fs_demo.fit(tr_features,tr_labels)
 ..
 
  Output:
@@ -123,7 +123,7 @@ Model selection for a classification problem using autoCV:
    # Set input_form_file = False, when label values are array. Select 'True' from Pandas dataframe.
    clf_cv_demo = dynaClassifier(random_state = 13,cv_num = 5,input_from_file = True)
    # Select detail_info = True, when you want to see the detail of the iteration
-   clf_cv_demo.fit(tr_features,tr_labels,detail_info = False)
+   clf_cv_demo.fit(tr_features,tr_labels)
    
    models = {}
    for mdl in ['lgr','svm','mlp','rf','ada','gb','xgb']:
