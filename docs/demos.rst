@@ -429,6 +429,7 @@ Build Pipeline Cluster Traveral Experiments using autoPipe:
 
 ..
 
+
 Pipeline Cluster Traversal Experiments Model Retrieval Diagram using autoViz:
 -----------------------------------------------------------------------------
 
@@ -448,3 +449,7 @@ Output:
     .. image:: autoViz_Demo.PNG 
         :width: 980
 
+Apply OptimalFlow in Jupyter notebook:
+--------------------------------
+
+https://github.com/tonyleidong/OptimalFlow/blob/master/tests/notebook_demo.ipynb
