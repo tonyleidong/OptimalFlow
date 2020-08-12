@@ -117,7 +117,7 @@ Defaults Parameters for Classifiers/Regressors
      - ['linear', 'poly', 'rbf', 'sigmoid']
    * - mlp
      - 'activation'
-     - ['identity','relu', 'tanh', 'logistic']
+     - ['identity','relu', 'logistic']
    * - 
      - 'hidden_layer_sizes'
      - [10, 50, 100]
