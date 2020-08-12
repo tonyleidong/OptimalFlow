@@ -59,6 +59,9 @@ pip install OptimalFlow
  - autoViz for pipeline cluster visualization. Current available: Model retrieval diagram
  - autoFlow for logging & tracking.
 
+### Notebook Demo:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb)
+
 ### Updates on 8/10/2020
  * Stable 0.1.0 version release on Pypi
  
