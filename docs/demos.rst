@@ -466,6 +466,10 @@ Build Pipeline Cluster Traveral Experiments using autoPipe:
 
 ..
 
+Here's static notebook demo:
+
+https://github.com/tonyleidong/OptimalFlow/blob/master/tests/notebook_demo.ipynb
+
 or Live Notebook Demo on Binder:
 
 .. image:: https://mybinder.org/badge_logo.svg
