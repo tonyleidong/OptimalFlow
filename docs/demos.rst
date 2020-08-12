@@ -64,16 +64,23 @@ Features selection for a regression problem using autoFS:
 
 .. code-block:: python
 
-   import pandas as pd
-   from optimalflow.autoFS import dynaFS_reg
+# Demo - Regression
 
-   tr_features = pd.read_csv('./data/regression/train_features.csv')
-   tr_labels = pd.read_csv('./data/regression/train_labels.csv')
-   
-   # Set input_form_file = False, when label values are array. Select 'True' from Pandas dataframe.
-   reg_fs_demo = dynaFS_reg( fs_num = 5,random_state = 13,cv = 5,input_from_file = True)
-   # Select detail_info = True, when you want to see the detail of the iteration
-   reg_fs_demo.fit(tr_features,tr_labels)
+    import pandas as pd
+    from optimalflow.autoFS import dynaFS_reg
+
+    # Boston Housing Cleaned dataset
+
+    tr_features = pd.read_csv('./data/regression/train_features.csv')
+    tr_labels = pd.read_csv('./data/regression/train_labels.csv')
+
+    # Set input_form_file = False, when label values are array. Select 'True' from Pandas dataframe.
+
+    reg_fs_demo = dynaFS_reg( fs_num = 5,random_state = 13,cv = 5,input_from_file = True)
+
+    # You can find details of each selector's choice in autoFS_logxxxxx.log file in the ./test folder
+
+    reg_fs_demo.fit(tr_features,tr_labels)
 ..
 
  Output:
