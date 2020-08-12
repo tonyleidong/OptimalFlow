@@ -36,7 +36,9 @@ In summary, **OptimalFlow** shares a few useful properties for data scientists:
       
       * *Custom Modify Welcomed* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
 
-
+Notebook Demo:
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb
 
 .. toctree::
    :maxdepth: 3
