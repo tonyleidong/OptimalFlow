@@ -453,3 +453,8 @@ Apply OptimalFlow in Jupyter notebook:
 --------------------------------
 
 https://github.com/tonyleidong/OptimalFlow/blob/master/tests/notebook_demo.ipynb
+
+or Live Notebook Demo on Binder:
+
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb
