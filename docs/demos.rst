@@ -64,7 +64,7 @@ Features selection for a regression problem using autoFS:
 
 .. code-block:: python
 
-# Demo - Regression
+    # Demo - Regression
 
     import pandas as pd
     from optimalflow.autoFS import dynaFS_reg
@@ -110,6 +110,10 @@ Features selection for a regression problem using autoFS:
 
     The optimalflow autoFS identify the top 5 important features for regression are: ['RM', 'LSTAT', 'PTRATIO', 'NOX', 'CRIM']. 
 ..
+
+Here's static notebook demo:
+
+https://github.com/tonyleidong/OptimalFlow/blob/master/tests/autoFS_demo.ipynb
 
 or Live Notebook Demo on Binder:
 
@@ -216,6 +220,10 @@ Model selection for a classification problem using autoCV:
     gb -- Accuracy: 0.815 / Precision: 0.796 / Recall: 0.662 / Latency: 2.0ms
     xgb -- Accuracy: 0.815 / Precision: 0.786 / Recall: 0.677 / Latency: 5.0ms
 ..
+
+Here's static notebook demo:
+
+https://github.com/tonyleidong/OptimalFlow/blob/master/tests/autoCV_clf_demo.ipynb
 
 or Live Notebook Demo on Binder:
 
@@ -379,6 +387,10 @@ Model selection for a regression problem using autoCV:
     cvlasso -- R^2 Score: 0.661 / Mean Absolute Error: 3.741 / Mean Squared Error: 25.821 / Root Mean Squared Error: 25.821 / Latency: 4.0s
     sgd -- R^2 Score: -7.6819521340367e+26 / Mean Absolute Error: 239048363331832.62 / Mean Squared Error: 5.849722584020232e+28 / Root Mean Squared Error: 5.849722584020232e+28 / Latency: 1.0s
 ..
+
+Here's static notebook demo:
+
+https://github.com/tonyleidong/OptimalFlow/blob/master/tests/autoCV_reg_demo.ipynb
 
 or Live Notebook Demo on Binder:
 
