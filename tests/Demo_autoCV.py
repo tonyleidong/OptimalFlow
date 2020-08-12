@@ -11,7 +11,7 @@ val_labels = pd.read_csv('./data/classification/val_labels.csv')
 te_features = pd.read_csv('./data/classification/test_features.csv')
 te_labels = pd.read_csv('./data/classification/test_labels.csv')
 
-custom_ml = ['lsvc','sgd','hgboost','rgcv']
+custom_ml = ['lgr','svm','mlp','rf','ada','gb','xgb','lsvc','sgd','hgboost','rgcv']
 
 clf_cv_demo = dynaClassifier(custom_estimators = custom_ml,random_state = 13,cv_num = 5)
 

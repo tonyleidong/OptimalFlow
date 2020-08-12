@@ -104,6 +104,14 @@ Features selection for a regression problem using autoFS:
     The optimalflow autoFS identify the top 5 important features for regression are: ['RM', 'LSTAT', 'PTRATIO', 'NOX', 'CRIM']. 
 ..
 
+or Live Notebook Demo on Binder:
+
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2FautoFS_demo.ipynb
+
+
+
+
 Model selection for a classification problem using autoCV:
 ----------------------------------------------------------
 
@@ -201,6 +209,11 @@ Model selection for a classification problem using autoCV:
     gb -- Accuracy: 0.815 / Precision: 0.796 / Recall: 0.662 / Latency: 2.0ms
     xgb -- Accuracy: 0.815 / Precision: 0.786 / Recall: 0.677 / Latency: 5.0ms
 ..
+
+or Live Notebook Demo on Binder:
+
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2FautoCV_clf_demo.ipynb
 
 Model selection for a regression problem using autoCV:
 ----------------------------------------------------------
@@ -359,6 +372,11 @@ Model selection for a regression problem using autoCV:
     cvlasso -- R^2 Score: 0.661 / Mean Absolute Error: 3.741 / Mean Squared Error: 25.821 / Root Mean Squared Error: 25.821 / Latency: 4.0s
     sgd -- R^2 Score: -7.6819521340367e+26 / Mean Absolute Error: 239048363331832.62 / Mean Squared Error: 5.849722584020232e+28 / Root Mean Squared Error: 5.849722584020232e+28 / Latency: 1.0s
 ..
+
+or Live Notebook Demo on Binder:
+
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2FautoCV_reg_demo.ipynb
 
 
 Custom estimators & parameters setting for for autoCV:
