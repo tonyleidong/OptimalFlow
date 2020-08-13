@@ -5,7 +5,7 @@ Welcome to OptimalFlow's Documentation!
    :align: center
    
 **OptimalFlow** is a high-level API toolkit to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple codes. 
-Comparing other popular "AutoML or Automated Machine Learning" APIs, **OptimalFlow** is designed as an omni-ensembled ML workflow optimizer with higher-level API targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. 
+Comparing other popular "AutoML or Automated Machine Learning" APIs, **OptimalFlow** is designed as an omni-ensemble ML workflow optimizer with higher-level API targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. 
 
 To achieve that, **OptimalFlow** creates *Pipeline Cluster Traversal Experiments* to assemble all cross-matching pipelines covering major tasks of Machine Learning workflow, and apply traversal-experiment to search the optimal baseline model.
 Besides, by modularizing all key pipeline components in reusable packages, it allows all components to be custom tunable along with high scalability.
@@ -26,9 +26,9 @@ In summary, **OptimalFlow** shares a few useful properties for data scientists:
 
       * *Easy & less coding* - High-level APIs to implement *Pipeline Cluster Traversal Experiments*, and each ML component is highly automated and modularized;
 
-      * *Well ensembled* - Each key component is ensemble of popular algorithms w/ optimal hyperparameters tuning included;
+      * *Well ensemble* - Each key component is ensemble of popular algorithms w/ optimal hyperparameters tuning included;
       
-      * *Hardly omission* - *Pipeline Cluster Traversal Experiments* are designed to cross-experiment with combined permuted input datasets, feature selection, and model selection;
+      * *Omni-coverage* - *Pipeline Cluster Traversal Experiments* are designed to cross-experiment with all key ML components, like combined permuted input datasets, feature selection, and model selection;
       
       * *Scalable & Consistency* - Each module could add new algorithms easily due to its ensemble & reusable design; no extra needs to modify existing codes for new experiment
 
