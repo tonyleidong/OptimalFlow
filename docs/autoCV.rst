@@ -50,10 +50,22 @@ dynaClassifier
 .. autoclass:: optimalflow.autoCV.dynaClassifier
     :members:
 
+fastClassifier
+---------------------
+
+.. autoclass:: optimalflow.autoCV.fastClassifier
+    :members:
+
 dynaRegressor
 ---------------------
 
 .. autoclass:: optimalflow.autoCV.dynaRegressor
+    :members:
+
+fastRegressor
+---------------------
+
+.. autoclass:: optimalflow.autoCV.fastRegressor
     :members:
 
 evaluate_model

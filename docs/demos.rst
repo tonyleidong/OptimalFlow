@@ -126,6 +126,8 @@ or Live Notebook Demo on Binder:
 Model selection for a classification problem using autoCV:
 ----------------------------------------------------------
 
+NOTE: This Demo is using *dynaClassifier* class, which is grid search based; alternatively, you can use *fastClassifier* class instead, which is random search based, although that's a kind of trades off runtime vs quality of the solution (See more details in *autoCV* module).
+
   Demo Code:
 
 .. code-block:: python
@@ -232,6 +234,8 @@ or Live Notebook Demo on Binder:
 
 Model selection for a regression problem using autoCV:
 ----------------------------------------------------------
+
+NOTE: This Demo is using dynaRegressor class, which is grid search based; alternatively, you can use fastRegressor class instead, which is random search based, although that's a kind of trades off runtime vs quality of the solution (See more details in *autoCV* module).
 
   Demo Code:
 

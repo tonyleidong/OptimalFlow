@@ -62,13 +62,17 @@ pip install OptimalFlow
 ### Notebook Demo:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb)
 
-### Updates on 8/10/2020
+#### Updates on 8/14/2020
+ * Add *fastClassifier*, and *fastRegressor* class which are both random parameter search based
+ * Modify the display settings when using dynaClassifier in non in_pipeline mode
+
+#### Updates on 8/10/2020
  * Stable 0.1.0 version release on Pypi
  
-### Updates on 8/7/2020
+#### Updates on 8/7/2020
  * Add estimators: HuberRegressor, RidgeCV, LassoCV, SGDRegressor, and HistGradientBoostingRegressor
  * Modify parameters.json, and reset_parameters.json for the added estimators
  * Add autoViz for classification problem model retrieval diagram
 
-### License:
+#### License:
 MIT

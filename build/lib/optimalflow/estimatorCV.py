@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier,RandomForestRegressor,AdaBoo
 from sklearn.neural_network import MLPClassifier,MLPRegressor
 from sklearn.ensemble import GradientBoostingClassifier,GradientBoostingRegressor
 from sklearn.neighbors import KNeighborsRegressor
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import GridSearchCV,RandomizedSearchCV
 import xgboost as xgb
 
 import warnings
@@ -46,9 +46,11 @@ class clf_cv:
     ----------
     None
     """
-    def __init__(self,cv_val = None,random_state = None):
+    def __init__(self,cv_val = None,random_state = None, fast_flag = False,n_comb = 10):
         self.cv = cv_val
         self.random_state = [random_state]
+        self.fast_flag = fast_flag
+        self.n_comb = n_comb
         warnings.warn = warn
 
     def lgr(self):
@@ -60,7 +62,11 @@ class clf_cv:
         #     }
         parameters = para_data["cls"]["lgr"]
         parameters['random_state'] = self.random_state
-        return (GridSearchCV(lgr_cv, parameters,cv = self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(lgr_cv, parameters,cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(lgr_cv, parameters,cv = self.cv))
+    
     def svm(self):
         warnings.warn = warn
         svm_cv = SVC()
@@ -69,7 +75,10 @@ class clf_cv:
         #     'kernel':['linear', 'poly', 'rbf', 'sigmoid'],
         #     'C': [0.1, 1, 10]
         #     }
-        return(GridSearchCV(svm_cv, parameters, cv = self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(svm_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(svm_cv, parameters, cv = self.cv))
     def mlp(self):
         warnings.warn = warn
         mlp_cv = MLPClassifier()
@@ -90,7 +99,12 @@ class clf_cv:
             para_data["cls"]["mlp"]['hidden_layer_sizes'] = tupled
         parameters = para_data["cls"]["mlp"]
         parameters['random_state'] = self.random_state
-        return(GridSearchCV(mlp_cv, parameters, cv = self.cv))
+
+        if(self.fast_flag):
+            return (RandomizedSearchCV(mlp_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(mlp_cv, parameters, cv = self.cv))
+    
     def ada(self):
         warnings.warn = warn
         ada_cv = AdaBoostClassifier()
@@ -101,7 +115,10 @@ class clf_cv:
         #     }
         parameters = para_data["cls"]["ada"]
         parameters['random_state'] = self.random_state
-        return(GridSearchCV(ada_cv, parameters, cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(ada_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(ada_cv, parameters, cv = self.cv))    
     def rf(self):
         warnings.warn = warn
         rf_cv = RandomForestClassifier()
@@ -113,7 +130,10 @@ class clf_cv:
         #     }
         parameters = para_data["cls"]["rf"]
         parameters['random_state'] = self.random_state
-        return(GridSearchCV(rf_cv, parameters, cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(rf_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(rf_cv, parameters, cv = self.cv)) 
     def gb(self):
         warnings.warn = warn
         gb_cv = GradientBoostingClassifier()
@@ -125,7 +145,10 @@ class clf_cv:
         #     }
         parameters = para_data["cls"]["gb"]
         parameters['random_state'] = self.random_state
-        return(GridSearchCV(gb_cv, parameters,cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(gb_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(gb_cv, parameters, cv = self.cv)) 
     def xgb(self):
         warnings.warn = warn
         xgb_cv = xgb.XGBClassifier()
@@ -136,7 +159,10 @@ class clf_cv:
         #     'verbosity' : [0]
         #     }
         parameters = para_data["cls"]["gb"]
-        return(GridSearchCV(xgb_cv, parameters,cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(xgb_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(xgb_cv, parameters, cv = self.cv)) 
     # New add on 8/10/2020
     def lsvc(self):
         warnings.warn = warn
@@ -145,7 +171,10 @@ class clf_cv:
         # parameters = {
         #     'C': [0.1, 1, 10]
         #     }
-        return(GridSearchCV(lsvc_cv, parameters, cv = self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(lsvc_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(lsvc_cv, parameters, cv = self.cv)) 
     def sgd(self):
         warnings.warn = warn
         sgd_cv = SGDClassifier()
@@ -155,7 +184,10 @@ class clf_cv:
         #     'learning_rate': ['constant','optimal','invscaling']
         #     }
         parameters = para_data["cls"]["sgd"]
-        return(GridSearchCV(sgd_cv, parameters,cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(sgd_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(sgd_cv, parameters, cv = self.cv)) 
     def hgboost(self):
         warnings.warn = warn
         hgboost_cv = HistGradientBoostingClassifier()
@@ -164,7 +196,10 @@ class clf_cv:
         #     'learning_rate': [0.1, 0.2,0.3,0.4]
         #     }
         parameters = para_data["cls"]["hgboost"]
-        return(GridSearchCV(hgboost_cv, parameters,cv=self.cv)) 
+        if(self.fast_flag):
+            return (RandomizedSearchCV(hgboost_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(hgboost_cv, parameters, cv = self.cv)) 
 
     def rgcv(self):
         warnings.warn = warn
@@ -173,7 +208,10 @@ class clf_cv:
         #     'fit_intercept': [True,False]
         #     }
         parameters = para_data["cls"]["rgcv"]
-        return(GridSearchCV(rgcv_cv, parameters,cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(rgcv_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(rgcv_cv, parameters, cv = self.cv)) 
 
 
 class reg_cv:
@@ -195,18 +233,24 @@ class reg_cv:
     ----------
     None
     """
-    def __init__(self,cv_val = None,random_state = None):
+    def __init__(self,cv_val = None,random_state = None, fast_flag = False,n_comb = 10):
         self.cv = cv_val
         self.random_state = [random_state]
+        self.fast_flag = fast_flag
+        self.n_comb = n_comb
         warnings.warn = warn
 
     def lr(self):
         warnings.warn = warn
         lr_cv = LinearRegression()
-        parameters = {
-            'normalize' : [True,False]
-            } 
-        return (GridSearchCV(lr_cv, parameters,cv = self.cv))
+        # parameters = {
+        #     'normalize' : [True,False]
+        #     } 
+        parameters = para_data["reg"]["lr"]
+        if(self.fast_flag):
+            return (RandomizedSearchCV(lr_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(lr_cv, parameters, cv = self.cv)) 
     def knn(self):
         warnings.warn = warn
         knn_cv = KNeighborsRegressor()
@@ -216,7 +260,10 @@ class reg_cv:
         #     'weights': ['uniform', 'distance'],
         #     }
         parameters = para_data["reg"]["knn"]
-        return(GridSearchCV(knn_cv, parameters, cv = self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(knn_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(knn_cv, parameters, cv = self.cv)) 
     def svm(self):
         warnings.warn = warn
         svm_cv = SVR()
@@ -225,7 +272,10 @@ class reg_cv:
         #     'C': [0.1, 1, 10]
         #     }
         parameters = para_data["reg"]["svm"]
-        return(GridSearchCV(svm_cv, parameters, cv = self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(svm_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(svm_cv, parameters, cv = self.cv)) 
     def mlp(self):
         warnings.warn = warn
         mlp_cv = MLPRegressor()
@@ -246,7 +296,10 @@ class reg_cv:
             para_data["reg"]["mlp"]['hidden_layer_sizes'] = tupled
         parameters = para_data["reg"]["mlp"]
         parameters['random_state'] = self.random_state
-        return(GridSearchCV(mlp_cv, parameters, cv = self.cv))  
+        if(self.fast_flag):
+            return (RandomizedSearchCV(mlp_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(mlp_cv, parameters, cv = self.cv))   
     def rf(self):
         warnings.warn = warn
         rf_cv = RandomForestRegressor()
@@ -255,7 +308,10 @@ class reg_cv:
         #     'max_depth': [2, 4, 8, 16, 32]
         #     }
         parameters = para_data["reg"]["rf"]   
-        return(GridSearchCV(rf_cv, parameters, cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(rf_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(rf_cv, parameters, cv = self.cv)) 
     def gb(self):
         warnings.warn = warn
         gb_cv = GradientBoostingRegressor()
@@ -265,7 +321,10 @@ class reg_cv:
         #     'learning_rate': [0.01, 0.1, 0.2,0.3,0.4]
         #     }
         parameters = para_data["reg"]["gb"]
-        return(GridSearchCV(gb_cv, parameters,cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(gb_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(gb_cv, parameters, cv = self.cv)) 
     def tree(self):
         warnings.warn = warn
         tree_cv = DecisionTreeRegressor()
@@ -276,7 +335,10 @@ class reg_cv:
         #     'min_samples_leaf':[1,3,5]
         #     }
         parameters = para_data["reg"]["tree"]
-        return(GridSearchCV(tree_cv, parameters,cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(tree_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(tree_cv, parameters, cv = self.cv))
       
     def ada(self):
         warnings.warn = warn
@@ -289,7 +351,10 @@ class reg_cv:
         #     }
         parameters = para_data["reg"]["ada"]
         parameters['random_state'] = self.random_state
-        return(GridSearchCV(ada_cv, parameters,cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(ada_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(ada_cv, parameters, cv = self.cv))
     def xgb(self):
         warnings.warn = warn
         xgb_cv = xgb.XGBRegressor()
@@ -300,7 +365,10 @@ class reg_cv:
         #     'verbosity' : [0]
         #     }
         parameters = para_data["reg"]["xgb"]
-        return(GridSearchCV(xgb_cv, parameters,cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(xgb_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(xgb_cv, parameters, cv = self.cv))
     # # New add August 5,2020
 
     def hgboost(self):
@@ -311,7 +379,10 @@ class reg_cv:
         #     'learning_rate': [0.1, 0.2,0.3,0.4]
         #     }
         parameters = para_data["reg"]["hgboost"]
-        return(GridSearchCV(hgboost_cv, parameters,cv=self.cv)) 
+        if(self.fast_flag):
+            return (RandomizedSearchCV(hgboost_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(hgboost_cv, parameters, cv = self.cv))
 
     def huber(self):
         warnings.warn = warn
@@ -320,7 +391,10 @@ class reg_cv:
         #     'fit_intercept' : [True,False]
         #     }
         parameters = para_data["reg"]["huber"]
-        return(GridSearchCV(huber_cv, parameters,cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(huber_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(huber_cv, parameters, cv = self.cv))
 
     def rgcv(self):
         warnings.warn = warn
@@ -329,7 +403,10 @@ class reg_cv:
         #     'fit_intercept': [True,False]
         #     }
         parameters = para_data["reg"]["rgcv"]
-        return(GridSearchCV(rgcv_cv, parameters,cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(rgcv_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(rgcv_cv, parameters, cv = self.cv))
 
     def cvlasso(self):
         warnings.warn = warn
@@ -338,7 +415,10 @@ class reg_cv:
         #     'fit_intercept': [True,False]
         #     }
         parameters = para_data["reg"]["cvlasso"]
-        return(GridSearchCV(cvlasso_cv, parameters,cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(cvlasso_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(cvlasso_cv, parameters, cv = self.cv))
     def sgd(self):
         warnings.warn = warn
         sgd_cv = SGDRegressor()
@@ -348,4 +428,7 @@ class reg_cv:
         #     'learning_rate': ['constant','optimal','invscaling']
         #     }
         parameters = para_data["reg"]["sgd"]
-        return(GridSearchCV(sgd_cv, parameters,cv=self.cv))
+        if(self.fast_flag):
+            return (RandomizedSearchCV(sgd_cv, parameters, cv = self.cv, n_iter = self.n_comb))
+        else:
+            return (GridSearchCV(sgd_cv, parameters, cv = self.cv))

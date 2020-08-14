@@ -215,7 +215,7 @@ class dynaClassifier:
                     model_name = os.path.join(pkl_folder, f'{est}_clf_model.pkl')
                     joblib.dump(cv_est.best_estimator_, model_name)
                     time_est = round(((time()-start_time)/60)*(total_loop - loop_num),4)
-                    update_progress(loop_num/total_loop, clear_flag = True, process_name = "Model Selection w/ Cross-validation",time_est= time_est)
+                    update_progress(loop_num/total_loop, clear_flag = False, process_name = "Model Selection w/ Cross-validation",time_est= time_est)
                 print(f"\n    *optimalflow* autoCV Module ===> {est}_CrossValidation with {self.cv_num} folds:")
                 print_results(cv_est,self.in_pipeline)
                 self.DICT_EST[est] = cv_est
@@ -295,6 +295,218 @@ class dynaRegressor:
         if(self.input_from_file):
             tr_labels = tr_labels.values.ravel()
         reg = reg_cv(cv_val = self.cv_num,random_state = self.random_state)
+        # estimators = ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd']
+        estimators = self.set_estimators
+        if (not self.in_pipeline):
+            pkl_folder = os.path.join(os.getcwd(),'pkl')
+            if not os.path.exists(pkl_folder):
+                os.makedirs(pkl_folder)
+        loop_num = 1
+        total_loop = len(estimators)
+        
+        for est in estimators:
+            start_time = time()
+            logger.info(Test_comment)
+            logger.info(f"Current Running:" + est +" estimator")
+            try:
+                cv_est = getattr(reg, est)()
+                cv_est.fit(tr_features,tr_labels)
+                if (not self.in_pipeline):
+                    model_name = os.path.join(pkl_folder, f'{est}_reg_model.pkl')
+                    joblib.dump(cv_est.best_estimator_, model_name)
+                    time_est = round(((time()-start_time)/60)*(total_loop - loop_num),4)
+                    update_progress(loop_num/total_loop, clear_flag = False, process_name = "Model Selection w/ Cross-validation",time_est= time_est)
+                
+                print(f"\n    *optimalflow* autoCV Module ===> {est} model CrossValidation with {self.cv_num} folds:")
+                print_results(cv_est,self.in_pipeline)
+                self.DICT_EST[est] = cv_est
+
+                logger.info(f"This estimator executed {round((time()-start_time)/60,4)} minutes")
+                loop_num += 1
+            except:
+                print(est+" estimator is not availible.")
+                if (not self.in_pipeline):
+                    time_est = round(((time()-start_time)/60)*(total_loop - loop_num),4)
+                    update_progress(loop_num/total_loop, clear_flag = True, process_name = "Model Selection w/ Cross-validation",time_est= time_est)
+                logger.info(f"This estimator executed {round((time()-start_time)/60,4)} minutes")
+                loop_num += 1
+                pass
+        return(self.cv_num,self.DICT_EST)
+
+# Fast Classifier with RandomSearchCV approach
+class fastClassifier:
+    """This class implements fast classification model selection with hyperparameters random search and cross-validation.
+    
+    Parameters
+    ----------
+    custom_estimators : list, default = None
+        Custom set the estimators in the autoCV regression module(if set None, will use all available estimators). Current version's default available estimators are ['lgr','svm','mlp','rf','ada','gb','xgb'].
+    
+    random_state : int, default = None
+        Random state value.
+    
+    cv : int, default = None
+        # of folds for cross-validation.
+
+    in_pipeline : bool, default = False
+        Should be set to "True" when using autoPipe module to build Pipeline Cluster Traveral Experiments.
+    
+    input_from_file : bool, default = True
+        When input dataset is df, needs to set "True"; Otherwise, i.e. array, needs to set "False".
+    
+    n_comb : int, default = 10
+        Number of parameter settings that are sampled. n_iter trades off runtime vs quality of the solution.
+
+    Example
+    -------
+    .. [Example] https://Optimal-Flow.readthedocs.io/en/latest/demos.html#model-selection-for-a-classification-problem-using-autocv
+    
+    References
+    ----------
+    None
+    """
+    def __init__(self,n_comb = 10,custom_estimators = None, random_state = 13,cv_num = 5,in_pipeline = False, input_from_file = True):
+        default_estimators = ['lgr','svm','mlp','rf','ada','gb','xgb']
+        if(custom_estimators is None):
+            self.set_estimators = default_estimators
+        else:
+            self.set_estimators = custom_estimators
+        self.random_state =random_state
+        self.cv_num = cv_num
+        self.input_from_file = input_from_file
+        self.in_pipeline = in_pipeline
+        self.DICT_EST = {}
+        self.n_comb = n_comb
+
+    def fit(self,tr_features = None,tr_labels = None):
+        """Fit and train datasets with classification hyperparameters RandomSearch and CV across multiple estimators. Module will Auto save trained model as {estimator_name}_clf_model.pkl file to ./pkl folder.
+        Parameters
+        ----------
+
+        features : df, default = None
+            Train features columns. ( NOTE: In the Pipeline Cluster Traversal Experiments, the features columns should be from the same pipeline dataset).
+        labels : df ,default = None
+            Train label column. 
+            ( NOTE: In the Pipeline Cluster Traversal Experiments, the label column should be from the same pipeline dataset).        
+        Returns
+        -------
+            cv_num : int
+                # of fold for cross-validation.
+            DICT_EST : dictionary
+                key is the name of estimators, value is the ralated trained model
+            
+            NOTE - Trained model auto save function only avalable when in_pipeline = "False".
+            NOTE - Log records will generate and save to ./logs folder automatedly.
+        """
+        warnings.warn = warn
+        if(self.input_from_file):
+            tr_labels = tr_labels.values.ravel()
+        clf = clf_cv(cv_val = self.cv_num,random_state = self.random_state, fast_flag = True,n_comb = self.n_comb)
+        # estimators = ['lgr','svm','mlp','rf','ada','gb','xgb']
+        estimators = self.set_estimators
+        loop_num = 1
+        total_loop = len(estimators)
+        if(not self.in_pipeline):
+            pkl_folder = os.path.join(os.getcwd(),'pkl')
+            if not os.path.exists(pkl_folder):
+                os.makedirs(pkl_folder)
+
+        for est in estimators:
+            start_time = time()
+            logger.info(Test_comment)
+            logger.info(f"Current Running:" + est +" estimator")
+            try:
+                cv_est = getattr(clf, est)()
+                cv_est.fit(tr_features,tr_labels)
+                if(not self.in_pipeline):
+                    model_name = os.path.join(pkl_folder, f'{est}_clf_model.pkl')
+                    joblib.dump(cv_est.best_estimator_, model_name)
+                    time_est = round(((time()-start_time)/60)*(total_loop - loop_num),4)
+                    update_progress(loop_num/total_loop, clear_flag = True, process_name = "Model Selection w/ Cross-validation",time_est= time_est)
+                print(f"\n    *optimalflow* autoCV Module ===> {est}_CrossValidation with {self.cv_num} folds:")
+                print_results(cv_est,self.in_pipeline)
+                self.DICT_EST[est] = cv_est
+
+                logger.info(f"This estimator executed {round((time()-start_time)/60,4)} minutes")
+                loop_num += 1
+            except:
+                print(est+" estimator is not availible.")
+                if(not self.in_pipeline):
+                    time_est = round(((time()-start_time)/60)*(total_loop - loop_num),4)
+                    update_progress(loop_num/total_loop, clear_flag = True, process_name = "Model Selection w/ Cross-validation",time_est= time_est)
+                logger.info(f"This estimator executed {round((time()-start_time)/60,4)} minutes")
+                loop_num += 1
+                pass
+        return(self.cv_num,self.DICT_EST)
+
+class fastRegressor:
+    """This class implements fast regression model selection with with hyperparameters random search and cross-validation. Module will Auto save trained model as {estimator_name}_reg_model.pkl file to ./pkl folder.
+    
+    Parameters
+    ----------
+    custom_estimators : list, default = None
+        Custom set the estimators in the autoCV regression module(if set None, will use all available estimators). Current version's default available estimators are ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd'].
+    
+    random_state : int, default = None
+        Random state value.
+    
+    cv : int, default = None
+        # of folds for cross-validation.
+
+    in_pipeline : bool, default = False
+        Should be set to "True" when using autoPipe module to build Pipeline Cluster Traveral Experiments.
+    
+    input_from_file : bool, default = True
+        When input dataset is df, needs to set "True"; Otherwise, i.e. array, needs to set "False".
+
+    n_comb : int, default = 10
+        Number of parameter settings that are sampled. n_iter trades off runtime vs quality of the solution.
+
+    Example
+    -------
+    .. [Example] https://Optimal-Flow.readthedocs.io/en/latest/demos.html#model-selection-for-a-regression-problem-using-autocv
+    
+    References
+    ----------
+    None
+    """
+    def __init__(self, n_comb = 10, custom_estimators = None, random_state = 25 ,cv_num = 5,in_pipeline = False, input_from_file = True):
+        default_estimators = ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd']
+        if(custom_estimators is None):
+            self.set_estimators = default_estimators
+        else:
+            self.set_estimators = custom_estimators
+        self.random_state =random_state
+        self.cv_num = cv_num
+        self.input_from_file = input_from_file
+        self.in_pipeline = in_pipeline
+        self.DICT_EST = {}
+        self.n_comb = n_comb
+
+    def fit(self,tr_features = None,tr_labels = None):
+        """Fit and train datasets with regression hyperparameters RandomSearch and CV across multiple estimators.
+        
+        Parameters
+        ----------
+
+        features : df, default = None
+            Train features columns. ( NOTE: In the Pipeline Cluster Traversal Experiments, the features columns should be from the same pipeline dataset).
+        labels : df ,default = None
+            Train label column. 
+            ( NOTE: In the Pipeline Cluster Traversal Experiments, the label column should be from the same pipeline dataset).        
+        Returns
+        -------
+            cv_num : int
+                # of fold for cross-validation.
+            DICT_EST : dictionary
+                key is the name of estimators, value is the ralated trained model.
+
+            NOTE - Trained model auto save function only avalable when in_pipeline = "False".
+            NOTE - Log records will generate and save to ./logs folder automatedly.
+        """        
+        if(self.input_from_file):
+            tr_labels = tr_labels.values.ravel()
+        reg = reg_cv(cv_val = self.cv_num,random_state = self.random_state, fast_flag = True,n_comb = self.n_comb)
         # estimators = ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd']
         estimators = self.set_estimators
         if (not self.in_pipeline):

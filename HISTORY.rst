@@ -2,6 +2,12 @@
 History
 =======
 
+0.1.2 (2020-08-14)
+------------------
+
+* Add *fastClassifier*, and *fastRegressor* class which are both random parameter search based
+* Modify the display settings when using dynaClassifier in non in_pipeline mode
+
 0.1.1 (2020-08-10)
 ------------------
 

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: optimalflow
-Version: 0.1.1
+Version: 0.1.2
 Summary: OptimalFlow is a high-level API to help data scientists building models in ensemble way, and automate Machine Learning workflow with simple code.
 Home-page: https://github.com/tonyleidong/OptimalFlow
 Author: Tony Dong
@@ -22,7 +22,7 @@ Description: ## OptimalFlow
         
         **OptimalFlow** is a high-level API toolkit to help data scientists building models in ensemble way, and automating Machine Learning workflow with simple codes. 
         
-        Comparing other popular "AutoML or Automatic Machine Learning" APIs, **OptimalFlow** is designed as an omni-ensembled ML workflow optimizer with higher-level API targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. 
+        Comparing other popular "AutoML or Automated Machine Learning" APIs, **OptimalFlow** is designed as an omni-ensembled ML workflow optimizer with higher-level API targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. 
         
         To achieve that, **OptimalFlow** applies *Pipeline Cluster Traversal Experiments* algorithm to assemble all cross-matching pipelines covering major tasks of Machine Learning workflow, and apply traversal-experiment to search the optimal baseline model.
         
@@ -33,7 +33,7 @@ Description: ## OptimalFlow
         
         The core concept in **OptimalFlow** is *Pipeline Cluster Traversal Experiments*, which is a theory, first raised by Tony Dong during Genpact 2020 GVector Conference, to optimize and automate Machine Learning Workflow using ensemble pipelines algorithm.
         
-        Comparing other automatic or classic machine learning workflow's repetitive experiments using single pipeline, *Pipeline Cluster Traversal Experiments* is more powerful, with larger coverage scope, to find the best model without manual intervention, and also more flexible with elasticity to cope with unseen data due to its ensemble designs in each component.
+        Comparing other automated or classic machine learning workflow's repetitive experiments using single pipeline, *Pipeline Cluster Traversal Experiments* is more powerful, with larger coverage scope, to find the best model without manual intervention, and also more flexible with elasticity to cope with unseen data due to its ensemble designs in each component.
         
         <img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/PipelineClusterTraversalExperiments.PNG" width="980">
         
@@ -67,15 +67,22 @@ Description: ## OptimalFlow
          - autoViz for pipeline cluster visualization. Current available: Model retrieval diagram
          - autoFlow for logging & tracking.
         
-        ### Updates on 8/10/2020
+        ### Notebook Demo:
+        [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb)
+        
+        #### Updates on 8/14/2020
+         * Add *fastClassifier*, and *fastRegressor* class which are both random parameter search based
+         * Modify the display settings when using dynaClassifier in non in_pipeline mode
+        
+        #### Updates on 8/10/2020
          * Stable 0.1.0 version release on Pypi
          
-        ### Updates on 8/7/2020
+        #### Updates on 8/7/2020
          * Add estimators: HuberRegressor, RidgeCV, LassoCV, SGDRegressor, and HistGradientBoostingRegressor
          * Modify parameters.json, and reset_parameters.json for the added estimators
          * Add autoViz for classification problem model retrieval diagram
         
-        ### License:
+        #### License:
         MIT
         
 Keywords: auto machine learning,features selection,model selection,model preprocessing,pipeline,optimal model
