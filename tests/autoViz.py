@@ -251,6 +251,3 @@ class autoViz:
 
             fig.update_layout(title = f'Pipeline Cluster Traversal Experiments - autoViz {metrics} Retrieval Diagram <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
             plot(fig)
-
-
-
