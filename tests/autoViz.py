@@ -2,7 +2,8 @@ import re
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.offline import plot
-
+from plotly.colors import n_colors
+import numpy as np
 
 class autoViz:
     """This class implements model visualization.
@@ -27,7 +28,36 @@ class autoViz:
     def __init__(self,preprocess_dict = None,report = None ):
         self.DICT_PREPROCESSING = preprocess_dict
         self.dyna_report = report
+    def table_report(self):
+        """This function implements heatmap style pipeline cluster's model evaluation report.
+    
+        Parameters
+        ----------
 
+        Example
+        -------
+        
+        .. [] 
+        
+        References
+        ----------
+        
+        """
+        colors = n_colors('rgb(255, 200, 200)', 'rgb(200, 0, 0)', 9, colortype='rgb')
+
+        df = self.dyna_report
+        fig = go.Figure(data=[go.Table(
+            header=dict(values=list(df.columns),
+                        fill_color='paleturquoise',
+                        align='left'),
+            cells=dict(values=[df.Dataset,df.Model_Name,df.Best_Parameters,df.Accuracy,df.Precision,df.Recall,df.Latency],
+                    # fill_color='lavender',
+                    fill_color=[np.array(colors)[df.Accuracy],np.array(colors)[df.Precision], np.array(colors)[df.Recall]],
+                    align='left'))
+        ])
+        fig.update_layout(title = f'Pipeline Cluster Model Evaluation Report - autoViz <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
+        plot(fig)
+        fig.show()
     def clf_model_retrieval(self,metrics = None):
         """This function implements classification model retrieval visualization.
     
@@ -155,6 +185,7 @@ class autoViz:
 
             fig.update_layout(title = f'Pipeline Cluster Traversal Experiments - autoViz {metrics} Retrieval Diagram <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
             plot(fig)
+            fig.show()
 
         elif metrics == "precision":
             df_report_Precision = df_pp.merge(self.dyna_report[['Dataset','Precision']], how = 'left', on = 'Dataset')
@@ -203,6 +234,7 @@ class autoViz:
 
             fig.update_layout(title = f'Pipeline Cluster Traversal Experiments - autoViz {metrics} Retrieval Diagram <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
             plot(fig)
+            fig.show()
 
         elif metrics == "recall":
             df_report_Recall = df_pp.merge(dyna_report[['Dataset','Recall']], how = 'left', on = 'Dataset')
@@ -251,3 +283,4 @@ class autoViz:
 
             fig.update_layout(title = f'Pipeline Cluster Traversal Experiments - autoViz {metrics} Retrieval Diagram <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
             plot(fig)
+            fig.show()

@@ -499,7 +499,26 @@ Output:
     .. image:: autoViz_Demo.PNG 
         :width: 980
 
-Apply OptimalFlow in Jupyter notebook:
+Pipeline Cluster Model Evaluation Dynamic Table using autoViz:
+-----------------------------------------------------------------------------
+
+  Demo Code:
+
+.. code-block:: python
+
+  from optimalflow.autoViz import autoViz
+  viz = autoViz(preprocess_dict = None,report = df)
+  viz.table_report()
+
+..
+
+Output:
+
+
+    .. image:: autoViz_Demo_Dynamic_Table.PNG 
+        :width: 980
+
+End-to-end OptimalFlow example in Jupyter notebook:
 --------------------------------
 
 https://github.com/tonyleidong/OptimalFlow/blob/master/tests/notebook_demo.ipynb
