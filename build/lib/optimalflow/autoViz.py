@@ -37,7 +37,7 @@ class autoViz:
         Example
         -------
         
-        .. [] https://optimal-flow.readthedocs.io/en/latest/demos.html#pipeline-cluster-model-evaluation-dynamic-table-using-autoviz
+        .. [Example] https://optimal-flow.readthedocs.io/en/latest/demos.html#pipeline-cluster-model-evaluation-dynamic-table-using-autoviz
         
         References
         ----------

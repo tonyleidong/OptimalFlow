@@ -105,9 +105,9 @@ class evaluate_model:
             start = time()
             pred = model.predict(features)
             end = time()
-            accuracy = round(accuracy_score(labels, pred), 3)
-            precision = round(precision_score(labels, pred), 3)
-            recall = round(recall_score(labels, pred), 3)
+            accuracy = accuracy_score(y_true =labels, y_pred = pred).round()
+            precision = precision_score(y_true = labels, y_pred = pred,average='weighted').round()
+            recall = recall_score(y_true=labels, y_pred = pred,average='weighted').round()
             latency = round((end - start)*1000, 1)
             optimal_scores = [name,accuracy,precision,recall,latency]
             if(not self.in_pipeline):

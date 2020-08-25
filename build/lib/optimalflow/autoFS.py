@@ -59,6 +59,10 @@ class dynaFS_clf:
     
     Parameters
     ----------
+    custom_selectors : list, default = None
+        Custom set the selectors in the autoFS module(if set None, will use all available selectors). Current version's default available selectors are ['kbest_f','kbest_chi2','rfe_lr','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf'].
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension structure), i.e.rfe_svm and rfecv_svm. When features number > 50, better exclude these 2 selectors, otherwise will result in long processing time.) 
+
     fs_num : int, default = None
         Set the # of features want to select out.
     
@@ -82,7 +86,12 @@ class dynaFS_clf:
     ----------
     None
     """
-    def __init__(self, fs_num = None ,random_state = None,cv = None, in_pipeline = False, input_from_file = True):
+    def __init__(self, custom_selectors = None, fs_num = None ,random_state = None,cv = None, in_pipeline = False, input_from_file = True):
+        default_selectors = ['kbest_f','kbest_chi2','rfe_lr','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
+        if(custom_selectors is None):
+            self.set_selectors = default_selectors
+        else:
+            self.set_selectors = custom_selectors
         self.fs_num = fs_num
         self.random_state = random_state
         self.cv = cv
@@ -115,8 +124,8 @@ class dynaFS_clf:
             tr_labels = tr_labels.values.ravel()
         
         clf = clf_fs(fs_num = self.fs_num ,random_state = self.random_state,cv = self.cv)
-        selectors = ['kbest_f','kbest_chi2','rfe_lr','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
-                    
+        #selectors = ['kbest_f','kbest_chi2','rfe_lr','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
+        selectors = self.set_selectors            
         loop_num = 1
         total_loop = len(selectors)
         selected_features = [] 
@@ -140,7 +149,7 @@ class dynaFS_clf:
             except:
                 if (not self.in_pipeline):
                     print(selector+" selector is not availible.")
-                    update_progress(loop_num/total_loop)
+                    update_progress(loop_num/total_loop,process_name = "Feature Selection Iteration")
                     logger.info(f"This selector executed {round((time()-start_time)/60,4)} minutes")
                 loop_num += 1
                 pass
@@ -158,6 +167,9 @@ class dynaFS_reg:
     
     Parameters
     ----------
+    custom_selectors : list, default = None
+        Custom set the selectors in the autoFS module(if set None, will use all available selectors). Current version's default available selectors are ['kbest_f','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf'].
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension structure), i.e.rfe_svm and rfecv_svm. When features number > 50, better exclude these 2 selectors, otherwise will result in long processing time.)
     fs_num : int, default = None
         Set the # of features want to select out.
     
@@ -183,7 +195,12 @@ class dynaFS_reg:
     None
     """
 
-    def __init__(self, fs_num = None ,random_state = None,cv = None,in_pipeline = False, input_from_file = True):
+    def __init__(self, custom_selectors = None, fs_num = None ,random_state = None,cv = None,in_pipeline = False, input_from_file = True):
+        default_selectors = ['kbest_f','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
+        if(custom_selectors is None):
+            self.set_selectors = default_selectors
+        else:
+            self.set_selectors = custom_selectors
         self.fs_num = fs_num
         self.random_state = random_state
         self.cv = cv
@@ -215,8 +232,8 @@ class dynaFS_reg:
             tr_labels = tr_labels.values.ravel()
 
         reg = reg_fs(fs_num = self.fs_num ,random_state = self.random_state,cv = self.cv)
-        selectors = ['kbest_f','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
-                    
+        #selectors = ['kbest_f','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
+        selectors =  self.set_selectors          
         loop_num = 1
         total_loop = len(selectors)
         selected_features = [] 
@@ -240,7 +257,7 @@ class dynaFS_reg:
             except:
                 if (not self.in_pipeline):
                     print(selector+" selector is not availible.")
-                    update_progress(loop_num/total_loop)
+                    update_progress(loop_num/total_loop,process_name = "Feature Selection Iteration")
                     logger.info(f"This selector executed {round((time()-start_time)/60,4)} minutes")
                 loop_num += 1
                 pass
