@@ -62,8 +62,14 @@ pip install OptimalFlow
 ### Notebook Demo:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb)
 
+
+#### Updates on 8/24/2020
+* Fix evaluate_model() function's precision_score issue when running modelmulti-class classification problems
+* Add custom_selectors args for customized algorithm settings with autoFS's 2 classes(dynaFS_reg, dynaFS_clf)
+
 #### Updates on 8/20/2020
  * Add Dynamic Table for Pipeline Cluster Model Evaluation Report in autoViz module
+ * Add custom_estimators args for customized algorithm settings with autoCV's 4 classes(dynaClassifier,dynaRegressor,fastClassifier, and fastRegressor)  
 
 #### Updates on 8/14/2020
  * Add *fastClassifier*, and *fastRegressor* class which are both random parameter search based

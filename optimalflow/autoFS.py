@@ -59,6 +59,10 @@ class dynaFS_clf:
     
     Parameters
     ----------
+    custom_selectors : list, default = None
+        Custom set the selectors in the autoFS module(if set None, will use all available selectors). Current version's default available selectors are ['kbest_f','kbest_chi2','rfe_lr','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf'].
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension structure), i.e.rfe_svm and rfecv_svm. When features number > 50, better exclude these 2 selectors, otherwise will result in long processing time.) 
+
     fs_num : int, default = None
         Set the # of features want to select out.
     
@@ -145,7 +149,7 @@ class dynaFS_clf:
             except:
                 if (not self.in_pipeline):
                     print(selector+" selector is not availible.")
-                    update_progress(loop_num/total_loop)
+                    update_progress(loop_num/total_loop,process_name = "Feature Selection Iteration")
                     logger.info(f"This selector executed {round((time()-start_time)/60,4)} minutes")
                 loop_num += 1
                 pass
@@ -163,6 +167,9 @@ class dynaFS_reg:
     
     Parameters
     ----------
+    custom_selectors : list, default = None
+        Custom set the selectors in the autoFS module(if set None, will use all available selectors). Current version's default available selectors are ['kbest_f','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf'].
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension structure), i.e.rfe_svm and rfecv_svm. When features number > 50, better exclude these 2 selectors, otherwise will result in long processing time.)
     fs_num : int, default = None
         Set the # of features want to select out.
     
@@ -250,7 +257,7 @@ class dynaFS_reg:
             except:
                 if (not self.in_pipeline):
                     print(selector+" selector is not availible.")
-                    update_progress(loop_num/total_loop)
+                    update_progress(loop_num/total_loop,process_name = "Feature Selection Iteration")
                     logger.info(f"This selector executed {round((time()-start_time)/60,4)} minutes")
                 loop_num += 1
                 pass
