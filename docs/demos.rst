@@ -482,7 +482,9 @@ or Live Notebook Demo on Binder:
 
 Pipeline Cluster Traversal Experiments Model Retrieval Diagram using autoViz:
 -----------------------------------------------------------------------------
-
+  
+  NOTE: Current available for Classification Only.
+  
   Demo Code:
 
 .. code-block:: python
@@ -502,6 +504,7 @@ Output:
 Pipeline Cluster Model Evaluation Dynamic Table using autoViz:
 -----------------------------------------------------------------------------
 
+  NOTE: Current available for Classification Only.
   Demo Code:
 
 .. code-block:: python
