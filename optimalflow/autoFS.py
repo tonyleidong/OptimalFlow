@@ -82,7 +82,12 @@ class dynaFS_clf:
     ----------
     None
     """
-    def __init__(self, fs_num = None ,random_state = None,cv = None, in_pipeline = False, input_from_file = True):
+    def __init__(self, custom_selectors = None, fs_num = None ,random_state = None,cv = None, in_pipeline = False, input_from_file = True):
+        default_selectors = ['kbest_f','kbest_chi2','rfe_lr','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
+        if(custom_selectors is None):
+            self.set_selectors = default_selectors
+        else:
+            self.set_selectors = custom_selectors
         self.fs_num = fs_num
         self.random_state = random_state
         self.cv = cv
@@ -115,8 +120,8 @@ class dynaFS_clf:
             tr_labels = tr_labels.values.ravel()
         
         clf = clf_fs(fs_num = self.fs_num ,random_state = self.random_state,cv = self.cv)
-        selectors = ['kbest_f','kbest_chi2','rfe_lr','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
-                    
+        #selectors = ['kbest_f','kbest_chi2','rfe_lr','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
+        selectors = self.set_selectors            
         loop_num = 1
         total_loop = len(selectors)
         selected_features = [] 
@@ -183,7 +188,12 @@ class dynaFS_reg:
     None
     """
 
-    def __init__(self, fs_num = None ,random_state = None,cv = None,in_pipeline = False, input_from_file = True):
+    def __init__(self, custom_selectors = None, fs_num = None ,random_state = None,cv = None,in_pipeline = False, input_from_file = True):
+        default_selectors = ['kbest_f','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
+        if(custom_selectors is None):
+            self.set_selectors = default_selectors
+        else:
+            self.set_selectors = custom_selectors
         self.fs_num = fs_num
         self.random_state = random_state
         self.cv = cv
@@ -215,8 +225,8 @@ class dynaFS_reg:
             tr_labels = tr_labels.values.ravel()
 
         reg = reg_fs(fs_num = self.fs_num ,random_state = self.random_state,cv = self.cv)
-        selectors = ['kbest_f','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
-                    
+        #selectors = ['kbest_f','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
+        selectors =  self.set_selectors          
         loop_num = 1
         total_loop = len(selectors)
         selected_features = [] 
