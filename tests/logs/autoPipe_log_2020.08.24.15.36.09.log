@@ -1,0 +1,112 @@
+24/08 15:36:09 - INFO - ######################################################################################################################################################################################################
+24/08 15:36:09 - INFO - Optimal Flow - autoCV - Auto Pipe Connector :: 2020.08.24.15.36.09
+24/08 15:36:09 - INFO - ######################################################################################################################################################################################################
+24/08 15:36:09 - INFO - Copyright All Reserved by Tony Dong | e-mail: tonyleidong@gmail.com 
+24/08 15:36:09 - INFO - Official Documentation: https://optimal-flow.readthedocs.io
+24/08 15:36:09 - INFO - ------------------------------------------------------------
+24/08 15:36:09 - INFO - All previous logfiles will be deleted, when DELETE_FLAG is set to True.
+24/08 15:36:09 - INFO - Deleted file:autoPipe_log_2020.08.07.23.23.41.log
+24/08 15:36:09 - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+24/08 15:39:07 - INFO - Total combinations: 128
+24/08 15:39:07 - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+24/08 15:39:07 - INFO - Current Running Preprocessed Dataset No. 0:
+24/08 15:39:07 - INFO - [Features Before autoFS]: 
+24/08 15:39:07 - INFO - ['Size_3', 'area_mean', 'compactness_mean', 'concave points_mean', 'concavity_mean', 'fractal_dimension_mean', 'perimeter_mean', 'radius_mean', 'smoothness_mean', 'symmetry_mean', 'texture_mean', 'Frequency_Age', 'onehot_Position_1_left', 'onehot_Position_1_right', 'Frequency_Position_2', 'Frequency_Size_1', 'Frequency_Size_2', 'Label_Treatment', 'onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno', 'onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes', 'Label_Type_3']
+24/08 15:39:36 - INFO - [Results Report]:
+24/08 15:39:36 - INFO - >>> autoFS summary - This dataset has the top 8 important features: ['concavity_mean', 'radius_mean', 'area_mean', 'concave points_mean', 'texture_mean', 'compactness_mean', 'perimeter_mean', 'symmetry_mean'].
+24/08 15:39:50 - INFO - >>> autoCV summary - lgr model CrossValidation with 5 folds:
+24/08 15:39:50 - INFO -      - Best Paramaters: {'C': 1000, 'random_state': 13}
+
+24/08 15:39:50 - INFO -      - Best CV Score: 0.9356302521008404
+
+24/08 15:39:50 - INFO - >>> autoCV summary - svm model CrossValidation with 5 folds:
+24/08 15:39:50 - INFO -      - Best Paramaters: {'C': 0.1, 'kernel': 'linear'}
+
+24/08 15:39:50 - INFO -      - Best CV Score: 0.9005042016806722
+
+24/08 15:39:50 - INFO - >>> autoCV summary - mlp model CrossValidation with 5 folds:
+24/08 15:39:50 - INFO -      - Best Paramaters: {'activation': 'relu', 'hidden_layer_sizes': (10,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'sgd'}
+
+24/08 15:39:50 - INFO -      - Best CV Score: 0.5205042016806722
+
+24/08 15:39:50 - INFO - >>> autoCV summary - rf model CrossValidation with 5 folds:
+24/08 15:39:50 - INFO -      - Best Paramaters: {'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+24/08 15:39:50 - INFO -      - Best CV Score: 0.9065546218487395
+
+24/08 15:39:50 - INFO - >>> autoCV summary - ada model CrossValidation with 5 folds:
+24/08 15:39:50 - INFO -      - Best Paramaters: {'learning_rate': 1, 'n_estimators': 50, 'random_state': 13}
+
+24/08 15:39:50 - INFO -      - Best CV Score: 0.9003361344537815
+
+24/08 15:39:50 - INFO - >>> autoCV summary - gb model CrossValidation with 5 folds:
+24/08 15:39:50 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+24/08 15:39:50 - INFO -      - Best CV Score: 0.9297478991596637
+
+24/08 15:39:50 - INFO - >>> autoCV summary - xgb model CrossValidation with 5 folds:
+24/08 15:39:50 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+24/08 15:39:50 - INFO -      - Best CV Score: 0.9238655462184873
+
+24/08 15:39:50 - INFO - >>> lgr Modle Validation Results -- Accuracy: 0.877 / Precision: 0.875 / Recall: 0.84 / Latency: 5.3s
+24/08 15:39:50 - INFO - >>> svm Modle Validation Results -- Accuracy: 0.912 / Precision: 0.885 / Recall: 0.92 / Latency: 2.1s
+24/08 15:39:50 - INFO - >>> mlp Modle Validation Results -- Accuracy: 0.439 / Precision: 0.439 / Recall: 1.0 / Latency: 5.4s
+24/08 15:39:50 - INFO - >>> rf Modle Validation Results -- Accuracy: 0.877 / Precision: 0.821 / Recall: 0.92 / Latency: 37.0s
+24/08 15:39:50 - INFO - >>> ada Modle Validation Results -- Accuracy: 0.895 / Precision: 0.952 / Recall: 0.8 / Latency: 40.7s
+24/08 15:39:50 - INFO - >>> gb Modle Validation Results -- Accuracy: 0.895 / Precision: 0.852 / Recall: 0.92 / Latency: 3.9s
+24/08 15:39:50 - INFO - >>> xgb Modle Validation Results -- Accuracy: 0.895 / Precision: 0.913 / Recall: 0.84 / Latency: 61.0s
+24/08 15:39:50 - INFO - Total executed 0.7168 minutes
+24/08 15:39:50 - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+24/08 15:39:50 - INFO - Current Running Preprocessed Dataset No. 1:
+24/08 15:39:50 - INFO - [Features Before autoFS]: 
+24/08 15:39:50 - INFO - ['Size_3', 'area_mean', 'compactness_mean', 'concave points_mean', 'concavity_mean', 'fractal_dimension_mean', 'perimeter_mean', 'radius_mean', 'smoothness_mean', 'symmetry_mean', 'texture_mean', 'Frequency_Age', 'onehot_Position_1_left', 'onehot_Position_1_right', 'Frequency_Position_2', 'Frequency_Size_1', 'Frequency_Size_2', 'Label_Treatment', 'onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno', 'onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes', 'Label_Type_3']
+24/08 15:39:59 - INFO - [Results Report]:
+24/08 15:39:59 - INFO - >>> autoFS summary - This dataset has the top 8 important features: ['concave points_mean', 'texture_mean', 'area_mean', 'concavity_mean', 'perimeter_mean', 'smoothness_mean', 'compactness_mean', 'radius_mean'].
+24/08 15:40:09 - INFO - >>> autoCV summary - lgr model CrossValidation with 5 folds:
+24/08 15:40:09 - INFO -      - Best Paramaters: {'C': 10, 'random_state': 13}
+
+24/08 15:40:09 - INFO -      - Best CV Score: 0.9532773109243697
+
+24/08 15:40:09 - INFO - >>> autoCV summary - svm model CrossValidation with 5 folds:
+24/08 15:40:09 - INFO -      - Best Paramaters: {'C': 0.1, 'kernel': 'linear'}
+
+24/08 15:40:09 - INFO -      - Best CV Score: 0.9473949579831933
+
+24/08 15:40:09 - INFO - >>> autoCV summary - mlp model CrossValidation with 5 folds:
+24/08 15:40:09 - INFO -      - Best Paramaters: {'activation': 'relu', 'hidden_layer_sizes': (10,), 'learning_rate': 'constant', 'random_state': 13, 'solver': 'sgd'}
+
+24/08 15:40:09 - INFO -      - Best CV Score: 0.8949579831932774
+
+24/08 15:40:09 - INFO - >>> autoCV summary - rf model CrossValidation with 5 folds:
+24/08 15:40:09 - INFO -      - Best Paramaters: {'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+24/08 15:40:09 - INFO -      - Best CV Score: 0.9065546218487395
+
+24/08 15:40:09 - INFO - >>> autoCV summary - ada model CrossValidation with 5 folds:
+24/08 15:40:09 - INFO -      - Best Paramaters: {'learning_rate': 1, 'n_estimators': 50, 'random_state': 13}
+
+24/08 15:40:09 - INFO -      - Best CV Score: 0.8949579831932774
+
+24/08 15:40:09 - INFO - >>> autoCV summary - gb model CrossValidation with 5 folds:
+24/08 15:40:09 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+24/08 15:40:09 - INFO -      - Best CV Score: 0.9297478991596639
+
+24/08 15:40:09 - INFO - >>> autoCV summary - xgb model CrossValidation with 5 folds:
+24/08 15:40:09 - INFO -      - Best Paramaters: {'learning_rate': 1, 'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+
+24/08 15:40:09 - INFO -      - Best CV Score: 0.9295798319327732
+
+24/08 15:40:09 - INFO - >>> lgr Modle Validation Results -- Accuracy: 0.895 / Precision: 0.913 / Recall: 0.84 / Latency: 5.4s
+24/08 15:40:09 - INFO - >>> svm Modle Validation Results -- Accuracy: 0.895 / Precision: 0.913 / Recall: 0.84 / Latency: 4.0s
+24/08 15:40:09 - INFO - >>> mlp Modle Validation Results -- Accuracy: 0.895 / Precision: 0.88 / Recall: 0.88 / Latency: 7.1s
+24/08 15:40:09 - INFO - >>> rf Modle Validation Results -- Accuracy: 0.877 / Precision: 0.821 / Recall: 0.92 / Latency: 44.7s
+24/08 15:40:09 - INFO - >>> ada Modle Validation Results -- Accuracy: 0.912 / Precision: 0.955 / Recall: 0.84 / Latency: 43.2s
+24/08 15:40:09 - INFO - >>> gb Modle Validation Results -- Accuracy: 0.877 / Precision: 0.846 / Recall: 0.88 / Latency: 5.1s
+24/08 15:40:09 - INFO - >>> xgb Modle Validation Results -- Accuracy: 0.912 / Precision: 0.955 / Recall: 0.84 / Latency: 15.7s
+24/08 15:40:09 - INFO - Total executed 0.3165 minutes
+24/08 15:40:09 - INFO - ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+24/08 15:40:09 - INFO - Current Running Preprocessed Dataset No. 2:
+24/08 15:40:09 - INFO - [Features Before autoFS]: 
+24/08 15:40:09 - INFO - ['Size_3', 'area_mean', 'compactness_mean', 'concave points_mean', 'concavity_mean', 'fractal_dimension_mean', 'perimeter_mean', 'radius_mean', 'smoothness_mean', 'symmetry_mean', 'texture_mean', 'Frequency_Age', 'onehot_Position_1_left', 'onehot_Position_1_right', 'Frequency_Position_2', 'Frequency_Size_1', 'Mean_Size_2', 'Label_Treatment', 'onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno', 'onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes', 'Label_Type_3']
