@@ -198,7 +198,7 @@ class autoPipe:
             models_summary = pd.concat([dict_flow[i] for i in dict_flow.keys()],ignore_index=True).sort_values(by=['Accuracy','Precision','Recall','Latency'], ascending=[False,False,False,True])
             models_summary = models_summary[["Dataset","Model_Name","Best_Parameters",'Accuracy','Precision','Recall','Latency']]
         if (evaluate_module.model_type == "reg"):
-            models_summary = pd.concat([dict_flow[i] for i in dict_flow.keys()],ignore_index=True).sort_values(by=['R2','MAE','MSE','RMSE','Latency'], ascending=[False,True,True,True])
+            models_summary = pd.concat([dict_flow[i] for i in dict_flow.keys()],ignore_index=True).sort_values(by=['R2','MAE','MSE','RMSE','Latency'], ascending=[False,True,True,True,True])
             models_summary = models_summary[["Dataset","Model_Name","Best_Parameters",'R2','MAE','MSE','RMSE','Latency']]          
         logger.info(Start_log)
         print(f"The top 5 Models with Best Performance Metrics:")
