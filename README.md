@@ -63,6 +63,11 @@ pip install OptimalFlow
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb)
 
 
+#### Updates on 8/26/2020
+------------------
+* Fix evaluate_model() function's bugs in coping with regression problem
+* Add reg_table_report() function to create dynamic table report for regression problem in autoViz
+
 #### Updates on 8/24/2020
 * Fix evaluate_model() function's precision_score issue when running modelmulti-class classification problems
 * Add custom_selectors args for customized algorithm settings with autoFS's 2 classes(dynaFS_reg, dynaFS_clf)

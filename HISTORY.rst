@@ -1,6 +1,11 @@
 =======
 History
 =======
+0.1.5 (2020-08-26)
+------------------
+* Fix evaluate_model() function's bugs in coping with regression problem
+* Add reg_table_report() function to create dynamic table report for regression problem in autoViz
+
 0.1.4 (2020-08-24)
 ------------------
 * Fix evaluate_model() function's precision_score issue when running modelmulti-class classification problems
