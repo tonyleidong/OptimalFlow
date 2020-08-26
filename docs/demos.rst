@@ -504,14 +504,15 @@ Output:
 Pipeline Cluster Model Evaluation Dynamic Table using autoViz:
 -----------------------------------------------------------------------------
 
-  NOTE: Current available for Classification Only.
+  This demo is for classification problem. When it comes regression problem, use reg_table_report() instead.
+  
   Demo Code:
 
 .. code-block:: python
 
   from optimalflow.autoViz import autoViz
   viz = autoViz(preprocess_dict = None,report = df)
-  viz.table_report()
+  viz.clf_table_report()
 
 ..
 
