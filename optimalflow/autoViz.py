@@ -86,27 +86,15 @@ class autoViz:
         ----------
         
         """
-        df = self.dyna_report
-        colors = n_colors('rgb(49, 130, 189)', 'rgb(239, 243, 255)', 15, colortype='rgb')
-        bins = [-1, 2, 4, 6, 7, 8, 9, 11]
-        bins_latency = [0, 5, 10, 15, 20, 50, 80, 100]
-        labels = [1,2,3,4,5,6,7]
-        
+        df = self.dyna_report      
 
         fig = go.Figure(data=[go.Table(
             header=dict(values=list(df.columns),
-                        fill_color='paleturquoise',
-                        font=dict(color='black', size=12),
-                        align='center'),
+                    fill_color='paleturquoise',
+                    align='left'),
             cells=dict(values=[df.Dataset,df.Model_Name,df.Best_Parameters,df.R2,df.MAE,df.MSE,df.RMSE,df.Latency],
-                    # fill_color='lavender',
-                    fill_color=['lavender','lavender','lavender',
-                    np.array(colors)[pd.cut(df.R2.apply(lambda x: x*10), bins=bins, labels=labels).astype(int)],
-                    np.array(colors)[pd.cut(df.MAE.apply(lambda x: x*10), bins=bins, labels=labels).astype(int)],
-                    np.array(colors)[pd.cut(df.MSE.apply(lambda x: x*10), bins=bins, labels=labels).astype(int)],
-                    np.array(colors)[pd.cut(df.RMSE.apply(lambda x: x*10), bins=bins, labels=labels).astype(int)],
-                    np.array(colors)[pd.cut(df.Latency,bins=bins_latency, labels=labels).astype(int)]],
-                    align='left'))
+                fill_color='lavender',
+                align='left'))
         ])
         fig.update_layout(title = f'Pipeline Cluster Model Regression Evaluation Report - autoViz <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
         plot(fig)
