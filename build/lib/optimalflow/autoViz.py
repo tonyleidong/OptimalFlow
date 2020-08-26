@@ -1,7 +1,9 @@
 import re
 import pandas as pd
+import numpy as np
 import plotly.graph_objects as go
 from plotly.offline import plot
+from plotly.colors import n_colors
 
 
 class autoViz:
@@ -28,8 +30,8 @@ class autoViz:
         self.DICT_PREPROCESSING = preprocess_dict
         self.dyna_report = report
 
-    def table_report(self):
-        """This function implements heatmap style pipeline cluster's model evaluation report(Dynamic Table).
+    def clf_table_report(self):
+        """This function implements heatmap style pipeline cluster's model evaluation report(Dynamic Table) for classification output report.
     
         Parameters
         ----------
@@ -64,10 +66,39 @@ class autoViz:
                     np.array(colors)[pd.cut(df.Latency,bins=bins_latency, labels=labels).astype(int)]],
                     align='left'))
         ])
-        fig.update_layout(title = f'Pipeline Cluster Model Evaluation Report - autoViz <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
+        fig.update_layout(title = f'Pipeline Cluster Model Classification Evaluation Report - autoViz <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
         plot(fig)
         fig.show()
 
+
+    def reg_table_report(self):
+        """This function implements heatmap style pipeline cluster's model evaluation report(Dynamic Table) for regression output report.
+    
+        Parameters
+        ----------
+
+        Example
+        -------
+        
+        .. [Example] https://optimal-flow.readthedocs.io/en/latest/demos.html#pipeline-cluster-model-evaluation-dynamic-table-using-autoviz
+        
+        References
+        ----------
+        
+        """
+        df = self.dyna_report      
+
+        fig = go.Figure(data=[go.Table(
+            header=dict(values=list(df.columns),
+                    fill_color='paleturquoise',
+                    align='left'),
+            cells=dict(values=[df.Dataset,df.Model_Name,df.Best_Parameters,df.R2,df.MAE,df.MSE,df.RMSE,df.Latency],
+                fill_color='lavender',
+                align='left'))
+        ])
+        fig.update_layout(title = f'Pipeline Cluster Model Regression Evaluation Report - autoViz <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
+        plot(fig)
+        fig.show()
 
     def clf_model_retrieval(self,metrics = None):
         """This function implements classification model retrieval visualization.
