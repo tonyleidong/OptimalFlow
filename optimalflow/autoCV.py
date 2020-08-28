@@ -139,6 +139,7 @@ class dynaClassifier:
     ----------
     custom_estimators : list, default = None
         Custom set the estimators in the autoCV regression module(if set None, will use all available estimators). Current version's default available estimators are ['lgr','svm','mlp','rf','ada','gb','xgb'].
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension) and training records number. When features number > 50 w/ records number over 50K,otherwise will result in long processing time.)
     
     random_state : int, default = None
         Random state value.
@@ -238,6 +239,7 @@ class dynaRegressor:
     ----------
     custom_estimators : list, default = None
         Custom set the estimators in the autoCV regression module(if set None, will use all available estimators). Current version's default available estimators are ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd'].
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension) and training records number. When features number > 50 w/ records number over 50K,otherwise will result in long processing time.)
     
     random_state : int, default = None
         Random state value.
@@ -341,6 +343,7 @@ class fastClassifier:
     ----------
     custom_estimators : list, default = None
         Custom set the estimators in the autoCV regression module(if set None, will use all available estimators). Current version's default available estimators are ['lgr','svm','mlp','rf','ada','gb','xgb'].
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension) and training records number. When features number > 50 w/ records number over 50K,otherwise will result in long processing time.)
     
     random_state : int, default = None
         Random state value.
@@ -446,6 +449,7 @@ class fastRegressor:
     ----------
     custom_estimators : list, default = None
         Custom set the estimators in the autoCV regression module(if set None, will use all available estimators). Current version's default available estimators are ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd'].
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension) and training records number. When features number > 50 w/ records number over 50K,otherwise will result in long processing time.)
     
     random_state : int, default = None
         Random state value.
