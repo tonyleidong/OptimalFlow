@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: optimalflow
-Version: 0.1.5
+Version: 0.1.6
 Summary: OptimalFlow is an Omni-ensemble Automated Machine Learning toolkit to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple code.
 Home-page: https://github.com/tonyleidong/OptimalFlow
 Author: Tony Dong
@@ -8,7 +8,7 @@ Author-email: tonyleidong@gmail.com
 License: UNKNOWN
 Description: ## OptimalFlow
         [![PyPI Latest Release](https://img.shields.io/pypi/v/OptimalFlow)](https://pypi.org/project/OptimalFlow/)
-        [![PyPI - Downloads](https://img.shields.io/pypi/dw/OptimalFlow?style=plastic)](https://pypi.org/project/OptimalFlow/)
+        [![PyPI - Downloads](https://img.shields.io/pypi/dw/OptimalFlow?style=plastic)](https://Optimal-Flow.readthedocs.io/)
         [![Github Issues](https://img.shields.io/github/issues/tonyleidong/OptimalFlow)](https://github.com/tonyleidong/OptimalFlow/issues)
         [![License](https://img.shields.io/github/license/tonyleidong/OptimalFlow)](https://github.com/tonyleidong/OptimalFlow/blob/master/LICENSE)
         [![Last Commit](https://img.shields.io/github/last-commit/tonyleidong/OptimalFlow)](https://github.com/tonyleidong/OptimalFlow)
@@ -71,8 +71,12 @@ Description: ## OptimalFlow
         [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb)
         
         
+        #### Updates on 8/28/2020
+        * Remove evaluate_model() function's round() bugs in coping with classification problem
+        * Move out SVM based algorithm from fastClassifier & fastRegressor's default estimators settings
+        * Move out SVM based algorithm from autoFS class's default selectors settings
+        
         #### Updates on 8/26/2020
-        ------------------
         * Fix evaluate_model() function's bugs in coping with regression problem
         * Add reg_table_report() function to create dynamic table report for regression problem in autoViz
         

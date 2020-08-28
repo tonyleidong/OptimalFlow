@@ -61,7 +61,7 @@ class dynaFS_clf:
     ----------
     custom_selectors : list, default = None
         Custom set the selectors in the autoFS module(if set None, will use all available selectors). Current version's default available selectors are ['kbest_f','kbest_chi2','rfe_lr','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf'].
-        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension structure), i.e.rfe_svm and rfecv_svm. When features number > 50, better exclude these 2 selectors, otherwise will result in long processing time.) 
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension) and training records number, i.e.rfe_svm and rfecv_svm. When features number > 50 w/ records number over 50K, better exclude these 2 selectors, otherwise will result in long processing time.) 
 
     fs_num : int, default = None
         Set the # of features want to select out.
@@ -87,7 +87,7 @@ class dynaFS_clf:
     None
     """
     def __init__(self, custom_selectors = None, fs_num = None ,random_state = None,cv = None, in_pipeline = False, input_from_file = True):
-        default_selectors = ['kbest_f','kbest_chi2','rfe_lr','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
+        default_selectors = ['kbest_f','kbest_chi2','rfe_lr','rfe_tree','rfe_rf','rfecv_tree','rfecv_rf']
         if(custom_selectors is None):
             self.set_selectors = default_selectors
         else:
@@ -169,7 +169,7 @@ class dynaFS_reg:
     ----------
     custom_selectors : list, default = None
         Custom set the selectors in the autoFS module(if set None, will use all available selectors). Current version's default available selectors are ['kbest_f','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf'].
-        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension structure), i.e.rfe_svm and rfecv_svm. When features number > 50, better exclude these 2 selectors, otherwise will result in long processing time.)
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension) and training records number, i.e.rfe_svm and rfecv_svm. When features number > 50 w/ records number over 50K,otherwise will result in long processing time.)
     fs_num : int, default = None
         Set the # of features want to select out.
     
@@ -196,7 +196,7 @@ class dynaFS_reg:
     """
 
     def __init__(self, custom_selectors = None, fs_num = None ,random_state = None,cv = None,in_pipeline = False, input_from_file = True):
-        default_selectors = ['kbest_f','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
+        default_selectors = ['kbest_f','rfe_tree','rfe_rf','rfecv_tree','rfecv_rf']
         if(custom_selectors is None):
             self.set_selectors = default_selectors
         else:

@@ -105,9 +105,9 @@ class evaluate_model:
             start = time()
             pred = model.predict(features)
             end = time()
-            accuracy = accuracy_score(y_true =labels, y_pred = pred).round()
-            precision = precision_score(y_true = labels, y_pred = pred,average='weighted').round()
-            recall = recall_score(y_true=labels, y_pred = pred,average='weighted').round()
+            accuracy = accuracy_score(y_true =labels, y_pred = pred)
+            precision = precision_score(y_true = labels, y_pred = pred,average='weighted')
+            recall = recall_score(y_true=labels, y_pred = pred,average='weighted')
             latency = round((end - start)*1000, 1)
             optimal_scores = [name,accuracy,precision,recall,latency]
             if(not self.in_pipeline):
@@ -139,6 +139,7 @@ class dynaClassifier:
     ----------
     custom_estimators : list, default = None
         Custom set the estimators in the autoCV regression module(if set None, will use all available estimators). Current version's default available estimators are ['lgr','svm','mlp','rf','ada','gb','xgb'].
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension) and training records number. When features number > 50 w/ records number over 50K,otherwise will result in long processing time.)
     
     random_state : int, default = None
         Random state value.
@@ -238,6 +239,7 @@ class dynaRegressor:
     ----------
     custom_estimators : list, default = None
         Custom set the estimators in the autoCV regression module(if set None, will use all available estimators). Current version's default available estimators are ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd'].
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension) and training records number. When features number > 50 w/ records number over 50K,otherwise will result in long processing time.)
     
     random_state : int, default = None
         Random state value.
@@ -341,6 +343,7 @@ class fastClassifier:
     ----------
     custom_estimators : list, default = None
         Custom set the estimators in the autoCV regression module(if set None, will use all available estimators). Current version's default available estimators are ['lgr','svm','mlp','rf','ada','gb','xgb'].
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension) and training records number. When features number > 50 w/ records number over 50K,otherwise will result in long processing time.)
     
     random_state : int, default = None
         Random state value.
@@ -366,7 +369,7 @@ class fastClassifier:
     None
     """
     def __init__(self,n_comb = 10,custom_estimators = None, random_state = 13,cv_num = 5,in_pipeline = False, input_from_file = True):
-        default_estimators = ['lgr','svm','mlp','rf','ada','gb','xgb']
+        default_estimators = ['lgr','mlp','rf','ada','gb','xgb']
         if(custom_estimators is None):
             self.set_estimators = default_estimators
         else:
@@ -446,6 +449,7 @@ class fastRegressor:
     ----------
     custom_estimators : list, default = None
         Custom set the estimators in the autoCV regression module(if set None, will use all available estimators). Current version's default available estimators are ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd'].
+        (NOTE: SVM based selectors are highly sensitive to the number of features(high-dimension) and training records number. When features number > 50 w/ records number over 50K,otherwise will result in long processing time.)
     
     random_state : int, default = None
         Random state value.
@@ -471,7 +475,7 @@ class fastRegressor:
     None
     """
     def __init__(self, n_comb = 10, custom_estimators = None, random_state = 25 ,cv_num = 5,in_pipeline = False, input_from_file = True):
-        default_estimators = ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd']
+        default_estimators = ['lr','knn','tree','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd']
         if(custom_estimators is None):
             self.set_estimators = default_estimators
         else:
