@@ -1,6 +1,12 @@
 =======
 History
 =======
+0.1.6 (2020-08-28)
+------------------
+* Remove evaluate_model() function's round() bugs in coping with classification problem
+* Move out SVM based algorithm from fastClassifier & fastRegressor's default estimators settings
+* Move out SVM based algorithm from autoFS class's default selectors settings 
+
 0.1.5 (2020-08-26)
 ------------------
 * Fix evaluate_model() function's bugs in coping with regression problem

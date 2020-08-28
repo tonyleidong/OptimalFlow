@@ -63,8 +63,12 @@ pip install OptimalFlow
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb)
 
 
+#### Updates on 8/28/2020
+* Remove evaluate_model() function's round() bugs in coping with classification problem
+* Move out SVM based algorithm from fastClassifier & fastRegressor's default estimators settings
+* Move out SVM based algorithm from autoFS class's default selectors settings
+
 #### Updates on 8/26/2020
-------------------
 * Fix evaluate_model() function's bugs in coping with regression problem
 * Add reg_table_report() function to create dynamic table report for regression problem in autoViz
 

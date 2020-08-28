@@ -87,7 +87,7 @@ class dynaFS_clf:
     None
     """
     def __init__(self, custom_selectors = None, fs_num = None ,random_state = None,cv = None, in_pipeline = False, input_from_file = True):
-        default_selectors = ['kbest_f','kbest_chi2','rfe_lr','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
+        default_selectors = ['kbest_f','kbest_chi2','rfe_lr','rfe_tree','rfe_rf','rfecv_tree','rfecv_rf']
         if(custom_selectors is None):
             self.set_selectors = default_selectors
         else:
@@ -196,7 +196,7 @@ class dynaFS_reg:
     """
 
     def __init__(self, custom_selectors = None, fs_num = None ,random_state = None,cv = None,in_pipeline = False, input_from_file = True):
-        default_selectors = ['kbest_f','rfe_svm','rfe_tree','rfe_rf','rfecv_svm','rfecv_tree','rfecv_rf']
+        default_selectors = ['kbest_f','rfe_tree','rfe_rf','rfecv_tree','rfecv_rf']
         if(custom_selectors is None):
             self.set_selectors = default_selectors
         else:

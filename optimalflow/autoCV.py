@@ -369,7 +369,7 @@ class fastClassifier:
     None
     """
     def __init__(self,n_comb = 10,custom_estimators = None, random_state = 13,cv_num = 5,in_pipeline = False, input_from_file = True):
-        default_estimators = ['lgr','svm','mlp','rf','ada','gb','xgb']
+        default_estimators = ['lgr','mlp','rf','ada','gb','xgb']
         if(custom_estimators is None):
             self.set_estimators = default_estimators
         else:
@@ -475,7 +475,7 @@ class fastRegressor:
     None
     """
     def __init__(self, n_comb = 10, custom_estimators = None, random_state = 25 ,cv_num = 5,in_pipeline = False, input_from_file = True):
-        default_estimators = ['lr','knn','tree','svm','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd']
+        default_estimators = ['lr','knn','tree','mlp','rf','gb','ada','xgb','hgboost','huber','rgcv','cvlasso','sgd']
         if(custom_estimators is None):
             self.set_estimators = default_estimators
         else:
