@@ -62,9 +62,9 @@ class autoViz:
                     fill_color=['lavender','lavender','lavender',
                     np.array(colors)[pd.cut(df.Accuracy.apply(lambda x: x*10), bins=bins, labels=labels).astype(int)],
                     np.array(colors)[pd.cut(df.Precision.apply(lambda x: x*10), bins=bins, labels=labels).astype(int)],
-                    np.array(colors)[pd.cut(df.Recall.apply(lambda x: x*10), bins=bins, labels=labels).astype(int)],
-                    np.array(colors)[pd.cut(df.Latency,bins=bins_latency, labels=labels).astype(int)]],
+                    np.array(colors)[pd.cut(df.Recall.apply(lambda x: x*10), bins=bins, labels=labels).astype(int)],'lavender'],
                     align='left'))
+                    # np.array(colors)[pd.cut(df.Latency,bins=bins_latency, labels=labels).astype(int)]],        
         ])
         fig.update_layout(title = f'Pipeline Cluster Model Classification Evaluation Report - autoViz <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
         plot(fig)
