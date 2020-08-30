@@ -56,13 +56,13 @@ class dynaPreprocessing:
         
         NOTE: default_parameters 
             = {
-            "scaler" : ["None", "standard", "minmax", "maxabs", "robust"],
+            "scaler" : ["standard", "minmax", "maxabs", "robust"],
             "encode_band" : [10],
             "low_encode" : ["onehot","label"], 
             "high_encode" : ["frequency", "mean"],
             "winsorizer" : [(0.01,0.01),(0.05,0.05)],
-            "sparsity" : [0.40],
-            "cols" : [30]
+            "sparsity" : [0.50],
+            "cols" : [100]
             }
 
     label_col: str, default = None
@@ -84,13 +84,13 @@ class dynaPreprocessing:
     def __init__(self, custom_parameters = None, label_col = None, model_type = "reg",export_output_files = False):
 
         default_parameters = {
-            "scaler" : ["None", "standard", "minmax", "maxabs", "robust"],
+            "scaler" : ["standard", "minmax", "maxabs", "robust"],
             "encode_band" : [10],
             "low_encode" : ["onehot","label"], 
             "high_encode" : ["frequency", "mean"],
             "winsorizer" : [(0.01,0.01),(0.05,0.05)],
-            "sparsity" : [0.40],
-            "cols" : [30]
+            "sparsity" : [0.50],
+            "cols" : [100]
             }
         if(custom_parameters is None):
             self.parameters = default_parameters

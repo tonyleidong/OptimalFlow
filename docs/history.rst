@@ -1,6 +1,12 @@
 =======
 History
 =======
+0.1.7 (2020-08-31)
+------------------
+* Modify autoPP's default_parameters: Remove "None" in  "scaler", modify "sparsity" : [0.50], modify "cols" : [100]
+* Modify autoViz clf_table_report()'s coloring settings 
+* Fix bugs in autoViz reg_table_report()'s gradient coloring function  
+
 0.1.6 (2020-08-28)
 ------------------
 * Remove evaluate_model() function's round() bugs in coping with classification problem

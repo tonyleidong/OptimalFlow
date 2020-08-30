@@ -17,7 +17,9 @@ Description :
         - fit() - fit & transform method for preprocessing
 
  - Current available strategies:
-    * Scaling : Numeric features scaling, default settings
+    * Scaling : Numeric features scaling, default settings 
+    (NOTE: When you select 'None', might cause overfitting with too high R-Squared Score in Regression Problem)
+        - "None" : None approach involve in scaling step 
         - "standard" : StandardScaler() approach
         - "minmax" - MinMaxScaler() approach
         - "maxabs" - MaxAbsScaler() approach

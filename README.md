@@ -63,6 +63,12 @@ pip install OptimalFlow
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb)
 
 
+#### Updates on 8/31/2020
+------------------
+* Modify autoPP's default_parameters: Remove "None" in  "scaler", modify "sparsity" : [0.50], modify "cols" : [100]
+* Modify autoViz clf_table_report()'s coloring settings 
+* Fix bugs in autoViz reg_table_report()'s gradient coloring function  
+
 #### Updates on 8/28/2020
 * Remove evaluate_model() function's round() bugs in coping with classification problem
 * Move out SVM based algorithm from fastClassifier & fastRegressor's default estimators settings

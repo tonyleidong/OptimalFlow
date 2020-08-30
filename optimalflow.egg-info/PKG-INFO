@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: optimalflow
-Version: 0.1.6
+Version: 0.1.7
 Summary: OptimalFlow is an Omni-ensemble Automated Machine Learning toolkit to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple code.
 Home-page: https://github.com/tonyleidong/OptimalFlow
 Author: Tony Dong
@@ -70,6 +70,12 @@ Description: ## OptimalFlow
         ### Notebook Demo:
         [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb)
         
+        
+        #### Updates on 8/31/2020
+        ------------------
+        * Modify autoPP's default_parameters: Remove "None" in  "scaler", modify "sparsity" : [0.50], modify "cols" : [100]
+        * Modify autoViz clf_table_report()'s coloring settings 
+        * Fix bugs in autoViz reg_table_report()'s gradient coloring function  
         
         #### Updates on 8/28/2020
         * Remove evaluate_model() function's round() bugs in coping with classification problem
