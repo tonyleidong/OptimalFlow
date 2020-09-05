@@ -63,6 +63,13 @@ pip install OptimalFlow
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb)
 
 
+### An End-to-End OptimalFlow Automated Machine Learning Tutorial with Real Projects
+* Part 1: https://medium.com/@tonyleidong/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-8b57073a7b50
+
+* Part 2: https://medium.com/@tonyleidong/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-31d810539102
+
+
+
 #### Updates on 8/31/2020
 ------------------
 * Modify autoPP's default_parameters: Remove "None" in  "scaler", modify "sparsity" : [0.50], modify "cols" : [100]
