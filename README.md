@@ -64,9 +64,9 @@ pip install OptimalFlow
 
 
 ### An End-to-End OptimalFlow Automated Machine Learning Tutorial with Real Projects
-* Part 1: https://medium.com/@tonyleidong/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-8b57073a7b50
+* Part 1: https://towardsdatascience.com/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-8b57073a7b50
 
-* Part 2: https://medium.com/@tonyleidong/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-31d810539102
+* Part 2: https://towardsdatascience.com/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-31d810539102
 
 
 
