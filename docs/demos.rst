@@ -533,9 +533,9 @@ or Live Notebook Demo on Binder:
  :target: https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb
 
 
-An End-to-End OptimalFlow Automated Machine Learning Tutorial with Real Projects @ Medium
+An End-to-End OptimalFlow Automated Machine Learning Tutorial with Real Projects @ TowardsDataScience
 -----------------------------------------------------------------------------------------
 
-* Part 1: https://medium.com/@tonyleidong/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-8b57073a7b50
+* Part 1: https://towardsdatascience.com/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-8b57073a7b50
 
-* Part 2: https://medium.com/@tonyleidong/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-31d810539102
+* Part 2: https://towardsdatascience.com/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-31d810539102
