@@ -71,7 +71,6 @@ pip install OptimalFlow
 
 
 #### Updates on 8/31/2020
-------------------
 * Modify autoPP's default_parameters: Remove "None" in  "scaler", modify "sparsity" : [0.50], modify "cols" : [100]
 * Modify autoViz clf_table_report()'s coloring settings 
 * Fix bugs in autoViz reg_table_report()'s gradient coloring function  
