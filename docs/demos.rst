@@ -141,8 +141,10 @@ NOTE: This Demo is using *dynaClassifier* class, which is grid search based; alt
    val_features = pd.read_csv('./data/classification/val_features.csv')
    val_labels = pd.read_csv('./data/classification/val_labels.csv')
    
+   # We customize models cadidates for this demo:
+   custom_cv = ['lgr','svm','mlp','rf','ada','gb','xgb']
    # Set input_form_file = False, when label values are array. Select 'True' from Pandas dataframe.
-   clf_cv_demo = dynaClassifier(random_state = 13,cv_num = 5,input_from_file = True)
+   clf_cv_demo = dynaClassifier(custom_estimators = custom_cv, random_state = 13,cv_num = 5,input_from_file = True)
    # Select detail_info = True, when you want to see the detail of the iteration
    clf_cv_demo.fit(tr_features,tr_labels)
    
