@@ -188,7 +188,7 @@ class dynaFS_reg:
     Example
     -------
     
-    .. [Example] https://Optimal-Flow.readthedocs.io/en/latest/demos.html#features-selection-for-a-regression-problem-using-autoFS
+    .. [Example] https://optimal-flow.readthedocs.io/en/latest/demos.html#features-selection-for-a-regression-problem-using-autofs
 
     References
     ----------
