@@ -1,10 +1,10 @@
 ## OptimalFlow
-[![PyPI Latest Release](https://img.shields.io/pypi/v/OptimalFlow)](https://pypi.org/project/OptimalFlow/)
-[![PyPI - Downloads](https://img.shields.io/pypi/dw/OptimalFlow?style=plastic)](https://Optimal-Flow.readthedocs.io/)
-[![Github Issues](https://img.shields.io/github/issues/tonyleidong/OptimalFlow)](https://github.com/tonyleidong/OptimalFlow/issues)
-[![License](https://img.shields.io/github/license/tonyleidong/OptimalFlow)](https://github.com/tonyleidong/OptimalFlow/blob/master/LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/tonyleidong/OptimalFlow)](https://github.com/tonyleidong/OptimalFlow)
-[![Python Version](https://img.shields.io/pypi/pyversions/OptimalFlow)](https://pypi.org/project/OptimalFlow/)
+[![PyPI Latest Release](https://img.shields.io/pypi/v/OptimalFlow?style=flat-square)](https://pypi.org/project/OptimalFlow/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/optimalflow?style=flat-square)](https://Optimal-Flow.readthedocs.io/)
+[![Github Issues](https://img.shields.io/github/issues/tonyleidong/OptimalFlow?style=flat-square)](https://github.com/tonyleidong/OptimalFlow/issues)
+[![License](https://img.shields.io/github/license/tonyleidong/OptimalFlow?style=flat-square)](https://github.com/tonyleidong/OptimalFlow/blob/master/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/tonyleidong/OptimalFlow?style=flat-square)](https://github.com/tonyleidong/OptimalFlow)
+[![Python Version](https://img.shields.io/pypi/pyversions/OptimalFlow?style=flat-square)](https://pypi.org/project/OptimalFlow/)
 
 
    
