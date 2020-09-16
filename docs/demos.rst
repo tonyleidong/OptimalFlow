@@ -513,7 +513,7 @@ Pipeline Cluster Model Evaluation Dynamic Table using autoViz:
 .. code-block:: python
 
   from optimalflow.autoViz import autoViz
-  viz = autoViz(report = df)
+  viz = autoViz(report = dyna_report)
   viz.clf_table_report()
 
 ..

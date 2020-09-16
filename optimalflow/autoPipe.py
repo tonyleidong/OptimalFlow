@@ -190,7 +190,7 @@ class autoPipe:
             time_est = round(((time()-start_time)/60)*(total_loop - loop_num),4)
             update_progress(loop_num/total_loop,clear_flag = True,process_name = "autoFS & autoCV Iteration",time_est = time_est)
             loop_num += 1
-
+        evaluate_module = self.step5
         dict_flow = DICT_MODELS_EVALUATION
         for key in dict_flow.keys():
             dict_flow[key]['Dataset'] = key
