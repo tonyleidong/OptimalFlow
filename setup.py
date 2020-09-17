@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="optimalflow", 
-    version="0.1.8",
+    version="0.1.10",
     author="Tony Dong",
     author_email="tonyleidong@gmail.com",
     description="OptimalFlow is an Omni-ensemble Automated Machine Learning toolkit to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple code.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/tonyleidong/OptimalFlow",
-    keywords = ['auto machine learning', 'features selection', 'model selection','model preprocessing','pipeline','optimal model'],
+    keywords = ['automated machine learning', 'features selection', 'model selection','AutoML','omni-ensemble machine learning','Machine Learning Web App'],
     packages=setuptools.find_packages(),
     include_package_data = True,
     install_requires=[

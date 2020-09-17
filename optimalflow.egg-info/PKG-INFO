@@ -1,18 +1,18 @@
 Metadata-Version: 2.1
 Name: optimalflow
-Version: 0.1.7
+Version: 0.1.10
 Summary: OptimalFlow is an Omni-ensemble Automated Machine Learning toolkit to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple code.
 Home-page: https://github.com/tonyleidong/OptimalFlow
 Author: Tony Dong
 Author-email: tonyleidong@gmail.com
 License: UNKNOWN
 Description: ## OptimalFlow
-        [![PyPI Latest Release](https://img.shields.io/pypi/v/OptimalFlow)](https://pypi.org/project/OptimalFlow/)
-        [![PyPI - Downloads](https://img.shields.io/pypi/dw/OptimalFlow?style=plastic)](https://Optimal-Flow.readthedocs.io/)
-        [![Github Issues](https://img.shields.io/github/issues/tonyleidong/OptimalFlow)](https://github.com/tonyleidong/OptimalFlow/issues)
-        [![License](https://img.shields.io/github/license/tonyleidong/OptimalFlow)](https://github.com/tonyleidong/OptimalFlow/blob/master/LICENSE)
-        [![Last Commit](https://img.shields.io/github/last-commit/tonyleidong/OptimalFlow)](https://github.com/tonyleidong/OptimalFlow)
-        [![Python Version](https://img.shields.io/pypi/pyversions/OptimalFlow)](https://pypi.org/project/OptimalFlow/)
+        [![PyPI Latest Release](https://img.shields.io/pypi/v/OptimalFlow?style=flat-square)](https://pypi.org/project/OptimalFlow/)
+        [![PyPI - Downloads](https://img.shields.io/pypi/dm/optimalflow?style=flat-square)](https://Optimal-Flow.readthedocs.io/)
+        [![Github Issues](https://img.shields.io/github/issues/tonyleidong/OptimalFlow?style=flat-square)](https://github.com/tonyleidong/OptimalFlow/issues)
+        [![License](https://img.shields.io/github/license/tonyleidong/OptimalFlow?style=flat-square)](https://github.com/tonyleidong/OptimalFlow/blob/master/LICENSE)
+        [![Last Commit](https://img.shields.io/github/last-commit/tonyleidong/OptimalFlow?style=flat-square)](https://github.com/tonyleidong/OptimalFlow)
+        [![Python Version](https://img.shields.io/pypi/pyversions/OptimalFlow?style=flat-square)](https://pypi.org/project/OptimalFlow/)
         
         
            
@@ -20,7 +20,7 @@ Description: ## OptimalFlow
         
         <img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow_Logo.png" width="150">
         
-        **OptimalFlow** is an Omni-ensemble Automated Machine Learning toolkit, which is based on *Pipeline Cluster Traversal Experiment* approach, to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple codes.
+        **OptimalFlow** is an Omni-ensemble Automated Machine Learning toolkit, which is based on *Pipeline Cluster Traversal Experiment* approach, to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple codes. In most recent version, I created a Web App, based on flask framework, as OptimalFlow's GUI. Users could build Automated Machine Learning workflow all clicks, without any coding at all! 
         
         Comparing other popular "AutoML or Automated Machine Learning" APIs, **OptimalFlow** is designed as an omni-ensembled ML workflow optimizer with higher-level API targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. 
         
@@ -71,8 +71,18 @@ Description: ## OptimalFlow
         [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tonyleidong/OptimalFlow/master?filepath=tests%2Fnotebook_demo.ipynb)
         
         
+        ### An End-to-End OptimalFlow Automated Machine Learning Tutorial with Real Projects
+        * Part 1: https://towardsdatascience.com/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-8b57073a7b50
+        
+        * Part 2: https://towardsdatascience.com/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-31d810539102
+        
+        #### Updates on 9/16/2020
+        -------------------------
+        * Created a Web App based on flask framework as OptimalFlow's GUI, to build PCTE Automated Machine Learning by simply clicks without any coding at all!
+        * Web App included PCTE workflow bulder, LogsViewer, Visualization, Documentation sections.
+        * Fix the filename issues in autoViz module, and remove auto_open function when generating new html format plots.
+        
         #### Updates on 8/31/2020
-        ------------------
         * Modify autoPP's default_parameters: Remove "None" in  "scaler", modify "sparsity" : [0.50], modify "cols" : [100]
         * Modify autoViz clf_table_report()'s coloring settings 
         * Fix bugs in autoViz reg_table_report()'s gradient coloring function  
@@ -109,7 +119,7 @@ Description: ## OptimalFlow
         #### License:
         MIT
         
-Keywords: auto machine learning,features selection,model selection,model preprocessing,pipeline,optimal model
+Keywords: automated machine learning,features selection,model selection,AutoML,omni-ensemble machine learning,Machine Learning Web App
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3.8
 Classifier: License :: OSI Approved :: MIT License

@@ -3,4 +3,9 @@ include LICENSE
 include optimalflow/parameters.json
 include optimalflow/reset_parameters.json
 include optimalflow/webapp/*
+include optimalflow/webapp/input/*
+include optimalflow/webapp/static/css/*
+include optimalflow/webapp/static/js/*
+include optimalflow/webapp/static/img/*
+include optimalflow/webapp/templates/*
 recursive-exclude * __pycache__

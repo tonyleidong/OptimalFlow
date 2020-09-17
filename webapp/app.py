@@ -3,13 +3,13 @@ from wtforms import Form, TextField, TextAreaField, validators, StringField, Sub
 from werkzeug.utils import secure_filename
 import time
 import os
-# from os import listdir
-# from os.path import isfile, join
-# import win32com.client as comclt
 import json
 
 json_path = os.path.join(os.path.dirname("./"), 'webapp.json')
 app  = Flask(__name__)
+
+log_flag = False
+
 #creating routes
 @app.route('/',methods=['POST', 'GET'])
 def index():
@@ -104,7 +104,7 @@ def index():
                             shell.SendKeys("webapp_script.py {ENTER}")
                         except:
                             print('Parameters Setting Error!')
-    
+        return render_template('index.html',thePercent = thePercent)
     return render_template('index.html',thePercent = thePercent)
 
 @app.route('/about/')
@@ -117,31 +117,43 @@ def docs():
 
 @app.route('/logs/',methods=['POST','GET'])
 def logs():
+    global log_flag
     if request.method == "POST":
         try:
-            run_btn =request.form['run_btn']
-            logfile =request.form['logfile']
             import time
             from win32com import client
             from os import listdir
             from os.path import isfile, join
+            run_btn =request.form['run_btn']
+            logfile =request.form['logfile']
+
             file_list = [f for f in listdir('./logs') if isfile(join('./logs', f))]
             file_select = [logfile]
-            
+
             for item in file_list:
                 ext_flag = [item.startswith(i) for i in file_select]
                 
                 if (ext_flag==[True]) and item.endswith('.log'):
-                    shell1 = client.Dispatch("WScript.Shell")
-                    shell1.run("cmd.exe")
-                    time.sleep(1)
-                    shell1.SendKeys("cd ./logs {ENTER}")
-                    shell1.SendKeys(item+" {ENTER}")
-                    shell1.SendKeys("exit {ENTER}")
+                    contents = open("./logs/"+item,"r")
+                    with open("./templates/logfile.html", "w") as e:
+                        for lines in contents.readlines():
+                            e.write("<pre>" + lines + "</pre> <br>\n")
+            log_flag = True
         except:
                 print('Read Log Files Error!')
-        return render_template('logs.html')
-    return render_template('logs.html')
+        return render_template('logs.html',log_flag=log_flag)
+    else:
+        log_flag = False
+        return render_template('logs.html',log_flag = log_flag)
+
+@app.route('/nologfile/')
+def nologfile():
+    return render_template('nologfile.html')
+
+@app.route('/logfile/')
+def logfile():
+    return render_template('logfile.html')
+
 @app.route('/viz/')
 def viz():
     return render_template('viz.html')

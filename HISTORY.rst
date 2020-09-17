@@ -1,6 +1,13 @@
 =======
 History
 =======
+
+0.1.10 (2020-09-16)
+------------------
+* Created a Web App, based on flask framework, as OptimalFlow's GUI. Users could build Automated Machine Learning workflow all clicks, without any coding at all!
+* Web App included PCTE workflow bulder, LogsViewer, Visualization, Documentation sections.
+* Fix the filename issues in autoViz module, and remove auto_open function when generating new html format plots.
+
 0.1.7 (2020-08-31)
 ------------------
 * Modify autoPP's default_parameters: Remove "None" in  "scaler", modify "sparsity" : [0.50], modify "cols" : [100]

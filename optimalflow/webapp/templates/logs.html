@@ -25,7 +25,19 @@
       </div>
     <button type="submit" class="btn btn-primary btn-block" name="run_btn" value = "Clicked_Run" >View Log File</button>
   </form>
+  <div>
+    <p>
+       
+    </p>
+  </div>
 
+  <div class="embed-responsive embed-responsive-16by9">
+    {% if log_flag %}
+    <iframe class="embed-responsive-item" src="{{ url_for('logfile') }}" allowfullscreen></iframe>
+    {% else %}
+    <iframe class="embed-responsive-item" src="{{ url_for('nologfile') }}" allowfullscreen></iframe>
+    {% endif %}
+  </div>
 </div>
 
 <div>

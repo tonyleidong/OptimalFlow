@@ -16,10 +16,10 @@ try:
     from optimalflow.autoViz import autoViz
     viz = autoViz(preprocess_dict=DICT_PREP,report=dyna_report)
     viz.clf_model_retrieval(metrics='accuracy')
-    move('./Pipeline Cluster Retrieval Diagram.html','./templates/diagram.html')
+    # move('./Pipeline Cluster Retrieval Diagram.html','./templates/diagram.html')
     viz = autoViz(report = dyna_report)
     viz.clf_table_report()
-    move('./Pipeline Cluster Model Evaluation Report.html','./templates/report.html')
+    # move('./Pipeline Cluster Model Evaluation Report.html','./templates/report.html')
 except:
     try:
         viz = autoViz(report = dyna_report)

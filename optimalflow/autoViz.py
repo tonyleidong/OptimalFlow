@@ -68,8 +68,8 @@ class autoViz:
                     # np.array(colors)[pd.cut(df.Latency,bins=bins_latency, labels=labels).astype(int)]],        
         ])
         fig.update_layout(title = f'Pipeline Cluster Model Classification Evaluation Report - autoViz <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
-        plot(fig,filename='Pipeline Cluster Model Evaluation Report.html', auto_open=False)
-        fig.show()
+        plot(fig,filename='Pipeline Cluster Model Evaluation Report.html',auto_open = False)
+        # fig.show()
 
 
     def reg_table_report(self):
@@ -107,8 +107,8 @@ class autoViz:
                     align='left'))
         ])
         fig.update_layout(title = f'Pipeline Cluster Model Regression Evaluation Report - autoViz <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
-        plot(fig,filename='Pipeline Cluster Model Evaluation Report.html',auto_open=False)
-        fig.show()
+        plot(fig,filename='Pipeline Cluster Model Evaluation Report.html',auto_open = False)
+        # fig.show()
 
     def clf_model_retrieval(self,metrics = None):
         """This function implements classification model retrieval visualization.
@@ -236,8 +236,8 @@ class autoViz:
             ))])
 
             fig.update_layout(title = f'Pipeline Cluster Traversal Experiments - autoViz {metrics} Retrieval Diagram <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
-            plot(fig,filename = "Pipeline Cluster Retrieval Diagram.html",auto_open=False)
-            fig.show()
+            plot(fig,filename = "Pipeline Cluster Retrieval Diagram.html",auto_open = False)
+            # fig.show()
 
         elif metrics == "precision":
             df_report_Precision = df_pp.merge(self.dyna_report[['Dataset','Precision']], how = 'left', on = 'Dataset')
@@ -285,8 +285,8 @@ class autoViz:
             ))])
 
             fig.update_layout(title = f'Pipeline Cluster Traversal Experiments - autoViz {metrics} Retrieval Diagram <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
-            plot(fig,filename = "Pipeline Cluster Retrieval Diagram.html",auto_open=False)
-            fig.show()
+            plot(fig,filename = "Pipeline Cluster Retrieval Diagram.html",auto_open = False)
+            # fig.show()
 
         elif metrics == "recall":
             df_report_Recall = df_pp.merge(dyna_report[['Dataset','Recall']], how = 'left', on = 'Dataset')
@@ -334,8 +334,8 @@ class autoViz:
             ))])
 
             fig.update_layout(title = f'Pipeline Cluster Traversal Experiments - autoViz {metrics} Retrieval Diagram <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
-            plot(fig,filename = "Pipeline Cluster Retrieval Diagram.html",auto_open=False)
-            fig.show()
+            plot(fig,filename = "Pipeline Cluster Retrieval Diagram.html",auto_open = False)
+            # fig.show()
 
 
 

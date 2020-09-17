@@ -5,3 +5,7 @@ scipy
 joblib
 category_encoders
 plotly
+flask
+wtforms
+werkzeug
+matplotlib
