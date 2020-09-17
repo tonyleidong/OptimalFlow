@@ -1,0 +1,777 @@
+16/09 20:54:00 - INFO - ###################################################################################################################################################################################################
+16/09 20:54:00 - INFO - Optimal Flow - autoCV - Auto PreProcessing :: 2020.09.16.20.54.00
+16/09 20:54:00 - INFO - ###################################################################################################################################################################################################
+16/09 20:54:00 - INFO - Copyright All Reserved by Tony Dong | e-mail: tonyleidong@gmail.com 
+16/09 20:54:00 - INFO - Official Documentation: https://optimal-flow.readthedocs.io
+16/09 20:54:00 - INFO - ------------------------------------------------------------
+16/09 20:54:00 - INFO - All previous logfiles will be deleted, when DELETE_FLAG is set to True.
+16/09 20:54:00 - INFO - Deleted file:autoPP_log_2020.09.16.20.41.17.log
+16/09 20:54:00 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:01 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:01 - INFO - Current Running Dataset No. 9 :
+16/09 20:54:01 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:01 - INFO - >>> Scaler stragety is None
+16/09 20:54:01 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:01 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:01 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:01 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:01 - INFO - >>> Scaler stragety is standard
+16/09 20:54:01 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:01 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:01 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:02 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:02 - INFO - Current Running Dataset No. 25 :
+16/09 20:54:02 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:02 - INFO - >>> Scaler stragety is None
+16/09 20:54:02 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:02 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:02 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:02 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:02 - INFO - >>> Scaler stragety is standard
+16/09 20:54:02 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:02 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:02 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:03 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:03 - INFO - Current Running Dataset No. 41 :
+16/09 20:54:03 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:03 - INFO - >>> Scaler stragety is None
+16/09 20:54:03 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:03 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:03 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:03 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:03 - INFO - >>> Scaler stragety is standard
+16/09 20:54:03 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:03 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:03 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:04 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:04 - INFO - Current Running Dataset No. 57 :
+16/09 20:54:04 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:04 - INFO - >>> Scaler stragety is None
+16/09 20:54:04 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:04 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:04 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:04 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:04 - INFO - >>> Scaler stragety is standard
+16/09 20:54:04 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:04 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:04 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:05 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:05 - INFO - Current Running Dataset No. 73 :
+16/09 20:54:05 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:05 - INFO - >>> Scaler stragety is None
+16/09 20:54:05 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:05 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:05 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:05 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:05 - INFO - >>> Scaler stragety is standard
+16/09 20:54:05 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:05 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:05 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:06 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:06 - INFO - Current Running Dataset No. 89 :
+16/09 20:54:06 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:06 - INFO - >>> Scaler stragety is None
+16/09 20:54:06 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:06 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:06 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:06 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:06 - INFO - >>> Scaler stragety is standard
+16/09 20:54:06 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:06 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:06 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:07 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:07 - INFO - Current Running Dataset No. 105 :
+16/09 20:54:07 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:07 - INFO - >>> Scaler stragety is None
+16/09 20:54:07 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:07 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:07 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:07 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:07 - INFO - >>> Scaler stragety is standard
+16/09 20:54:07 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:07 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:07 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:08 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:08 - INFO - Current Running Dataset No. 121 :
+16/09 20:54:08 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:08 - INFO - >>> Scaler stragety is None
+16/09 20:54:08 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:08 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:08 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:08 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:08 - INFO - >>> Scaler stragety is standard
+16/09 20:54:08 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:08 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:08 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:09 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:09 - INFO - Current Running Dataset No. 137 :
+16/09 20:54:09 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:09 - INFO - >>> Scaler stragety is None
+16/09 20:54:09 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:09 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:09 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:09 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:09 - INFO - >>> Scaler stragety is standard
+16/09 20:54:09 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:09 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:09 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:10 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:10 - INFO - Current Running Dataset No. 153 :
+16/09 20:54:10 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:10 - INFO - >>> Scaler stragety is None
+16/09 20:54:10 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:10 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:10 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:10 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:10 - INFO - >>> Scaler stragety is standard
+16/09 20:54:10 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:10 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:10 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:11 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:11 - INFO - Current Running Dataset No. 169 :
+16/09 20:54:11 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:11 - INFO - >>> Scaler stragety is None
+16/09 20:54:11 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:11 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:11 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:11 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:11 - INFO - >>> Scaler stragety is standard
+16/09 20:54:11 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:11 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:11 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:12 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:12 - INFO - Current Running Dataset No. 185 :
+16/09 20:54:12 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:12 - INFO - >>> Scaler stragety is None
+16/09 20:54:12 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:12 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:12 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:12 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:12 - INFO - >>> Scaler stragety is standard
+16/09 20:54:12 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:12 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:12 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:13 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:13 - INFO - Current Running Dataset No. 201 :
+16/09 20:54:13 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:13 - INFO - >>> Scaler stragety is None
+16/09 20:54:13 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:13 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:13 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:13 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:13 - INFO - >>> Scaler stragety is standard
+16/09 20:54:13 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:13 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:13 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:14 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:14 - INFO - Current Running Dataset No. 217 :
+16/09 20:54:14 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:14 - INFO - >>> Scaler stragety is None
+16/09 20:54:14 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:14 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:14 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:14 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:14 - INFO - >>> Scaler stragety is standard
+16/09 20:54:14 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:14 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:14 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:16 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:16 - INFO - Current Running Dataset No. 233 :
+16/09 20:54:16 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:16 - INFO - >>> Scaler stragety is None
+16/09 20:54:16 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:16 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:16 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:16 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:16 - INFO - >>> Scaler stragety is standard
+16/09 20:54:16 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:16 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:16 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:17 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:17 - INFO - Current Running Dataset No. 249 :
+16/09 20:54:17 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:17 - INFO - >>> Scaler stragety is None
+16/09 20:54:17 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:17 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:17 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:17 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:17 - INFO - >>> Scaler stragety is standard
+16/09 20:54:17 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:17 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:17 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:18 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:18 - INFO - Current Running Dataset No. 265 :
+16/09 20:54:18 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:18 - INFO - >>> Scaler stragety is None
+16/09 20:54:18 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:18 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:18 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:18 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:18 - INFO - >>> Scaler stragety is standard
+16/09 20:54:18 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:18 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:18 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:19 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:19 - INFO - Current Running Dataset No. 281 :
+16/09 20:54:19 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:19 - INFO - >>> Scaler stragety is None
+16/09 20:54:19 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:19 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:19 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:19 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:19 - INFO - >>> Scaler stragety is standard
+16/09 20:54:19 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:19 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:19 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:20 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:20 - INFO - Current Running Dataset No. 297 :
+16/09 20:54:20 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:20 - INFO - >>> Scaler stragety is None
+16/09 20:54:20 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:20 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:20 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:20 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:20 - INFO - >>> Scaler stragety is standard
+16/09 20:54:20 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:20 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:20 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:21 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:21 - INFO - Current Running Dataset No. 313 :
+16/09 20:54:21 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:21 - INFO - >>> Scaler stragety is None
+16/09 20:54:21 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:21 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:21 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:21 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:21 - INFO - >>> Scaler stragety is standard
+16/09 20:54:21 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:21 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:21 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:22 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:22 - INFO - Current Running Dataset No. 329 :
+16/09 20:54:22 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:22 - INFO - >>> Scaler stragety is None
+16/09 20:54:22 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:22 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:22 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:22 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:22 - INFO - >>> Scaler stragety is standard
+16/09 20:54:22 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:22 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:22 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:22 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:22 - INFO - Current Running Dataset No. 345 :
+16/09 20:54:22 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:22 - INFO - >>> Scaler stragety is None
+16/09 20:54:22 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:22 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:22 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:23 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:23 - INFO - >>> Scaler stragety is standard
+16/09 20:54:23 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:23 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:23 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:23 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:23 - INFO - Current Running Dataset No. 361 :
+16/09 20:54:23 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:23 - INFO - >>> Scaler stragety is None
+16/09 20:54:23 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:23 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:23 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:23 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:23 - INFO - >>> Scaler stragety is standard
+16/09 20:54:23 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:23 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:23 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:24 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:24 - INFO - Current Running Dataset No. 377 :
+16/09 20:54:24 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:24 - INFO - >>> Scaler stragety is None
+16/09 20:54:24 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:24 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:24 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:24 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:24 - INFO - >>> Scaler stragety is standard
+16/09 20:54:24 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:24 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:24 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:25 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:25 - INFO - Current Running Dataset No. 393 :
+16/09 20:54:25 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:25 - INFO - >>> Scaler stragety is None
+16/09 20:54:25 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:25 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:25 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:25 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:25 - INFO - >>> Scaler stragety is standard
+16/09 20:54:25 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:25 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:25 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:26 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:26 - INFO - Current Running Dataset No. 409 :
+16/09 20:54:26 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:26 - INFO - >>> Scaler stragety is None
+16/09 20:54:26 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:26 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:26 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:26 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:26 - INFO - >>> Scaler stragety is standard
+16/09 20:54:26 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:26 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:26 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:27 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:27 - INFO - Current Running Dataset No. 425 :
+16/09 20:54:27 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:27 - INFO - >>> Scaler stragety is None
+16/09 20:54:27 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:27 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:27 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:27 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:27 - INFO - >>> Scaler stragety is standard
+16/09 20:54:27 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:27 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:27 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:28 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:28 - INFO - Current Running Dataset No. 441 :
+16/09 20:54:28 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:28 - INFO - >>> Scaler stragety is None
+16/09 20:54:28 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:28 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:28 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:28 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:28 - INFO - >>> Scaler stragety is standard
+16/09 20:54:28 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:28 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:28 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:29 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:29 - INFO - Current Running Dataset No. 457 :
+16/09 20:54:29 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:29 - INFO - >>> Scaler stragety is None
+16/09 20:54:29 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:29 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:29 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:29 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:29 - INFO - >>> Scaler stragety is standard
+16/09 20:54:29 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:29 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:29 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:30 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:30 - INFO - Current Running Dataset No. 473 :
+16/09 20:54:30 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:30 - INFO - >>> Scaler stragety is None
+16/09 20:54:30 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:30 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:30 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:30 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:30 - INFO - >>> Scaler stragety is standard
+16/09 20:54:30 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:30 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:30 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:31 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:31 - INFO - Current Running Dataset No. 489 :
+16/09 20:54:31 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:31 - INFO - >>> Scaler stragety is None
+16/09 20:54:31 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:31 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:31 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:31 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:31 - INFO - >>> Scaler stragety is standard
+16/09 20:54:31 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:31 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:31 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:32 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:32 - INFO - Current Running Dataset No. 505 :
+16/09 20:54:32 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:32 - INFO - >>> Scaler stragety is None
+16/09 20:54:32 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:32 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:32 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:32 - INFO - >>> winsorized_Strategy is 0
+16/09 20:54:32 - INFO - >>> Scaler stragety is standard
+16/09 20:54:32 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:32 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:32 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:33 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:33 - INFO - Current Running Dataset No. 9 :
+16/09 20:54:33 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:33 - INFO - >>> Scaler stragety is None
+16/09 20:54:33 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:33 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:33 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:33 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:33 - INFO - >>> Scaler stragety is standard
+16/09 20:54:33 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:33 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:33 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:34 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:34 - INFO - Current Running Dataset No. 25 :
+16/09 20:54:34 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:34 - INFO - >>> Scaler stragety is None
+16/09 20:54:34 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:34 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:34 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:34 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:34 - INFO - >>> Scaler stragety is standard
+16/09 20:54:34 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:34 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:34 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:35 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:35 - INFO - Current Running Dataset No. 41 :
+16/09 20:54:35 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:35 - INFO - >>> Scaler stragety is None
+16/09 20:54:35 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:35 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:35 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:35 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:35 - INFO - >>> Scaler stragety is standard
+16/09 20:54:35 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:35 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:35 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:36 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:36 - INFO - Current Running Dataset No. 57 :
+16/09 20:54:36 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:36 - INFO - >>> Scaler stragety is None
+16/09 20:54:36 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:36 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:36 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:36 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:36 - INFO - >>> Scaler stragety is standard
+16/09 20:54:36 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:36 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:36 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:37 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:37 - INFO - Current Running Dataset No. 73 :
+16/09 20:54:37 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:37 - INFO - >>> Scaler stragety is None
+16/09 20:54:37 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:37 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:37 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:37 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:37 - INFO - >>> Scaler stragety is standard
+16/09 20:54:37 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:37 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:37 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:38 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:38 - INFO - Current Running Dataset No. 89 :
+16/09 20:54:38 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:38 - INFO - >>> Scaler stragety is None
+16/09 20:54:38 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:38 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:38 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:38 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:38 - INFO - >>> Scaler stragety is standard
+16/09 20:54:38 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:38 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:38 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:39 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:39 - INFO - Current Running Dataset No. 105 :
+16/09 20:54:39 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:39 - INFO - >>> Scaler stragety is None
+16/09 20:54:39 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:39 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:39 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:39 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:39 - INFO - >>> Scaler stragety is standard
+16/09 20:54:39 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:39 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:39 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:39 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:39 - INFO - Current Running Dataset No. 121 :
+16/09 20:54:39 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:39 - INFO - >>> Scaler stragety is None
+16/09 20:54:39 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:39 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:39 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:39 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:39 - INFO - >>> Scaler stragety is standard
+16/09 20:54:39 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:39 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:39 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:40 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:40 - INFO - Current Running Dataset No. 137 :
+16/09 20:54:40 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:40 - INFO - >>> Scaler stragety is None
+16/09 20:54:40 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:40 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:40 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:40 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:40 - INFO - >>> Scaler stragety is standard
+16/09 20:54:40 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:40 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:40 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:41 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:41 - INFO - Current Running Dataset No. 153 :
+16/09 20:54:41 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:41 - INFO - >>> Scaler stragety is None
+16/09 20:54:41 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:41 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:41 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:41 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:41 - INFO - >>> Scaler stragety is standard
+16/09 20:54:41 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:41 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:41 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:42 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:42 - INFO - Current Running Dataset No. 169 :
+16/09 20:54:42 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:42 - INFO - >>> Scaler stragety is None
+16/09 20:54:42 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:42 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:42 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:42 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:42 - INFO - >>> Scaler stragety is standard
+16/09 20:54:42 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:42 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:42 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:43 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:43 - INFO - Current Running Dataset No. 185 :
+16/09 20:54:43 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:43 - INFO - >>> Scaler stragety is None
+16/09 20:54:43 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:43 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:43 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:43 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:43 - INFO - >>> Scaler stragety is standard
+16/09 20:54:43 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:43 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:43 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:44 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:44 - INFO - Current Running Dataset No. 201 :
+16/09 20:54:44 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:44 - INFO - >>> Scaler stragety is None
+16/09 20:54:44 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:44 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:44 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:44 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:44 - INFO - >>> Scaler stragety is standard
+16/09 20:54:44 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:44 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:44 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:45 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:45 - INFO - Current Running Dataset No. 217 :
+16/09 20:54:45 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:45 - INFO - >>> Scaler stragety is None
+16/09 20:54:45 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:45 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:45 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:45 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:45 - INFO - >>> Scaler stragety is standard
+16/09 20:54:45 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:45 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:45 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:46 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:46 - INFO - Current Running Dataset No. 233 :
+16/09 20:54:46 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:46 - INFO - >>> Scaler stragety is None
+16/09 20:54:46 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:46 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:46 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:46 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:46 - INFO - >>> Scaler stragety is standard
+16/09 20:54:46 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:46 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:46 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:47 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:47 - INFO - Current Running Dataset No. 249 :
+16/09 20:54:47 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:47 - INFO - >>> Scaler stragety is None
+16/09 20:54:47 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:47 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:47 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:47 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:47 - INFO - >>> Scaler stragety is standard
+16/09 20:54:47 - INFO - >>> Encoding strategy: [['Frequency_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:47 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:47 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:48 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:48 - INFO - Current Running Dataset No. 265 :
+16/09 20:54:48 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:48 - INFO - >>> Scaler stragety is None
+16/09 20:54:48 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:48 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:48 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:48 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:48 - INFO - >>> Scaler stragety is standard
+16/09 20:54:48 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:48 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:48 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:49 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:49 - INFO - Current Running Dataset No. 281 :
+16/09 20:54:49 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:49 - INFO - >>> Scaler stragety is None
+16/09 20:54:49 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:49 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:49 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:49 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:49 - INFO - >>> Scaler stragety is standard
+16/09 20:54:49 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:49 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:49 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:50 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:50 - INFO - Current Running Dataset No. 297 :
+16/09 20:54:50 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:50 - INFO - >>> Scaler stragety is None
+16/09 20:54:50 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:50 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:50 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:50 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:50 - INFO - >>> Scaler stragety is standard
+16/09 20:54:50 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:50 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:50 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:51 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:51 - INFO - Current Running Dataset No. 313 :
+16/09 20:54:51 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:51 - INFO - >>> Scaler stragety is None
+16/09 20:54:51 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:51 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:51 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:51 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:51 - INFO - >>> Scaler stragety is standard
+16/09 20:54:51 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:51 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:51 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:52 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:52 - INFO - Current Running Dataset No. 329 :
+16/09 20:54:52 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:52 - INFO - >>> Scaler stragety is None
+16/09 20:54:52 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:52 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:52 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:52 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:52 - INFO - >>> Scaler stragety is standard
+16/09 20:54:52 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:52 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:52 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:53 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:53 - INFO - Current Running Dataset No. 345 :
+16/09 20:54:53 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:53 - INFO - >>> Scaler stragety is None
+16/09 20:54:53 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:53 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:53 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:53 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:53 - INFO - >>> Scaler stragety is standard
+16/09 20:54:53 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:53 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:53 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:53 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:53 - INFO - Current Running Dataset No. 361 :
+16/09 20:54:53 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:53 - INFO - >>> Scaler stragety is None
+16/09 20:54:53 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:53 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:53 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:53 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:53 - INFO - >>> Scaler stragety is standard
+16/09 20:54:53 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:53 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:53 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46178821178821183
+16/09 20:54:54 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:54 - INFO - Current Running Dataset No. 377 :
+16/09 20:54:54 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:54 - INFO - >>> Scaler stragety is None
+16/09 20:54:54 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:54 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:54 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:54 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:54 - INFO - >>> Scaler stragety is standard
+16/09 20:54:54 - INFO - >>> Encoding strategy: [['Mean_Age'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:54 - INFO - >>> Total columns with label column is: 26
+16/09 20:54:54 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.462037962037962
+16/09 20:54:55 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:55 - INFO - Current Running Dataset No. 393 :
+16/09 20:54:55 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:55 - INFO - >>> Scaler stragety is None
+16/09 20:54:55 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:55 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:55 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:55 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:55 - INFO - >>> Scaler stragety is standard
+16/09 20:54:55 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:55 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:55 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:56 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:56 - INFO - Current Running Dataset No. 409 :
+16/09 20:54:56 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:56 - INFO - >>> Scaler stragety is None
+16/09 20:54:56 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:56 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:56 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:56 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:56 - INFO - >>> Scaler stragety is standard
+16/09 20:54:56 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:56 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:56 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:57 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:57 - INFO - Current Running Dataset No. 425 :
+16/09 20:54:57 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:57 - INFO - >>> Scaler stragety is None
+16/09 20:54:57 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:57 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:57 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:57 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:57 - INFO - >>> Scaler stragety is standard
+16/09 20:54:57 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:57 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:57 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:58 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:58 - INFO - Current Running Dataset No. 441 :
+16/09 20:54:58 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:58 - INFO - >>> Scaler stragety is None
+16/09 20:54:58 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:58 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:58 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:58 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:58 - INFO - >>> Scaler stragety is standard
+16/09 20:54:58 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Frequency_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:58 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:58 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:54:59 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:54:59 - INFO - Current Running Dataset No. 457 :
+16/09 20:54:59 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:59 - INFO - >>> Scaler stragety is None
+16/09 20:54:59 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:59 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:59 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:54:59 - INFO - >>> winsorized_Strategy is 1
+16/09 20:54:59 - INFO - >>> Scaler stragety is standard
+16/09 20:54:59 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:54:59 - INFO - >>> Total columns with label column is: 25
+16/09 20:54:59 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:55:00 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:55:00 - INFO - Current Running Dataset No. 473 :
+16/09 20:55:00 - INFO - >>> winsorized_Strategy is 1
+16/09 20:55:00 - INFO - >>> Scaler stragety is None
+16/09 20:55:00 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:55:00 - INFO - >>> Total columns with label column is: 25
+16/09 20:55:00 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:55:00 - INFO - >>> winsorized_Strategy is 1
+16/09 20:55:00 - INFO - >>> Scaler stragety is standard
+16/09 20:55:00 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Frequency_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:55:00 - INFO - >>> Total columns with label column is: 25
+16/09 20:55:00 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:55:01 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:55:01 - INFO - Current Running Dataset No. 489 :
+16/09 20:55:01 - INFO - >>> winsorized_Strategy is 1
+16/09 20:55:01 - INFO - >>> Scaler stragety is None
+16/09 20:55:01 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:55:01 - INFO - >>> Total columns with label column is: 25
+16/09 20:55:01 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:55:01 - INFO - >>> winsorized_Strategy is 1
+16/09 20:55:01 - INFO - >>> Scaler stragety is standard
+16/09 20:55:01 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Frequency_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:55:01 - INFO - >>> Total columns with label column is: 25
+16/09 20:55:01 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46126949973103815
+16/09 20:55:02 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16/09 20:55:02 - INFO - Current Running Dataset No. 505 :
+16/09 20:55:02 - INFO - >>> winsorized_Strategy is 1
+16/09 20:55:02 - INFO - >>> Scaler stragety is None
+16/09 20:55:02 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:55:02 - INFO - >>> Total columns with label column is: 25
+16/09 20:55:02 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156
+16/09 20:55:02 - INFO - >>> winsorized_Strategy is 1
+16/09 20:55:02 - INFO - >>> Scaler stragety is standard
+16/09 20:55:02 - INFO - >>> Encoding strategy: [['Mean_Age'], ['Label_Position_1'], ['Mean_Position_2'], ['Mean_Size_1'], ['Mean_Size_2'], ['Label_Treatment'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['Label_Type_3']]
+16/09 20:55:02 - INFO - >>> Total columns with label column is: 25
+16/09 20:55:02 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.46153846153846156

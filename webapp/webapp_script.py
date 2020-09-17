@@ -117,18 +117,19 @@ try:
     from optimalflow.autoViz import autoViz
     viz = autoViz(preprocess_dict=DICT_PREP,report=dyna_report)
     viz.clf_model_retrieval(metrics='accuracy')
-    move('./temp-plot.html','./static/Pipeline Cluster Retrieval Diagram.html')
+    move('./Pipeline Cluster Retrieval Diagram.html','./templates/diagram.html')
     viz = autoViz(report = dyna_report)
     viz.clf_table_report()
-    move('./temp-plot.html','./static/Pipeline Cluster Model Evaluation Report.html')
+    move('./Pipeline Cluster Model Evaluation Report.html','./templates/report.html')
 except:
     try:
         viz = autoViz(report = dyna_report)
         viz.reg_table_report()
-        move('./static/img/no-cls-output.html','./static/Pipeline Cluster Model Evaluation Report.html')
-        move('./temp-plot.html','./static/Pipeline Cluster Model Evaluation Report.html')
+        move('./static/img/no-cls-output.html','./templates/diagram.html')
+        move('./Pipeline Cluster Model Evaluation Report.html','./template/report.html')
     except:
         print('No Visualization Outputs found!')
 
-import sys
-sys.exit("Click [Enter] to Exit...")
+print("PCTE Workflow's Done. More details of results are in LogsViewer & Visualization Page. Thank you for using! --Tony Dong")
+
+input("\n\nPress the enter key to exit.")

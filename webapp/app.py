@@ -133,20 +133,26 @@ def logs():
                 
                 if (ext_flag==[True]) and item.endswith('.log'):
                     shell1 = client.Dispatch("WScript.Shell")
-                    print(1)
                     shell1.run("cmd.exe")
                     time.sleep(1)
-                    shell1.SendKeys("cd logs {ENTER}")
+                    shell1.SendKeys("cd ./logs {ENTER}")
                     shell1.SendKeys(item+" {ENTER}")
                     shell1.SendKeys("exit {ENTER}")
         except:
                 print('Read Log Files Error!')
-
+        return render_template('logs.html')
     return render_template('logs.html')
-
 @app.route('/viz/')
 def viz():
     return render_template('viz.html')
+
+@app.route('/report/')
+def report():
+    return render_template('report.html')
+
+@app.route('/diagram/')
+def diagram():
+    return render_template('diagram.html')
 
 #run flask app
 if __name__ == "__main__":

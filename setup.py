@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="optimalflow", 
-    version="0.1.7",
+    version="0.1.8",
     author="Tony Dong",
     author_email="tonyleidong@gmail.com",
     description="OptimalFlow is an Omni-ensemble Automated Machine Learning toolkit to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple code.",
@@ -22,7 +22,11 @@ setuptools.setup(
         'scipy',
         'joblib',
         'category_encoders',
-        'plotly'
+        'plotly',
+        'flask',
+        'wtforms',
+        'werkzeug',
+        'matplotlib'
     ],
     classifiers=[
         "Programming Language :: Python :: 3.8",

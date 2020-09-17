@@ -68,7 +68,7 @@ class autoViz:
                     # np.array(colors)[pd.cut(df.Latency,bins=bins_latency, labels=labels).astype(int)]],        
         ])
         fig.update_layout(title = f'Pipeline Cluster Model Classification Evaluation Report - autoViz <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
-        plot(fig)
+        plot(fig,filename='Pipeline Cluster Model Evaluation Report.html', auto_open=False)
         fig.show()
 
 
@@ -107,7 +107,7 @@ class autoViz:
                     align='left'))
         ])
         fig.update_layout(title = f'Pipeline Cluster Model Regression Evaluation Report - autoViz <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
-        plot(fig)
+        plot(fig,filename='Pipeline Cluster Model Evaluation Report.html',auto_open=False)
         fig.show()
 
     def clf_model_retrieval(self,metrics = None):
@@ -236,7 +236,7 @@ class autoViz:
             ))])
 
             fig.update_layout(title = f'Pipeline Cluster Traversal Experiments - autoViz {metrics} Retrieval Diagram <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
-            plot(fig)
+            plot(fig,filename = "Pipeline Cluster Retrieval Diagram.html",auto_open=False)
             fig.show()
 
         elif metrics == "precision":
@@ -285,7 +285,7 @@ class autoViz:
             ))])
 
             fig.update_layout(title = f'Pipeline Cluster Traversal Experiments - autoViz {metrics} Retrieval Diagram <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
-            plot(fig)
+            plot(fig,filename = "Pipeline Cluster Retrieval Diagram.html",auto_open=False)
             fig.show()
 
         elif metrics == "recall":
@@ -334,7 +334,7 @@ class autoViz:
             ))])
 
             fig.update_layout(title = f'Pipeline Cluster Traversal Experiments - autoViz {metrics} Retrieval Diagram <a href="https://www.linkedin.com/in/lei-tony-dong/"> ©Tony Dong</a>', font_size=8)
-            plot(fig)
+            plot(fig,filename = "Pipeline Cluster Retrieval Diagram.html",auto_open=False)
             fig.show()
 
 

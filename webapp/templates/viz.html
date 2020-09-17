@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-<!-- {% block title %} Home {% endblock %} -->
+{% block title %} OptimalFlow Visualization{% endblock %}
 
 {% block body %}
 <div class="container">
@@ -9,11 +9,11 @@
     <p class="lead">Quickly Generate PCTE Model Evaluation Report or Retrieval Diagram, which are Supported by autoViz Module.</p>
 
     <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="{{url_for('static',filename='Pipeline Cluster Model Evaluation Report.html')}}" allowfullscreen></iframe>
+      <iframe class="embed-responsive-item" src="{{ url_for('report') }}" allowfullscreen></iframe>
       </div>
     <p class = "lead">You can find more use demos from <a href="{{ url_for('docs') }}">Documentation</a> or from OptimalFlow's <a href="https://github.com/tonyleidong">GitHub</a>.</p>
     <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="{{url_for('static',filename='Pipeline Cluster Retrieval Diagram.html')}}" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="{{ url_for('diagram') }}" allowfullscreen></iframe>
       </div>
 </div>
   <!-- Footer -->
