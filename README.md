@@ -75,7 +75,9 @@ pip install OptimalFlow
 
 
 ### Please, Avoid Selling this Work as Yours
-Voice from the Author: I am glad if you find **OptimalFlow** useful and helpful. Feel free to add it to your project and let more people know how good it is.But please avoid simply changing the name and selling it as your work. That's not why I'm sharing the source code, at all. All copyrights reserved by Tony Dong following MIT license.
+Voice from the Author: I am glad if you find **OptimalFlow** useful and helpful. Feel free to add it to your project and let more people know how good it is. But please avoid simply changing the name and selling it as your work. That's not why I'm sharing the source code, at all. 
+
+All copyrights reserved by Tony Dong following MIT license.
 
 ### License:
 MIT
