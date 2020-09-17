@@ -7,7 +7,7 @@ About OptimalFlow Web App:
 OptimalFlow was designed highly modularized from the beginning, which made it easy to continue developing and users could build applications based on it. The web app of OptimalFlow is a user-friendly GUI for people who don't have coding experience to build Omni-ensemble Automated Machine Learning workflow simply and quickly.
 
 .. image:: webapp-pcte-initial.PNG
-   :width: 800
+   :width: 500
 
 The web app include 3 function components: Pipeline Cluster Traversal Experiment(PCTE) Builder, LogsViewer, and Visualization. Users can set up the parameters for each OptimalFlow's key module, and run the workflow all by clicking on the web page. Also, when the automated machine learning's done, users could check logs information and review the visualization outputs immediately.
 
@@ -55,7 +55,7 @@ Build Pipeline Cluster Traversal Experiment(PCTE) Workflow:
 When you done the deployment steps, and start running the server, you will see the web app in your browser like picture below:
 
 .. image:: webapp-pcte-initial.PNG
-   :width: 800
+   :width: 500
 
 To build a PCTE workflow, you need to enter the parameters for each OptimalFlow's module: autoPP, autoFS and autoCV.
 
@@ -63,38 +63,38 @@ But before that, you need to move the dataset you want to build model into the .
 
 After doing that, we could select the dataset by clicking the button under "Load Dataset":
 
-.. image:: webapp-pcte-load data.PNG
-   :width: 800
+.. image:: webapp-pcte-load-data.PNG
+   :width: 500
 
 Then, you need to finish the settings for autoPP, autoFS, and autoCV step by step. Please note, be careful to the setting "sparsity" and "cols" values in autoPP parameters panel, if the combinaton of the feature preprocessing can't meet the restriction values you've set, OptimalFlow will not able to continue running the following modules. More details could be found in autoPP's documentation<https://optimal-flow.readthedocs.io/en/latest/autoPP.html>
 
-.. image:: webapp-pcte-set autoPP.PNG
-   :width: 800
+.. image:: webapp-pcte-set-autoPP.PNG
+   :width: 500
 
 
-.. image:: webapp-pcte-set autoFS.PNG
-   :width: 800
+.. image:: webapp-pcte-set-autoFS.PNG
+   :width: 500
 
-.. image:: webapp-pcte-set autoCV.PNG
-   :width: 800
+.. image:: webapp-pcte-set-autoCV.PNG
+   :width: 500
 
 
 Finally, when you finished all setting steps(the progress bar is fulfilled), you can click the 'Build PCTE Workflow' button, to run the Omni-ensemble Automated Machine Learning based on PCTE algorithm.
 
-.. image:: webapp-pcte-start run.PNG
-   :width: 800
+.. image:: webapp-pcte-start-run.PNG
+   :width: 500
 
 Here's the sample outputs when the process's done.
 
-.. image:: webapp-pcte-end run.PNG
-   :width: 800
+.. image:: webapp-pcte-end-run.PNG
+   :width: 500
 
 LogsViewer:
 -------------
 You could view the logs information related to each module in 'LogsViewer' page. Please note, you could only use it after the previous automated machine learning process's done. 
 
-.. image:: Webapp-LogsViewer.PNG.PNG
-   :width: 800
+.. image:: Webapp-LogsViewer.PNG
+   :width: 500
 
 Visualization:
 --------------
@@ -102,4 +102,4 @@ Visualization:
 You could also review the visualization outputs from 'Visualization' page. For classification problem, it will present 'Pipeline Cluster Traversal Experiments Model Retrieval Diagram' and 'Pipeline Cluster Model Evaluation Dynamic Table'. And for regression problem, it only will present 'Pipeline Cluster Model Evaluation Dynamic Table'. All visualizaton outputs are based on plotly, so you could play with them by dragging or scrolling. You will find more detais in example page<https://optimal-flow.readthedocs.io/en/latest/demos.html#pipeline-cluster-traversal-experiments-model-retrieval-diagram-using-autoviz>.
 
 .. image:: webapp-Visualization.PNG
-   :width: 800
+   :width: 500
