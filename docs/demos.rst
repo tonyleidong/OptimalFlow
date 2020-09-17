@@ -524,6 +524,14 @@ Output:
     .. image:: autoViz_Demo_Dynamic_Table.PNG 
         :width: 980
 
+Build Pipeline Cluster Traversal Experiments Workflow with Web App:
+-----------------------------------------------------------------------------
+
+  See details in the 'Web App' page<https://optimal-flow.readthedocs.io/en/latest/webapp.html>
+
+  .. image:: webapp-pcte-initial.PNG 
+    :width: 800
+
 End-to-end OptimalFlow example in Jupyter notebook:
 --------------------------------------------------
 
