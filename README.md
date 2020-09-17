@@ -14,7 +14,7 @@
 
 **OptimalFlow** is an Omni-ensemble Automated Machine Learning toolkit, which is based on *Pipeline Cluster Traversal Experiment* approach, to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple codes. In the latest version(0.1.10), it added a Web App, based on flask framework, as OptimalFlow's GUI. Users could build Automated Machine Learning workflow all clicks, without any coding at all! (Read more details in Documentation https://Optimal-Flow.readthedocs.io/)
 
-<img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/Webapp-PCTE.png" width="800">
+<img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/Webapp-PCTE.PNG" width="700">
 
 
 Comparing other popular "AutoML or Automated Machine Learning" APIs, **OptimalFlow** is designed as an omni-ensembled ML workflow optimizer with higher-level API targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. 
@@ -71,6 +71,13 @@ pip install OptimalFlow
 
 * Part 2: https://towardsdatascience.com/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-31d810539102
 
+
+#### Please, Avoid Selling this Work as Yours
+Voice from the Author: I am glad if you find **OptimalFlow** useful and helpful. Feel free to add it to your project and let more people know how good it is.But please avoid simply changing the name and selling it as your work. That's not why I'm sharing the source code, at all. All copyrights reserved by Tony Dong following MIT license.
+
+#### License:
+MIT
+
 #### Updates on 9/16/2020
 -------------------------
 * Created a Web App based on flask framework as OptimalFlow's GUI, to build PCTE Automated Machine Learning by simply clicks without any coding at all!
@@ -111,5 +118,4 @@ pip install OptimalFlow
  * Modify parameters.json, and reset_parameters.json for the added estimators
  * Add autoViz for classification problem model retrieval diagram
 
-#### License:
-MIT
+
