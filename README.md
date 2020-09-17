@@ -12,7 +12,9 @@
 
 <img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow_Logo.png" width="150">
 
-**OptimalFlow** is an Omni-ensemble Automated Machine Learning toolkit, which is based on *Pipeline Cluster Traversal Experiment* approach, to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple codes. In the latest version(0.1.10), it added a Web App, based on flask framework, as OptimalFlow's GUI. Users could build Automated Machine Learning workflow all clicks, without any coding at all! (Read more details in Documentation https://Optimal-Flow.readthedocs.io/)
+**OptimalFlow** is an Omni-ensemble Automated Machine Learning toolkit, which is based on *Pipeline Cluster Traversal Experiment* approach, to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple codes. 
+
+In the latest version(0.1.10), it added a Web App, based on flask framework, as OptimalFlow's GUI. Users could build Automated Machine Learning workflow all clicks, without any coding at all! (Read more details in Documentation https://Optimal-Flow.readthedocs.io/)
 
 <img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/Webapp-PCTE.PNG" width="700">
 
