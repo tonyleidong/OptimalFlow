@@ -72,6 +72,14 @@ pip install OptimalFlow
 
 * Part 2: https://towardsdatascience.com/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-31d810539102
 
+#### Other Stories:
+
+* Ensemble Feature Selection in Machine Learning using OptimalFlow - Easy Way with Simple Code to Select top Features: https://towardsdatascience.com/ensemble-feature-selection-in-machine-learning-by-optimalflow-49f6ee0d52eb
+
+* Ensemble Model Selection & Evaluation in Machine Learning using OptimalFlow - Easy Way with Simple Code to Select the Optimal Model: https://towardsdatascience.com/ensemble-model-selection-evaluation-in-machine-learning-by-optimalflow-9e5126308f12
+
+* Build No-code Automated Machine Learning Model with OptimalFlow Web App: https://towardsdatascience.com/build-no-code-automated-machine-learning-model-with-optimalflow-web-app-8acaad8262b1
+
 ### Support OptimalFlow
 If you like OptimalFlow, please consider starring or forking it on GitHub and spreading the word!
 
@@ -125,5 +133,4 @@ MIT
  * Add estimators: HuberRegressor, RidgeCV, LassoCV, SGDRegressor, and HistGradientBoostingRegressor
  * Modify parameters.json, and reset_parameters.json for the added estimators
  * Add autoViz for classification problem model retrieval diagram
-
 
