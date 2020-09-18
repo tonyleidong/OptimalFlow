@@ -11,7 +11,7 @@ OptimalFlow was designed highly modularized from the beginning, which made it ea
 
 The web app includes 3 function components: Pipeline Cluster Traversal Experiment(PCTE) Builder, LogsViewer, and Visualization. Users can set up the parameters for each OptimalFlow's key module, and run the workflow all by clicking on the web page. Also, when the automated machine learning's done, users could check logs information and review the visualization outputs immediately.
 
-Comparing other popular 'no-code' machine learning platforms, OptimalFlow's Web App is born from omni-ensemble automated machine learning framework and built on Pipelin Cluster Traversal Experiments(PCTE) theory. It's light, scalable, and open-source to users. It was designed from data scientists who need more focus on local implementation and can be easily transplanted among machines. When teams want to deployment it on a server, Flask based Web App can be quickly implemented with high flexiblity.
+Comparing other popular 'no-code' machine learning platforms, OptimalFlow's Web App is born from its unique Omni-ensemble Automated Machine Learning framework and built on Pipelin Cluster Traversal Experiments(PCTE) theory. It's also light, scalable, and open-source to users. It was designed for data scientists who need more focus on local implementation and can be easily transplanted among machines. When teams want to deploy it on a server, Flask based Web App can be quickly implemented with high flexibility.
 
 In summary, the goal of this web application is: Build Automated Machine Learning Workflow without Code!
 
