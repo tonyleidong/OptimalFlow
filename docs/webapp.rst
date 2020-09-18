@@ -34,7 +34,7 @@ Method 1 - Get it from OptimalFlow GitHub<https://github.com/tonyleidong/Optimal
 .. image:: webapp-deployment-0.PNG
    :width: 500
 
-Method 2 - Get from OptimalFlow's package. You could find it in you Python core folder. Here's the example where you can find the 'Webapp' folder.
+Method 2 - Get from OptimalFlow's package. You could find it in your Python core folder. Here's the example where you can find the 'Webapp' folder.
 
 .. image:: webapp-deployment-1.PNG
    :width: 500  
@@ -55,7 +55,7 @@ Done! You can now open your browser (recommend Chrome), and type 127.0.0.1:500 t
 Build Pipeline Cluster Traversal Experiment(PCTE) Workflow:
 -----------------------------------------------------------
 
-When you done the deployment steps, and start running the server, you will see the web app in your browser like picture below:
+When you've done the deployment steps, and start running the server, you will see the web app in your browser like picture below:
 
 .. image:: webapp-pcte-initial.PNG
    :width: 500
@@ -69,25 +69,30 @@ After doing that, we could select the dataset by clicking the button under "Load
 .. image:: webapp-pcte-load-data.PNG
    :width: 500
 
-Then, you need to finish the settings for autoPP, autoFS, and autoCV step by step. Please note, be careful to the setting "sparsity" and "cols" values in autoPP parameters panel, if the combinaton of the feature preprocessing can't meet the restriction values you've set, OptimalFlow will not able to continue running the following modules. More details could be found in autoPP's documentation<https://optimal-flow.readthedocs.io/en/latest/autoPP.html>
+Then, you need to finish the settings for autoPP, autoFS, and autoCV step by step. 
+
+Please NOTE: be careful to the setting "sparsity" and "cols" values in autoPP parameters panel, if the combination of the feature preprocessing can't meet the restriction values you've set, OptimalFlow will not able to continue running the following modules. More details could be found in autoPP's Documentation<https://optimal-flow.readthedocs.io/en/latest/autoPP.html>.
 
 .. image:: webapp-pcte-set-autoPP.PNG
    :width: 500
 
+Next, you need to finish set parameters in autoFS module, i.e. set how many top features you want to select, and what algorithm you want PCTE to go through. More details about autoFS module here<https://optimal-flow.readthedocs.io/en/latest/autoFS.html>.
 
 .. image:: webapp-pcte-set-autoFS.PNG
    :width: 500
 
+For the autoCV module's settings, you could click the autoCV 'Set Parameters' button, and enter the tuning strategy and algorithms comparison scope you want OptimalFlow to automatedly test. More details about autoCV module here<https://optimal-flow.readthedocs.io/en/latest/autoCV.html>.
+
 .. image:: webapp-pcte-set-autoCV.PNG
    :width: 500
 
+Finally, when you finished all setting steps(the progress bar should be fulfilled 100%), you can click the 'Build PCTE Workflow' button, to run the Omni-ensemble Automated Machine Learning operation. This function is based on autoPipe module, more details about autoPipe is here<https://optimal-flow.readthedocs.io/en/latest/autoPipe.html>.
 
-Finally, when you finished all setting steps(the progress bar is fulfilled), you can click the 'Build PCTE Workflow' button, to run the Omni-ensemble Automated Machine Learning based on PCTE algorithm.
 
 .. image:: webapp-pcte-start-run.PNG
    :width: 500
 
-Here's the sample outputs when the process's done.
+Here are the sample outputs when the process's done. You will find the Top 5 Optimal models with evaluation metrics there. More details and use cases about OptimalFlow modules and notebook samples could be found in Documentation<https://optimal-flow.readthedocs.io/en/latest/demos.html#examples>.
 
 .. image:: webapp-pcte-end-run.PNG
    :width: 500
