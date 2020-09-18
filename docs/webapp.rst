@@ -27,12 +27,14 @@ To install OptimalFlow's latest version, run this command in your terminal:
 
 * **Step 2: Download web app's source code:**
 There're 2 ways to download its source code:
-    * Method 1 - Get it from OptimalFlow GitHub<https://github.com/tonyleidong/OptimalFlow/tree/master/optimalflow>. Download all codes and sub-folders within 'Webapp' folder.
+
+Method 1 - Get it from OptimalFlow GitHub<https://github.com/tonyleidong/OptimalFlow/tree/master/optimalflow>. Download all codes and sub-folders within 'Webapp' folder.
+    
 
 .. image:: webapp-deployment-0.PNG
    :width: 500
 
-    * Method 2 - Get from OptimalFlow's package. You could find it in you Python core folder. Here's the example where you can find the 'Webapp' folder.
+Method 2 - Get from OptimalFlow's package. You could find it in you Python core folder. Here's the example where you can find the 'Webapp' folder.
 
 .. image:: webapp-deployment-1.PNG
    :width: 500  
