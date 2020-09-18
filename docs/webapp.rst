@@ -4,7 +4,7 @@ Web App
 
 About OptimalFlow Web App:
 ---------------------------
-OptimalFlow was designed highly modularized from the beginning, which made it easy to continue developing and users could build applications based on it. The web app of OptimalFlow is a user-friendly GUI for people who don't have coding experience to build Omni-ensemble Automated Machine Learning workflow simply and quickly.
+OptimalFlow was designed highly modularized from the beginning, which made it easy to continue developing and users could build applications based on it. The web app of OptimalFlow is a user-friendly GUI for people who don't have coding experience to build Omni-ensemble Automated Machine Learning workflow easily and quickly.
 
 .. image:: webapp-pcte-initial.PNG
    :width: 500
