@@ -16,8 +16,7 @@
 
 In the latest version(0.1.10), it added a Web App, based on flask framework, as OptimalFlow's GUI. Users could build Automated Machine Learning workflow all clicks, without any coding at all! (Read more details https://optimal-flow.readthedocs.io/en/latest/webapp.html)
 
-<img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/Webapp-PCTE.PNG" width="700">
-
+![WebApp Demo](docs/OptimalFLow-WebApp.gif)
 
 Comparing other popular "AutoML or Automated Machine Learning" APIs, **OptimalFlow** is designed as an omni-ensembled ML workflow optimizer with higher-level API targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. 
 
