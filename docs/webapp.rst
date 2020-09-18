@@ -107,7 +107,7 @@ You could view the logs information related to each module in 'LogsViewer' page.
 Visualization:
 --------------
 
-You could also review the visualization outputs from 'Visualization' page. For classification problem, it will present 'Pipeline Cluster Traversal Experiments Model Retrieval Diagram' and 'Pipeline Cluster Model Evaluation Dynamic Table'. And for regression problem, it only will present 'Pipeline Cluster Model Evaluation Dynamic Table'. All visualizaton outputs are based on plotly, so you could play with them by dragging or scrolling. You will find more detais in example page<https://optimal-flow.readthedocs.io/en/latest/demos.html#pipeline-cluster-traversal-experiments-model-retrieval-diagram-using-autoviz>.
+You could also review the visualization outputs from the 'Visualization' page. For the classification problems, it will present 'Pipeline Cluster Traversal Experiments Model Retrieval Diagram' and 'Pipeline Cluster Model Evaluation Dynamic Table'. And for the regression problem, it only will present 'Pipeline Cluster Model Evaluation Dynamic Table'. All visualization outputs are based on Plotly, so you could play with them by dragging or scrolling. You will find more details on the example page<https://optimal-flow.readthedocs.io/en/latest/demos.html#pipeline-cluster-traversal-experiments-model-retrieval-diagram-using-autoviz>.
 
 .. image:: webapp-Visualization.PNG
    :width: 500
