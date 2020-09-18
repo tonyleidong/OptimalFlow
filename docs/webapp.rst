@@ -50,7 +50,7 @@ And you will see the output similar to the picture below:
 .. image:: webapp-deployment-3.PNG
    :width: 500 
 
-Done! You can now open your browser (recommend Chrome), and type 127.0.0.1:500 to open the web app in your laptop.
+Done! You can now open your browser (recommend Chrome), and type 127.0.0.1:500 to open the web app on your laptop.
 
 Build Pipeline Cluster Traversal Experiment(PCTE) Workflow:
 -----------------------------------------------------------
