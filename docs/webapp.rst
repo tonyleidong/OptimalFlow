@@ -15,7 +15,7 @@ Comparing other popular 'no-code' machine learning platforms, the Web App is bor
 
 In summary, the goal of this web application is: Build Automated Machine Learning Workflow without Code!
 
-How to deployment:
+How to deploy Web App:
 ------------------
 * **Step 1: Install OptimalFlow:** 
 If you didn't install OptimalFlow's latest version, you should do that from PYPI, simply using PIP.
