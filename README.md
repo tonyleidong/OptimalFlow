@@ -72,14 +72,19 @@ pip install OptimalFlow
 
 * Part 2: https://towardsdatascience.com/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-31d810539102
 
+### Support OptimalFlow
+If you like OptimalFlow, please consider starring or forking it on GitHub and spreading the word!
+
+[![Github Stars](https://img.shields.io/github/stars/tonyleidong/OptimalFlow?style=social)](https://github.com/tonyleidong/OptimalFlow)
+[![Github Forks](https://img.shields.io/github/forks/tonyleidong/OptimalFlow?style=social)](https://github.com/tonyleidong/OptimalFlow)
 
 ### Please, Avoid Selling this Work as Yours
-Voice from the Author: I am glad if you find **OptimalFlow** useful and helpful. Feel free to add it to your project and let more people know how good it is. But please avoid simply changing the name and selling it as your work. That's not why I'm sharing the source code, at all. 
-
-All copyrights reserved by Tony Dong following MIT license.
+Voice from the Author: I am glad if you find **OptimalFlow** useful and helpful. Feel free to add it to your project and let more people know how good it is. But please avoid simply changing the name and selling it as your work. That's not why I'm sharing the source code, at all. All copyrights reserved by Tony Dong following MIT license.
 
 ### License:
 MIT
+
+### Updates History:
 
 #### Updates on 9/16/2020
 -------------------------
