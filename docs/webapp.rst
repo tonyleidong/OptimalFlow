@@ -20,10 +20,12 @@ How to deploy Web App:
 * **Step 1: Install OptimalFlow:** 
 If you didn't install OptimalFlow's latest version, you should do that from PYPI, simply using PIP.
 To install OptimalFlow's latest version, run this command in your terminal:
-.. code-block:: console
 
-    $ pip install --upgrade optimalflow
+.. code-block:: python
 
+   pip install --upgrade optimalflow
+
+..
 
 * **Step 2: Download web app's source code:**
 There're 2 ways to download its source code:
