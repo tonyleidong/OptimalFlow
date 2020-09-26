@@ -1,0 +1,239 @@
+{% extends 'base.html' %}
+
+<!-- This Web app was built with Python via the Flask framework. -->
+{% block title %} OptimalFlow Web App{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <h2></h2>
+    <h1>Searching Space Settings </h1>
+    <p class="lead">You Could Set Up Estimators/Regressors Searching Space here:</p>
+    <div class="row text-center">
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Reset Searching Space</h3>
+                <p class="card-text">Reset to the Default Parameters Here:</p>
+              </div>
+              <div class="card-footer">
+                <div class="modal fade" id="modalLoginFormReset" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <form role="form" method='POST' action='/'>
+                      <input class="form-check-input" type="checkbox" value="reset_default" id="defaultCheck1" name = "confirm_reset">
+                      <label class="form-check-label" for="defaultCheck1">
+                          Confirm Reset to Default Settings Values(reset_parameters)
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="reset_settings" id="defaultCheck1" name = "confirm_reset">
+                      <label class="form-check-label" for="defaultCheck1">
+                          Confirm Reset Your Previous Settings Inputs(reset_settings)
+                      </label>
+                      <br>
+                        <button type="submit" class="btn btn-primary" id="code">APPLY</button>
+                        <div>
+                            <a href="https://optimal-flow.readthedocs.io">*Check Documentation </a>
+                        </div>
+                        </form>
+        
+                     </div>
+                </div>
+              </div>
+              
+              <div class="text-center">
+                <a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalLoginFormReset">Set Parameters</a>
+              </div>
+              
+              </div>
+            </div>
+            </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                <h3 class="card-title">Classification Searching Space</h3>
+                <p class="card-text">Set Parameters of Estimators Here:</p>
+                </div>
+                <div class="card-footer">
+                <div class="modal fade" id="modalParaEstimator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <form role="form" method='POST' action='/'>
+                        <div class="form-group">
+
+                            <div><label>Select Estimators to Update:</label></div>
+                            <div>
+                                <select name="parent" id="id_parent" data-child-id='id_child' class='dependent-selects__parent'>
+                                <option value = "lgr" data-child-options="C">LogisticRegression()</option>
+                                <option value="svm" data-child-options="C|#kernel">SVM.SVC()</option>
+                                <option value="mlp" data-child-options="activation|#hidden_layer_sizes|#learning_rate|#solver">MLPClassifier()</option>
+                                <option value="ada" data-child-options="n_estimators|#learning_rate">AdaBoostClassifier()</option>
+                                <option value="rf" data-child-options="max_depth|#n_estimators">RandomForestClassifier()</option>
+                                <option value="gb" data-child-options="n_estimators|#max_depth|#learning_rate">GradientBoostingClassifier()</option>
+                                <option value="xgb" data-child-options="n_estimators|#max_depth|#learning_rate">XGBClassifier()</option>
+                                <option value="lsvc" data-child-options="C">LinearSVC()</option>
+                                <option value="hgboost" data-child-options="max_depth|#learning_rate">HistGradientBoostingClassifier()</option>
+                                <option value="sgd" data-child-options="penalty">SGDClassifier()</option>
+                                <option value="rgcv" data-child-options="fit_intercept">RidgeClassifierCV()</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div><label>Select Parameter to Update:</label></div>
+                            <div>
+                                Parameters: <select name="child" id="id_child" class='dependent-selects__child'>
+                                <option value="">--------</option>
+                                <option value="C">C</option>
+                                <option value="kernel">kernel</option>
+                                <option value="activation">activation</option>
+                                <option value="hidden_layer_sizes">hidden_layer_sizes</option>
+                                <option value="learning_rate">learning_rate</option>
+                                <option value="max_depth">max_depth</option>
+                                <option value="solver">solver</option>
+                                <option value="n_estimators">n_estimators</option>
+                                <option value="penalty">penalty</option>
+                                <option value="fit_intercept">fit_intercept</option>
+                                <option value="min_samples_leaf">min_samples_leaf</option>
+                                <option value="shuffle">shuffle</option>
+                                <option value="min_samples_leaf">min_samples_leaf</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div><label>Enter the Updated Values:</label></div>
+                            <div>
+                                <div class="mx-auto" style="width: 350px;">
+                                    <input class="form-control align-items-center" type="text" name = "paraValCls" placeholder="i.e. [0.1]" id="ParaClsVal" autofocus required>
+                                    </div>
+                            </div>
+
+                            <br>
+                            <button type="submit" class="btn btn-primary" id="code">APPLY</button>
+                            <div>
+                                <a href="https://optimal-flow.readthedocs.io/en/latest/autoFS.html">*Check Documentation </a>
+                            </div>
+                            
+                        </div>
+                        
+                    </form>
+        
+                        </div>
+                </div>
+                </div>
+                
+                <div class="text-center">
+                <a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalParaEstimator">Set Parameters</a>
+                </div>
+                
+                </div>
+            </div>
+            </div>
+            
+        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+            <h3 class="card-title">Regression Searching Space</h3>
+            <p class="card-text">Set Parameters of Estimators Here:</p>
+            </div>
+            <div class="card-footer">
+            <div class="modal fade" id="modalParaRegressor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <form role="form" method='POST' action='/'>
+                    <div class="form-group">
+
+                        <div><label>Select Estimators to Update:</label></div>
+                        <div>
+                            <select name="parent2" id="id_parent2" data-child-id='id_child2' class='dependent-selects__parent'>
+                            <option value = "lr" data-child-options="normalize">LinearRegression()</option>
+                            <option value="knn" data-child-options="algorithm|#n_neighbors|#weights">KNeighborsRegressor()</option>
+                            <option value="svr" data-child-options="C|#kernel">SVM.SVR()</option>
+                            <option value="rf" data-child-options="max_depth|#n_estimators">RandomForestRegressor()</option>
+                            <option value="ada" data-child-options="n_estimators|#loss|#learning_rate">AdaBoostRegressor()</option>
+                            <option value="gb" data-child-options="n_estimators|#max_depth|#learning_rate">GradientBoostingRegressor()</option>
+                            <option value="tree" data-child-options="splitter|#max_depth|#min_samples_leaf">DecisionTreeRegressor()</option>
+                            <option value="mlp" data-child-options="activation|#hidden_layer_sizes|#learning_rate|#solver">MLPRegressor()</option>
+                            <option value="xgb" data-child-options="n_estimators|#max_depth|#learning_rate">XGBRegressor()</option>
+                            <option value="hgboost" data-child-options="max_depth|#learning_rate">HistGradientBoostingRegressor()</option>
+                            <option value="huber" data-child-options="fit_intercept">RidgeClassifierCV()</option>
+                            <option value="rgcv" data-child-options="fit_intercept">RidgeCV()</option>
+                            <option value="cvlasso" data-child-options="fit_intercept">LassoCV()</option>
+                            <option value="sgd" data-child-options="shuffle|#penalty|#learning_rate">SGDRegressor()</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div><label>Select Parameter to Update:</label></div>
+                        <div>
+                            Parameters: <select name="child2" id="id_child2" class='dependent-selects__child'>
+                            <option value="">--------</option>
+                            <option value="C">C</option>
+                            <option value="kernel">kernel</option>
+                            <option value="activation">activation</option>
+                            <option value="hidden_layer_sizes">hidden_layer_sizes</option>
+                            <option value="learning_rate">learning_rate</option>
+                            <option value="max_depth">max_depth</option>
+                            <option value="solver">solver</option>
+                            <option value="n_estimators">n_estimators</option>
+                            <option value="penalty">penalty</option>
+                            <option value="fit_intercept">fit_intercept</option>
+                            <option value="min_samples_leaf">min_samples_leaf</option>
+                            <option value="shuffle">shuffle</option>
+                            <option value="algorithm">algorithm</option>
+                            <option value="weights">weights</option>
+                            <option value="n_neighbors">n_neighbors</option>
+                            <option value="normalize">normalize</option>
+                            <option value="splitter">splitter</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div><label>Enter the Updated Values:</label></div>
+                        <div>
+                            <div class="mx-auto" style="width: 350px;">
+                                <input class="form-control align-items-center" type="text" name = "paraValReg" placeholder="i.e. [0.1]" id="ParaClsReg" autofocus required>
+                                </div>
+                        </div>
+
+                        <br>
+                        <button type="submit" class="btn btn-primary" id="code">APPLY</button>
+                        <div>
+                            <a href="https://optimal-flow.readthedocs.io/en/latest/autoFS.html">*Check Documentation </a>
+                        </div>
+                        
+                    </div>
+                    
+                </form>
+    
+                    </div>
+            </div>
+            </div>
+            
+            <div class="text-center">
+            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalParaRegressor">Set Parameters</a>
+            </div>
+            
+            </div>
+        </div>
+            </div>
+    </div>
+</div>
+
+  <!-- Footer -->
+<footer class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <p class="m-0 text-white">Copyright &copy; Tony Dong 2020</p>
+    </div>
+    <!-- /.container -->
+</footer>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="{{url_for('static', filename='/js/dependent-selects.js')}}"></script>
+<script type="text/javascript">
+    $('#MyModal').on('hidden.bs.modal', function () {
+        $(this).find('form').trigger('reset');
+    })
+</script>
+{% endblock %}

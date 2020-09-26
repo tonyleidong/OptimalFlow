@@ -196,6 +196,15 @@ Defaults Parameters for Classifiers/Regressors
    * - lr
      - 'normalize'
      - [True,False]
+   * - knn
+     - 'algorithm'
+     - ['auto', 'ball_tree', 'kd_tree', 'brute']
+   * - 
+     - 'n_neighbors'
+     - [5, 10, 15, 20, 25]
+   * - 
+     - 'weights'
+     - ['uniform', 'distance']
    * - svm
      - 'C'
      - [0.1, 1, 10]
