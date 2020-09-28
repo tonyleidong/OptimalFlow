@@ -114,19 +114,56 @@ def about():
 
 @app.route('/parameters/',methods=['POST','GET'])
 def parameters():
-    # if request.method == "POST":
-    #     try:
-    #         confirm_reset = request.form['confirm_reset']
-    #         with open(json_path_settings,'r',encoding='utf-8') as s_file:
-    #             para = json.load(s_file)
-    #         para['confirm_reset'] = confirm_reset
-    #     except:
-    #         mode = request.form['mode']
-    #         with open(json_path_settings,'r',encoding='utf-8') as s_file:
-    #             para = json.load(s_file)
-    #         para['confirm_reset'] = "no_confirm"
-
-
+    if request.method == "POST":
+        try:
+            confirm_reset = request.form['confirm_reset']
+            with open(json_path_settings,'r',encoding='utf-8') as s_file:
+                para = json.load(s_file)
+            para['confirm_reset'] = confirm_reset
+            s_file.close()
+            w_file = open(json_path_settings, "w",encoding='utf-8')
+            json.dump(para, w_file)
+            w_file.close()
+            
+        except:
+            try:
+                algo_name = request.form['parent']
+                para_name = request.form['child']
+                para_val = request.form['paraValCls']
+                para_val = list(para_val.split(","))
+                try:
+                    para_val = [float(i) if '.' in i else int(i) for i in para_val]
+                except:
+                    para_val = para_val
+                with open(json_path_settings,'r',encoding='utf-8') as s_file:
+                    para = json.load(s_file)
+                para['space_set']['cls'][algo_name][para_name] = para_val
+                w_file = open(json_path_settings, "w",encoding='utf-8')
+                json.dump(para, w_file)
+                w_file.close()
+                print(algo_name,para_name,para_val)
+                s_file.close()
+            except:
+                try:
+                    algo_name = request.form['parent2']
+                    para_name = request.form['child2']
+                    para_val = request.form['paraValReg']
+                    para_val = list(para_val.split(","))
+                    try:
+                        para_val = [float(i) if '.' in i else int(i) for i in para_val]
+                    except:
+                        para_val = para_val
+                    with open(json_path_settings,'r',encoding='utf-8') as s_file:
+                        para = json.load(s_file)
+                    para['space_set']['reg'][algo_name][para_name] = para_val
+                    w_file = open(json_path_settings, "w",encoding='utf-8')
+                    json.dump(para, w_file)
+                    w_file.close()
+                    print(algo_name,para_name,para_val)
+                    s_file.close()
+                except:
+                    print("Error in Setting Searchin Space!")
+                
     return render_template('parameters.html')
 
 @app.route('/docs/')

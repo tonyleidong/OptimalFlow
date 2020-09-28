@@ -21,7 +21,7 @@
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
-                    <form role="form" method='POST' action='/'>
+                    <form role="form" method='POST' action="{{ url_for('parameters') }}">
                       <input class="form-check-input" type="checkbox" value="reset_default" id="defaultCheck1" name = "confirm_reset">
                       <label class="form-check-label" for="defaultCheck1">
                           Confirm Reset to Default Settings Values(reset_parameters)
@@ -60,7 +60,7 @@
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                    <form role="form" method='POST' action='/'>
+                    <form role="form" method='POST' action="{{ url_for('parameters') }}">
                         <div class="form-group">
 
                             <div><label>Select Estimators to Update:</label></div>
@@ -140,7 +140,7 @@
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                <form role="form" method='POST' action='/'>
+                <form role="form" method='POST' action="{{ url_for('parameters') }}">
                     <div class="form-group">
 
                         <div><label>Select Estimators to Update:</label></div>
@@ -190,7 +190,7 @@
                         <div><label>Enter the Updated Values:</label></div>
                         <div>
                             <div class="mx-auto" style="width: 350px;">
-                                <input class="form-control align-items-center" type="text" name = "paraValReg" placeholder="i.e. [0.1]" id="ParaClsReg" autofocus required>
+                                <input class="form-control align-items-center" type="text" name = "paraValReg" placeholder="enter values with comma separated when many" id="ParaClsReg" autofocus required>
                                 </div>
                         </div>
 
