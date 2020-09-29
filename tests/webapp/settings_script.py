@@ -36,7 +36,8 @@ custom_space = {
         "reg_rgcv":para_data['space_set']['reg']['rgcv'],
         "reg_cvlasso":para_data['space_set']['reg']['cvlasso'],
         "reg_huber":para_data['space_set']['reg']['huber'],
-        "reg_sgd":para_data['space_set']['reg']['sgd']
+        "reg_sgd":para_data['space_set']['reg']['sgd'],
+        "reg_knn":para_data['space_set']['reg']['knn']
 }
 
 

@@ -138,6 +138,7 @@ def parameters():
                 with open(json_path_settings,'r',encoding='utf-8') as s_file:
                     para = json.load(s_file)
                 para['space_set']['cls'][algo_name][para_name] = para_val
+                para['confirm_reset'] = 'no_confirm'
                 w_file = open(json_path_settings, "w",encoding='utf-8')
                 json.dump(para, w_file)
                 w_file.close()
@@ -146,16 +147,20 @@ def parameters():
             except:
                 try:
                     algo_name = request.form['parent2']
+                    print(algo_name)
                     para_name = request.form['child2']
                     para_val = request.form['paraValReg']
                     para_val = list(para_val.split(","))
+                    print(1)
                     try:
                         para_val = [float(i) if '.' in i else int(i) for i in para_val]
                     except:
                         para_val = para_val
+                    print(para_val)
                     with open(json_path_settings,'r',encoding='utf-8') as s_file:
                         para = json.load(s_file)
                     para['space_set']['reg'][algo_name][para_name] = para_val
+                    para['confirm_reset'] = 'no_confirm'
                     w_file = open(json_path_settings, "w",encoding='utf-8')
                     json.dump(para, w_file)
                     w_file.close()
