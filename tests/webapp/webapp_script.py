@@ -49,26 +49,23 @@ custom_space = {
 try:
     if(reset_flag == "reset_default"):
         reset_parameters()
+    if(reset_flag == "reset_settings"):
+        json_s = os.path.join(os.path.dirname("./"), 'reset_settings.json')
+        with open(json_s,'r') as d_file:
+            para = json.load(d_file)
+        json_s = os.path.join(os.path.dirname("./"), 'settings.json')
+        w_file = open(json_s, "w",encoding='utf-8')
+        w_file. truncate(0)
+        json.dump(para, w_file)
+        w_file.close()
+    if(reset_flag == "no_confirm"):  
+        reset_parameters()
+        for i in custom_space.keys():
+            if custom_space[i]!={}:
+                model_type, algo_name=i.split('_')
+                update_parameters(mode = model_type,estimator_name=algo_name,**custom_space[i])
 except:
-    try:
-        if(reset_flag == "reset_settings"):
-            json_s = os.path.join(os.path.dirname("./"), 'reset_settings.json')
-            with open(json_s,'r') as d_file:
-                para = json.load(d_file)
-            json_s = os.path.join(os.path.dirname("./"), 'settings.json')
-            w_file = open(json_s, "w",encoding='utf-8')
-            w_file. truncate(0)
-            json.dump(para, w_file)
-            w_file.close()
-    except:
-        try:            
-            reset_parameters()
-            for i in custom_space.keys():
-                if custom_space[i]!={}:
-                    model_type, algo_name=i.split('_')
-                    update_parameters(mode = model_type,estimator_name=algo_name,**custom_space[i])
-        except:
-            print("Failed to Set Up the Searching Space, will Use the Default Settings!")
+    print("Failed to Set Up the Searching Space, will Use the Default Settings!")
 
 
 ###------------------------ Settings PCTE Parameters--------------------------------------
