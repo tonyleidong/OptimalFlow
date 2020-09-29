@@ -532,6 +532,11 @@ Build Pipeline Cluster Traversal Experiments Workflow with Web App:
   .. image:: webapp-pcte-initial.PNG 
     :width: 600
 
+  Related Story @ TowardsDataScience:
+
+  * Build No-code Automated Machine Learning Model with OptimalFlow Web App: https://towardsdatascience.com/build-no-code-automated-machine-learning-model-with-optimalflow-web-app-8acaad8262b1
+
+
 End-to-end OptimalFlow example in Jupyter notebook:
 --------------------------------------------------
 

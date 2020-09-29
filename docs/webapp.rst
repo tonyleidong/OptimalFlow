@@ -113,3 +113,19 @@ You could also review the visualization outputs from the 'Visualization' page. F
 
 .. image:: webapp-Visualization.PNG
    :width: 500
+
+SearchingSpace:
+---------------
+
+Users could custom set estimators/regressors' parameters for optimal tuning outputs.
+
+.. image:: webapp-SearchingSpace.PNG
+   :width: 500
+
+.. image:: webapp-SearchingSpace-Set.PNG
+   :width: 500
+
+Related Story @ TowardsDataScience:
+--------------
+
+* Build No-code Automated Machine Learning Model with OptimalFlow Web App: https://towardsdatascience.com/build-no-code-automated-machine-learning-model-with-optimalflow-web-app-8acaad8262b1

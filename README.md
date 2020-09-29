@@ -93,9 +93,13 @@ Voice from the Author: I am glad if you find **OptimalFlow** useful and helpful.
 MIT
 
 ### Updates History:
+-------------------------
+
+#### Updates on 9/29/2020
+* Added SearchinSpace settings page in Web App. Users could custom set estimators/regressors' parameters for optimal tuning outputs.
+* Modified some layouts of existing pages in Web App.
 
 #### Updates on 9/16/2020
--------------------------
 * Created a Web App based on flask framework as OptimalFlow's GUI, to build PCTE Automated Machine Learning by simply clicks without any coding at all!
 * Web App included PCTE workflow bulder, LogsViewer, Visualization, Documentation sections.
 * Fix the filename issues in autoViz module, and remove auto_open function when generating new html format plots.

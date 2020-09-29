@@ -21,6 +21,9 @@ optimalflow.egg-info/dependency_links.txt
 optimalflow.egg-info/requires.txt
 optimalflow.egg-info/top_level.txt
 optimalflow/webapp/app.py
+optimalflow/webapp/reset_settings.json
+optimalflow/webapp/settings.json
+optimalflow/webapp/settings_script.py
 optimalflow/webapp/webapp.json
 optimalflow/webapp/webapp_script.py
 optimalflow/webapp/input/breast_cancer.csv
@@ -49,6 +52,7 @@ optimalflow/webapp/static/js/bootstrap.js
 optimalflow/webapp/static/js/bootstrap.js.map
 optimalflow/webapp/static/js/bootstrap.min.js
 optimalflow/webapp/static/js/bootstrap.min.js.map
+optimalflow/webapp/static/js/dependent-selects.js
 optimalflow/webapp/templates/about.html
 optimalflow/webapp/templates/base.html
 optimalflow/webapp/templates/diagram.html
@@ -57,5 +61,6 @@ optimalflow/webapp/templates/index.html
 optimalflow/webapp/templates/logfile.html
 optimalflow/webapp/templates/logs.html
 optimalflow/webapp/templates/nologfile.html
+optimalflow/webapp/templates/parameters.html
 optimalflow/webapp/templates/report.html
 optimalflow/webapp/templates/viz.html

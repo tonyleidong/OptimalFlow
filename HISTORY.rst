@@ -2,6 +2,11 @@
 History
 =======
 
+0.1.11 (2020-09-29)
+------------------
+* Added SearchinSpace settings page in Web App. Users could custom set estimators/regressors' parameters for optimal tuning outputs.
+* Modified some layouts of existing pages in Web App.
+
 0.1.10 (2020-09-16)
 ------------------
 * Created a Web App, based on flask framework, as OptimalFlow's GUI. Users could build Automated Machine Learning workflow all clicks, without any coding at all!

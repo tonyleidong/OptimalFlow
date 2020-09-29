@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: optimalflow
-Version: 0.1.10
+Version: 0.1.11
 Summary: OptimalFlow is an Omni-ensemble Automated Machine Learning toolkit to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple code.
 Home-page: https://github.com/tonyleidong/OptimalFlow
 Author: Tony Dong
@@ -8,19 +8,23 @@ Author-email: tonyleidong@gmail.com
 License: UNKNOWN
 Description: ## OptimalFlow
         [![PyPI Latest Release](https://img.shields.io/pypi/v/OptimalFlow?style=flat-square)](https://pypi.org/project/OptimalFlow/)
-        [![PyPI - Downloads](https://img.shields.io/pypi/dm/optimalflow?style=flat-square)](https://Optimal-Flow.readthedocs.io/)
         [![Github Issues](https://img.shields.io/github/issues/tonyleidong/OptimalFlow?style=flat-square)](https://github.com/tonyleidong/OptimalFlow/issues)
         [![License](https://img.shields.io/github/license/tonyleidong/OptimalFlow?style=flat-square)](https://github.com/tonyleidong/OptimalFlow/blob/master/LICENSE)
         [![Last Commit](https://img.shields.io/github/last-commit/tonyleidong/OptimalFlow?style=flat-square)](https://github.com/tonyleidong/OptimalFlow)
         [![Python Version](https://img.shields.io/pypi/pyversions/OptimalFlow?style=flat-square)](https://pypi.org/project/OptimalFlow/)
+        <!---
+        [![PyPI - Downloads](https://img.shields.io/pypi/dm/optimalflow?style=flat-square)](https://Optimal-Flow.readthedocs.io/)
+        -->
         
-        
-           
         #### Author: [Tony Dong](http://www.linkedin.com/in/lei-tony-dong)
         
         <img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow_Logo.png" width="150">
         
-        **OptimalFlow** is an Omni-ensemble Automated Machine Learning toolkit, which is based on *Pipeline Cluster Traversal Experiment* approach, to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple codes. In most recent version, I created a Web App, based on flask framework, as OptimalFlow's GUI. Users could build Automated Machine Learning workflow all clicks, without any coding at all! 
+        **OptimalFlow** is an Omni-ensemble Automated Machine Learning toolkit, which is based on *Pipeline Cluster Traversal Experiment* approach, to help data scientists building optimal models in easy way, and automate Supervised Learning workflow with simple codes. 
+        
+        In the latest version(0.1.10), it added a "no-code" Web App, based on flask framework, as OptimalFlow's GUI. Users could build Automated Machine Learning workflow all by clicks, without any coding at all! (Read more details https://optimal-flow.readthedocs.io/en/latest/webapp.html)
+        
+        ![WebApp Demo](https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow-WebApp-slow.gif)
         
         Comparing other popular "AutoML or Automated Machine Learning" APIs, **OptimalFlow** is designed as an omni-ensembled ML workflow optimizer with higher-level API targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. 
         
@@ -76,8 +80,34 @@ Description: ## OptimalFlow
         
         * Part 2: https://towardsdatascience.com/end-to-end-optimalflow-automated-machine-learning-tutorial-with-real-projects-formula-e-laps-31d810539102
         
-        #### Updates on 9/16/2020
+        #### Other Stories:
+        
+        * Ensemble Feature Selection in Machine Learning using OptimalFlow - Easy Way with Simple Code to Select top Features: https://towardsdatascience.com/ensemble-feature-selection-in-machine-learning-by-optimalflow-49f6ee0d52eb
+        
+        * Ensemble Model Selection & Evaluation in Machine Learning using OptimalFlow - Easy Way with Simple Code to Select the Optimal Model: https://towardsdatascience.com/ensemble-model-selection-evaluation-in-machine-learning-by-optimalflow-9e5126308f12
+        
+        * Build No-code Automated Machine Learning Model with OptimalFlow Web App: https://towardsdatascience.com/build-no-code-automated-machine-learning-model-with-optimalflow-web-app-8acaad8262b1
+        
+        ### Support OptimalFlow
+        If you like OptimalFlow, please consider starring or forking it on GitHub and spreading the word!
+        
+        [![Github Stars](https://img.shields.io/github/stars/tonyleidong/OptimalFlow?style=social)](https://github.com/tonyleidong/OptimalFlow)
+        [![Github Forks](https://img.shields.io/github/forks/tonyleidong/OptimalFlow?style=social)](https://github.com/tonyleidong/OptimalFlow)
+        
+        ### Please, Avoid Selling this Work as Yours
+        Voice from the Author: I am glad if you find **OptimalFlow** useful and helpful. Feel free to add it to your project and let more people know how good it is. But please avoid simply changing the name and selling it as your work. That's not why I'm sharing the source code, at all. All copyrights reserved by Tony Dong following MIT license.
+        
+        ### License:
+        MIT
+        
+        ### Updates History:
         -------------------------
+        
+        #### Updates on 9/29/2020
+        * Added SearchinSpace settings page in Web App. Users could custom set estimators/regressors' parameters for optimal tuning outputs.
+        * Modified some layouts of existing pages in Web App.
+        
+        #### Updates on 9/16/2020
         * Created a Web App based on flask framework as OptimalFlow's GUI, to build PCTE Automated Machine Learning by simply clicks without any coding at all!
         * Web App included PCTE workflow bulder, LogsViewer, Visualization, Documentation sections.
         * Fix the filename issues in autoViz module, and remove auto_open function when generating new html format plots.
@@ -116,8 +146,6 @@ Description: ## OptimalFlow
          * Modify parameters.json, and reset_parameters.json for the added estimators
          * Add autoViz for classification problem model retrieval diagram
         
-        #### License:
-        MIT
         
 Keywords: automated machine learning,features selection,model selection,AutoML,omni-ensemble machine learning,Machine Learning Web App
 Platform: UNKNOWN
