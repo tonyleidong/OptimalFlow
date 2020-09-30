@@ -50,7 +50,7 @@ In summary, **OptimalFlow** shares a few useful properties for data scientists:
 
 * *Adaptable* - *Pipeline Cluster Traversal Experiments* makes it easier to adapt unseen datasets with the right pipeline;
       
-* *Custom Modify Welcomed* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
+* *Custom Modify Welcome* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
 
 ### Documentation:  https://Optimal-Flow.readthedocs.io/
 
