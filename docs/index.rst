@@ -32,15 +32,19 @@ In summary, **OptimalFlow** shares a few useful properties for data scientists:
 
       * *Easy & less coding* - High-level APIs to implement *Pipeline Cluster Traversal Experiments*, and each ML component is highly automated and modularized;
 
-      * *Well ensemble* - Each key component is ensemble of popular algorithms w/ optimal hyperparameters tuning included;
+      * *Local-based* - Focus on process automation for locally implementation,which is easy to transfer current operation and meet compliance restriction(i.e. pharmaceutical compliance policy)
+
+      * *Light & transplantable* - Easier to transplant among projects and faster to deployment comparing other cloud-based AutoML solution(i.e. Microsoft Azure AutoML);
+
+      * *Well ensembled* - Each key component is ensemble of popular algorithms w/ optimal hyperparameters tuning included;
       
-      * *Omni-coverage* - *Pipeline Cluster Traversal Experiments* are designed to cross-experiment with all key ML components, like combined permuted input datasets, feature selection, and model selection;
+      * *Omni-Coverage* - Using *Pipeline Cluster Traversal Experiments*, to cross-experiment with combined permutated input datasets, feature selection, and model selection;
       
-      * *Scalable & Consistency* - Each module could add new algorithms easily due to its ensemble & reusable design; no extra needs to modify existing codes for new experiment
+      * *Scalable* - Each module could add new algorithms easily due to its ensemble and reuseable coding design;
 
       * *Adaptable* - *Pipeline Cluster Traversal Experiments* makes it easier to adapt unseen datasets with the right pipeline;
       
-      * *Custom Modify Welcomed* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
+      * *Custom Modify Welcome* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
 
 An End-to-End OptimalFlow Automated Machine Learning Tutorial with Real Projects @ TowardsDataScience:
 
