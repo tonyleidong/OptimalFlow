@@ -38,6 +38,10 @@ In summary, **OptimalFlow** shares a few useful properties for data scientists:
 
 * *Easy & less coding* - High-level APIs to implement *Pipeline Cluster Traversal Experiments*, and each ML component is highly automated and modularized;
 
+* *Local-based* - Focus on process automation for locally implementation,which is easy to transfer current operation and meet compliance restriction(i.e. pharmaceutical compliance policy)
+
+* *Light & transplantable* - Easier to transplant among projects and faster to deployment comparing other cloud-based AutoML solution(i.e. Microsoft Azure AutoML);
+
 * *Well ensembled* - Each key component is ensemble of popular algorithms w/ optimal hyperparameters tuning included;
       
 * *Omni-Coverage* - Using *Pipeline Cluster Traversal Experiments*, to cross-experiment with combined permutated input datasets, feature selection, and model selection;
