@@ -4,9 +4,9 @@ Welcome to OptimalFlow's Documentation!
    :width: 200
    :align: center
    
-**OptimalFlow** is an Omni-ensemble Automated Machine Learning Python Library to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple code. 
+**OptimalFlow** is an Omni-ensemble Automated Machine Learning Python toolkit to help data scientists building optimal models in easy way, and automate Machine Learning workflow with simple code. 
 
-After the version(0.1.10), it added a "no-code" Web App, based on flask framework, as OptimalFlow's GUI. Users could build Automated Machine Learning workflow all by clicks, without any coding at all! (Read more details in 'Web App' https://optimal-flow.readthedocs.io/en/latest/webapp.html)
+After the version(0.1.10), it added a "no-code" Web App as an application demo built on OptimalFlow. Users could build Automated Machine Learning workflow all by clicks, without any coding at all! (Read more details in 'Web App' https://optimal-flow.readthedocs.io/en/latest/webapp.html)
 
 .. image:: OptimalFlow-WebApp-slow.gif
 
