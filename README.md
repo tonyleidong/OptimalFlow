@@ -14,6 +14,10 @@
 
 **OptimalFlow** is an Omni-ensemble Automated Machine Learning Python toolkit, which is based on *Pipeline Cluster Traversal Experiment* approach, to help data scientists build optimal models in easy way, and automate Supervised Learning workflow with simple codes. 
 
+**OptimalFlow** wraps the Scikit-learn supervised learning framework to automatically create a collection of machine learning pipelines(aka ‘pipeline cluster’) based on algorithms permutation in each framework component. It includes feature engineering methods in its preprocessing module such as missing value imputation, categorical feature encoding, numeric feature rescaling, and outlier winsorization. The models  inherit algorithms from Scikit-learn estimators for classification and regression problems.
+
+**OptimalFlow** uses *Pipeline Cluster Traversal Experiments* as the optimizer to build an omni-ensemble workflow for an optimal baseline model searching, including feature preprocessing/selection optimization, hyperparameters tuning, model selection and assessment.
+
 After version 0.1.10, it added a "no-code" Web App as an application demo built on **OptimalFlow**. Users could build Automated Machine Learning workflow all by clicks, without any coding at all! (Read more details https://optimal-flow.readthedocs.io/en/latest/webapp.html)
 
 ![WebApp Demo](https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow-WebApp-slow.gif)
