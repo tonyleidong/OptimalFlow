@@ -51,8 +51,6 @@ In summary, **OptimalFlow** shares a few useful properties for data scientists:
 * *Omni ensemble* - OptimalFlow uses *Pipeline Cluster Traversal Experiments* as the optimizer to build an omni-ensemble workflow for an optimal baseline model searching. Easy for data scientists to implement iterated experiments across all ensemble components in the pipeline;
       
 * *High Scalablility* - Each module could add new algorithms easily due to its ensemble and reuseable coding desig. And *Pipeline Cluster Traversal Experiments* makes it easier to adapt unseen datasets with the right pipeline;
-
-* *Adaptable* - *Pipeline Cluster Traversal Experiments* makes it easier to adapt unseen datasets with the right pipeline;
       
 * *Customization* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
 
