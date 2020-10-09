@@ -18,7 +18,7 @@
 
 **OptimalFlow** uses *Pipeline Cluster Traversal Experiments* as the optimizer to build an omni-ensemble workflow for an optimal baseline model searching, including feature preprocessing/selection optimization, hyperparameters tuning, model selection and assessment.
 
-After version 0.1.10, it added a "no-code" Web App as an application demo built on **OptimalFlow**. Users could build Automated Machine Learning workflow all by clicks, without any coding at all! (Read more details https://optimal-flow.readthedocs.io/en/latest/webapp.html)
+After version 0.1.10, it added a "no-code" Web App as an application demo built on **OptimalFlow**. The web app allows simple click and selection for all of the parameters inside of OptimalFLow, which means users could build end-to-end Automated Machine Learning workflow without coding at all!(Read more details https://optimal-flow.readthedocs.io/en/latest/webapp.html)
 
 ![WebApp Demo](https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow-WebApp-slow.gif)
 
