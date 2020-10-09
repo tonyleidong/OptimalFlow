@@ -40,21 +40,21 @@ Comparing other automated or classic machine learning workflow's repetitive expe
 
 In summary, **OptimalFlow** shares a few useful properties for data scientists:
 
-* *Easy & less coding* - High-level APIs to implement *Pipeline Cluster Traversal Experiments*, and each ML component is highly automated and modularized;
+* *Easy coding* - High-level APIs to implement *Pipeline Cluster Traversal Experiments*, and each machine learning component is highly automated and modularized;
 
-* *Local-based* - Focus on process automation for locally implementation,which is easy to transfer current operation and meet compliance restriction(i.e. pharmaceutical compliance policy)
+* *Easy transformation* - Focus on process automation for locally implementation,which is easy to transfer current operation and meet compliance restriction(i.e. pharmaceutical compliance policy);
 
-* *Light & transplantable* - Easier to transplant among projects and faster to deployment comparing other cloud-based AutoML solution(i.e. Microsoft Azure AutoML);
+* *Easy maitaining* - Wrap machine learning components to well-modularized code packages without miscellaneous parameters inside;
 
-* *Well ensembled* - Each key component is ensemble of popular algorithms w/ optimal hyperparameters tuning included;
+* *Light & transplantable* - Easy to transplant among projects. Faster w/ convenience to deploy comparing other cloud-based solution(i.e. Microsoft Azure AutoML);
+
+* *Omni ensemble* - OptimalFlow uses *Pipeline Cluster Traversal Experiments* as the optimizer to build an omni-ensemble workflow for an optimal baseline model searching. Easy for data scientists to implement iterated experiments across all ensemble components in the pipeline;
       
-* *Omni-Coverage* - Using *Pipeline Cluster Traversal Experiments*, to cross-experiment with combined permutated input datasets, feature selection, and model selection;
-      
-* *Scalable* - Each module could add new algorithms easily due to its ensemble and reuseable coding design;
+* *High Scalablility* - Each module could add new algorithms easily due to its ensemble and reuseable coding desig. And *Pipeline Cluster Traversal Experiments* makes it easier to adapt unseen datasets with the right pipeline;
 
 * *Adaptable* - *Pipeline Cluster Traversal Experiments* makes it easier to adapt unseen datasets with the right pipeline;
       
-* *Custom Modify Welcome* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
+* *Customization* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
 
 ### Documentation:  https://Optimal-Flow.readthedocs.io/
 
