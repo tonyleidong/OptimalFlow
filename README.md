@@ -12,9 +12,13 @@
 
 <img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow_Logo.png" width="150">
 
-**OptimalFlow** is an Omni-ensemble Automated Machine Learning Python toolkit, which is based on *Pipeline Cluster Traversal Experiment* approach, to help data scientists building optimal models in easy way, and automate Supervised Learning workflow with simple codes. 
+**OptimalFlow** is an Omni-ensemble Automated Machine Learning Python toolkit, which is based on *Pipeline Cluster Traversal Experiment* approach, to help data scientists build optimal models in easy way, and automate Supervised Learning workflow with simple codes. 
 
-After version 0.1.10, it added a "no-code" Web App as an application demo built on **OptimalFlow**. Users could build Automated Machine Learning workflow all by clicks, without any coding at all! (Read more details https://optimal-flow.readthedocs.io/en/latest/webapp.html)
+**OptimalFlow** wraps the Scikit-learn supervised learning framework to automatically create an ensemble of machine learning pipelines(Omni-ensemble Pipeline Cluster) based on algorithms permutation in each framework component. It includes feature engineering methods in its preprocessing module such as missing value imputation, categorical feature encoding, numeric feature standardization, and outlier winsorization. The models inherit algorithms from Scikit-learn and XGBoost estimators for classification and regression problems. And the extendable coding structure supports adding models from external estimator libraries, which distincts **OptimalFlow** ’s scalability out of most of AutoML toolkits.
+
+**OptimalFlow** uses *Pipeline Cluster Traversal Experiments* as the optimizer to build an omni-ensemble workflow for an optimal baseline model searching, including feature preprocessing/selection optimization, hyperparameters tuning, model selection and assessment.
+
+After version 0.1.10, it added a "no-code" Web App as an application demo built on **OptimalFlow**. The web app allows simple click and selection for all of the parameters inside of OptimalFLow, which means users could build end-to-end Automated Machine Learning workflow without coding at all!(Read more details https://optimal-flow.readthedocs.io/en/latest/webapp.html)
 
 ![WebApp Demo](https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow-WebApp-slow.gif)
 
@@ -36,17 +40,19 @@ Comparing other automated or classic machine learning workflow's repetitive expe
 
 In summary, **OptimalFlow** shares a few useful properties for data scientists:
 
-* *Easy & less coding* - High-level APIs to implement *Pipeline Cluster Traversal Experiments*, and each ML component is highly automated and modularized;
+* *Easy coding* - High-level APIs to implement *Pipeline Cluster Traversal Experiments*, and each machine learning component is highly automated and modularized;
 
-* *Well ensembled* - Each key component is ensemble of popular algorithms w/ optimal hyperparameters tuning included;
-      
-* *Omni-Coverage* - Using *Pipeline Cluster Traversal Experiments*, to cross-experiment with combined permutated input datasets, feature selection, and model selection;
-      
-* *Scalable* - Each module could add new algorithms easily due to its ensemble and reuseable coding design;
+* *Easy transformation* - Focus on process automation for locally implementation,which is easy to transfer current operation and meet compliance restriction(i.e. pharmaceutical compliance policy);
 
-* *Adaptable* - *Pipeline Cluster Traversal Experiments* makes it easier to adapt unseen datasets with the right pipeline;
+* *Easy maintaining* - Wrap machine learning components to well-modularized code packages without miscellaneous parameters inside;
+
+* *Light & transplantable* - Easy to transplant among projects. Faster w/ convenience to deploy comparing other cloud-based solution(i.e. Microsoft Azure AutoML);
+
+* *Omni ensemble* - OptimalFlow uses *Pipeline Cluster Traversal Experiments* as the optimizer to build an omni-ensemble workflow for an optimal baseline model searching. Easy for data scientists to implement iterated experiments across all ensemble components in the pipeline;
       
-* *Custom Modify Welcomed* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
+* *High Scalability* - Each module could add new algorithms easily due to its ensemble and reusable coding design. And *Pipeline Cluster Traversal Experiments* makes it easier to adapt unseen datasets with the right pipeline;
+      
+* *Customization* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
 
 ### Documentation:  https://Optimal-Flow.readthedocs.io/
 

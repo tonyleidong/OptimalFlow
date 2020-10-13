@@ -5,7 +5,7 @@ autoCV Module
 Description : 
  - This module is used for model selection:
     * Automate the models training with cross validation
-    * GridSearch the best parameters
+    * OpitmalFlow supports two methods of hyperparameter optimization; cartesian grid search and random grid search.
     * Export the optimized models as pkl files, and saved them in /pkl folders
     * Validate the optimized models, and select the best model  
 
