@@ -7,7 +7,7 @@ Description :
     * Automate the feature selection with several selectors
     * Evaluate the outputs from all selector methods, and ranked a final list of the top important features
 
- .. image:: Parallel_Coordinates_Plot.PNG
+ .. image:: Parallel_Coordinates_Plot.png
    :width: 980
    
  - Class:
