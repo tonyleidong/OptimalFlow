@@ -6,7 +6,10 @@ Description :
  - This module is used for features selection:
     * Automate the feature selection with several selectors
     * Evaluate the outputs from all selector methods, and ranked a final list of the top important features
- 
+
+ .. image:: Parallel_Coordinates_Plot.PNG
+   :width: 980
+   
  - Class:
     * dynaFS_clf : Focus on classification problems
         - fit() - fit and transform method for classifier
