@@ -1,0 +1,22 @@
+12/10 21:13:59 - INFO - ###################################################################################################################################################################################################
+12/10 21:13:59 - INFO - Optimal Flow - autoCV - Auto PreProcessing :: 2020.10.12.21.13.59
+12/10 21:13:59 - INFO - ###################################################################################################################################################################################################
+12/10 21:13:59 - INFO - Copyright All Reserved by Tony Dong | e-mail: tonyleidong@gmail.com 
+12/10 21:13:59 - INFO - Official Documentation: https://optimal-flow.readthedocs.io
+12/10 21:13:59 - INFO - ------------------------------------------------------------
+12/10 21:13:59 - INFO - All previous logfiles will be deleted, when DELETE_FLAG is set to True.
+12/10 21:13:59 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/10 21:15:31 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/10 21:15:31 - INFO - Current Running Dataset No. 0 :
+12/10 21:15:31 - INFO - >>> winsorized_Strategy is 0
+12/10 21:15:31 - INFO - >>> Scaler stragety is standard
+12/10 21:15:31 - INFO - >>> Encoding strategy: [['onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up'], ['onehot_Size_1_0-4', 'onehot_Size_1_10-14', 'onehot_Size_1_15-19', 'onehot_Size_1_20-24', 'onehot_Size_1_25-29', 'onehot_Size_1_30-34', 'onehot_Size_1_35-39', 'onehot_Size_1_40-44', 'onehot_Size_1_45-49', 'onehot_Size_1_5-9', 'onehot_Size_1_50-54'], ['onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11'], ['onehot_Treatment_no-recurrence-events', 'onehot_Treatment_recurrence-events'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['onehot_Type_3_no', 'onehot_Type_3_yes']]
+12/10 21:15:31 - INFO - >>> Total columns with label column is: 54
+12/10 21:15:31 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.7857142857142857
+12/10 21:17:04 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/10 21:17:04 - INFO - Current Running Dataset No. 0 :
+12/10 21:17:04 - INFO - >>> winsorized_Strategy is 0
+12/10 21:17:04 - INFO - >>> Scaler stragety is standard
+12/10 21:17:04 - INFO - >>> Encoding strategy: [['onehot_Age_20-29', 'onehot_Age_30-39', 'onehot_Age_40-49', 'onehot_Age_50-59', 'onehot_Age_60-69', 'onehot_Age_70-79'], ['onehot_Position_1_left', 'onehot_Position_1_right'], ['onehot_Position_2_NaN', 'onehot_Position_2_central', 'onehot_Position_2_left_low', 'onehot_Position_2_left_up', 'onehot_Position_2_right_low', 'onehot_Position_2_right_up'], ['onehot_Size_1_0-4', 'onehot_Size_1_10-14', 'onehot_Size_1_15-19', 'onehot_Size_1_20-24', 'onehot_Size_1_25-29', 'onehot_Size_1_30-34', 'onehot_Size_1_35-39', 'onehot_Size_1_40-44', 'onehot_Size_1_45-49', 'onehot_Size_1_5-9', 'onehot_Size_1_50-54'], ['onehot_Size_2_0-2', 'onehot_Size_2_12-14', 'onehot_Size_2_15-17', 'onehot_Size_2_24-26', 'onehot_Size_2_3-5', 'onehot_Size_2_6-8', 'onehot_Size_2_9-11'], ['onehot_Treatment_no-recurrence-events', 'onehot_Treatment_recurrence-events'], ['onehot_Type_1_ge40', 'onehot_Type_1_lt40', 'onehot_Type_1_premeno'], ['onehot_Type_2_NaN', 'onehot_Type_2_no', 'onehot_Type_2_yes'], ['onehot_Type_3_no', 'onehot_Type_3_yes']]
+12/10 21:17:04 - INFO - >>> Total columns with label column is: 54
+12/10 21:17:04 - INFO - >>> Encoded Category Columns' Sparsity Score: 0.7857142857142857

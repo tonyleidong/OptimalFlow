@@ -1,0 +1,450 @@
+12/10 21:14:00 - INFO - #####################################################################################################################################################################################################################################################################
+12/10 21:14:00 - INFO - Optimal Flow - autoCV - Auto Model Selection w/ Cross Validation :: 2020.10.12.21.14.00
+12/10 21:14:00 - INFO - #####################################################################################################################################################################################################################################################################
+12/10 21:14:00 - INFO - Copyright All Reserved by Tony Dong | e-mail: tonyleidong@gmail.com 
+12/10 21:14:00 - INFO - Official Documentation: https://optimal-flow.readthedocs.io
+12/10 21:14:00 - INFO - ------------------------------------------------------------
+12/10 21:14:00 - INFO - All previous logfiles will be deleted, when DELETE_FLAG is set to True.
+12/10 21:14:00 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/10 21:15:31 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/10 21:15:31 - INFO - Current Running:svm estimator
+12/10 21:15:31 - INFO - Best Paramaters: {'C': 1, 'kernel': 'linear'}
+
+12/10 21:15:31 - INFO - Best CV Score: 0.953109243697479
+
+12/10 21:15:31 - INFO - 0.93 (+/-0.08) for {'C': 0.1, 'kernel': 'linear'}
+12/10 21:15:31 - INFO - 0.83 (+/-0.07) for {'C': 0.1, 'kernel': 'poly'}
+12/10 21:15:31 - INFO - 0.936 (+/-0.094) for {'C': 0.1, 'kernel': 'rbf'}
+12/10 21:15:31 - INFO - 0.924 (+/-0.093) for {'C': 0.1, 'kernel': 'sigmoid'}
+12/10 21:15:31 - INFO - 0.953 (+/-0.047) for {'C': 1, 'kernel': 'linear'}
+12/10 21:15:31 - INFO - 0.901 (+/-0.126) for {'C': 1, 'kernel': 'poly'}
+12/10 21:15:31 - INFO - 0.947 (+/-0.068) for {'C': 1, 'kernel': 'rbf'}
+12/10 21:15:31 - INFO - 0.924 (+/-0.047) for {'C': 1, 'kernel': 'sigmoid'}
+12/10 21:15:31 - INFO - 0.942 (+/-0.064) for {'C': 10, 'kernel': 'linear'}
+12/10 21:15:31 - INFO - 0.924 (+/-0.06) for {'C': 10, 'kernel': 'poly'}
+12/10 21:15:31 - INFO - 0.942 (+/-0.081) for {'C': 10, 'kernel': 'rbf'}
+12/10 21:15:31 - INFO - 0.901 (+/-0.08) for {'C': 10, 'kernel': 'sigmoid'}
+12/10 21:15:31 - INFO - This estimator executed 0.006 minutes
+12/10 21:15:31 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/10 21:15:31 - INFO - Current Running:rf estimator
+12/10 21:15:42 - INFO - Best Paramaters: {'max_depth': 4, 'n_estimators': 50, 'random_state': 13}
+
+12/10 21:15:42 - INFO - Best CV Score: 0.9297478991596637
+
+12/10 21:15:42 - INFO - 0.854 (+/-0.158) for {'max_depth': 2, 'n_estimators': 5, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.918 (+/-0.101) for {'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.924 (+/-0.109) for {'max_depth': 2, 'n_estimators': 250, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.883 (+/-0.11) for {'max_depth': 4, 'n_estimators': 5, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.93 (+/-0.08) for {'max_depth': 4, 'n_estimators': 50, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.93 (+/-0.08) for {'max_depth': 4, 'n_estimators': 250, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.889 (+/-0.083) for {'max_depth': 8, 'n_estimators': 5, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.918 (+/-0.068) for {'max_depth': 8, 'n_estimators': 50, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.918 (+/-0.068) for {'max_depth': 8, 'n_estimators': 250, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.889 (+/-0.083) for {'max_depth': 16, 'n_estimators': 5, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.918 (+/-0.068) for {'max_depth': 16, 'n_estimators': 50, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.918 (+/-0.068) for {'max_depth': 16, 'n_estimators': 250, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.889 (+/-0.083) for {'max_depth': 32, 'n_estimators': 5, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.918 (+/-0.068) for {'max_depth': 32, 'n_estimators': 50, 'random_state': 13}
+12/10 21:15:42 - INFO - 0.918 (+/-0.068) for {'max_depth': 32, 'n_estimators': 250, 'random_state': 13}
+12/10 21:15:42 - INFO - This estimator executed 0.1762 minutes
+12/10 21:15:42 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/10 21:15:42 - INFO - Current Running:ada estimator
+12/10 21:15:49 - INFO - Best Paramaters: {'learning_rate': 1, 'n_estimators': 50, 'random_state': 13}
+
+12/10 21:15:49 - INFO - Best CV Score: 0.9242016806722688
+
+12/10 21:15:49 - INFO - 0.901 (+/-0.07) for {'learning_rate': 0.1, 'n_estimators': 50, 'random_state': 13}
+12/10 21:15:49 - INFO - 0.924 (+/-0.06) for {'learning_rate': 0.1, 'n_estimators': 100, 'random_state': 13}
+12/10 21:15:49 - INFO - 0.918 (+/-0.068) for {'learning_rate': 0.1, 'n_estimators': 150, 'random_state': 13}
+12/10 21:15:49 - INFO - 0.924 (+/-0.094) for {'learning_rate': 1, 'n_estimators': 50, 'random_state': 13}
+12/10 21:15:49 - INFO - 0.913 (+/-0.061) for {'learning_rate': 1, 'n_estimators': 100, 'random_state': 13}
+12/10 21:15:49 - INFO - 0.912 (+/-0.037) for {'learning_rate': 1, 'n_estimators': 150, 'random_state': 13}
+12/10 21:15:49 - INFO - 0.466 (+/-0.288) for {'learning_rate': 10, 'n_estimators': 50, 'random_state': 13}
+12/10 21:15:49 - INFO - 0.466 (+/-0.288) for {'learning_rate': 10, 'n_estimators': 100, 'random_state': 13}
+12/10 21:15:49 - INFO - 0.466 (+/-0.288) for {'learning_rate': 10, 'n_estimators': 150, 'random_state': 13}
+12/10 21:15:49 - INFO - nan (+/-nan) for {'learning_rate': 100, 'n_estimators': 50, 'random_state': 13}
+12/10 21:15:49 - INFO - nan (+/-nan) for {'learning_rate': 100, 'n_estimators': 100, 'random_state': 13}
+12/10 21:15:49 - INFO - nan (+/-nan) for {'learning_rate': 100, 'n_estimators': 150, 'random_state': 13}
+12/10 21:15:49 - INFO - This estimator executed 0.1177 minutes
+12/10 21:15:49 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/10 21:15:49 - INFO - Current Running:xgb estimator
+12/10 21:16:20 - INFO - Best Paramaters: {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 50}
+
+12/10 21:16:20 - INFO - Best CV Score: 0.941344537815126
+
+12/10 21:16:20 - INFO - 0.877 (+/-0.113) for {'learning_rate': 0.01, 'max_depth': 1, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.871 (+/-0.11) for {'learning_rate': 0.01, 'max_depth': 1, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.865 (+/-0.11) for {'learning_rate': 0.01, 'max_depth': 1, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.871 (+/-0.122) for {'learning_rate': 0.01, 'max_depth': 1, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.871 (+/-0.122) for {'learning_rate': 0.01, 'max_depth': 1, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.877 (+/-0.095) for {'learning_rate': 0.01, 'max_depth': 1, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.883 (+/-0.092) for {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.901 (+/-0.109) for {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.901 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.901 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.901 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.906 (+/-0.087) for {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.889 (+/-0.102) for {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.889 (+/-0.102) for {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.895 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.895 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.901 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.901 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.889 (+/-0.102) for {'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.889 (+/-0.102) for {'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.895 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.895 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.901 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.901 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.889 (+/-0.102) for {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.889 (+/-0.102) for {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.895 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.895 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.901 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.901 (+/-0.08) for {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.901 (+/-0.08) for {'learning_rate': 0.1, 'max_depth': 1, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.918 (+/-0.045) for {'learning_rate': 0.1, 'max_depth': 1, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.924 (+/-0.03) for {'learning_rate': 0.1, 'max_depth': 1, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.93 (+/-0.06) for {'learning_rate': 0.1, 'max_depth': 1, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.93 (+/-0.06) for {'learning_rate': 0.1, 'max_depth': 1, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.93 (+/-0.088) for {'learning_rate': 0.1, 'max_depth': 1, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.924 (+/-0.071) for {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.924 (+/-0.08) for {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.935 (+/-0.087) for {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.93 (+/-0.088) for {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.93 (+/-0.088) for {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.93 (+/-0.088) for {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.912 (+/-0.092) for {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.93 (+/-0.109) for {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.906 (+/-0.087) for {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.93 (+/-0.109) for {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.906 (+/-0.087) for {'learning_rate': 0.1, 'max_depth': 9, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.1, 'max_depth': 9, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.93 (+/-0.109) for {'learning_rate': 0.1, 'max_depth': 9, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.1, 'max_depth': 9, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.1, 'max_depth': 9, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.1, 'max_depth': 9, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.912 (+/-0.065) for {'learning_rate': 0.2, 'max_depth': 1, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.93 (+/-0.06) for {'learning_rate': 0.2, 'max_depth': 1, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.935 (+/-0.069) for {'learning_rate': 0.2, 'max_depth': 1, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.93 (+/-0.088) for {'learning_rate': 0.2, 'max_depth': 1, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.924 (+/-0.109) for {'learning_rate': 0.2, 'max_depth': 1, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.93 (+/-0.088) for {'learning_rate': 0.2, 'max_depth': 1, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.924 (+/-0.08) for {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.918 (+/-0.102) for {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.924 (+/-0.08) for {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.924 (+/-0.08) for {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.93 (+/-0.08) for {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.924 (+/-0.08) for {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.918 (+/-0.102) for {'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.918 (+/-0.102) for {'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.93 (+/-0.08) for {'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.924 (+/-0.08) for {'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.918 (+/-0.102) for {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.924 (+/-0.109) for {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.93 (+/-0.08) for {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.924 (+/-0.08) for {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.918 (+/-0.102) for {'learning_rate': 0.2, 'max_depth': 9, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.924 (+/-0.109) for {'learning_rate': 0.2, 'max_depth': 9, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.2, 'max_depth': 9, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.924 (+/-0.103) for {'learning_rate': 0.2, 'max_depth': 9, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.93 (+/-0.08) for {'learning_rate': 0.2, 'max_depth': 9, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.924 (+/-0.08) for {'learning_rate': 0.2, 'max_depth': 9, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.93 (+/-0.029) for {'learning_rate': 0.3, 'max_depth': 1, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.935 (+/-0.069) for {'learning_rate': 0.3, 'max_depth': 1, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.93 (+/-0.088) for {'learning_rate': 0.3, 'max_depth': 1, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.93 (+/-0.088) for {'learning_rate': 0.3, 'max_depth': 1, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.924 (+/-0.096) for {'learning_rate': 0.3, 'max_depth': 1, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.924 (+/-0.096) for {'learning_rate': 0.3, 'max_depth': 1, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.924 (+/-0.132) for {'learning_rate': 0.3, 'max_depth': 3, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.924 (+/-0.132) for {'learning_rate': 0.3, 'max_depth': 3, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.93 (+/-0.109) for {'learning_rate': 0.3, 'max_depth': 3, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.93 (+/-0.109) for {'learning_rate': 0.3, 'max_depth': 3, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.935 (+/-0.087) for {'learning_rate': 0.3, 'max_depth': 3, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.924 (+/-0.096) for {'learning_rate': 0.3, 'max_depth': 3, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.918 (+/-0.078) for {'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.93 (+/-0.08) for {'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.93 (+/-0.059) for {'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.93 (+/-0.046) for {'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.93 (+/-0.046) for {'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.93 (+/-0.046) for {'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.924 (+/-0.08) for {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.93 (+/-0.08) for {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.93 (+/-0.059) for {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.93 (+/-0.046) for {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.93 (+/-0.046) for {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.93 (+/-0.046) for {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.924 (+/-0.08) for {'learning_rate': 0.3, 'max_depth': 9, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.93 (+/-0.08) for {'learning_rate': 0.3, 'max_depth': 9, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.93 (+/-0.059) for {'learning_rate': 0.3, 'max_depth': 9, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.93 (+/-0.046) for {'learning_rate': 0.3, 'max_depth': 9, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.93 (+/-0.046) for {'learning_rate': 0.3, 'max_depth': 9, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.93 (+/-0.046) for {'learning_rate': 0.3, 'max_depth': 9, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.93 (+/-0.06) for {'learning_rate': 0.4, 'max_depth': 1, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.924 (+/-0.109) for {'learning_rate': 0.4, 'max_depth': 1, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.93 (+/-0.088) for {'learning_rate': 0.4, 'max_depth': 1, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.924 (+/-0.096) for {'learning_rate': 0.4, 'max_depth': 1, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.924 (+/-0.096) for {'learning_rate': 0.4, 'max_depth': 1, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.924 (+/-0.096) for {'learning_rate': 0.4, 'max_depth': 1, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.941 (+/-0.053) for {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.935 (+/-0.069) for {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.935 (+/-0.069) for {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.935 (+/-0.069) for {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.93 (+/-0.088) for {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.935 (+/-0.087) for {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.906 (+/-0.12) for {'learning_rate': 0.4, 'max_depth': 5, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.906 (+/-0.12) for {'learning_rate': 0.4, 'max_depth': 5, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.906 (+/-0.12) for {'learning_rate': 0.4, 'max_depth': 5, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.912 (+/-0.098) for {'learning_rate': 0.4, 'max_depth': 5, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.918 (+/-0.078) for {'learning_rate': 0.4, 'max_depth': 5, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.912 (+/-0.083) for {'learning_rate': 0.4, 'max_depth': 5, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.906 (+/-0.12) for {'learning_rate': 0.4, 'max_depth': 7, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.906 (+/-0.12) for {'learning_rate': 0.4, 'max_depth': 7, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.906 (+/-0.12) for {'learning_rate': 0.4, 'max_depth': 7, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.912 (+/-0.098) for {'learning_rate': 0.4, 'max_depth': 7, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.918 (+/-0.078) for {'learning_rate': 0.4, 'max_depth': 7, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.912 (+/-0.083) for {'learning_rate': 0.4, 'max_depth': 7, 'n_estimators': 300}
+12/10 21:16:20 - INFO - 0.906 (+/-0.12) for {'learning_rate': 0.4, 'max_depth': 9, 'n_estimators': 50}
+12/10 21:16:20 - INFO - 0.906 (+/-0.12) for {'learning_rate': 0.4, 'max_depth': 9, 'n_estimators': 100}
+12/10 21:16:20 - INFO - 0.906 (+/-0.12) for {'learning_rate': 0.4, 'max_depth': 9, 'n_estimators': 150}
+12/10 21:16:20 - INFO - 0.912 (+/-0.098) for {'learning_rate': 0.4, 'max_depth': 9, 'n_estimators': 200}
+12/10 21:16:20 - INFO - 0.918 (+/-0.078) for {'learning_rate': 0.4, 'max_depth': 9, 'n_estimators': 250}
+12/10 21:16:20 - INFO - 0.912 (+/-0.083) for {'learning_rate': 0.4, 'max_depth': 9, 'n_estimators': 300}
+12/10 21:16:20 - INFO - This estimator executed 0.5102 minutes
+12/10 21:16:20 - INFO - svm -- Accuracy: 0.8947368421052632 / Precision: 0.8958137030555928 / Recall: 0.8947368421052632 / Latency: 2.0s
+12/10 21:16:20 - INFO - rf -- Accuracy: 0.8947368421052632 / Precision: 0.8947368421052632 / Recall: 0.8947368421052632 / Latency: 13.0s
+12/10 21:16:20 - INFO - ada -- Accuracy: 0.8596491228070176 / Precision: 0.8596491228070176 / Recall: 0.8596491228070176 / Latency: 17.0s
+12/10 21:16:20 - INFO - xgb -- Accuracy: 0.8947368421052632 / Precision: 0.8947368421052632 / Recall: 0.8947368421052632 / Latency: 2.0s
+12/10 21:17:05 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/10 21:17:05 - INFO - Current Running:svm estimator
+12/10 21:17:05 - INFO - Best Paramaters: {'C': 10, 'kernel': 'rbf'}
+
+12/10 21:17:05 - INFO - Best CV Score: 0.9179831932773108
+
+12/10 21:17:05 - INFO - 0.901 (+/-0.086) for {'C': 0.1, 'kernel': 'linear'}
+12/10 21:17:05 - INFO - 0.86 (+/-0.14) for {'C': 0.1, 'kernel': 'poly'}
+12/10 21:17:05 - INFO - 0.895 (+/-0.069) for {'C': 0.1, 'kernel': 'rbf'}
+12/10 21:17:05 - INFO - 0.895 (+/-0.087) for {'C': 0.1, 'kernel': 'sigmoid'}
+12/10 21:17:05 - INFO - 0.889 (+/-0.067) for {'C': 1, 'kernel': 'linear'}
+12/10 21:17:05 - INFO - 0.883 (+/-0.104) for {'C': 1, 'kernel': 'poly'}
+12/10 21:17:05 - INFO - 0.912 (+/-0.073) for {'C': 1, 'kernel': 'rbf'}
+12/10 21:17:05 - INFO - 0.907 (+/-0.076) for {'C': 1, 'kernel': 'sigmoid'}
+12/10 21:17:05 - INFO - 0.895 (+/-0.078) for {'C': 10, 'kernel': 'linear'}
+12/10 21:17:05 - INFO - 0.871 (+/-0.116) for {'C': 10, 'kernel': 'poly'}
+12/10 21:17:05 - INFO - 0.918 (+/-0.045) for {'C': 10, 'kernel': 'rbf'}
+12/10 21:17:05 - INFO - 0.877 (+/-0.086) for {'C': 10, 'kernel': 'sigmoid'}
+12/10 21:17:05 - INFO - This estimator executed 0.0051 minutes
+12/10 21:17:05 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/10 21:17:05 - INFO - Current Running:rf estimator
+12/10 21:17:16 - INFO - Best Paramaters: {'max_depth': 8, 'n_estimators': 250, 'random_state': 13}
+
+12/10 21:17:16 - INFO - Best CV Score: 0.9240336134453783
+
+12/10 21:17:16 - INFO - 0.866 (+/-0.118) for {'max_depth': 2, 'n_estimators': 5, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.901 (+/-0.086) for {'max_depth': 2, 'n_estimators': 50, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.901 (+/-0.086) for {'max_depth': 2, 'n_estimators': 250, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.883 (+/-0.097) for {'max_depth': 4, 'n_estimators': 5, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.918 (+/-0.057) for {'max_depth': 4, 'n_estimators': 50, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.918 (+/-0.067) for {'max_depth': 4, 'n_estimators': 250, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.889 (+/-0.067) for {'max_depth': 8, 'n_estimators': 5, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.918 (+/-0.078) for {'max_depth': 8, 'n_estimators': 50, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.924 (+/-0.06) for {'max_depth': 8, 'n_estimators': 250, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.889 (+/-0.067) for {'max_depth': 16, 'n_estimators': 5, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.918 (+/-0.078) for {'max_depth': 16, 'n_estimators': 50, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.924 (+/-0.06) for {'max_depth': 16, 'n_estimators': 250, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.889 (+/-0.067) for {'max_depth': 32, 'n_estimators': 5, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.918 (+/-0.078) for {'max_depth': 32, 'n_estimators': 50, 'random_state': 13}
+12/10 21:17:16 - INFO - 0.924 (+/-0.06) for {'max_depth': 32, 'n_estimators': 250, 'random_state': 13}
+12/10 21:17:16 - INFO - This estimator executed 0.1833 minutes
+12/10 21:17:16 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/10 21:17:16 - INFO - Current Running:ada estimator
+12/10 21:17:23 - INFO - Best Paramaters: {'learning_rate': 0.1, 'n_estimators': 50, 'random_state': 13}
+
+12/10 21:17:23 - INFO - Best CV Score: 0.9065546218487395
+
+12/10 21:17:23 - INFO - 0.907 (+/-0.068) for {'learning_rate': 0.1, 'n_estimators': 50, 'random_state': 13}
+12/10 21:17:23 - INFO - 0.883 (+/-0.065) for {'learning_rate': 0.1, 'n_estimators': 100, 'random_state': 13}
+12/10 21:17:23 - INFO - 0.889 (+/-0.045) for {'learning_rate': 0.1, 'n_estimators': 150, 'random_state': 13}
+12/10 21:17:23 - INFO - 0.877 (+/-0.078) for {'learning_rate': 1, 'n_estimators': 50, 'random_state': 13}
+12/10 21:17:23 - INFO - 0.877 (+/-0.087) for {'learning_rate': 1, 'n_estimators': 100, 'random_state': 13}
+12/10 21:17:23 - INFO - 0.865 (+/-0.096) for {'learning_rate': 1, 'n_estimators': 150, 'random_state': 13}
+12/10 21:17:23 - INFO - 0.509 (+/-0.375) for {'learning_rate': 10, 'n_estimators': 50, 'random_state': 13}
+12/10 21:17:23 - INFO - 0.509 (+/-0.375) for {'learning_rate': 10, 'n_estimators': 100, 'random_state': 13}
+12/10 21:17:23 - INFO - 0.509 (+/-0.375) for {'learning_rate': 10, 'n_estimators': 150, 'random_state': 13}
+12/10 21:17:23 - INFO - nan (+/-nan) for {'learning_rate': 100, 'n_estimators': 50, 'random_state': 13}
+12/10 21:17:23 - INFO - nan (+/-nan) for {'learning_rate': 100, 'n_estimators': 100, 'random_state': 13}
+12/10 21:17:23 - INFO - nan (+/-nan) for {'learning_rate': 100, 'n_estimators': 150, 'random_state': 13}
+12/10 21:17:23 - INFO - This estimator executed 0.1127 minutes
+12/10 21:17:23 - INFO - ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/10 21:17:23 - INFO - Current Running:xgb estimator
+12/10 21:17:54 - INFO - Best Paramaters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+
+12/10 21:17:54 - INFO - Best CV Score: 0.9181512605042016
+
+12/10 21:17:54 - INFO - 0.895 (+/-0.087) for {'learning_rate': 0.01, 'max_depth': 1, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.901 (+/-0.086) for {'learning_rate': 0.01, 'max_depth': 1, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.901 (+/-0.086) for {'learning_rate': 0.01, 'max_depth': 1, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.907 (+/-0.077) for {'learning_rate': 0.01, 'max_depth': 1, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.907 (+/-0.077) for {'learning_rate': 0.01, 'max_depth': 1, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.906 (+/-0.094) for {'learning_rate': 0.01, 'max_depth': 1, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.889 (+/-0.119) for {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.906 (+/-0.094) for {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.901 (+/-0.095) for {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.907 (+/-0.068) for {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.901 (+/-0.07) for {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.912 (+/-0.064) for {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.871 (+/-0.087) for {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.883 (+/-0.064) for {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.883 (+/-0.064) for {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.877 (+/-0.058) for {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.883 (+/-0.037) for {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.889 (+/-0.041) for {'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.871 (+/-0.087) for {'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.883 (+/-0.064) for {'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.883 (+/-0.064) for {'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.877 (+/-0.058) for {'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.883 (+/-0.037) for {'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.895 (+/-0.058) for {'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.871 (+/-0.087) for {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.883 (+/-0.064) for {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.883 (+/-0.064) for {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.877 (+/-0.058) for {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.883 (+/-0.037) for {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.895 (+/-0.058) for {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.912 (+/-0.074) for {'learning_rate': 0.1, 'max_depth': 1, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.912 (+/-0.074) for {'learning_rate': 0.1, 'max_depth': 1, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.901 (+/-0.079) for {'learning_rate': 0.1, 'max_depth': 1, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.1, 'max_depth': 1, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.889 (+/-0.044) for {'learning_rate': 0.1, 'max_depth': 1, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.895 (+/-0.048) for {'learning_rate': 0.1, 'max_depth': 1, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.912 (+/-0.064) for {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.918 (+/-0.068) for {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.912 (+/-0.083) for {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.912 (+/-0.083) for {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.912 (+/-0.083) for {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.912 (+/-0.083) for {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.901 (+/-0.027) for {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.895 (+/-0.028) for {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.895 (+/-0.028) for {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.895 (+/-0.028) for {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.895 (+/-0.046) for {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.889 (+/-0.023) for {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.901 (+/-0.027) for {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.895 (+/-0.028) for {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.907 (+/-0.043) for {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.901 (+/-0.046) for {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.901 (+/-0.046) for {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.889 (+/-0.044) for {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.901 (+/-0.027) for {'learning_rate': 0.1, 'max_depth': 9, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.895 (+/-0.028) for {'learning_rate': 0.1, 'max_depth': 9, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.907 (+/-0.043) for {'learning_rate': 0.1, 'max_depth': 9, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.901 (+/-0.046) for {'learning_rate': 0.1, 'max_depth': 9, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.901 (+/-0.046) for {'learning_rate': 0.1, 'max_depth': 9, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.889 (+/-0.044) for {'learning_rate': 0.1, 'max_depth': 9, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.912 (+/-0.074) for {'learning_rate': 0.2, 'max_depth': 1, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.2, 'max_depth': 1, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.895 (+/-0.048) for {'learning_rate': 0.2, 'max_depth': 1, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.889 (+/-0.069) for {'learning_rate': 0.2, 'max_depth': 1, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.889 (+/-0.069) for {'learning_rate': 0.2, 'max_depth': 1, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.883 (+/-0.064) for {'learning_rate': 0.2, 'max_depth': 1, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.912 (+/-0.053) for {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.901 (+/-0.07) for {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.895 (+/-0.078) for {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.901 (+/-0.07) for {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.895 (+/-0.088) for {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.895 (+/-0.088) for {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.901 (+/-0.03) for {'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.895 (+/-0.03) for {'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.883 (+/-0.037) for {'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.889 (+/-0.044) for {'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.889 (+/-0.068) for {'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.889 (+/-0.068) for {'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.901 (+/-0.046) for {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.895 (+/-0.028) for {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.889 (+/-0.044) for {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.889 (+/-0.044) for {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.889 (+/-0.068) for {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.889 (+/-0.068) for {'learning_rate': 0.2, 'max_depth': 7, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.901 (+/-0.046) for {'learning_rate': 0.2, 'max_depth': 9, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.895 (+/-0.028) for {'learning_rate': 0.2, 'max_depth': 9, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.889 (+/-0.044) for {'learning_rate': 0.2, 'max_depth': 9, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.889 (+/-0.044) for {'learning_rate': 0.2, 'max_depth': 9, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.889 (+/-0.068) for {'learning_rate': 0.2, 'max_depth': 9, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.889 (+/-0.068) for {'learning_rate': 0.2, 'max_depth': 9, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.912 (+/-0.064) for {'learning_rate': 0.3, 'max_depth': 1, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.895 (+/-0.048) for {'learning_rate': 0.3, 'max_depth': 1, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.889 (+/-0.069) for {'learning_rate': 0.3, 'max_depth': 1, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.889 (+/-0.069) for {'learning_rate': 0.3, 'max_depth': 1, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.889 (+/-0.069) for {'learning_rate': 0.3, 'max_depth': 1, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.889 (+/-0.078) for {'learning_rate': 0.3, 'max_depth': 1, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.906 (+/-0.044) for {'learning_rate': 0.3, 'max_depth': 3, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.895 (+/-0.048) for {'learning_rate': 0.3, 'max_depth': 3, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.889 (+/-0.078) for {'learning_rate': 0.3, 'max_depth': 3, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.889 (+/-0.078) for {'learning_rate': 0.3, 'max_depth': 3, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.883 (+/-0.083) for {'learning_rate': 0.3, 'max_depth': 3, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.883 (+/-0.083) for {'learning_rate': 0.3, 'max_depth': 3, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.901 (+/-0.06) for {'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.895 (+/-0.061) for {'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.901 (+/-0.06) for {'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.901 (+/-0.059) for {'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.901 (+/-0.059) for {'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.901 (+/-0.059) for {'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.906 (+/-0.044) for {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.901 (+/-0.048) for {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.889 (+/-0.057) for {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.901 (+/-0.059) for {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.906 (+/-0.044) for {'learning_rate': 0.3, 'max_depth': 9, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.901 (+/-0.048) for {'learning_rate': 0.3, 'max_depth': 9, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.889 (+/-0.057) for {'learning_rate': 0.3, 'max_depth': 9, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.3, 'max_depth': 9, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.3, 'max_depth': 9, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.901 (+/-0.059) for {'learning_rate': 0.3, 'max_depth': 9, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.4, 'max_depth': 1, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.883 (+/-0.064) for {'learning_rate': 0.4, 'max_depth': 1, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.883 (+/-0.064) for {'learning_rate': 0.4, 'max_depth': 1, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.883 (+/-0.064) for {'learning_rate': 0.4, 'max_depth': 1, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.877 (+/-0.12) for {'learning_rate': 0.4, 'max_depth': 1, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.877 (+/-0.12) for {'learning_rate': 0.4, 'max_depth': 1, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.901 (+/-0.046) for {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.901 (+/-0.046) for {'learning_rate': 0.4, 'max_depth': 3, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.889 (+/-0.057) for {'learning_rate': 0.4, 'max_depth': 5, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.4, 'max_depth': 5, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.895 (+/-0.079) for {'learning_rate': 0.4, 'max_depth': 5, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.895 (+/-0.079) for {'learning_rate': 0.4, 'max_depth': 5, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.889 (+/-0.078) for {'learning_rate': 0.4, 'max_depth': 5, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.4, 'max_depth': 5, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.889 (+/-0.057) for {'learning_rate': 0.4, 'max_depth': 7, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.4, 'max_depth': 7, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.895 (+/-0.079) for {'learning_rate': 0.4, 'max_depth': 7, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.895 (+/-0.079) for {'learning_rate': 0.4, 'max_depth': 7, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.889 (+/-0.078) for {'learning_rate': 0.4, 'max_depth': 7, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.4, 'max_depth': 7, 'n_estimators': 300}
+12/10 21:17:54 - INFO - 0.889 (+/-0.057) for {'learning_rate': 0.4, 'max_depth': 9, 'n_estimators': 50}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.4, 'max_depth': 9, 'n_estimators': 100}
+12/10 21:17:54 - INFO - 0.895 (+/-0.079) for {'learning_rate': 0.4, 'max_depth': 9, 'n_estimators': 150}
+12/10 21:17:54 - INFO - 0.895 (+/-0.079) for {'learning_rate': 0.4, 'max_depth': 9, 'n_estimators': 200}
+12/10 21:17:54 - INFO - 0.889 (+/-0.078) for {'learning_rate': 0.4, 'max_depth': 9, 'n_estimators': 250}
+12/10 21:17:54 - INFO - 0.895 (+/-0.06) for {'learning_rate': 0.4, 'max_depth': 9, 'n_estimators': 300}
+12/10 21:17:54 - INFO - This estimator executed 0.5161 minutes
+12/10 21:17:54 - INFO - svm -- Accuracy: 0.8596491228070176 / Precision: 0.8626380766731644 / Recall: 0.8596491228070176 / Latency: 3.0s
+12/10 21:17:54 - INFO - rf -- Accuracy: 0.8245614035087719 / Precision: 0.8276803118908382 / Recall: 0.8245614035087719 / Latency: 46.9s
+12/10 21:17:54 - INFO - ada -- Accuracy: 0.8771929824561403 / Precision: 0.8799270904534061 / Recall: 0.8771929824561403 / Latency: 8.0s
+12/10 21:17:54 - INFO - xgb -- Accuracy: 0.8245614035087719 / Precision: 0.8246511419212994 / Recall: 0.8245614035087719 / Latency: 2.0s
