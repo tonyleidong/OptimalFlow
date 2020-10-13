@@ -9,7 +9,7 @@ Description :
     * Export the optimized models as pkl files, and saved them in /pkl folders
     * Validate the optimized models, and select the best model  
 
- .. image:: Learning_Curve_Compare.PNG
+ .. image:: Learning_Curve_Compare.png
    :width: 980
 
 - Class
