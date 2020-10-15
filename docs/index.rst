@@ -40,7 +40,7 @@ In summary, **OptimalFlow** shares a few useful properties for data scientists:
 
    * *Easy maintaining* - Wrap machine learning components to well-modularized code packages without miscellaneous parameters inside;
 
-   * *Light & transplantable* - Easy to transplant among projects. Faster w/ convenience to deploy comparing other cloud-based solution(i.e. Microsoft Azure AutoML);
+   * *Light & swift* - Easy to transplant among projects. Faster w/ convenience to deploy comparing other cloud-based solution(i.e. Microsoft Azure AutoML);
 
    * *Omni ensemble* - OptimalFlow uses *Pipeline Cluster Traversal Experiments* as the optimizer to build an omni-ensemble workflow for an optimal baseline model searching. Easy for data scientists to implement iterated experiments across all ensemble components in the pipeline;
       
