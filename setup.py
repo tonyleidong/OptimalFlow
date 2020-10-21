@@ -26,7 +26,10 @@ setuptools.setup(
         'flask',
         'wtforms',
         'werkzeug',
-        'matplotlib'
+        'matplotlib',
+        'pandas',
+        'xgboost',
+        'pywin32'
     ],
     classifiers=[
         "Programming Language :: Python :: 3.8",
