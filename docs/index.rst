@@ -62,6 +62,8 @@ Other Stories:
 
 * Build No-code Automated Machine Learning Model with OptimalFlow Web App: https://towardsdatascience.com/build-no-code-automated-machine-learning-model-with-optimalflow-web-app-8acaad8262b1
 
+* Feature Preprocessor in Automated Machine Learning: https://tonyleidong.medium.com/feature-preprocessor-in-automated-machine-learning-c3af6f22f015
+
 **Table of contents**
 
 .. toctree::

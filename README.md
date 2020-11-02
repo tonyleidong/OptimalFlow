@@ -92,6 +92,8 @@ In summary, **OptimalFlow** shares a few useful properties for data scientists:
 
 * Build No-code Automated Machine Learning Model with OptimalFlow Web App: https://towardsdatascience.com/build-no-code-automated-machine-learning-model-with-optimalflow-web-app-8acaad8262b1
 
+* Feature Preprocessor in Automated Machine Learning: https://tonyleidong.medium.com/feature-preprocessor-in-automated-machine-learning-c3af6f22f015
+
 ### Support OptimalFlow
 If you like OptimalFlow, please consider starring or forking it on GitHub and spreading the word!
 
