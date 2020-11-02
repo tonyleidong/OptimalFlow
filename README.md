@@ -14,6 +14,17 @@
 
 <img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow_Logo.png" width="150">
 
+### Documentation:  https://Optimal-Flow.readthedocs.io/
+
+### Installation
+```python
+pip install OptimalFlow
+```
+### Publication(Preprint)
+Lei(Tony) Dong, Syed Khader. 
+GENPACT GVector Augmented Intelligence Conference, 2020.
+[OptimalFlow: Omni-ensemble and Scalable Automated Machine Learning.pdf](https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow_Omni-ensemble_and_Scalable_Automated_Machine_Learning.pdf)
+
 **OptimalFlow** is an Omni-ensemble Automated Machine Learning Python toolkit, which is based on *Pipeline Cluster Traversal Experiment* approach, to help data scientists build optimal models in easy way, and automate Supervised Learning workflow with simple codes. 
 
 **OptimalFlow** wraps the Scikit-learn supervised learning framework to automatically create an ensemble of machine learning pipelines(Omni-ensemble Pipeline Cluster) based on algorithms permutation in each framework component. It includes feature engineering methods in its preprocessing module such as missing value imputation, categorical feature encoding, numeric feature standardization, and outlier winsorization. The models inherit algorithms from Scikit-learn and XGBoost estimators for classification and regression problems. And the extendable coding structure supports adding models from external estimator libraries, which distincts **OptimalFlow** ’s scalability out of most of AutoML toolkits.
@@ -55,13 +66,6 @@ In summary, **OptimalFlow** shares a few useful properties for data scientists:
 * *High Scalability* - Each module could add new algorithms easily due to its ensemble and reusable coding design. And *Pipeline Cluster Traversal Experiments* makes it easier to adapt unseen datasets with the right pipeline;
       
 * *Customization* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
-
-### Documentation:  https://Optimal-Flow.readthedocs.io/
-
-### Installation
-```python
-pip install OptimalFlow
-```
 
 ### Core Modules: 
  - autoPP for feature preprocessing
