@@ -14,8 +14,7 @@
 
 <img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow_Logo.png" width="150">
 
-### Documentation:  
-https://Optimal-Flow.readthedocs.io/
+### Documentation:  https://Optimal-Flow.readthedocs.io/
 
 ### Publication(Preprint)
 Lei(Tony) Dong, Syed Khader. 
