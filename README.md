@@ -27,9 +27,7 @@ pip install OptimalFlow
 ```
 
 ### Introduction
-**OptimalFlow** is an omni-ensemble and scalable automated machine learning Python toolkit, which uses Pipeline Cluster Traversal Experiments(PCTE) and Selection-based Feature Preprocessor with Ensemble Encoding(SPEE), to help data scientists build optimal models, and automate supervised learning workflow with simpler coding. 
-
-**OptimalFlow** is designed with high-level APIs targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. It reimages the automated machine learning framework by switching the focus from single pipeline components automation to a higher workflow level by creating an automated pipeline ensemble and evaluation mechanism. By modularizing functional modules in reusable APIs, OptimalFlow makes each supervised learning step to be custom tunable along with high scalability.  
+**OptimalFlow** is an omni-ensemble and scalable automated machine learning Python toolkit, which uses Pipeline Cluster Traversal Experiments(PCTE) and Selection-based Feature Preprocessor with Ensemble Encoding(SPEE), to help data scientists build optimal models, and automate supervised learning workflow with simpler coding.   
 
 **OptimalFlow** wraps the Scikit-learn supervised learning framework to automatically create an ensemble of machine learning pipelines(Omni-ensemble Pipeline Cluster) based on algorithms permutation in each framework component. It includes feature engineering methods in its preprocessing module such as missing value imputation, categorical feature encoding, numeric feature standardization, and outlier winsorization. The models inherit algorithms from Scikit-learn and XGBoost estimators for classification and regression problems. And the extendable coding structure supports adding models from external estimator libraries, which distincts **OptimalFlow** ’s scalability out of most of AutoML toolkits.
 
