@@ -18,7 +18,7 @@
 
 ### Publication(Preprint)
 Lei(Tony) Dong, Syed Khader. 
-*GENPACT GVector Augmented Intelligence Conference*, 2020.
+*GENPACT GVector Augmented Intelligence Conference*, November 2020.
 [OptimalFlow: Omni-ensemble and Scalable Automated Machine Learning.pdf](https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow_Omni-ensemble_and_Scalable_Automated_Machine_Learning.pdf)
 
 ### Installation
@@ -27,7 +27,9 @@ pip install OptimalFlow
 ```
 
 ### Introduction
-**OptimalFlow** is an Omni-ensemble Automated Machine Learning Python toolkit, which is based on *Pipeline Cluster Traversal Experiment* approach, to help data scientists build optimal models in easy way, and automate Supervised Learning workflow with simple codes. 
+**OptimalFlow** is an omni-ensemble and scalable automated machine learning Python toolkit, which uses Pipeline Cluster Traversal Experiments(PCTE) and Selection-based Feature Preprocessor with Ensemble Encoding(SPEE), to help data scientists build optimal models, and automate supervised learning workflow with simpler coding. 
+
+**OptimalFlow** is designed with high-level APIs targeting to avoid manual repetitive train-along-evaluate experiments in general pipeline building. It reimages the automated machine learning framework by switching the focus from single pipeline components automation to a higher workflow level by creating an automated pipeline ensemble and evaluation mechanism. By modularizing functional modules in reusable APIs, OptimalFlow makes each supervised learning step to be custom tunable along with high scalability.  
 
 **OptimalFlow** wraps the Scikit-learn supervised learning framework to automatically create an ensemble of machine learning pipelines(Omni-ensemble Pipeline Cluster) based on algorithms permutation in each framework component. It includes feature engineering methods in its preprocessing module such as missing value imputation, categorical feature encoding, numeric feature standardization, and outlier winsorization. The models inherit algorithms from Scikit-learn and XGBoost estimators for classification and regression problems. And the extendable coding structure supports adding models from external estimator libraries, which distincts **OptimalFlow** ’s scalability out of most of AutoML toolkits.
 
@@ -55,17 +57,17 @@ Comparing other automated or classic machine learning workflow's repetitive expe
 
 In summary, **OptimalFlow** shares a few useful properties for data scientists:
 
-* *Easy coding* - High-level APIs to implement *Pipeline Cluster Traversal Experiments*, and each machine learning component is highly automated and modularized;
+* *Easy coding* - High-level APIs to implement PCTE, and each machine learning component is highly automated and modularized;
 
-* *Easy transformation* - Focus on process automation for locally implementation,which is easy to transfer current operation and meet compliance restriction(i.e. pharmaceutical compliance policy);
+* *Easy transformation* - Focus on process automation for local implementation, which is easy to transfer current operation and meet compliance restrictions, i.e. pharmaceutical compliance policy;
 
-* *Easy maintaining* - Wrap machine learning components to well-modularized code packages without miscellaneous parameters inside;
+* *Easy maintenance* - Wrap machine learning components to well-modularized code packages without miscellaneous parameters inside;
 
-* *Light & swift* - Easy to transplant among projects. Faster w/ convenience to deploy comparing other cloud-based solution(i.e. Microsoft Azure AutoML);
+* *Light & swift* - Easy to transplant among projects. Quick and convenient, to deploy compared with other cloud-based solutions(i.e. Microsoft Azure AutoML);
 
-* *Omni ensemble* - OptimalFlow uses *Pipeline Cluster Traversal Experiments* as the optimizer to build an omni-ensemble workflow for an optimal baseline model searching. Easy for data scientists to implement iterated experiments across all ensemble components in the pipeline;
+* *Omni ensemble* - Easy for data scientists to implement iterated experiments across all ensemble components in the workflow;
       
-* *High Scalability* - Each module could add new algorithms easily due to its ensemble and reusable coding design. And *Pipeline Cluster Traversal Experiments* makes it easier to adapt unseen datasets with the right pipeline;
+* *High Scalability* - Each module allows addition of add new algorithms easily owing to its ensemble and reusable coding design. PCTE and SPEE make it easier to adapt unseen datasets with the right pipeline;
       
 * *Customization* - Support custom settings to add/remove algorithms or modify hyperparameters for elastic requirements.
 
