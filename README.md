@@ -53,7 +53,7 @@ Comparing other automated or classic machine learning workflow's repetitive expe
 <img src="https://github.com/tonyleidong/OptimalFlow/blob/master/docs/PipelineClusterTraversalExperiments.PNG" width="980">
 
 
-In summary, **OptimalFlow** shares a few useful properties for data scientists:
+In summary, **OptimalFlow** provides the following benefits to data scientists:
 
 * *Easy coding* - High-level APIs to implement PCTE, and each machine learning component is highly automated and modularized;
 
