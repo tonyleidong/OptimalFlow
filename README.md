@@ -16,7 +16,7 @@
 
 ### Documentation:  https://Optimal-Flow.readthedocs.io/
 
-### Publication(Preprint)
+### Publication
 Lei(Tony) Dong, Syed Khader. 
 *GENPACT GVector Augmented Intelligence Conference*, November 2020.
 [OptimalFlow: Omni-ensemble and Scalable Automated Machine Learning.pdf](https://github.com/tonyleidong/OptimalFlow/blob/master/docs/OptimalFlow_Omni-ensemble_and_Scalable_Automated_Machine_Learning.pdf)
