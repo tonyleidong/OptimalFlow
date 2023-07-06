@@ -1,5 +1,5 @@
 scikit-learn==0.23.1
-scipy==1.5.1
+scipy==1.10.0
 statsmodels==0.11.1
 pandas==1.0.5
 joblib==0.16.0
